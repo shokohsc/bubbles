@@ -3,9 +3,9 @@
 parameters:
 #    parameter_name: value
 
-# services:
-#     kernel.listener.AppEventListener:
-#         class: Front\AppBundle\EventListener\AppExceptionListener
-#         arguments: [@twig]
-#         tags:
-#             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+services:
+    kernel.listener.AppEventListener:
+        class: Front\AppBundle\EventListener\AppExceptionListener
+        arguments: [@twig]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
