@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ title|striptags }} {% endblock %}
+
+{% block content %}
+	<h1 class="text-center">{{ header }}</h1>
+
+	<div class="row col-centered">
+	  	{% for comic in collection %}
+			{% include 'front/comic_list.html.twig' %}
+		{% endfor %}
+	</div>
+
+	<div class="row col-centered">
+	    {% if page is defined %}
+	        {% if serie is defined %}
+	            {% set route = 'serie' %}
+	        {% elseif creator is defined %}
+	            {% set route = 'creator' %}
+	        {% endif %}
+            {% include 'front/pagination_comics.html.twig' %}
+	    {% endif %}
+
+	    {% if pagination is defined %}
+	      {% include 'front/pagination.html.twig' %}
+	    {% endif %}
+	</div>
+{% endblock %}

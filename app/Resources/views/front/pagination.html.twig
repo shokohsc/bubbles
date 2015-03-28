@@ -1,0 +1,21 @@
+<nav>
+  <ul class="pager">
+    <li>
+    	<a href="{{ path('released', {
+    	'day':   date|previousWeek('day'),
+    	'month': date|previousWeek('month'),
+    	'year':  date|previousWeek('year') }) }}">
+	    	<span class="glyphicon glyphicon-chevron-left"></span> Browse one week before
+	    </a>
+    </li>
+
+    <li>
+    	<a href="{{ path('released', {
+    	'day':   date|nextWeek('day'),
+    	'month': date|nextWeek('month'),
+    	'year':  date|nextWeek('year') }) }}">
+	    	Browse one week after <span class="glyphicon glyphicon-chevron-right"></span>
+	    </a>
+    </li>
+  </ul>
+</nav>

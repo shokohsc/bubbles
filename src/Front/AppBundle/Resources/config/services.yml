@@ -1,0 +1,17 @@
+services:
+    app.comic_repository:
+        class: Front\AppBundle\Repository\ComicRepository
+        arguments: [@marvel_api_client]
+
+    app.serie_repository:
+        class: Front\AppBundle\Repository\SerieRepository
+        arguments: [@marvel_api_client, @twig]
+
+    app.creator_repository:
+        class: Front\AppBundle\Repository\CreatorRepository
+        arguments: [@marvel_api_client, @twig]
+
+    app.twig.app_twig_extension:
+        class: Front\AppBundle\Twig\AppTwigExtension
+        tags:
+            - { name: twig.extension }
