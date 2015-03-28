@@ -25,7 +25,7 @@ class FrontController extends Controller
                 'collection' => $collection,
                 'date' => $date,
                 'pagination' => true,
-                ]);
+            ]);
     }
 
     /**
@@ -44,7 +44,7 @@ class FrontController extends Controller
                 'collection' => $collection,
                 'date' => $date,
                 'pagination' => true,
-                ]);
+            ]);
     }
 
     /**
@@ -57,7 +57,7 @@ class FrontController extends Controller
         return $this->render('front/comic.html.twig',
             [
                 'comic' => $comic,
-                ]);
+            ]);
     }
 
     /**
@@ -75,7 +75,7 @@ class FrontController extends Controller
                 'serie' => $serie,
                 'collection' => $collection,
                 'page' => $page,
-                ]);
+            ]);
     }
 
     /**
@@ -93,7 +93,7 @@ class FrontController extends Controller
                 'creator' => $creator,
                 'collection' => $collection,
                 'page' => $page,
-                ]);
+            ]);
     }
 
     /**
@@ -110,21 +110,8 @@ class FrontController extends Controller
                 'collection' => $collection,
                 'serie' => true,
                 'search' => true,
-                ]);
+            ]);
     }
-
-    /**
-     * @Route("/contact", name="contact")
-     */
-    public function contactAction()
-    {
-      return $this->render('front/contact.html.twig',
-          [
-              'title' => 'Contact Bubbles',
-              ]);
-
-    }
-
 
     /**
      * @Route("/about", name="about")
@@ -134,7 +121,7 @@ class FrontController extends Controller
       return $this->render('front/about.html.twig',
           [
               'title' => 'Bubbles in a few words',
-              ]);
+          ]);
     }
 
 }
