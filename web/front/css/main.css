@@ -39,21 +39,6 @@ footer{
   min-width: 216px;
   height: 324px;
 }
-.icon-action{
-  font-size: 40px;
-  position: absolute;
-  z-index: 1;
-  padding-left: 20px;
-}
-.user-action-icon-on{
-  color: #5CB85C;
-}
-.user-action-icon-off{
-  color: #D9534F;
-}
-.icon-action a:hover{
-  color: #5BC0DE;
-}
 .mfp-img{
   max-height: 100% !important;
 }
