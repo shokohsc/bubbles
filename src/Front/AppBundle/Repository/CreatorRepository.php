@@ -23,7 +23,7 @@ class CreatorRepository
     /**
      * Creator repository constructor
      * @param Client $client
-     * @param insteger $comicsPerPage
+     * @param integer $comicsPerPage
      */
     public function __construct(Client $client, $comicsPerPage)
     {
