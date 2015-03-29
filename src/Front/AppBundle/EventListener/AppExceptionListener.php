@@ -21,14 +21,14 @@ class AppExceptionListener
         if ($exception instanceof NotFoundHttpException) {
             $args = [
                     'title' => 'Bubble is lost',
-                    'code' => $exception->getCode(),
-                    'message' => $exception->getMessage(),
+                    'code' => '404',
+                    'message' => 'Deadpool says you lost your way.',
                     ];
         } else {
             $args = [
                     'title' => 'Bubble stumbled',
                     'code' => '500',
-                    'message' => 'Sorry mate, seems there is an issue here.',
+                    'message' => 'Deadpool says we lost our way.',
                     ];
         }
         $response = new Response($this->twig->render('front/error.html.twig', $args));
