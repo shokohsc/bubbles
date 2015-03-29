@@ -29,8 +29,6 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
-    globals:
-        comicsPerPage: 20
     form:
         resources: ['bootstrap_3_horizontal_layout.html.twig']
 

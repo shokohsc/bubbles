@@ -10,6 +10,8 @@ use Carbon\Carbon;
 class FrontController extends Controller
 {
     /**
+     * Index
+     *
      * @Route("/", name="homepage")
      */
     public function homeAction()
@@ -27,6 +29,8 @@ class FrontController extends Controller
     }
 
     /**
+     * Index for that week
+     *
      * @Route("/released/{day}/{month}/{year}", name="released", requirements={"day" = "\d+", "month" = "\d+", "year" = "\d+"})
      */
     public function thatWeekAction($day, $month, $year)
@@ -44,6 +48,8 @@ class FrontController extends Controller
     }
 
     /**
+     * Comic
+     *
      * @Route("/comic/{id}", name="comic", requirements={"id" = "\d+"})
      */
     public function comicAction($id)
@@ -57,6 +63,8 @@ class FrontController extends Controller
     }
 
     /**
+     * Comics from Serie
+     *
      * @Route("/serie/{id}/{page}", name="serie", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
      */
     public function serieAction($id, $page)
@@ -73,6 +81,8 @@ class FrontController extends Controller
     }
 
     /**
+     * Comics from Creator
+     *
      * @Route("/creator/{id}/{page}", name="creator", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
      */
     public function creatorAction($id, $page)
@@ -89,6 +99,8 @@ class FrontController extends Controller
     }
 
     /**
+     * Search Serie
+     *
      * @Route("/search", name="search")
      */
     public function searchAction(Request $request)
@@ -104,6 +116,8 @@ class FrontController extends Controller
     }
 
     /**
+     * About
+     *
      * @Route("/about", name="about")
      */
     public function aboutAction()

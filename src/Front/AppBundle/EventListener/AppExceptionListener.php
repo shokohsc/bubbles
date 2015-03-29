@@ -8,13 +8,25 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AppExceptionListener
 {
+    /**
+     * Twig Environment
+     * @var \Twig_Environment
+     */
     private $twig;
 
+    /**
+     * AppExceptionListener constructor
+     * @param Twig_Environment $twig injected via service definition
+     */
     public function __construct(\Twig_Environment $twig)
     {
         $this->twig = $twig;
     }
 
+    /**
+     * onKernelException
+     * @param GetResponseForExceptionEvent $event
+     */
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
         $exception = $event->getException();

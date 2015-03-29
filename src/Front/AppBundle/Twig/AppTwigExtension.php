@@ -4,6 +4,9 @@ namespace Front\AppBundle\Twig;
 
 class AppTwigExtension extends \Twig_Extension
 {
+    /**
+     * Get filters defined
+     */
     public function getFilters()
     {
         return array(
@@ -16,6 +19,11 @@ class AppTwigExtension extends \Twig_Extension
         );
     }
 
+    /**
+     * filter the resourceId from the resourceURI
+     * @param string $resourceURI
+     * @return string
+     */
     public function resourceIdFilter($resourceURI)
     {
         $arrayResourceURI = explode('/', $resourceURI);
@@ -24,11 +32,22 @@ class AppTwigExtension extends \Twig_Extension
         return $arrayResourceURI[0];
     }
 
+    /**
+     * decode html elements leftovers
+     * @param string $string comic description
+     * @return string
+     */
     public function htmlDecodeFilter($string)
     {
         return html_entity_decode($string, ENT_QUOTES);
     }
 
+    /**
+     * previous week
+     * @param Carbon\Carbon $date
+     * @param string $partOfDate
+     * @return Carbon\Carbon
+     */
     public function previousWeekFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
@@ -41,6 +60,12 @@ class AppTwigExtension extends \Twig_Extension
         }
     }
 
+    /**
+     * next week
+     * @param Carbon\Carbon $date
+     * @param string $partOfDate
+     * @return Carbon\Carbon
+     */
     public function nextWeekFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
@@ -53,6 +78,12 @@ class AppTwigExtension extends \Twig_Extension
         }
     }
 
+    /**
+     * previous month
+     * @param Carbon\Carbon $date
+     * @param string $partOfDate
+     * @return Carbon\Carbon
+     */
     public function previousMonthFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
@@ -65,6 +96,12 @@ class AppTwigExtension extends \Twig_Extension
         }
     }
 
+    /**
+     * next month
+     * @param Carbon\Carbon $date
+     * @param string $partOfDate
+     * @return Carbon\Carbon
+     */
     public function nextMonthFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
@@ -77,6 +114,9 @@ class AppTwigExtension extends \Twig_Extension
         }
     }
 
+    /**
+     * Get Twig_Extension name
+     */
     public function getName()
     {
         return 'app_twig_extension';

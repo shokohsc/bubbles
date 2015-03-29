@@ -19,5 +19,7 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
+    entity_per_page:  20
+
     marvel_api_key.public: your-public-marvel-api-key
     marvel_api_key.private: your-secret-marvel-api-key

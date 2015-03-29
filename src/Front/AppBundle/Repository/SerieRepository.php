@@ -8,18 +8,38 @@ use Front\MarvelApiBundle\Collection;
 
 class SerieRepository
 {
+    /**
+     * Marvel Api Client
+     * @var Client
+     */
     private $client;
-    private $twig;
 
-    public function __construct(Client $client, \Twig_Environment $twig)
+    /**
+     * Number of comics displayed
+     * @var integer
+     */
+    private $comicsPerPage;
+
+    /**
+     * Serie repository constructor
+     * @param Client $client
+     * @param insteger $comicsPerPage
+     */
+    public function __construct(Client $client, $comicsPerPage)
     {
-        $this->client = $client;
-        $this->twig = $twig;
+        $this->client         = $client;
+        $this->comicsPerPage  = $comicsPerPage;
     }
 
+    /**
+     * Find all comics matching serie id
+     * @param string $id
+     * @param string $page
+     * @return Collection|array
+     */
     public function findAllComicsById($id, $page)
     {
-        $comics_per_page = $this->twig->getGlobals()['comicsPerPage'];
+        $comics_per_page = $this->comicsPerPage;
         try {
             $filters = [
                 'series' => $id,
@@ -37,6 +57,11 @@ class SerieRepository
         }
     }
 
+    /**
+     * Find one serie matching id
+     * @param string $id
+     * @return Chadicus\Marvel\Api\Response|array
+     */
     public function findOneById($id)
     {
         try {
@@ -51,6 +76,11 @@ class SerieRepository
         }
     }
 
+    /**
+     * Find all series matching query
+     * @param string $query input from search form
+     * @return Collection|array
+     */
     public function findAllByQuery($query)
     {
         try {

@@ -2,33 +2,53 @@
 
 namespace Front\AppBundle\Repository;
 
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Chadicus\Marvel\Api\Client;
 use Front\MarvelApiBundle\Collection;
 
-class CreatorRepository extends ContainerAware
+class CreatorRepository
 {
+    /**
+     * Marvel Api Client
+     * @var Client
+     */
     private $client;
-    private $twig;
 
-    public function __construct(Client $client, \Twig_Environment $twig)
+    /**
+     * Number of comics displayed
+     * @var integer
+     */
+    private $comicsPerPage;
+
+    /**
+     * Creator repository constructor
+     * @param Client $client
+     * @param insteger $comicsPerPage
+     */
+    public function __construct(Client $client, $comicsPerPage)
     {
-        $this->client = $client;
-        $this->twig = $twig;
+        $this->client         = $client;
+        $this->comicsPerPage  = $comicsPerPage;
     }
 
+    /**
+     * Find all comics matching creator id
+     * @param string $id
+     * @param string $page
+     * @return Collection|array
+     */
     public function findAllComicsById($id, $page)
     {
-        $comics_per_page = $this->twig->getGlobals()['comicsPerPage'];
+        $comics_per_page = $this->comicsPerPage;
         try {
             $filters = [
-                'creators' => $id,
-                'format' => 'comic',
-                'formatType' => 'comic',
-                'noVariants' => true,
-                'orderBy' => '-onsaleDate',
-                'limit' => $comics_per_page,
-                'offset' => ($page * $comics_per_page) - $comics_per_page
+                'creators'    => $id,
+                'format'      => 'comic',
+                'formatType'  => 'comic',
+                'noVariants'  => true,
+                'orderBy'     => '-onsaleDate',
+                'limit'       => $comics_per_page,
+                'offset'      => ($page * $comics_per_page) - $comics_per_page
                 ];
 
             return new Collection($this->client, 'comics', $filters);
@@ -37,6 +57,11 @@ class CreatorRepository extends ContainerAware
         }
     }
 
+    /**
+     * Find one creator matching id
+     * @param string $id
+     * @return Chadicus\Marvel\Api\Response|array
+     */
     public function findOneById($id)
     {
         try {
