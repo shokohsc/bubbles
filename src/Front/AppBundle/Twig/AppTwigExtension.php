@@ -11,6 +11,8 @@ class AppTwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('htmlDecode', array($this, 'htmlDecodeFilter')),
             new \Twig_SimpleFilter('previousWeek', array($this, 'previousWeekFilter')),
             new \Twig_SimpleFilter('nextWeek', array($this, 'nextWeekFilter')),
+            new \Twig_SimpleFilter('previousMonth', array($this, 'previousMonthFilter')),
+            new \Twig_SimpleFilter('nextMonth', array($this, 'nextMonthFilter')),
         );
     }
 
@@ -48,6 +50,30 @@ class AppTwigExtension extends \Twig_Extension
                 return $date->copy()->addWeek()->month;
             case 'year':
                 return $date->copy()->addWeek()->year;
+        }
+    }
+
+    public function previousMonthFilter($date, $partOfDate)
+    {
+        switch ($partOfDate) {
+            case 'day':
+                return $date->copy()->subMonth()->day;
+            case 'month':
+                return $date->copy()->subMonth()->month;
+            case 'year':
+                return $date->copy()->subMonth()->year;
+        }
+    }
+
+    public function nextMonthFilter($date, $partOfDate)
+    {
+        switch ($partOfDate) {
+            case 'day':
+                return $date->copy()->addMonth()->day;
+            case 'month':
+                return $date->copy()->addMonth()->month;
+            case 'year':
+                return $date->copy()->addMonth()->year;
         }
     }
 

@@ -16,9 +16,9 @@
           <a href="{{ path('about') }}" title="About">About</a>
         </li>
         <li>
-          <form action="{{ path('search') }}" method="post" class="navbar-form navbar-left" role="search">
+          <form action="{{ path('search') }}" method="get" class="navbar-form navbar-left" role="search">
             <div class="input-group">
-              <input name="query" type="text" class="form-control" placeholder="Search...">
+              <input name="q" type="text" class="form-control" placeholder="Search...">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
               </span>

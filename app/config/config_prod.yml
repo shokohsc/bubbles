@@ -23,3 +23,10 @@ monolog:
             level: debug
         console:
             type:  console
+
+services:
+    kernel.listener.AppEventListener:
+        class: Front\AppBundle\EventListener\AppExceptionListener
+        arguments: [@twig]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

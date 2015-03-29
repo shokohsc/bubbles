@@ -16,15 +16,14 @@ class FrontController extends Controller
     public function homeAction()
     {
         $date = Carbon::now();
+        $title = 'This week';
         $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
 
         return $this->render('front/comics.html.twig',
             [
-                'title' => 'This week',
-                'header' => 'Released as of '.$date->toFormattedDateString(),
-                'collection' => $collection,
-                'date' => $date,
-                'pagination' => true,
+                'title'       => $title,
+                'collection'  => $collection,
+                'date'        => $date,
             ]);
     }
 
@@ -39,11 +38,9 @@ class FrontController extends Controller
 
         return $this->render('front/comics.html.twig',
             [
-                'title' => $title,
-                'header' => 'Released as of '.$date->toFormattedDateString(),
-                'collection' => $collection,
-                'date' => $date,
-                'pagination' => true,
+                'title'       => $title,
+                'collection'  => $collection,
+                'date'        => $date,
             ]);
     }
 
@@ -68,13 +65,11 @@ class FrontController extends Controller
         $collection = $this->get('app.serie_repository')->findAllComicsById($id, $page);
         $serie = $this->get('app.serie_repository')->findOneById($id);
 
-        return $this->render('front/comics.html.twig',
+        return $this->render('front/serie.html.twig',
             [
-                'title' => $serie['title'],
-                'header' => $serie['title'],
-                'serie' => $serie,
-                'collection' => $collection,
-                'page' => $page,
+                'serie'       => $serie,
+                'collection'  => $collection,
+                'page'        => $page,
             ]);
     }
 
@@ -86,30 +81,26 @@ class FrontController extends Controller
         $collection = $this->get('app.creator_repository')->findAllComicsById($id, $page);
         $creator = $this->get('app.creator_repository')->findOneById($id);
 
-        return $this->render('front/comics.html.twig',
+        return $this->render('front/creator.html.twig',
             [
-                'title' => $creator['fullName'],
-                'header' => $creator['fullName'],
-                'creator' => $creator,
-                'collection' => $collection,
-                'page' => $page,
+                'creator'     => $creator,
+                'collection'  => $collection,
+                'page'        => $page,
             ]);
     }
 
     /**
-     * @Route("/search/", name="search", methods={"POST"})
+     * @Route("/search", name="search")
      */
     public function searchAction(Request $request)
     {
-        $collection = $this->get('app.serie_repository')->findAllByQuery($request->request->get('query'));
+        $query = filter_var($request->get('q'), FILTER_SANITIZE_STRING);
+        $collection = $this->get('app.serie_repository')->findAllByQuery($query);
 
-        return $this->render('front/comics.html.twig',
+        return $this->render('front/search.html.twig',
             [
-                'title' => strip_tags($request->request->get('query')),
-                'header' => 'Results for '.strip_tags($request->request->get('query')),
-                'collection' => $collection,
-                'serie' => true,
-                'search' => true,
+                'query'       => $query,
+                'collection'  => $collection,
             ]);
     }
 
@@ -118,10 +109,7 @@ class FrontController extends Controller
      */
     public function aboutAction()
     {
-      return $this->render('front/about.html.twig',
-          [
-              'title' => 'Bubbles in a few words',
-          ]);
+      return $this->render('front/about.html.twig');
     }
 
 }

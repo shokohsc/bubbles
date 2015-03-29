@@ -1,20 +1,32 @@
 <nav>
   <ul class="pager">
     <li>
-    	<a href="{{ path('released', {
+      <a href="{{ path('released', {
+    	'day':   date|previousMonth('day'),
+    	'month': date|previousMonth('month'),
+    	'year':  date|previousMonth('year') }) }}" title="Browse one month before">
+        <span aria-hidden="true">&larr;</span> month
+	    </a>
+      <a href="{{ path('released', {
     	'day':   date|previousWeek('day'),
     	'month': date|previousWeek('month'),
-    	'year':  date|previousWeek('year') }) }}">
-	    	<span class="glyphicon glyphicon-chevron-left"></span> Browse one week before
+    	'year':  date|previousWeek('year') }) }}" title="Browse one week before">
+        <span aria-hidden="true">&larr;</span> week
 	    </a>
     </li>
 
     <li>
-    	<a href="{{ path('released', {
+      <a href="{{ path('released', {
     	'day':   date|nextWeek('day'),
     	'month': date|nextWeek('month'),
-    	'year':  date|nextWeek('year') }) }}">
-	    	Browse one week after <span class="glyphicon glyphicon-chevron-right"></span>
+    	'year':  date|nextWeek('year') }) }}" title="Browse one week after">
+	    	week <span aria-hidden="true">&rarr;</span>
+	    </a>
+      <a href="{{ path('released', {
+    	'day':   date|nextMonth('day'),
+    	'month': date|nextMonth('month'),
+    	'year':  date|nextMonth('year') }) }}" title="Browse one month after">
+        month <span aria-hidden="true">&rarr;</span>
 	    </a>
     </li>
   </ul>

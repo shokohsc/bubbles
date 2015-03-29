@@ -1,0 +1,54 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ creator.fullName }} {% endblock %}
+
+{% block content %}
+
+	<h1 class="text-center">{{ creator.fullName }}</h1>
+
+	<div class="row col-centered">
+	  	{% for comic in collection %}
+      <div class="col-xs-12 col-sm-4 col-md-1 comic-item-list">
+
+      	<div class="row">
+      		<a href="{{ path('comic', {'id':comic.id}) }}" title="{{ comic.title|title }}">
+      			{% include 'front/comic_image.html.twig' %}
+      		</a>
+      	</div>
+
+      	<div class="row">
+      		<strong>
+      			<a href="{{ path('comic', {'id':comic.id}) }}" title="{{ comic.title|title }}">{{ comic.title|title }}</a>
+      		</strong>
+      	</div>
+      </div>
+		{% endfor %}
+	</div>
+
+{% endblock %}
+
+{% block pagination %}
+
+	<div class="row col-centered">
+    <nav>
+      <ul class="pager">
+        {% if page > 1 %}
+        <li>
+        	<a href="{{ path('creator', {'id' : creator.id, 'page': page - 1 }) }}">
+    	    	<span class="glyphicon glyphicon-chevron-left"></span> Newer
+    	    </a>
+        </li>
+        {% endif %}
+
+        {% if collection.count() > 0 %}
+        <li>
+        	<a href="{{ path('creator', {'id' : creator.id, 'page': page + 1 }) }}">
+    	    	Older <span class="glyphicon glyphicon-chevron-right"></span>
+    	    </a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+	</div>
+
+{% endblock %}

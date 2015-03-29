@@ -17,7 +17,7 @@ class ComicRepository extends ContainerAware
         $this->client = $client;
     }
 
-    public function getReleaseDateRange($date)
+    protected function getReleaseDateRange($date)
     {
         $end = $date->toDateString();
         $start = $date->copy()->subDays(6)->toDateString();
