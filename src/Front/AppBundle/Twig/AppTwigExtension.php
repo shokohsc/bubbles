@@ -20,7 +20,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * filter the resourceId from the resourceURI
+     * Filter the resourceId from the resourceURI
+     *
      * @param string $resourceURI
      * @return string
      */
@@ -33,7 +34,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * decode html elements leftovers
+     * Decode html elements leftovers
+     *
      * @param string $string comic description
      * @return string
      */
@@ -43,7 +45,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * previous week
+     * Previous week
+     *
      * @param Carbon\Carbon $date
      * @param string $partOfDate
      * @return Carbon\Carbon
@@ -61,7 +64,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * next week
+     * Next week
+     *
      * @param Carbon\Carbon $date
      * @param string $partOfDate
      * @return Carbon\Carbon
@@ -79,7 +83,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * previous month
+     * Previous month
+     *
      * @param Carbon\Carbon $date
      * @param string $partOfDate
      * @return Carbon\Carbon
@@ -97,7 +102,8 @@ class AppTwigExtension extends \Twig_Extension
     }
 
     /**
-     * next month
+     * Next month
+     *
      * @param Carbon\Carbon $date
      * @param string $partOfDate
      * @return Carbon\Carbon
@@ -116,6 +122,8 @@ class AppTwigExtension extends \Twig_Extension
 
     /**
      * Get Twig_Extension name
+     *
+     * @return string
      */
     public function getName()
     {

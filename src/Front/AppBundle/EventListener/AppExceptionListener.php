@@ -10,6 +10,7 @@ class AppExceptionListener
 {
     /**
      * Twig Environment
+     * 
      * @var \Twig_Environment
      */
     private $twig;
@@ -25,6 +26,7 @@ class AppExceptionListener
 
     /**
      * onKernelException
+     *
      * @param GetResponseForExceptionEvent $event
      */
     public function onKernelException(GetResponseForExceptionEvent $event)

@@ -13,6 +13,7 @@ class FrontController extends Controller
      * Index
      *
      * @Route("/", name="homepage")
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function homeAction()
     {
@@ -32,6 +33,11 @@ class FrontController extends Controller
      * Index for that week
      *
      * @Route("/released/{day}/{month}/{year}", name="released", requirements={"day" = "\d+", "month" = "\d+", "year" = "\d+"})
+     *
+     * @param string $day   day 00-31
+     * @param string $month month 00-12
+     * @param string $year  year 1939-YYYY
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function thatWeekAction($day, $month, $year)
     {
@@ -51,6 +57,9 @@ class FrontController extends Controller
      * Comic
      *
      * @Route("/comic/{id}", name="comic", requirements={"id" = "\d+"})
+     *
+     * @param string $id  comic id
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function comicAction($id)
     {
@@ -66,6 +75,10 @@ class FrontController extends Controller
      * Comics from Serie
      *
      * @Route("/serie/{id}/{page}", name="serie", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
+     *
+     * @param string $id  serie id
+     * @param string $page  pagination
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function serieAction($id, $page)
     {
@@ -84,6 +97,10 @@ class FrontController extends Controller
      * Comics from Creator
      *
      * @Route("/creator/{id}/{page}", name="creator", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
+     *
+     * @param string $id  creator id
+     * @param string $page  pagination
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function creatorAction($id, $page)
     {
@@ -102,6 +119,9 @@ class FrontController extends Controller
      * Search Serie
      *
      * @Route("/search", name="search")
+     *
+     * @param Request $request input from user
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function searchAction(Request $request)
     {
@@ -119,6 +139,8 @@ class FrontController extends Controller
      * About
      *
      * @Route("/about", name="about")
+     *
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function aboutAction()
     {

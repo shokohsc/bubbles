@@ -10,18 +10,21 @@ class CreatorRepository
 {
     /**
      * Marvel Api Client
+     *
      * @var Client
      */
     private $client;
 
     /**
      * Number of comics displayed
+     *
      * @var integer
      */
     private $comicsPerPage;
 
     /**
      * Creator repository constructor
+     *
      * @param Client $client
      * @param integer $comicsPerPage
      */
@@ -33,6 +36,7 @@ class CreatorRepository
 
     /**
      * Find all comics matching creator id
+     *
      * @param string $id
      * @param string $page
      * @return Collection|array
@@ -59,6 +63,7 @@ class CreatorRepository
 
     /**
      * Find one creator matching id
+     * 
      * @param string $id
      * @return Chadicus\Marvel\Api\Response|array
      */

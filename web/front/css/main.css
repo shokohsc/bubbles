@@ -39,6 +39,9 @@ footer{
   min-width: 216px;
   height: 324px;
 }
+.pagination-centered {
+  text-align: center;
+}
 .mfp-img{
   max-height: 100% !important;
 }

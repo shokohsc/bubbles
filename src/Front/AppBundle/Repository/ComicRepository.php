@@ -11,12 +11,14 @@ class ComicRepository
 {
     /**
      * Marvel Api Client
+     * 
      * @var Client
      */
     private $client;
 
     /**
      * Comic Repository constructor
+     *
      * @param Client $client
      */
     public function __construct(Client $client)
@@ -26,6 +28,7 @@ class ComicRepository
 
     /**
      * Get Release date range from the given date
+     *
      * @param Carbon $date
      * @return string
      */
@@ -39,6 +42,7 @@ class ComicRepository
 
     /**
      * Find all released comics the week containing the $date
+     *
      * @param Carbon $date
      * @return Collection|array
      */
@@ -61,6 +65,7 @@ class ComicRepository
 
     /**
      * Find all comics from the beginning of the serie
+     *
      * @param string $id matching serie id
      * @return Collection|array
      */
@@ -84,6 +89,7 @@ class ComicRepository
 
     /**
      * Find one comic matching id
+     *
      * @param string $id comic id
      * @return Chadicus\Marvel\Api\Response|array
      */

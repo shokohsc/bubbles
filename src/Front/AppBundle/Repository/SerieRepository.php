@@ -10,18 +10,21 @@ class SerieRepository
 {
     /**
      * Marvel Api Client
+     *
      * @var Client
      */
     private $client;
 
     /**
      * Number of comics displayed
+     *
      * @var integer
      */
     private $comicsPerPage;
 
     /**
      * Serie repository constructor
+     *
      * @param Client $client
      * @param integer $comicsPerPage
      */
@@ -33,6 +36,7 @@ class SerieRepository
 
     /**
      * Find all comics matching serie id
+     *
      * @param string $id
      * @param string $page
      * @return Collection|array
@@ -59,6 +63,7 @@ class SerieRepository
 
     /**
      * Find one serie matching id
+     *
      * @param string $id
      * @return Chadicus\Marvel\Api\Response|array
      */
@@ -78,6 +83,7 @@ class SerieRepository
 
     /**
      * Find all series matching query
+     * 
      * @param string $query input from search form
      * @return Collection|array
      */
