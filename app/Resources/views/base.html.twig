@@ -17,6 +17,8 @@
         <!-- Magnific-popup css -->
         <link type="text/css" rel="stylesheet" href="{{ asset('front/css/main.css') }}" />
 
+        {% block stylesheets %}{% endblock %}
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -29,9 +31,9 @@
 
         <div class="container">
             {% include 'front/navbar.html.twig' %}
-
-            {% block content %}{% endblock %}
-
+            <div id="content">
+              {% block content %}{% endblock %}
+            </div>
             {% block pagination %}{% endblock %}
         </div>
 
@@ -46,6 +48,13 @@
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
         <!-- my.js -->
         <script type="text/javascript" src="{{ asset('front/js/main.js') }}"></script>
+
+        <!-- The core React library -->
+        <script src="http://fb.me/react-0.13.1.js"></script>
+        <!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
+        <script src="http://fb.me/JSXTransformer-0.13.1.js"></script>
+
+        {% block javascripts %}{% endblock %}
 
     </body>
 </html>
