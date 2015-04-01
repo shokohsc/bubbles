@@ -23,24 +23,25 @@ footer{
 .code-new-roman {
   font-family: code-new-roman;
 }
-.col-centered {
-    float: none;
-  margin: 0 auto;
+.comics{
+
 }
 .comic-item-list{
   width: 216px;
-  height: 364px;
+  height: 350px;
   margin: 0 5px 20px;
+  display: inline-block;
+}
+.comic-item-list a{
+  width: 216px;
+  float: left;
 }
 .comic-item-list a:hover img{
   background: #EB2025;
 }
 .comic-item-list-image{
-  min-width: 216px;
-  height: 324px;
-}
-.pagination-centered {
-  text-align: center;
+  /* min-width: 216px; */
+  /* height: 324px; */
 }
 .mfp-img{
   max-height: 100% !important;
