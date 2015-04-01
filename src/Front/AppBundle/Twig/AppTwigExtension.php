@@ -6,6 +6,8 @@ class AppTwigExtension extends \Twig_Extension
 {
     /**
      * Get filters defined
+     *
+     * @return array
      */
     public function getFilters()
     {
