@@ -1,10 +1,10 @@
 {% extends "base.html.twig" %}
 
-{% block title %} Results for {{ query }} {% endblock %}
+{% block title %} {{ 'search.results'|trans }} {{ query }} {% endblock %}
 
 {% block content %}
 
-	<h1 class="text-center">Results for {{ query }}</h1>
+	<h1 class="text-center">{{ 'search.results'|trans }} {{ query }}</h1>
 
 	<div class="row col-centered">
 	  	{% for comic in collection %}

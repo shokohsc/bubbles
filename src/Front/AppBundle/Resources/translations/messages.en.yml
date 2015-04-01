@@ -1,0 +1,62 @@
+base:
+    title: Welcome to Bubbles
+    content: Comics releases
+
+navbar:
+    navigation: Toggle navigation
+    search: Search
+    about: About
+
+credits:
+    provided: Data provided by
+    powered: Powered by
+
+pagination:
+    week: week
+    month: month
+
+comics:
+    release: Released as of
+    this_week: This week
+
+comic:
+    published: Published
+    serie: Serie
+
+serie:
+    pagination:
+        newer: Newer
+        older: Older
+
+search:
+    results: Results for
+
+error:
+    backward: Head back
+    404:
+        title: Bubbles is lost
+        message: Deadpool says you lost your way.
+    500:
+        title: Bubble stumbled
+        message: Deadpool says we lost our way.
+
+about:
+    title: About Bubbles
+    what:
+        question: What is this ?
+        answer: Bubbles is meant to display marvel.com/comics.
+    who:
+        question: Who am I ?
+        answer: I am a 29 years old web developer who lives in France near Paris.
+    why:
+        question: Why did I do that ?
+        answer: "This is Symfony practice, check out my<a href=\"//shokohsc.github.io\">resume</a>."
+    thanks:
+        main: Thanks
+        iThank: I would like to thank
+        heroku: for hosting this project.
+        marvel: for providing an API that I can enjoy while coding.
+        redpanda: for his numerous tips and advices.
+        sensiolabs: for their coding tools.
+        bootstrap: for their framework.
+        openfonts: for this font.

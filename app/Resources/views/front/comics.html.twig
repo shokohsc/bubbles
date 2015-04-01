@@ -4,7 +4,7 @@
 
 {% block content %}
 
-	<h1 class="text-center">Released as of {{ date.toFormattedDateString() }}</h1>
+	<h1 class="text-center">{{ 'comics.release'|trans }} {{ date.toFormattedDateString() }}</h1>
 
 	<div class="row col-centered">
 	  	{% for comic in collection %}

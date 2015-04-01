@@ -28,7 +28,8 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-PDO": "*",
-        "ext-soap": "*"
+        "ext-soap": "*",
+        "jms/i18n-routing-bundle": "~1.1"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

@@ -12,7 +12,7 @@
 					{{ comic.title|title }} <small><a href="{{ comic.urls.0.url }}" target="_blank" title="{{ comic.title|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
 				</h2>
 				<p>
-					<strong>Published:</strong>&nbsp;
+					<strong>{{ 'comic.published'|trans }}:</strong>&nbsp;
 					    	<a href="{{ path('released', {
 					    	'day':   comic.dates.0.date|date("d"),
 					    	'month': comic.dates.0.date|date("m"),
@@ -21,7 +21,7 @@
 						    </a>
 					<br>
 
-					<strong>Serie:</strong>&nbsp;
+					<strong>{{ 'comic.serie'|trans }}:</strong>&nbsp;
 					<a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a>
 					<br>
 

@@ -35,7 +35,7 @@
         {% if page > 1 %}
         <li>
         	<a href="{{ path('serie', {'id' : serie.id, 'page': page - 1 }) }}">
-    	    	<span class="glyphicon glyphicon-chevron-left"></span> Newer
+    	    	<span class="glyphicon glyphicon-chevron-left"></span> {{ 'serie.pagination.newer'|trans }}
     	    </a>
         </li>
         {% endif %}
@@ -43,7 +43,7 @@
         {% if collection.count() > 0 %}
         <li>
         	<a href="{{ path('serie', {'id' : serie.id, 'page': page + 1 }) }}">
-    	    	Older <span class="glyphicon glyphicon-chevron-right"></span>
+						{{ 'serie.pagination.older'|trans }} <span class="glyphicon glyphicon-chevron-right"></span>
     	    </a>
         </li>
         {% endif %}

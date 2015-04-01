@@ -27,6 +27,6 @@ monolog:
 services:
     kernel.listener.AppEventListener:
         class: Front\AppBundle\EventListener\AppExceptionListener
-        arguments: [@twig]
+        arguments: [@twig, @translator]
         tags:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

@@ -17,6 +17,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
+            new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new Front\AppBundle\AppBundle(),
             new Front\MarvelApiBundle\MarvelApiBundle(),
         );

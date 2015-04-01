@@ -18,7 +18,7 @@ class FrontController extends Controller
     public function homeAction()
     {
         $date = Carbon::now();
-        $title = 'This week';
+        $title = $this->get('translator')->trans('comics.this_week');
         $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
 
         return $this->render('front/comics.html.twig',
