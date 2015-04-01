@@ -25,7 +25,8 @@ class AppExceptionListener
 
     /**
      * AppExceptionListener constructor
-     * @param Twig_Environment $twig injected via service definition
+     * @param Twig_Environment $twig
+     * @param TranslatorInterface $translator
      */
     public function __construct(\Twig_Environment $twig, TranslatorInterface $translator)
     {
