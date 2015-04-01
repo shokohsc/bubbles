@@ -3,37 +3,37 @@
 {% block title %} {{ comic.title|title }}{% endblock %}
 
 {% block content %}
-		<div class="media">
-			<a class="media-left col-xs-12 col-sm-4 col-md-3 lightbox comic-item-list-image" href="{{ comic.thumbnail.path }}/detail.{{ comic.thumbnail.extension }}">
-				{% include 'front/comic_image.html.twig' %}
-			</a>
-			<div class="media-body col-xs-12 col-sm-8 col-md-9">
-				<h2 class="media-heading">
-					{{ comic.title|title }} <small><a href="{{ comic.urls.0.url }}" target="_blank" title="{{ comic.title|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
-				</h2>
-				<p>
-					<strong>{{ 'comic.published'|trans }}:</strong>&nbsp;
-					    	<a href="{{ path('released', {
-					    	'day':   comic.dates.0.date|date("d"),
-					    	'month': comic.dates.0.date|date("m"),
-					    	'year':  comic.dates.0.date|date("Y") }) }}">
-						    	{{ comic.dates.0.date|date("F d, Y") }}
-						    </a>
-					<br>
+    <div class="media">
+      <a class="media-left col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.thumbnail.path }}/detail.{{ comic.thumbnail.extension }}">
+        {% include 'front/comic_image.html.twig' %}
+      </a>
+      <div class="media-body col-xs-12 col-sm-8 col-md-9">
+        <h2 class="media-heading">
+          {{ comic.title|title }} <small><a href="{{ comic.urls.0.url }}" target="_blank" title="{{ comic.title|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
+        </h2>
+        <p>
+          <strong>{{ 'comic.published'|trans }}:</strong>&nbsp;
+                <a href="{{ path('released', {
+                'day':   comic.dates.0.date|date("d"),
+                'month': comic.dates.0.date|date("m"),
+                'year':  comic.dates.0.date|date("Y") }) }}">
+                  {{ comic.dates.0.date|date("F d, Y") }}
+                </a>
+          <br>
 
-					<strong>{{ 'comic.serie'|trans }}:</strong>&nbsp;
-					<a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a>
-					<br>
+          <strong>{{ 'comic.serie'|trans }}:</strong>&nbsp;
+          <a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a>
+          <br>
 
-					{% for creator in comic.creators.items %}
-						<strong>{{ creator.role|capitalize }}:</strong>&nbsp;
-						<a href="{{ path('creator', {'id' : creator.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ creator.name|title }}</a>
-						<br>
-					{% endfor %}
-				</p>
+          {% for creator in comic.creators.items %}
+            <strong>{{ creator.role|capitalize }}:</strong>&nbsp;
+            <a href="{{ path('creator', {'id' : creator.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ creator.name|title }}</a>
+            <br>
+          {% endfor %}
+        </p>
 
-				<p>{{ comic.description|striptags|htmlDecode }}</p>
-			</div>
-		</div>
+        <p>{{ comic.description|striptags|htmlDecode }}</p>
+      </div>
+    </div>
 
 {% endblock %}

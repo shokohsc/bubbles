@@ -6,8 +6,7 @@
 
   <h1 class="text-center">{{ 'comics.release'|trans }} {{ date.toFormattedDateString() }}</h1>
 
-    <div class="comics text-center">
-
+  <div class="text-center">
     {% for comic in collection %}
       <div class="comic-item-list">
 
@@ -21,8 +20,7 @@
 
       </div>
     {% endfor %}
-
-    </div>
+  </div>
 
 {% endblock %}
 
@@ -31,19 +29,5 @@
   <div class="row">
     {% include 'front/pagination.html.twig' %}
   </div>
-
-{% endblock %}
-
-{% block javascripts %}
-
-<script type="text/javascript" charset="utf-8">
-  // var container = document.querySelector('.comics');
-  // var msnry = new Masonry( container, {
-  //   containerStyle: { position: 'relative' },
-  //   columnWidth: 216,
-  //   gutter: 10,
-  //   itemSelector: '.comic-item-list'
-  // });
-</script>
 
 {% endblock %}

@@ -23,13 +23,10 @@ footer{
 .code-new-roman {
   font-family: code-new-roman;
 }
-.comics{
-
-}
 .comic-item-list{
   width: 216px;
   height: 350px;
-  margin: 0 5px 20px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 .comic-item-list a{
@@ -38,10 +35,6 @@ footer{
 }
 .comic-item-list a:hover img{
   background: #EB2025;
-}
-.comic-item-list-image{
-  /* min-width: 216px; */
-  /* height: 324px; */
 }
 .mfp-img{
   max-height: 100% !important;
