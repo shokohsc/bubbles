@@ -20,14 +20,14 @@
         {% if page > 1 %}
         <li>
           <a href="{{ path('serie', {'id' : id, 'page': page - 1 }) }}">
-            <span class="glyphicon glyphicon-chevron-left"></span> {{ 'serie.pagination.newer'|trans }}
+            <span class="glyphicon glyphicon-chevron-left"></span> {{ 'serie.pagination.newer'|trans|capitalize }}
           </a>
         </li>
         {% endif %}
 
         <li>
           <a href="{{ path('serie', {'id' : id, 'page': page + 1 }) }}">
-            {{ 'serie.pagination.older'|trans }} <span class="glyphicon glyphicon-chevron-right"></span>
+            {{ 'serie.pagination.older'|trans|capitalize }} <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </li>
       </ul>

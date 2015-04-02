@@ -1,58 +1,67 @@
 base:
-    title: Welcome to Bubbles
-    content: Comics releases
+    title: welcome to bubbles
+    content: comics releases
 
 navbar:
-    navigation: Toggle navigation
-    search: Search
-    about: About
+    navigation: toggle navigation
+    search: search
+    about: about
 
 credits:
-    provided: Data provided by
-    powered: Powered by
+    provided: data provided by
+    powered: powered by
 
 pagination:
     week: week
     month: month
 
 comics:
-    release: Released as of
-    this_week: This week
+    release: released as of
+    this_week: this week
 
 comic:
-    published: Published
-    serie: Serie
+    published: published
+    serie: serie
+    creator:
+        cover: cover
+
+artist: artist
+writer: writer
+penciller: penciller
+colorist: colorist
+inker: inker
+letterer: letterer
 
 serie:
     pagination:
-        newer: Newer
-        older: Older
+        newer: newer
+        older: older
 
 search:
-    results: Results for
+    results: results for
 
 error:
-    backward: Head back
+    backward: head back
     404:
-        title: Bubbles is lost
-        message: Deadpool says you lost your way.
+        title: bubbles is lost
+        message: deadpool says you lost your way.
     500:
-        title: Bubble stumbled
-        message: Deadpool says we lost our way.
+        title: bubble stumbled
+        message: deadpool says we lost our way.
 
 about:
-    title: About Bubbles
+    title: about bubbles
     what:
-        question: What is this ?
+        question: what is this ?
         answer: Bubbles is meant to display marvel.com/comics.
     who:
-        question: Who am I ?
+        question: who am I ?
         answer: I am a 29 years old web developer who lives in France near Paris.
     why:
-        question: Why did I do that ?
-        answer: "This is Symfony practice, check out my<a href=\"//shokohsc.github.io\">resume</a>."
+        question: why did I do that ?
+        answer: "This is Symfony practice, check out my <a href=\"//shokohsc.github.io\">resume</a>."
     thanks:
-        main: Thanks
+        main: thanks
         iThank: I would like to thank
         heroku: for hosting this project.
         marvel: for providing an API that I can enjoy while coding.

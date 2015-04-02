@@ -1,20 +1,20 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ 'about.title'|trans }} {% endblock %}
+{% block title %} {{ 'about.title'|trans|title }} {% endblock %}
 
 {% block content %}
 
-  <h1>{{ 'about.what.question'|trans }}</h1>
-  <p>{{ 'about.what.answer'|trans }}</p>
+  <h1>{{ 'about.what.question'|trans|capitalize }}</h1>
+  <p>{{ 'about.what.answer'|trans|capitalize }}</p>
 
-  <h3>{{ 'about.who.question'|trans }}</h3>
-  <p>{{ 'about.who.answer'|trans }}</p>
+  <h3>{{ 'about.who.question'|trans|capitalize }}</h3>
+  <p>{{ 'about.who.answer'|trans|capitalize }}</p>
 
-  <h3>{{ 'about.why.question'|trans }}</h3>
-  <p>{{ 'about.why.answer'|trans|raw }}</p>
+  <h3>{{ 'about.why.question'|trans|capitalize }}</h3>
+  <p>{{ 'about.why.answer'|trans|capitalize|raw }}</p>
 
-  <h3>{{ 'about.thanks.main'|trans }}</h3>
-  <p>{{ 'about.thanks.iThank'|trans }} :
+  <h3>{{ 'about.thanks.main'|trans|capitalize }}</h3>
+  <p>{{ 'about.thanks.iThank'|trans|capitalize }} :
     <ul class="list-unstyled">
       <li><strong><a href="//heroku.com">Heroku</a></strong> {{ 'about.thanks.heroku'|trans }}</li>
       <li><strong><a href="//marvel.com">Marvel</a></strong> {{ 'about.thanks.marvel'|trans }}</li>

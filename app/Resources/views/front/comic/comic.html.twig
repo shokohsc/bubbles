@@ -11,26 +11,30 @@
         <h2 class="media-heading">
           {{ comic.title|title }} <small><a href="{{ comic.urls.0.url }}" target="_blank" title="{{ comic.title|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
         </h2>
-        <p>
-          <strong>{{ 'comic.published'|trans }}:</strong>&nbsp;
-                <a href="{{ path('released', {
-                'day':   comic.dates.0.date|date("d"),
-                'month': comic.dates.0.date|date("m"),
-                'year':  comic.dates.0.date|date("Y") }) }}">
-                  {{ comic.dates.0.date|date("F d, Y") }}
-                </a>
-          <br>
-
-          <strong>{{ 'comic.serie'|trans }}:</strong>&nbsp;
-          <a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a>
-          <br>
+        <table class="table table-condensed">
+          <tr>
+            <td><strong>{{ 'comic.published'|trans|capitalize }}</strong></td>
+            <td>
+              <a href="{{ path('released', {
+              'day':   comic.dates.0.date|date("d"),
+              'month': comic.dates.0.date|date("m"),
+              'year':  comic.dates.0.date|date("Y") }) }}">
+                {{ comic.dates.0.date|date("F d, Y") }}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>{{ 'comic.serie'|trans|capitalize }}</strong></td>
+            <td><a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a></td>
+          </tr>
 
           {% for creator in comic.creators.items %}
-            <strong>{{ creator.role|capitalize }}:</strong>&nbsp;
-            <a href="{{ path('creator', {'id' : creator.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ creator.name|title }}</a>
-            <br>
+          <tr>
+            <td><strong>{{ creator.role|trans|capitalize }}</strong></td>
+            <td><a href="{{ path('creator', {'id' : creator.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ creator.name|title }}</a></td>
+          </tr>
           {% endfor %}
-        </p>
+        </table>
 
         <p>{{ comic.description|striptags|htmlDecode }}</p>
       </div>

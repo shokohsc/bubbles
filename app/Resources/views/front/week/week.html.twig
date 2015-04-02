@@ -1,10 +1,10 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ title }} {% endblock %}
+{% block title %} {{ title|title }} {% endblock %}
 
 {% block content %}
 
-  <h1 class="text-center">{{ 'comics.release'|trans }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
+  <h1 class="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
 
   <div class="text-center">
 
@@ -23,25 +23,25 @@
           <a href="{{ path('released', {
           'day':   date|previousMonth('day'),
           'month': date|previousMonth('month'),
-          'year':  date|previousMonth('year') }) }}">-{{ 'pagination.month'|trans }}</a>
+          'year':  date|previousMonth('year') }) }}">-{{ 'pagination.month'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
           'day':   date|previousWeek('day'),
           'month': date|previousWeek('month'),
-          'year':  date|previousWeek('year') }) }}">-{{ 'pagination.week'|trans }}</a>
+          'year':  date|previousWeek('year') }) }}">-{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
           'day':   date|nextWeek('day'),
           'month': date|nextWeek('month'),
-          'year':  date|nextWeek('year') }) }}">+{{ 'pagination.week'|trans }}</a>
+          'year':  date|nextWeek('year') }) }}">+{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
           'day':   date|nextMonth('day'),
           'month': date|nextMonth('month'),
-          'year':  date|nextMonth('year') }) }}">+{{ 'pagination.month'|trans }}</a>
+          'year':  date|nextMonth('year') }) }}">+{{ 'pagination.month'|trans|lower }}</a>
         </li>
       </ul>
     </nav>

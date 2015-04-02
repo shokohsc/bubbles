@@ -1,59 +1,68 @@
 base:
-    title: Bienvenue chez Bubbles
-    content: Sorties de comics
+    title: bienvenue chez bubbles
+    content: sorties de comics
 
 navbar:
-    navigation: Afficher la navigation
-    search: Recherche
-    about: A propos
+    navigation: afficher la navigation
+    search: recherche
+    about: a propos
 
 credits:
-    provided: Données obtenues par
-    powered: Propulsé par
+    provided: données obtenues par
+    powered: propulsé par
 
 pagination:
     week: semaine
     month: mois
 
 comics:
-    release: Sorties :
-    this_week: Cette semaine
+    release: sorties :
+    this_week: cette semaine
 
 comic:
-    published: Publié
-    serie: Série
+    published: publié
+    serie: série
+    creator:
+        cover: couverture
+
+artist: artiste
+writer: auteur
+penciller: crayon
+colorist: couleur
+inker: encreur
+letterer: lettres
 
 serie:
     pagination:
-        newer: Plus jeune
-        older: Plus vieux
+        newer: plus jeune
+        older: plus vieux
 
 search:
-    results: Résultats pour
+    results: résultats pour
 
 error:
-    backward: Page précédente
+    backward: page précédente
     404:
-        title: Bubbles s'est perdu
-        message: Deadpool dit que tu t'es perdu.
+        title: bubbles s'est perdu
+        message: deadpool dit que tu t'es perdu.
     500:
-        title: Bubble s'est planté
-        message: Deadpool dit qu'on s'est perdu.
+        title: bubble s'est planté
+        message: deadpool dit qu'on s'est perdu.
 
 about:
-    title: A propos de Bubbles
+    title: a propos de Bubbles
     what:
-        question: Qu'est-ce donc ?
+        question: qu'est-ce donc ?
         answer: Bubbles reflète marvel.com/comics.
     who:
-        question: Qui suis-je ?
+        question: qui suis-je ?
         answer: Je suis un développeur de 29 ans qui vit en France près de Paris.
     why:
-        question: Pourquoi ça ?
-        answer: "C'est un entrainement à Symfony et plus encore, regardez mon<a href=\"//shokohsc.github.io\">cv</a>."
+        question: pourquoi ça ?
+        answer: "C'est un entrainement à Symfony et plus encore, regardez mon <a href=\"//shokohsc.github.io\">cv</a>."
     thanks:
-        main: Remerciements
-        iThank: J'aimerais remercier
+        main: remerciements
+        iThank: j'aimerais remercier
         heroku: pour héberger ce projet.
         marvel: pour utliser une API avec laquelle s'amuser.
         redpanda: pour ses nombreuses astuces et conseils.

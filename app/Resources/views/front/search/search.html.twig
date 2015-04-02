@@ -1,10 +1,10 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ 'search.results'|trans }} {{ query }} {% endblock %}
+{% block title %} {{ 'search.results'|trans|capitalize }} {{ query }} {% endblock %}
 
 {% block content %}
 
-  <h1 class="text-center">{{ 'search.results'|trans }} {{ query }}</h1>
+  <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ query|lower }}</h1>
 
   <div class="text-center">
 
