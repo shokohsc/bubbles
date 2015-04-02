@@ -29,7 +29,8 @@
         "ext-mbstring": "*",
         "ext-PDO": "*",
         "ext-soap": "*",
-        "jms/i18n-routing-bundle": "~1.1"
+        "jms/i18n-routing-bundle": "~1.1",
+        "friendsofsymfony/jsrouting-bundle": "~1.5"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

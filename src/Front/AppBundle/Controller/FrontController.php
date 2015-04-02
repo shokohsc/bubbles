@@ -5,6 +5,7 @@ namespace Front\AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Carbon\Carbon;
 
 class FrontController extends Controller
@@ -94,14 +95,28 @@ class FrontController extends Controller
      */
     public function serieAction($id, $page)
     {
-        $serie = $this->get('app.serie_repository')->findOneById($id);
-
         return $this->render('front/serie/serie.html.twig',
             [
-                'serie'       => $serie,
                 'id'          => $id,
                 'page'        => $page,
             ]);
+    }
+
+    /**
+     * Get Serie entity
+     *
+     * @Route("/get/serie/{id}", name="get_serie", requirements={"id" = "\d+"}, options={"expose"=true})
+     *
+     * @param string $id serie id
+     * @return JsonResponse
+     */
+    public function getSerieAction($id)
+    {
+        $response = new JsonResponse();
+        $response->setData(array(
+          'data' => $this->get('app.serie_repository')->findOneById($id)
+        ));
+        return $response;
     }
 
     /**
@@ -132,14 +147,28 @@ class FrontController extends Controller
      */
     public function creatorAction($id, $page)
     {
-        $creator = $this->get('app.creator_repository')->findOneById($id);
-
         return $this->render('front/creator/creator.html.twig',
             [
-                'creator'     => $creator,
                 'id'          => $id,
                 'page'        => $page,
             ]);
+    }
+
+    /**
+     * Get Creator entity
+     *
+     * @Route("/get/creator/{id}", name="get_creator", requirements={"id" = "\d+"}, options={"expose"=true})
+     *
+     * @param string $id creator id
+     * @return JsonResponse
+     */
+    public function getCreatorAction($id)
+    {
+        $response = new JsonResponse();
+        $response->setData(array(
+          'data' => $this->get('app.creator_repository')->findOneById($id)
+        ));
+        return $response;
     }
 
     /**

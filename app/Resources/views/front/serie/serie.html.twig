@@ -1,10 +1,8 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ serie.title }} {% endblock %}
-
 {% block content %}
 
-  <h1 class="text-center">{{ serie.title }}</h1>
+  <h1 class="text-center"></h1>
 
   <div class="text-center">
 
@@ -35,5 +33,23 @@
       </ul>
     </nav>
   </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+  <script type="text/javascript" charset="utf-8">
+    $.ajax({
+      url: Routing.generate('get_serie', { id: {{ id }} }),
+      type: 'get',
+      dataType: 'json',
+      success: function(data, textStatus, jqXHR){
+          document.title = data.data.title;
+          $('h1').text(data.data.title);
+      },
+      error: function(jqXHR, textStatus, errorThrown){},
+      complete: function( jqXHR, textStatus ){}
+    });
+  </script>
 
 {% endblock %}
