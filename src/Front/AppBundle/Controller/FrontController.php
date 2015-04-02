@@ -18,6 +18,9 @@ class FrontController extends Controller
      */
     public function homeAction()
     {
+        $locale = $this->get('request')->getLocale();
+        setlocale(LC_TIME, $locale.'_'.strtoupper($locale));
+
         $date = Carbon::now();
         $title = $this->get('translator')->trans('comics.this_week');
 
@@ -40,6 +43,10 @@ class FrontController extends Controller
      */
     public function thatWeekAction($day, $month, $year)
     {
+        $locale = $this->get('request')->getLocale();
+        Carbon::setLocale($locale);
+        setlocale(LC_TIME, $locale.'_'.strtoupper($locale));
+
         $date = Carbon::createFromDate($year, $month, $day);
         $title = $date->diffForHumans(Carbon::now());
 
