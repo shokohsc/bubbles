@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+
+  <h1 class="text-center">{{ 'comics.release'|trans }} {{ date.toFormattedDateString() }}</h1>
+
+  <div class="text-center">
+
+    {{ render_hinclude(controller('AppBundle:Front:weekComics', {'date': date.toDateString()})) }}
+
+  </div>
+
+{% endblock %}
+
+{% block pagination %}
+
+  <div class="row">
+    <nav class="text-center">
+      <ul class="pagination">
+        <li>
+          <a href="{{ path('released', {
+          'day':   date|previousMonth('day'),
+          'month': date|previousMonth('month'),
+          'year':  date|previousMonth('year') }) }}">-{{ 'pagination.month'|trans }}</a>
+        </li>
+        <li>
+          <a href="{{ path('released', {
+          'day':   date|previousWeek('day'),
+          'month': date|previousWeek('month'),
+          'year':  date|previousWeek('year') }) }}">-{{ 'pagination.week'|trans }}</a>
+        </li>
+        <li>
+          <a href="{{ path('released', {
+          'day':   date|nextWeek('day'),
+          'month': date|nextWeek('month'),
+          'year':  date|nextWeek('year') }) }}">+{{ 'pagination.week'|trans }}</a>
+        </li>
+        <li>
+          <a href="{{ path('released', {
+          'day':   date|nextMonth('day'),
+          'month': date|nextMonth('month'),
+          'year':  date|nextMonth('year') }) }}">+{{ 'pagination.month'|trans }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+{% endblock %}

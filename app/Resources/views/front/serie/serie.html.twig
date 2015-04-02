@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ serie.title }} {% endblock %}
+
+{% block content %}
+
+  <h1 class="text-center">{{ serie.title }}</h1>
+
+  <div class="text-center">
+
+    {{ render_hinclude(controller('AppBundle:Front:serieComics', {'id': id, 'page': page})) }}
+
+  </div>
+
+{% endblock %}
+
+{% block pagination %}
+
+  <div class="row">
+    <nav>
+      <ul class="pager">
+        {% if page > 1 %}
+        <li>
+          <a href="{{ path('serie', {'id' : id, 'page': page - 1 }) }}">
+            <span class="glyphicon glyphicon-chevron-left"></span> {{ 'serie.pagination.newer'|trans }}
+          </a>
+        </li>
+        {% endif %}
+
+        <li>
+          <a href="{{ path('serie', {'id' : id, 'page': page + 1 }) }}">
+            {{ 'serie.pagination.older'|trans }} <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+{% endblock %}

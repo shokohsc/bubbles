@@ -19,12 +19,10 @@ class FrontController extends Controller
     {
         $date = Carbon::now();
         $title = $this->get('translator')->trans('comics.this_week');
-        $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
 
-        return $this->render('front/comics.html.twig',
+        return $this->render('front/week/week.html.twig',
             [
                 'title'       => $title,
-                'collection'  => $collection,
                 'date'        => $date,
             ]);
     }
@@ -43,13 +41,27 @@ class FrontController extends Controller
     {
         $date = Carbon::createFromDate($year, $month, $day);
         $title = $date->diffForHumans(Carbon::now());
-        $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
 
-        return $this->render('front/comics.html.twig',
+        return $this->render('front/week/week.html.twig',
             [
                 'title'       => $title,
-                'collection'  => $collection,
                 'date'        => $date,
+            ]);
+    }
+
+    /**
+     * Get comics matching the date
+     *
+     * @param string $date
+     * @return Symfony\Component\HttpFoundation\Response
+     */
+    public function weekComicsAction($date)
+    {
+        $collection = $this->get('app.comic_repository')->findAllByReleaseDate(Carbon::parse($date));
+
+        return $this->render('front/comic/list.html.twig',
+            [
+                'collection'  => $collection
             ]);
     }
 
@@ -65,7 +77,7 @@ class FrontController extends Controller
     {
         $comic = $this->get('app.comic_repository')->findOneById($id);
 
-        return $this->render('front/comic.html.twig',
+        return $this->render('front/comic/comic.html.twig',
             [
                 'comic' => $comic,
             ]);
@@ -82,14 +94,30 @@ class FrontController extends Controller
      */
     public function serieAction($id, $page)
     {
-        $collection = $this->get('app.serie_repository')->findAllComicsById($id, $page);
         $serie = $this->get('app.serie_repository')->findOneById($id);
 
-        return $this->render('front/serie.html.twig',
+        return $this->render('front/serie/serie.html.twig',
             [
                 'serie'       => $serie,
-                'collection'  => $collection,
+                'id'          => $id,
                 'page'        => $page,
+            ]);
+    }
+
+    /**
+     *  Get comics belonging to the serie matching id
+     *
+     * @param string $id   serie id
+     * @param string $page pagination
+     * @return Symfony\Component\HttpFoundation\Response
+     */
+    public function serieComicsAction($id, $page)
+    {
+        $collection = $this->get('app.serie_repository')->findAllComicsById($id, $page);
+
+        return $this->render('front/comic/list.html.twig',
+            [
+                'collection'  => $collection,
             ]);
     }
 
@@ -104,14 +132,30 @@ class FrontController extends Controller
      */
     public function creatorAction($id, $page)
     {
-        $collection = $this->get('app.creator_repository')->findAllComicsById($id, $page);
         $creator = $this->get('app.creator_repository')->findOneById($id);
 
-        return $this->render('front/creator.html.twig',
+        return $this->render('front/creator/creator.html.twig',
             [
                 'creator'     => $creator,
-                'collection'  => $collection,
+                'id'          => $id,
                 'page'        => $page,
+            ]);
+    }
+
+    /**
+     *  Get comics belonging to the creator matching id
+     *
+     * @param string $id   creator Id
+     * @param string $page pagination
+     * @return Symfony\Component\HttpFoundation\Response
+     */
+    public function creatorComicsAction($id, $page)
+    {
+        $collection = $this->get('app.creator_repository')->findAllComicsById($id, $page);
+
+        return $this->render('front/comic/list.html.twig',
+            [
+                'collection'  => $collection,
             ]);
     }
 
@@ -126,11 +170,25 @@ class FrontController extends Controller
     public function searchAction(Request $request)
     {
         $query = filter_var($request->get('q'), FILTER_SANITIZE_STRING);
-        $collection = $this->get('app.serie_repository')->findAllByQuery($query);
 
-        return $this->render('front/search.html.twig',
+        return $this->render('front/search/search.html.twig',
             [
                 'query'       => $query,
+            ]);
+    }
+
+    /**
+     *  Get series matching the search query
+     *
+     * @param string $query search query
+     * @return Symfony\Component\HttpFoundation\Response
+     */
+    public function searchSeriesAction($query)
+    {
+        $collection = $this->get('app.serie_repository')->findAllByQuery($query);
+
+        return $this->render('front/search/list.html.twig',
+            [
                 'collection'  => $collection,
             ]);
     }
@@ -144,7 +202,7 @@ class FrontController extends Controller
      */
     public function aboutAction()
     {
-      return $this->render('front/about.html.twig');
+        return $this->render('front/about.html.twig');
     }
 
 }

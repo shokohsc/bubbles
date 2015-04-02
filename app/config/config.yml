@@ -15,6 +15,7 @@ framework:
     validation:      { enable_annotations: true }
     templating:
         engines: ['twig']
+        hinclude_default_template: loading.html.twig
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_hosts:   ~
@@ -22,7 +23,7 @@ framework:
     session:
         # handler_id set to null will use default session handler from php.ini
         handler_id:  ~
-    fragments:       ~
+    fragments:       { path: /_fragment }
     http_method_override: true
 
 # Twig Configuration

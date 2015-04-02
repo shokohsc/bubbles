@@ -14,8 +14,10 @@
 
         <!-- Magnific-popup css -->
         <link type="text/css" rel="stylesheet" href="{{ asset('front/css/magnific-popup.css') }}" />
-        <!-- Magnific-popup css -->
+        <!-- Main css -->
         <link type="text/css" rel="stylesheet" href="{{ asset('front/css/main.css') }}" />
+        <!-- Loading css -->
+        <link type="text/css" rel="stylesheet" href="{{ asset('front/css/loading.css') }}" />
 
         {% block stylesheets %}{% endblock %}
 
@@ -49,10 +51,8 @@
         <!-- my.js -->
         <script type="text/javascript" src="{{ asset('front/js/main.js') }}"></script>
 
-        <!-- The core React library -->
-        <script src="http://fb.me/react-0.13.1.js"></script>
-        <!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
-        <script src="http://fb.me/JSXTransformer-0.13.1.js"></script>
+        <!-- hinclude js -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/hinclude/0.9.5/hinclude.min.js"></script>
 
         {% block javascripts %}{% endblock %}
 
