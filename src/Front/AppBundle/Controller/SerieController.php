@@ -43,6 +43,7 @@ class SerieController extends Controller
       $response->setData(array(
         'data' => $this->get('app.serie_repository')->findOneById($id)
       ));
+
       return $response;
   }
 

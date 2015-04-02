@@ -43,6 +43,7 @@ class CreatorController extends Controller
       $response->setData(array(
         'data' => $this->get('app.creator_repository')->findOneById($id)
       ));
+
       return $response;
   }
 
