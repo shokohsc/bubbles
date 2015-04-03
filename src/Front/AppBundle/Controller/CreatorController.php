@@ -32,7 +32,7 @@ class CreatorController extends Controller
   /**
    * Get Creator entity
    *
-   * @Route("/get/creator/{id}", name="get_creator", requirements={"id" = "\d+"}, options={"expose"=true})
+   * @Route("/get_creator/{id}", name="get_creator", requirements={"id" = "\d+"}, options={"expose"=true})
    *
    * @param string $id creator id
    * @return JsonResponse
@@ -50,8 +50,8 @@ class CreatorController extends Controller
   /**
    *  Get comics belonging to the creator matching id
    *
-   * @param string $id   creator Id
-   * @param string $page pagination
+   * @Route("/get_creator_comics/{id}/{page}", name="get_creator_comics", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"}, options={"expose"=true})
+   *
    * @return Symfony\Component\HttpFoundation\Response
    */
   public function comicsAction($id, $page)

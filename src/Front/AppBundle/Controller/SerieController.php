@@ -32,7 +32,7 @@ class SerieController extends Controller
   /**
    * Get Serie entity
    *
-   * @Route("/get/serie/{id}", name="get_serie", requirements={"id" = "\d+"}, options={"expose"=true})
+   * @Route("/get_serie/{id}", name="get_serie", requirements={"id" = "\d+"}, options={"expose"=true})
    *
    * @param string $id serie id
    * @return JsonResponse
@@ -50,8 +50,8 @@ class SerieController extends Controller
   /**
    *  Get comics belonging to the serie matching id
    *
-   * @param string $id   serie id
-   * @param string $page pagination
+   * @Route("/get_serie_comics/{id}/{page}", name="get_serie_comics", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"}, options={"expose"=true})
+   *
    * @return Symfony\Component\HttpFoundation\Response
    */
   public function comicsAction($id, $page)

@@ -6,9 +6,9 @@
 
   <h1 class="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
 
-  <div class="text-center">
+  <div id="comic-list" class="text-center">
 
-    {{ render_hinclude(controller('AppBundle:Front:weekComics', {'date': date.toDateString()})) }}
+      {% include 'front/loading.html.twig' %}
 
   </div>
 
@@ -46,5 +46,24 @@
       </ul>
     </nav>
   </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" charset="utf-8">
+
+        $.ajax({
+            url: Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
+            type: 'get',
+            dataType: 'html',
+            success: function(data, textStatus, jqXHR){
+              $('#comic-list').html(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown){},
+            complete: function( jqXHR, textStatus ){}
+        });
+
+    </script>
 
 {% endblock %}

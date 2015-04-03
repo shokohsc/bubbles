@@ -6,12 +6,31 @@
 
   <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ query|lower }}</h1>
 
-  <div class="text-center">
+  <div id="serie-list" class="text-center">
 
-    {{ render_hinclude(controller('AppBundle:Search:series', {'query': query})) }}
+      {% include 'front/loading.html.twig' %}
 
   </div>
 
 {% endblock %}
 
 {% block pagination %}{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" charset="utf-8">
+
+        $.ajax({
+            url: Routing.generate('get_search_series', { query: '{{ query }}' }),
+            type: 'get',
+            dataType: 'html',
+            success: function(data, textStatus, jqXHR){
+              $('#serie-list').html(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown){},
+            complete: function( jqXHR, textStatus ){}
+        });
+
+    </script>
+
+{% endblock %}

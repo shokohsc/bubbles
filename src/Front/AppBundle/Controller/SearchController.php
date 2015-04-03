@@ -32,7 +32,8 @@ class SearchController extends Controller
   /**
    *  Get series matching the search query
    *
-   * @param string $query search query
+   * @Route("/get_search_series/{query}", name="get_search_series", requirements={"query"}, options={"expose"=true})
+   *
    * @return Symfony\Component\HttpFoundation\Response
    */
   public function seriesAction($query)

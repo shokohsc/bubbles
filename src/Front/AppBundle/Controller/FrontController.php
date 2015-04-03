@@ -60,12 +60,14 @@ class FrontController extends Controller
     /**
      * Get comics matching the date
      *
-     * @param string $date
+     * @Route("get/week/{date}", name="get_week_comics", options={"expose"=true})
+     *
      * @return Symfony\Component\HttpFoundation\Response
      */
-    public function weekComicsAction($date)
+    public function weekComicsAction($date = null)
     {
-        $collection = $this->get('app.comic_repository')->findAllByReleaseDate(Carbon::parse($date));
+        $date = null === $date ? Carbon::now() : Carbon::parse($date);
+        $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
 
         return $this->render('front/comic/list.html.twig',
             [
