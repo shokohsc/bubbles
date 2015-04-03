@@ -7,6 +7,8 @@ navbar:
     search: recherche
     about: a propos
 
+home: accueil
+
 credits:
     provided: données obtenues par
     powered: propulsé par

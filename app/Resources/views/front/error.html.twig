@@ -6,6 +6,13 @@
   <div class="jumbotron">
     <h1>{{ code }}</h1>
     <p><span class="glyphicon glyphicon-exclamation-sign"></span> {{ message|capitalize }}</p>
-    <p><a class="btn btn-primary btn-lg" onclick="window.history.back()" role="button"><span class="glyphicon glyphicon-arrow-left"></span> {{ 'error.backward'|trans|capitalize }}</a></p>
+    <p>
+        <a class="btn btn-primary btn-lg" onclick="window.history.back()" role="button">
+            <span class="glyphicon glyphicon-arrow-left"></span> {{ 'error.backward'|trans|capitalize }}
+        </a>
+        <a class="btn btn-primary btn-lg" href="{{ path('homepage') }}" role="button">
+            <span class="glyphicon glyphicon-home"></span> {{ 'home'|trans|capitalize }}
+        </a>
+    </p>
   </div>
 {% endblock %}
