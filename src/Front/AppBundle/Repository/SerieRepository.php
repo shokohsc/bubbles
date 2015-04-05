@@ -3,6 +3,8 @@
 namespace Front\AppBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
+use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\SeriesRepository;
 use Octante\MarvelAPIBundle\Model\Query\SerieQuery;
 
@@ -30,16 +32,34 @@ class SerieRepository
     private $query;
 
     /**
+     * ComicsRepository
+     *
+     * @var ComicsRepository
+     */
+    private $comicRepository;
+
+    /**
+     * ComicQuery
+     *
+     * @var ComicQuery
+     */
+    private $comicQuery;
+
+    /**
      * SerieRepository constructor
      *
      * @param SeriesRepository $repository
      * @param SerieQuery       $query
+     * @param ComicsRepository $comicRepository
+     * @param ComicQuery       $comicQuery
      * @param integer          $comicsPerPage
      */
-    public function __construct(SeriesRepository $repository, SerieQuery $query, $comicsPerPage)
+    public function __construct(SeriesRepository $repository, SerieQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
     {
         $this->repository = $repository;
         $this->query = $query;
+        $this->comicRepository = $comicRepository;
+        $this->comicQuery = $comicQuery;
         $this->comicsPerPage  = $comicsPerPage;
     }
 
@@ -49,22 +69,22 @@ class SerieRepository
      *
      * @param string $id
      * @param string $page
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
      */
     public function findAllComicsById($id, $page)
     {
         $comics_per_page = $this->comicsPerPage;
         try {
-            $this->query->setSeries($id);
-            $this->query->setFormat('comic');
-            $this->query->setFormatType('comic');
-            $this->query->setNoVariants(true);
-            $this->query->setOrderBy('-issueNumber');
-            $this->query->setLimit($comics_per_page);
-            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+            $this->comicQuery->setSeries($id);
+            $this->comicQuery->setFormat('comic');
+            $this->comicQuery->setFormatType('comic');
+            $this->comicQuery->setNoVariants(true);
+            $this->comicQuery->setOrderBy('-issueNumber');
+            $this->comicQuery->setLimit($comics_per_page);
+            $this->comicQuery->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return $this->repository
-                ->getComics($this->query)
+            return $this->comicRepository
+                ->getComics($this->comicQuery)
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
