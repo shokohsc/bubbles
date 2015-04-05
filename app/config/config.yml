@@ -78,3 +78,8 @@ jms_i18n_routing:
     default_locale: en
     locales: [fr, en]
     strategy: prefix_except_default
+
+# Octante MarvelAPI Bundle
+octante_marvel_api:
+    public_key: "%marvel_public_key%"
+    private_key: "%marvel_private_key%"

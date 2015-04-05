@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7368bf29c5fc87834eb8cd4f0d6fbea",
+    "hash": "3598cca9c41c9a59c5b86547b16acf21",
     "packages": [
         {
             "name": "chadicus/marvel-api-client",
@@ -1406,6 +1406,48 @@
                 "php"
             ],
             "time": "2012-04-23 22:52:11"
+        },
+        {
+            "name": "octante/marvel-api-bundle",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/octante/MarvelAPIBundle.git",
+                "reference": "f392e3c72d43c82f72b947a1c062962cb15e50f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/octante/MarvelAPIBundle/zipball/f392e3c72d43c82f72b947a1c062962cb15e50f4",
+                "reference": "f392e3c72d43c82f72b947a1c062962cb15e50f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/framework-bundle": "2.*"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Octante\\MarvelAPIBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Issel Guberna",
+                    "email": "issel_guberna@hotmail.com"
+                }
+            ],
+            "description": "Marvel API bundle for Symfony2",
+            "homepage": "https://github.com/octante",
+            "keywords": [
+                "api",
+                "marvel"
+            ],
+            "time": "2015-03-30 17:00:20"
         },
         {
             "name": "psr/log",
