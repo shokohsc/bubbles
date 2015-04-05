@@ -1,42 +1,42 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ comic.title|title }}{% endblock %}
+{% block title %} {{ comic.getTitle()|title }}{% endblock %}
 
 {% block content %}
     <div class="media">
-      <a class="media-left col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.thumbnail.path }}/detail.{{ comic.thumbnail.extension }}">
+      <a class="media-left col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.getThumbnail().path }}/detail.{{ comic.getThumbnail().getExtension() }}">
         {% include 'front/comic/image.html.twig' %}
       </a>
       <div class="media-body col-xs-12 col-sm-8 col-md-9">
         <h2 class="media-heading">
-          {{ comic.title|title }} <small><a href="{{ comic.urls.0.url }}" target="_blank" title="{{ comic.title|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
+          {{ comic.getTitle()|title }} <small><a href="{{ comic.getUrls().0.getUrl() }}" target="_blank" title="{{ comic.getTitle()|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
         </h2>
         <table class="table table-condensed">
           <tr>
             <td><strong>{{ 'comic.published'|trans|capitalize }}</strong></td>
             <td>
               <a href="{{ path('released', {
-              'day':   comic.dates.0.date|date("d"),
-              'month': comic.dates.0.date|date("m"),
-              'year':  comic.dates.0.date|date("Y") }) }}">
-                {{ comic.dates.0.date|date("F d, Y") }}
+              'day':   comic.getDates().0.getDate()|date("d"),
+              'month': comic.getDates().0.getDate()|date("m"),
+              'year':  comic.getDates().0.getDate()|date("Y") }) }}">
+                {{ comic.getDates().0.getDate()|date("F d, Y") }}
               </a>
             </td>
           </tr>
           <tr>
             <td><strong>{{ 'comic.serie'|trans|capitalize }}</strong></td>
-            <td><a href="{{ path('serie', {'id' : comic.series.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ comic.series.name|title }}</a></td>
+            <td><a href="{{ path('serie', {'id' : comic.getSeries().getResourceURI()|resourceId }) }}" title="{{ comic.getSeries().getName()|title }}">{{ comic.getSeries().getName()|title }}</a></td>
           </tr>
 
-          {% for creator in comic.creators.items %}
+          {% for creator in comic.getCreators().getItems() %}
           <tr>
-            <td><strong>{{ creator.role|trans|capitalize }}</strong></td>
-            <td><a href="{{ path('creator', {'id' : creator.resourceURI|resourceId }) }}" title="{{ comic.series.name|title }}">{{ creator.name|title }}</a></td>
+            <td><strong>{{ creator.getRole()|trans|capitalize }}</strong></td>
+            <td><a href="{{ path('creator', {'id' : creator.getResourceURI()|resourceId }) }}" title="{{ comic.getSeries().getName()|title }}">{{ creator.getName()|title }}</a></td>
           </tr>
           {% endfor %}
         </table>
 
-        <p>{{ comic.description|striptags|htmlDecode }}</p>
+        <p>{{ comic.getDescription()|striptags|htmlDecode }}</p>
       </div>
     </div>
 

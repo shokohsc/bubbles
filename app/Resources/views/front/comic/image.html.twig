@@ -1,8 +1,8 @@
 <img
-  id="incredible_{{ comic.id }}"
+  id="incredible_{{ comic.getId().getComicId() }}"
   class="img-thumbnail"
-  src="{{ comic.thumbnail.path }}/portrait_incredible.{{ comic.thumbnail.extension }}"
-  alt="{{ comic.title|title }}"
+  src="{{ comic.getThumbnail().getPath() }}/portrait_incredible.{{ comic.getThumbnail().getExtension() }}"
+  alt="{{ comic.getTitle()|title }}"
   height="324"
   width="216"
 />

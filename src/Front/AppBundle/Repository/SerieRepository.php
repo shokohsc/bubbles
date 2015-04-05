@@ -3,18 +3,11 @@
 namespace Front\AppBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Chadicus\Marvel\Api\Client;
-use Front\MarvelApiBundle\Collection;
+use Octante\MarvelAPIBundle\Repositories\SeriesRepository;
+use Octante\MarvelAPIBundle\Model\Query\SerieQuery;
 
 class SerieRepository
 {
-    /**
-     * Marvel Api Client
-     *
-     * @var Client
-     */
-    private $client;
-
     /**
      * Number of comics displayed
      *
@@ -23,39 +16,57 @@ class SerieRepository
     private $comicsPerPage;
 
     /**
-     * Serie repository constructor
+     * SeriesRepository
      *
-     * @param Client $client
-     * @param integer $comicsPerPage
+     * @var SeriesRepository
      */
-    public function __construct(Client $client, $comicsPerPage)
+    private $repository;
+
+    /**
+     * SerieQuery
+     *
+     * @var SerieQuery
+     */
+    private $query;
+
+    /**
+     * SerieRepository constructor
+     *
+     * @param SeriesRepository $repository
+     * @param SerieQuery       $query
+     * @param integer          $comicsPerPage
+     */
+    public function __construct(SeriesRepository $repository, SerieQuery $query, $comicsPerPage)
     {
-        $this->client         = $client;
+        $this->repository = $repository;
+        $this->query = $query;
         $this->comicsPerPage  = $comicsPerPage;
     }
+
 
     /**
      * Find all comics matching serie id
      *
      * @param string $id
      * @param string $page
-     * @return Collection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
      */
     public function findAllComicsById($id, $page)
     {
         $comics_per_page = $this->comicsPerPage;
         try {
-            $filters = [
-                'series' => $id,
-                'format' => 'comic',
-                'formatType' => 'comic',
-                'noVariants' => true,
-                'orderBy' => '-issueNumber',
-                'limit' => $comics_per_page,
-                'offset' => ($page * $comics_per_page) - $comics_per_page
-                ];
+            $this->query->setSeries($id);
+            $this->query->setFormat('comic');
+            $this->query->setFormatType('comic');
+            $this->query->setNoVariants(true);
+            $this->query->setOrderBy('-issueNumber');
+            $this->query->setLimit($comics_per_page);
+            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return new Collection($this->client, 'comics', $filters);
+            return $this->repository
+                ->getComics($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
@@ -65,17 +76,15 @@ class SerieRepository
      * Find one serie matching id
      *
      * @param string $id
-     * @return Chadicus\Marvel\Api\Response|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
      */
     public function findOneById($id)
     {
         try {
-            $response = $this->client->get('series', intval($id));
-            if ($response->getBody()['code'] !== 200) {
-                throw new NotFoundHttpException('Sorry mate ! Can\'t find that serie.', new NotFoundHttpException(), 404);
-            }
-
-            return $response->getBody()['data']['results'][0];
+            return $this->repository
+                ->getSerieById(intval($id))
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
@@ -83,9 +92,9 @@ class SerieRepository
 
     /**
      * Find all series matching query
-     * 
+     *
      * @param string $query input from search form
-     * @return Collection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
      */
     public function findAllByQuery($query)
     {
@@ -97,7 +106,15 @@ class SerieRepository
                 'limit' => 100,
                 ];
 
-            return new Collection($this->client, 'series', $filters);
+            $this->query->setTitleStartsWith($query);
+            $this->query->setOrderBy('-startYear');
+            $this->query->setContains('comic');
+            $this->query->setLimit(100);
+
+            return $this->repository
+                ->getSeries($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }

@@ -21,7 +21,6 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new Front\AppBundle\AppBundle(),
-            new Front\MarvelApiBundle\MarvelApiBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

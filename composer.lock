@@ -4,62 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3598cca9c41c9a59c5b86547b16acf21",
+    "hash": "8add5f34d1d2b79726a998caa997d407",
     "packages": [
-        {
-            "name": "chadicus/marvel-api-client",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/chadicus/marvel-api-client.git",
-                "reference": "b619838db4e8b4d3a62e99e4b9410f92b43e23fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/marvel-api-client/zipball/b619838db4e8b4d3a62e99e4b9410f92b43e23fe",
-                "reference": "b619838db4e8b4d3a62e99e4b9410f92b43e23fe",
-                "shasum": ""
-            },
-            "require": {
-                "dominionenterprises/filter": "~1.0",
-                "dominionenterprises/util": "~1.0",
-                "php": "~5.4"
-            },
-            "require-dev": {
-                "chadicus/coding-standard": "dev-master",
-                "phpdocumentor/phpdocumentor": "~2.0",
-                "phploc/phploc": "~2.0.2",
-                "phpunit/phpunit": "~3.7.19"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Chadicus": [
-                        "src",
-                        "tests"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chad Gray",
-                    "email": "chadwickgray@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP Client for the Marvel API",
-            "keywords": [
-                "api",
-                "client",
-                "marvel",
-                "rest"
-            ],
-            "time": "2014-12-15 13:54:55"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.3",
@@ -761,116 +707,6 @@
                 "orm"
             ],
             "time": "2014-12-16 13:45:01"
-        },
-        {
-            "name": "dominionenterprises/filter",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dominionenterprises/filter-php.git",
-                "reference": "14f8930eda5e64cee67889ff9654f3159ebac62e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/filter-php/zipball/14f8930eda5e64cee67889ff9654f3159ebac62e",
-                "reference": "14f8930eda5e64cee67889ff9654f3159ebac62e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "dominionenterprises/dws-coding-standard": "~1.1",
-                "phpunit/phpunit": "~4.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "DominionEnterprises\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Spencer Rinehart",
-                    "email": "anubis@overthemonkey.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jonathan Gaillard",
-                    "email": "jonathan.gaillard@dominionenterprises.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Chad Gray",
-                    "email": "chadwickgray@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A filtering implementation for verifying correct data and performing typical modifications to data",
-            "keywords": [
-                "utility"
-            ],
-            "time": "2014-08-08 16:20:31"
-        },
-        {
-            "name": "dominionenterprises/util",
-            "version": "v1.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dominionenterprises/util-php.git",
-                "reference": "029ee6132495ebda5e15ff30b4e926cb4f5404d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-php/zipball/029ee6132495ebda5e15ff30b4e926cb4f5404d1",
-                "reference": "029ee6132495ebda5e15ff30b4e926cb4f5404d1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~5.4"
-            },
-            "require-dev": {
-                "dominionenterprises/dws-coding-standard": "~1.1",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "DominionEnterprises\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Spencer Rinehart",
-                    "email": "anubis@overthemonkey.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jonathan Gaillard",
-                    "email": "jonathan.gaillard@dominionenterprises.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Chad Gray",
-                    "email": "chadwickgray@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A collection of utility classes",
-            "keywords": [
-                "utility"
-            ],
-            "time": "2014-10-08 18:10:26"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -2149,6 +1985,116 @@
     ],
     "packages-dev": [
         {
+            "name": "dominionenterprises/filter",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dominionenterprises/filter-php.git",
+                "reference": "14f8930eda5e64cee67889ff9654f3159ebac62e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dominionenterprises/filter-php/zipball/14f8930eda5e64cee67889ff9654f3159ebac62e",
+                "reference": "14f8930eda5e64cee67889ff9654f3159ebac62e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "dominionenterprises/dws-coding-standard": "~1.1",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DominionEnterprises\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "anubis@overthemonkey.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A filtering implementation for verifying correct data and performing typical modifications to data",
+            "keywords": [
+                "utility"
+            ],
+            "time": "2014-08-08 16:20:31"
+        },
+        {
+            "name": "dominionenterprises/util",
+            "version": "v1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dominionenterprises/util-php.git",
+                "reference": "029ee6132495ebda5e15ff30b4e926cb4f5404d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dominionenterprises/util-php/zipball/029ee6132495ebda5e15ff30b4e926cb4f5404d1",
+                "reference": "029ee6132495ebda5e15ff30b4e926cb4f5404d1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.4"
+            },
+            "require-dev": {
+                "dominionenterprises/dws-coding-standard": "~1.1",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6.1",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DominionEnterprises\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Spencer Rinehart",
+                    "email": "anubis@overthemonkey.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Gaillard",
+                    "email": "jonathan.gaillard@dominionenterprises.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Chad Gray",
+                    "email": "chadwickgray@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of utility classes",
+            "keywords": [
+                "utility"
+            ],
+            "time": "2014-10-08 18:10:26"
+        },
+        {
             "name": "sensio/generator-bundle",
             "version": "v2.5.3",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
@@ -2199,9 +2145,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "chadicus/marvel-api-client": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

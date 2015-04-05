@@ -3,27 +3,36 @@
 namespace Front\AppBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Chadicus\Marvel\Api\Client;
-use Front\MarvelApiBundle\Collection;
+use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
+use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Carbon\Carbon;
 
 class ComicRepository
 {
     /**
-     * Marvel Api Client
-     * 
-     * @var Client
+     * ComicsRepository
+     *
+     * @var ComicsRepository
      */
-    private $client;
+    private $repository;
 
     /**
-     * Comic Repository constructor
+     * ComicQuery
      *
-     * @param Client $client
+     * @var ComicQuery
      */
-    public function __construct(Client $client)
+    private $query;
+
+    /**
+     * ComicRepository constructor
+     *
+     * @param ComicsRepository $repository
+     * @param ComicQuery       $query
+     */
+    public function __construct(ComicsRepository $repository, ComicQuery $query)
     {
-        $this->client = $client;
+        $this->repository = $repository;
+        $this->query = $query;
     }
 
     /**
@@ -44,20 +53,22 @@ class ComicRepository
      * Find all released comics the week containing the $date
      *
      * @param Carbon $date
-     * @return Collection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
      */
     public function findAllByReleaseDate(Carbon $date)
     {
         try {
-            $filters = [
-                'format'      => 'comic',
-                'formatType'  => 'comic',
-                'noVariants'  => true,
-                'dateRange'   => $this->getReleaseDateRange($date),
-                'orderBy'     => 'title',
-                ];
+            $this->query->setFormat('comic');
+            $this->query->setFormatType('comic');
+            $this->query->setNoVariants(true);
+            $this->query->setDateRange($this->getReleaseDateRange($date));
+            $this->query->setOrderBy('title');
+            $this->query->setLimit(100);
 
-            return new Collection($this->client, 'comics', $filters);
+            return $this->repository
+                ->getComics($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
@@ -67,21 +78,22 @@ class ComicRepository
      * Find all comics from the beginning of the serie
      *
      * @param string $id matching serie id
-     * @return Collection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
      */
     public function findAllByStartUntilNow($id)
     {
         try {
-            $filters = [
-                'format'      => 'comic',
-                'formatType'  => 'comic',
-                'noVariants'  => true,
-                'series'      => $id,
-                'dateRange'   => Carbon::create(1939, 01, 01)->toDateString().','.Carbon::now()->toDateString(),
-                'orderBy'     => '-issueNumber',
-                ];
+            $this->query->setFormat('comic');
+            $this->query->setFormatType('comic');
+            $this->query->setNoVariants(true);
+            $this->query->setSeries($id);
+            $this->query->setDateRange(Carbon::create(1939, 01, 01)->toDateString().','.Carbon::now()->toDateString());
+            $this->query->setOrderBy('-issueNumber');
 
-            return new Collection($this->client, 'comics', $filters);
+            return $this->repository
+                ->getComics($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
@@ -91,16 +103,15 @@ class ComicRepository
      * Find one comic matching id
      *
      * @param string $id comic id
-     * @return Chadicus\Marvel\Api\Response|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
      */
     public function findOneById($id)
     {
         try {
-            $response = $this->client->get('comics', intval($id));
-            if ($response->getBody()['code'] == 404) {
-                throw new NotFoundHttpException('Sorry mate ! Can\'t find that comic.', new NotFoundHttpException(), 404);
-            }
-            return $response->getBody()['data']['results'][0];
+            return $this->repository
+                ->getComicById(intval($id))
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }

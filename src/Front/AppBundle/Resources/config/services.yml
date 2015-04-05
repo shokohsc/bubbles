@@ -4,15 +4,15 @@ parameters:
 services:
     app.comic_repository:
         class: Front\AppBundle\Repository\ComicRepository
-        arguments: [@marvel_api_client]
+        arguments: [@marvel.comics, @marvel.comics_query]
 
     app.serie_repository:
         class: Front\AppBundle\Repository\SerieRepository
-        arguments: [@marvel_api_client, "%comics_per_page%"]
+        arguments: [@marvel.series, @marvel.series_query, %comics_per_page%]
 
     app.creator_repository:
         class: Front\AppBundle\Repository\CreatorRepository
-        arguments: [@marvel_api_client, "%comics_per_page%"]
+        arguments: [@marvel.creators, @marvel.creators_query, %comics_per_page%]
 
     app.twig.app_twig_extension:
         class: Front\AppBundle\Twig\AppTwigExtension

@@ -3,18 +3,11 @@
 namespace Front\AppBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Chadicus\Marvel\Api\Client;
-use Front\MarvelApiBundle\Collection;
+use Octante\MarvelAPIBundle\Repositories\CreatorsRepository;
+use Octante\MarvelAPIBundle\Model\Query\CreatorQuery;
 
 class CreatorRepository
 {
-    /**
-     * Marvel Api Client
-     *
-     * @var Client
-     */
-    private $client;
-
     /**
      * Number of comics displayed
      *
@@ -23,14 +16,30 @@ class CreatorRepository
     private $comicsPerPage;
 
     /**
-     * Creator repository constructor
+     * CreatorsRepository
      *
-     * @param Client $client
-     * @param integer $comicsPerPage
+     * @var CreatorsRepository
      */
-    public function __construct(Client $client, $comicsPerPage)
+    private $repository;
+
+    /**
+     * CreatorQuery
+     *
+     * @var CreatorQuery
+     */
+    private $query;
+
+    /**
+     * CreatorRepository constructor
+     *
+     * @param CreatorsRepository $repository
+     * @param CreatorQuery       $query
+     * @param integer          $comicsPerPage
+     */
+    public function __construct(CreatorsRepository $repository, CreatorQuery $query, $comicsPerPage)
     {
-        $this->client         = $client;
+        $this->repository = $repository;
+        $this->query = $query;
         $this->comicsPerPage  = $comicsPerPage;
     }
 
@@ -39,23 +48,24 @@ class CreatorRepository
      *
      * @param string $id
      * @param string $page
-     * @return Collection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\CreatorsCollection|array
      */
     public function findAllComicsById($id, $page)
     {
         $comics_per_page = $this->comicsPerPage;
         try {
-            $filters = [
-                'creators'    => $id,
-                'format'      => 'comic',
-                'formatType'  => 'comic',
-                'noVariants'  => true,
-                'orderBy'     => '-onsaleDate',
-                'limit'       => $comics_per_page,
-                'offset'      => ($page * $comics_per_page) - $comics_per_page
-                ];
+            $this->query->setCreators($id);
+            $this->query->setFormat('comic');
+            $this->query->setFormatType('comic');
+            $this->query->setNoVariants(true);
+            $this->query->setOrderBy('-onsaleDate');
+            $this->query->setLimit($comics_per_page);
+            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return new Collection($this->client, 'comics', $filters);
+            return $this->repository
+                ->getComics($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
@@ -63,19 +73,17 @@ class CreatorRepository
 
     /**
      * Find one creator matching id
-     * 
+     *
      * @param string $id
-     * @return Chadicus\Marvel\Api\Response|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\CreatorsCollection|array
      */
     public function findOneById($id)
     {
         try {
-            $response = $this->client->get('creators', intval($id));
-            if ($response->getBody()['code'] !== 200) {
-                throw new NotFoundHttpException('Sorry mate ! Can\'t find that creator.', new NotFoundHttpException(), 404);
-            }
-
-            return $response->getBody()['data']['results'][0];
+            return $this->repository
+                ->getCreatorById(intval($id))
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }
