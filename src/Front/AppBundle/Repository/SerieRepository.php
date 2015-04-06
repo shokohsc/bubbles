@@ -104,7 +104,7 @@ class SerieRepository
             return $this->repository
                 ->getSerieById(intval($id))
                 ->getData()
-                ->getResults();
+                ->getResults()[0];
         } catch (Exception $e) {
             return array();
         }
@@ -119,13 +119,6 @@ class SerieRepository
     public function findAllByQuery($query)
     {
         try {
-            $filters = [
-                'titleStartsWith' => $query,
-                'orderBy' => '-startYear',
-                'contains' => 'comic',
-                'limit' => 100,
-                ];
-
             $this->query->setTitleStartsWith($query);
             $this->query->setOrderBy('-startYear');
             $this->query->setContains('comic');

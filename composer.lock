@@ -1245,16 +1245,16 @@
         },
         {
             "name": "octante/marvel-api-bundle",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octante/MarvelAPIBundle.git",
-                "reference": "f392e3c72d43c82f72b947a1c062962cb15e50f4"
+                "reference": "deecbd6318a655a850334a924f7ab0668139d0d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octante/MarvelAPIBundle/zipball/f392e3c72d43c82f72b947a1c062962cb15e50f4",
-                "reference": "f392e3c72d43c82f72b947a1c062962cb15e50f4",
+                "url": "https://api.github.com/repos/octante/MarvelAPIBundle/zipball/deecbd6318a655a850334a924f7ab0668139d0d4",
+                "reference": "deecbd6318a655a850334a924f7ab0668139d0d4",
                 "shasum": ""
             },
             "require": {
@@ -1283,7 +1283,7 @@
                 "api",
                 "marvel"
             ],
-            "time": "2015-03-30 17:00:20"
+            "time": "2015-04-06 09:14:55"
         },
         {
             "name": "psr/log",

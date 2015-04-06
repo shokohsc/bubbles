@@ -103,7 +103,7 @@ class CreatorRepository
             return $this->repository
                 ->getCreatorById(intval($id))
                 ->getData()
-                ->getResults();
+                ->getResults()[0];
         } catch (Exception $e) {
             return array();
         }

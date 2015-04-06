@@ -111,7 +111,7 @@ class ComicRepository
             return $this->repository
                 ->getComicById(intval($id))
                 ->getData()
-                ->getResults();
+                ->getResults()[0];
         } catch (Exception $e) {
             return array();
         }

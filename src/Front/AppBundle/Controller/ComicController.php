@@ -19,7 +19,6 @@ class ComicController extends Controller
   public function comicAction($id)
   {
       $comic = $this->get('app.comic_repository')->findOneById($id);
-
       return $this->render('front/comic/comic.html.twig',
           [
               'comic' => $comic,
