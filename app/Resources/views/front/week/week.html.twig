@@ -51,7 +51,7 @@
 
 {% block javascripts %}
 
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript">
 
         $.ajax({
             url: Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' }),

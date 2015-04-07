@@ -38,31 +38,31 @@
 
 {% block javascripts %}
 
-  <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript">
 
-    $.ajax({
-        url: Routing.generate('get_serie_comics', {'id': '{{id}}', 'page': '{{page}}' }),
-        type: 'get',
-        dataType: 'html',
-        success: function(data, textStatus, jqXHR){
-            $('#comic-list').html(data);
-        },
-        error: function(jqXHR, textStatus, errorThrown){},
-        complete: function( jqXHR, textStatus ){}
-    });
+        $.ajax({
+            url: Routing.generate('get_serie_comics', {'id': '{{id}}', 'page': '{{page}}' }),
+            type: 'get',
+            dataType: 'html',
+            success: function(data, textStatus, jqXHR){
+                $('#comic-list').html(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown){},
+            complete: function( jqXHR, textStatus ){}
+        });
 
-    $.ajax({
-      url: Routing.generate('get_serie', { id: {{ id }} }),
-      type: 'get',
-      dataType: 'json',
-      success: function(data, textStatus, jqXHR){
-          document.title = data.data.title;
-          $('h1').text(data.data.title);
-      },
-      error: function(jqXHR, textStatus, errorThrown){},
-      complete: function( jqXHR, textStatus ){}
-    });
+        $.ajax({
+          url: Routing.generate('get_serie', { id: {{ id }} }),
+          type: 'get',
+          dataType: 'json',
+          success: function(data, textStatus, jqXHR){
+              document.title = data.data.title;
+              $('h1').text(data.data.title);
+          },
+          error: function(jqXHR, textStatus, errorThrown){},
+          complete: function( jqXHR, textStatus ){}
+        });
 
-  </script>
+    </script>
 
 {% endblock %}
