@@ -1,10 +1,10 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ 'search.results'|trans|capitalize }} {{ query }} {% endblock %}
+{% block title %} {{ 'search.results'|trans|capitalize }} {{ q }} {% endblock %}
 
 {% block content %}
 
-  <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ query|lower }}</h1>
+  <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ q|lower }}</h1>
 
   <div id="serie-list" class="text-center">
 
@@ -14,14 +14,36 @@
 
 {% endblock %}
 
-{% block pagination %}{% endblock %}
+{% block pagination %}
+
+    <div class="row">
+      <nav>
+        <ul class="pager">
+          {% if page > 1 %}
+          <li>
+            <a href="{{ path('search', {'q' : app.request.get('q'), 'page': app.request.get('page') - 1, 'entity': app.request.get('entity') }) }}">
+              <span class="glyphicon glyphicon-chevron-left"></span> {{ 'serie.pagination.newer'|trans|capitalize }}
+            </a>
+          </li>
+          {% endif %}
+
+          <li>
+            <a href="{{ path('search', {'q' : app.request.get('q'), 'page': app.request.get('page') + 1, 'entity': app.request.get('entity') }) }}">
+              {{ 'serie.pagination.older'|trans|capitalize }} <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+{% endblock %}
 
 {% block javascripts %}
 
     <script type="text/javascript">
 
         $.ajax({
-            url: Routing.generate('get_search_series', { query: '{{ query }}' }),
+            url: Routing.generate('get_search_' + '{{ entity }}', { q: '{{ q }}', page: '{{ page }}' }),
             type: 'get',
             dataType: 'html',
             success: function(data, textStatus, jqXHR){

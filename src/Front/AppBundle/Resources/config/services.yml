@@ -4,7 +4,7 @@ parameters:
 services:
     app.comic_repository:
         class: Front\AppBundle\Repository\ComicRepository
-        arguments: [@marvel.comics, @marvel.comics_query]
+        arguments: [@marvel.comics, @marvel.comics_query, %comics_per_page%]
 
     app.serie_repository:
         class: Front\AppBundle\Repository\SerieRepository

@@ -4,7 +4,11 @@ base:
 
 navbar:
     navigation: toggle navigation
-    search: search
+    search:
+        input: search
+        entity:
+            comic: comic
+            serie: serie
     about: about
 
 home: home

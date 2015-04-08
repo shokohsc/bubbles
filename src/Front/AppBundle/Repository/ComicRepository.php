@@ -10,6 +10,13 @@ use Carbon\Carbon;
 class ComicRepository
 {
     /**
+     * Number of comics displayed
+     *
+     * @var integer
+     */
+    private $comicsPerPage;
+
+    /**
      * ComicsRepository
      *
      * @var ComicsRepository
@@ -29,10 +36,11 @@ class ComicRepository
      * @param ComicsRepository $repository
      * @param ComicQuery       $query
      */
-    public function __construct(ComicsRepository $repository, ComicQuery $query)
+    public function __construct(ComicsRepository $repository, ComicQuery $query, $comicsPerPage)
     {
         $this->repository = $repository;
         $this->query = $query;
+        $this->comicsPerPage  = $comicsPerPage;
     }
 
     /**
@@ -112,6 +120,33 @@ class ComicRepository
                 ->getComicById(intval($id))
                 ->getData()
                 ->getResults()[0];
+        } catch (Exception $e) {
+            return array();
+        }
+    }
+
+    /**
+     * Find all comics matching query
+     *
+     * @param string $query input from search form
+     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     */
+     public function findAllByQuery($query, $page)
+     {
+         $comics_per_page = $this->comicsPerPage;
+        try {
+            $this->query->setTitleStartsWith($query);
+            $this->query->setOrderBy('-onsaleDate');
+            $this->query->setFormat('comic');
+            $this->query->setFormatType('comic');
+            $this->query->setNoVariants(true);
+            $this->query->setLimit($comics_per_page);
+            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+
+            return $this->repository
+                ->getComics($this->query)
+                ->getData()
+                ->getResults();
         } catch (Exception $e) {
             return array();
         }

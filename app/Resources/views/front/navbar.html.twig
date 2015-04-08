@@ -16,9 +16,18 @@
           <a href="{{ path('about') }}" title="About">{{ 'navbar.about'|trans|title }}</a>
         </li>
         <li>
-          <form action="{{ path('search') }}" method="get" class="navbar-form navbar-left" role="search">
+          <form class="navbar-form" action="{{ path('search') }}" method="get">
             <div class="input-group">
-              <input name="q" type="text" class="form-control" placeholder="{{ 'navbar.search'|trans|title }}...">
+              <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
+               <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" title="comics">{{ 'navbar.search.entity.comic'|trans|title }}</a></li>
+                    <li><a href="#" title="series">{{ 'navbar.search.entity.serie'|trans|title }}</a></li>
+                </ul>
+                <input type="hidden" name="entity" class="category">
+                <input type="hidden" name="page" value="{% if app.request.request.page is defined %} {{ app.Request.request.page }} {% else %} 1 {% endif %}">
+              </div>
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
               </span>

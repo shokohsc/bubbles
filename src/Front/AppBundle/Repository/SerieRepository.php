@@ -116,13 +116,15 @@ class SerieRepository
      * @param string $query input from search form
      * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
      */
-    public function findAllByQuery($query)
+    public function findAllByQuery($query, $page)
     {
+        $comics_per_page = $this->comicsPerPage;
         try {
             $this->query->setTitleStartsWith($query);
             $this->query->setOrderBy('-startYear');
             $this->query->setContains('comic');
-            $this->query->setLimit(100);
+            $this->query->setLimit($comics_per_page);
+            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
             return $this->repository
                 ->getSeries($this->query)
