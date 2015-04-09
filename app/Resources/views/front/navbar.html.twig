@@ -16,24 +16,37 @@
           <a href="{{ path('about') }}" title="About">{{ 'navbar.about'|trans|title }}</a>
         </li>
         <li>
-          <form class="navbar-form" action="{{ path('search') }}" method="get">
+          <form class="navbar-form navbar-right" action="{{ path('search') }}" method="get">
             <div class="input-group">
-              <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
-               <div class="input-group-btn">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#" title="comics">{{ 'navbar.search.entity.comic'|trans|title }}</a></li>
-                    <li><a href="#" title="series">{{ 'navbar.search.entity.serie'|trans|title }}</a></li>
-                </ul>
+                <div class="input-group-btn btn-group search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">{{ 'navbar.search.entity.serie'|trans|title }}</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#{{ 'navbar.search.entity.comic'|trans|title }}" title="comics">{{ 'navbar.search.entity.comic'|trans|title }}</a></li>
+                        <li><a href="#{{ 'navbar.search.entity.serie'|trans|title }}" title="series">{{ 'navbar.search.entity.serie'|trans|title }}</a></li>
+                    </ul>
+                </div>
                 <input type="hidden" name="entity" class="category">
                 <input type="hidden" name="page" value="{% if app.request.request.page is defined %} {{ app.Request.request.page }} {% else %} 1 {% endif %}">
-              </div>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
+                <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+                <!-- <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
+                 <input type="hidden" name="entity" class="category">
+                 <input type="hidden" name="page" value="{% if app.request.request.page is defined %} {{ app.Request.request.page }} {% else %} 1 {% endif %}"> -->
             </div>
+            <!-- <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button> -->
           </form>
         </li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#" title="comics">{{ 'navbar.search.input'|trans|title }} {{ 'navbar.search.entity.comic'|trans|title }}</a></li>
+              <li><a href="#" title="series">{{ 'navbar.search.input'|trans|title }} {{ 'navbar.search.entity.serie'|trans|title }}</a></li>
+          </ul>
+        </li> -->
       </ul>
     </div>
   </div>

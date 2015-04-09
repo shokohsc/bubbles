@@ -6,10 +6,19 @@ $(document).ready(function() {
         "margin-bottom": height
     });
 
-    $('.dropdown-menu li > a').click(function(e){
-      e.preventDefault();
-
-      var selected = $(this).attr('title');
-      $('.category').val(selected);
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+        e.preventDefault();
+        var param = $(this).attr("href").replace("#","");
+        var concept = $(this).text();
+        $('.search-panel span#search_concept').text(concept);
+        $('.input-group #search_param').val(param);
     });
+
+    // $('.dropdown-menu li > a').click(function(e){
+    //   e.preventDefault();
+    //
+    //   var selected = $(this).attr('title');
+    //   var selectedText = $(this).text();
+    //   $('.category').val(selected);
+    // });
 });

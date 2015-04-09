@@ -3,12 +3,12 @@
 {% block title %} {{ comic.getTitle()|title }}{% endblock %}
 
 {% block content %}
-    <div class="media">
-      <a class="media-left col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.getThumbnail().path }}/detail.{{ comic.getThumbnail().getExtension() }}">
+    <div class="row">
+      <a class="col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.getThumbnail().path }}/detail.{{ comic.getThumbnail().getExtension() }}">
         {% include 'front/comic/image.html.twig' %}
       </a>
-      <div class="media-body col-xs-12 col-sm-8 col-md-9">
-        <h2 class="media-heading">
+      <div class="col-xs-12 col-sm-8 col-md-9">
+        <h2>
           {{ comic.getTitle()|title }} <small><a href="{{ comic.getUrls().0.url }}" target="_blank" title="{{ comic.getTitle()|title }}"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></small>
         </h2>
         <table class="table table-condensed">
