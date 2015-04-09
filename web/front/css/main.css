@@ -41,7 +41,14 @@ footer{
 }
 .open .dropdown-menu{
     position: absolute !important;
-    background: black !important;
+    background: white !important;
+    color:black !important;
+}
+.open .dropdown-menu>li>a{
+    color:black !important;
+}
+.open .dropdown-menu>li>a:hover{
+    background: #e6e6e6 !important;
 }
 .navbar-collapse.in {
     overflow-y: visible;
