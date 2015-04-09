@@ -10,43 +10,32 @@
       <a class="navbar-brand" href="{{ path('homepage') }}" title="Homepage">Bubbles</a>
     </div>
 
-    <div id="navbar" class="navbar-collapse collapse" role="navigation" aria-expanded="false">
+    <div id="navbar" class="navbar-collapse collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
           <a href="{{ path('about') }}" title="About">{{ 'navbar.about'|trans|title }}</a>
         </li>
         <li>
           <form class="navbar-form navbar-right" action="{{ path('search') }}" method="get">
-            <div class="input-group">
-                <div class="input-group-btn btn-group search-panel">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <span id="search_concept">{{ 'navbar.search.entity.serie'|trans|title }}</span> <span class="caret"></span>
+              <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      <span id="search_concept">{{ 'navbar.search.entity.serie'|trans|title }}</span> <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#{{ 'navbar.search.entity.comic'|trans|title }}" title="comics">{{ 'navbar.search.entity.comic'|trans|title }}</a></li>
-                        <li><a href="#{{ 'navbar.search.entity.serie'|trans|title }}" title="series">{{ 'navbar.search.entity.serie'|trans|title }}</a></li>
+                        <li><a href="#comics" title="comics">{{ 'navbar.search.entity.comic'|trans|title }}</a></li>
+                        <li><a href="#series" title="series">{{ 'navbar.search.entity.serie'|trans|title }}</a></li>
                     </ul>
                 </div>
-                <input type="hidden" name="entity" class="category">
-                <input type="hidden" name="page" value="{% if app.request.request.page is defined %} {{ app.Request.request.page }} {% else %} 1 {% endif %}">
-                <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
+                <input type="text" class="form-control" name="q" value="" placeholder="{{ 'navbar.search.input'|trans|title }}...">
+                <input type="hidden" id="entity" name="entity" class="category" value="serie">
+                <input type="hidden" id="page" name="page" value="{% if app.request.request.page is defined %} {{ app.request.request.page }} {% else %}1{% endif %}">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
-                <!-- <input class="form-control" type="text" value="" placeholder="{{ 'navbar.search.input'|trans|title }}..." name="q">
-                 <input type="hidden" name="entity" class="category">
-                 <input type="hidden" name="page" value="{% if app.request.request.page is defined %} {{ app.Request.request.page }} {% else %} 1 {% endif %}"> -->
-            </div>
-            <!-- <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button> -->
+             </div>
           </form>
         </li>
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-              <li><a href="#" title="comics">{{ 'navbar.search.input'|trans|title }} {{ 'navbar.search.entity.comic'|trans|title }}</a></li>
-              <li><a href="#" title="series">{{ 'navbar.search.input'|trans|title }} {{ 'navbar.search.entity.serie'|trans|title }}</a></li>
-          </ul>
-        </li> -->
       </ul>
     </div>
   </div>

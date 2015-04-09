@@ -11,14 +11,6 @@ $(document).ready(function() {
         var param = $(this).attr("href").replace("#","");
         var concept = $(this).text();
         $('.search-panel span#search_concept').text(concept);
-        $('.input-group #search_param').val(param);
+        $('#entity').val(param.toLowerCase());
     });
-
-    // $('.dropdown-menu li > a').click(function(e){
-    //   e.preventDefault();
-    //
-    //   var selected = $(this).attr('title');
-    //   var selectedText = $(this).text();
-    //   $('.category').val(selected);
-    // });
 });
