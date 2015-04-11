@@ -41,17 +41,6 @@
     <script type="text/javascript">
 
         $.ajax({
-            url: Routing.generate('get_serie_comics', {'id': '{{id}}', 'page': '{{page}}' }),
-            type: 'get',
-            dataType: 'html',
-            success: function(data, textStatus, jqXHR){
-                $('#comic-list').html(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown){},
-            complete: function( jqXHR, textStatus ){}
-        });
-
-        $.ajax({
           url: Routing.generate('get_serie', { id: {{ id }} }),
           type: 'get',
           dataType: 'json',
@@ -61,6 +50,17 @@
           },
           error: function(jqXHR, textStatus, errorThrown){},
           complete: function( jqXHR, textStatus ){}
+        });
+
+        $.ajax({
+            url: Routing.generate('get_serie_comics', {'id': '{{id}}', 'page': '{{page}}' }),
+            type: 'get',
+            dataType: 'html',
+            success: function(data, textStatus, jqXHR){
+                $('#comic-list').html(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown){},
+            complete: function( jqXHR, textStatus ){}
         });
 
     </script>

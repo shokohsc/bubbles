@@ -37,9 +37,13 @@ class SerieController extends Controller
    */
   public function getSerieAction($id)
   {
+      $serie = $this->get('app.serie_repository')->findOneById($id);
+      $data = [
+          'title' => $serie->getTitle(),
+      ];
       $response = new JsonResponse();
       $response->setData(array(
-        'data' => $this->get('app.serie_repository')->findOneById($id)
+        'data' => $data
       ));
 
       return $response;

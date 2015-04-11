@@ -37,9 +37,13 @@ class CreatorController extends Controller
    */
   public function getCreatorAction($id)
   {
+      $creator = $this->get('app.creator_repository')->findOneById($id);
+      $data = [
+          'fullName' => $creator->getFullName(),
+      ];
       $response = new JsonResponse();
       $response->setData(array(
-        'data' => $this->get('app.creator_repository')->findOneById($id)
+        'data' => $data
       ));
 
       return $response;
