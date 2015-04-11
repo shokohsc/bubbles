@@ -34,6 +34,7 @@ comic:
 artist: artist
 writer: writer
 penciller: penciller
+penciller (cover): "penciller (cover)"
 colorist: colorist
 inker: inker
 letterer: letterer
