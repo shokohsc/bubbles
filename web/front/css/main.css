@@ -53,3 +53,6 @@ footer{
 .navbar-collapse.in {
     overflow-y: visible;
 }
+.navbar-form>.input-group>span.input-group-btn>button.btn{
+    height:34px;
+}
