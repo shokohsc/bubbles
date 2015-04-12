@@ -14,6 +14,14 @@ services:
         class: Front\AppBundle\Repository\CreatorRepository
         arguments: [@marvel.creators, @marvel.creators_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
 
+    app.character_repository:
+        class: Front\AppBundle\Repository\CharacterRepository
+        arguments: [@marvel.characters, @marvel.characters_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    app.event_repository:
+        class: Front\AppBundle\Repository\EventRepository
+        arguments: [@marvel.events, @marvel.events_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
     app.twig.app_twig_extension:
         class: Front\AppBundle\Twig\AppTwigExtension
         tags:

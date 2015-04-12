@@ -28,12 +28,34 @@
             <td><a href="{{ path('serie', {'id' : comic.getSeries().getResourceURI()|resourceId }) }}" title="{{ comic.getSeries().getName()|title }}">{{ comic.getSeries().getName()|title }}</a></td>
           </tr>
 
+          {% if comic.getEvents().getAvailable() > 0 %}
+              <tr>
+                <td><strong>{{ 'comic.events'|trans|capitalize }}</strong></td>
+                <td>
+                    {% for event in comic.getEvents().getItems() %}
+                        <a href="{{ path('event', {'id' : event.getResourceURI()|resourceId }) }}" title="{{ event.getName()|title }}">{{ event.getName()|title }}</a>
+                    {% endfor %}
+                </td>
+              </tr>
+          {% endif %}
+
           {% for creator in comic.getCreators().getItems() %}
           <tr>
             <td><strong>{{ creator.getRole()|trans|capitalize }}</strong></td>
             <td><a href="{{ path('creator', {'id' : creator.getResourceURI()|resourceId }) }}" title="{{ comic.getSeries().getName()|title }}">{{ creator.getName()|title }}</a></td>
           </tr>
           {% endfor %}
+
+          {% if comic.getCharacters().getAvailable() > 0 %}
+              <tr>
+                <td><strong>{{ 'comic.characters'|trans|capitalize }}</strong></td>
+                <td>
+                    {% for character in comic.getCharacters().getItems() %}
+                        <a href="{{ path('character', {'id' : character.getResourceURI()|resourceId }) }}" class="label label-primary" title="{{ character.getName()|title }}">{{ character.getName()|title }}</a>
+                    {% endfor %}
+                </td>
+              </tr>
+          {% endif %}
         </table>
 
         <p>{{ comic.getDescription()|striptags|htmlDecode }}</p>

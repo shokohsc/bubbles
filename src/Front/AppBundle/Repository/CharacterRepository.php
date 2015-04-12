@@ -5,10 +5,10 @@ namespace Front\AppBundle\Repository;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
-use Octante\MarvelAPIBundle\Repositories\CreatorsRepository;
-use Octante\MarvelAPIBundle\Model\Query\CreatorQuery;
+use Octante\MarvelAPIBundle\Repositories\CharactersRepository;
+use Octante\MarvelAPIBundle\Model\Query\CharacterQuery;
 
-class CreatorRepository
+class CharacterRepository
 {
     /**
      * Number of comics displayed
@@ -18,16 +18,16 @@ class CreatorRepository
     private $comicsPerPage;
 
     /**
-     * CreatorsRepository
+     * CharactersRepository
      *
-     * @var CreatorsRepository
+     * @var CharactersRepository
      */
     private $repository;
 
     /**
-     * CreatorQuery
+     * CharacterQuery
      *
-     * @var CreatorQuery
+     * @var CharacterQuery
      */
     private $query;
 
@@ -46,15 +46,15 @@ class CreatorRepository
     private $comicQuery;
 
     /**
-     * CreatorRepository constructor
+     * CharacterRepository constructor
      *
-     * @param CreatorsRepository $repository
-     * @param CreatorQuery       $query
+     * @param CharactersRepository $repository
+     * @param CharacterQuery       $query
      * @param ComicsRepository $comicRepository
      * @param ComicQuery       $comicQuery
      * @param integer          $comicsPerPage
      */
-    public function __construct(CreatorsRepository $repository, CreatorQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
+    public function __construct(CharactersRepository $repository, CharacterQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
     {
         $this->repository = $repository;
         $this->query = $query;
@@ -64,7 +64,7 @@ class CreatorRepository
     }
 
     /**
-     * Find all comics matching creator id
+     * Find all comics matching character id
      *
      * @param string $id
      * @param string $page
@@ -74,7 +74,7 @@ class CreatorRepository
     {
         $comics_per_page = $this->comicsPerPage;
         try {
-            $this->comicQuery->setCreators($id);
+            $this->comicQuery->setCharacters($id);
             $this->comicQuery->setFormat('comic');
             $this->comicQuery->setFormatType('comic');
             $this->comicQuery->setNoVariants(true);
@@ -92,16 +92,16 @@ class CreatorRepository
     }
 
     /**
-     * Find one creator matching id
+     * Find one character matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Collections\CreatorsCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\CharactersCollection|array
      */
     public function findOneById($id)
     {
         try {
             return $this->repository
-                ->getCreatorById(intval($id))
+                ->getCharacterById(intval($id))
                 ->getData()
                 ->getResults()[0];
         } catch (Exception $e) {
@@ -120,12 +120,12 @@ class CreatorRepository
          $comics_per_page = $this->comicsPerPage;
          try {
             $this->query->setNameStartsWith($query);
-            $this->query->setOrderBy('firstName');
+            $this->query->setOrderBy('name');
             $this->query->setLimit($comics_per_page);
             $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
             return $this->repository
-                ->getCreators($this->query)
+                ->getCharacters($this->query)
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {

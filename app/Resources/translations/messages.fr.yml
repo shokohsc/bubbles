@@ -9,6 +9,9 @@ navbar:
         entity:
             comic: comic
             serie: série
+            creator: auteur
+            event: évènement
+            character: personnage
     about: a propos
 
 home: accueil
@@ -30,6 +33,8 @@ comic:
     serie: série
     creator:
         cover: couverture
+    characters: personnage(s)
+    events: évènements
 
 artist: artiste
 writer: auteur
