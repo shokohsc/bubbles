@@ -42,7 +42,7 @@ class SearchController extends Controller
   {
       $collection = $this->get('app.serie_repository')->findAllByQuery($q, $page);
 
-      return $this->render('front/search/list.html.twig',
+      return $this->render('front/serie/list.html.twig',
           [
               'collection'  => $collection,
           ]);
