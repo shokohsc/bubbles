@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 <input type="text" class="form-control" name="q" value="" placeholder="{{ 'navbar.search.input'|trans|title }}...">
-                <input type="hidden" id="entity" name="entity" class="category" value="serie">
+                <input type="hidden" id="entity" name="entity" class="category" value="series">
                 <input type="hidden" id="page" name="page" value="{% if app.request.request.page is defined %} {{ app.request.request.page }} {% else %}1{% endif %}">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
