@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 
-{% block title %} {{ 'search.results'|trans|capitalize }} {{ q }} {% endblock %}
+{% block title %} {{ 'search.results'|trans|capitalize }} {{ q|lower }} {% endblock %}
 
 {% block content %}
 
