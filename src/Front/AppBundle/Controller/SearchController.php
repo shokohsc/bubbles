@@ -28,7 +28,8 @@ class SearchController extends Controller
               'q'       => $q,
               'entity'  => $entity,
               'page'    => $page,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -45,7 +46,8 @@ class SearchController extends Controller
       return $this->render('front/serie/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -62,7 +64,8 @@ class SearchController extends Controller
       return $this->render('front/comic/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -79,7 +82,8 @@ class SearchController extends Controller
       return $this->render('front/event/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -96,7 +100,8 @@ class SearchController extends Controller
       return $this->render('front/character/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -113,7 +118,8 @@ class SearchController extends Controller
       return $this->render('front/creator/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
 }

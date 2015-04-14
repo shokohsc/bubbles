@@ -32,7 +32,8 @@ class WeekController extends Controller
             [
                 'title'       => $title,
                 'date'        => $date,
-            ]);
+            ]
+        );
     }
 
     /**

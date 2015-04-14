@@ -87,7 +87,7 @@ class CreatorRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -105,7 +105,7 @@ class CreatorRepository
                 ->getData()
                 ->getResults()[0];
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -129,7 +129,7 @@ class CreatorRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 }

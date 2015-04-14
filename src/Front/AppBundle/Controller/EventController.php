@@ -24,7 +24,8 @@ class EventController extends Controller
           [
               'id'          => $id,
               'page'        => $page,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -42,9 +43,11 @@ class EventController extends Controller
           'title' => $event->getTitle(),
       ];
       $response = new JsonResponse();
-      $response->setData(array(
-        'data' => $data
-      ));
+      $response->setData(
+      [
+          'data' => $data
+          ]
+      );
 
       return $response;
   }
@@ -63,7 +66,8 @@ class EventController extends Controller
       return $this->render('front/comic/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
 }

@@ -26,7 +26,8 @@ class FrontController extends Controller
             [
                 'title'       => $title,
                 'date'        => $date,
-            ]);
+            ]
+        );
     }
 
     /**

@@ -88,7 +88,7 @@ class SerieRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -106,7 +106,7 @@ class SerieRepository
                 ->getData()
                 ->getResults()[0];
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -131,7 +131,7 @@ class SerieRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 }

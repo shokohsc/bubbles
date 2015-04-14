@@ -24,7 +24,8 @@ class CreatorController extends Controller
           [
               'id'          => $id,
               'page'        => $page,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -42,9 +43,11 @@ class CreatorController extends Controller
           'fullName' => $creator->getFullName(),
       ];
       $response = new JsonResponse();
-      $response->setData(array(
-        'data' => $data
-      ));
+      $response->setData(
+      [
+          'data' => $data
+          ]
+      );
 
       return $response;
   }
@@ -63,7 +66,8 @@ class CreatorController extends Controller
       return $this->render('front/comic/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
 }

@@ -22,7 +22,8 @@ class ComicController extends Controller
       return $this->render('front/comic/comic.html.twig',
           [
               'comic' => $comic,
-          ]);
+          ]
+      );
   }
 
 }

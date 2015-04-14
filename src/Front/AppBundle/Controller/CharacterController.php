@@ -24,7 +24,8 @@ class CharacterController extends Controller
           [
               'id'          => $id,
               'page'        => $page,
-          ]);
+          ]
+      );
   }
 
   /**
@@ -39,12 +40,14 @@ class CharacterController extends Controller
   {
       $character = $this->get('app.character_repository')->findOneById($id);
       $data = [
-          'name' => $character->getName(),
-      ];
+          'name' => $character->getName()
+          ];
       $response = new JsonResponse();
-      $response->setData(array(
-        'data' => $data
-      ));
+      $response->setData(
+      [
+          'data' => $data
+          ]
+      );
 
       return $response;
   }
@@ -63,7 +66,8 @@ class CharacterController extends Controller
       return $this->render('front/comic/list.html.twig',
           [
               'collection'  => $collection,
-          ]);
+          ]
+      );
   }
 
 }

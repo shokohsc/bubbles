@@ -78,7 +78,7 @@ class ComicRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -103,7 +103,7 @@ class ComicRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -121,7 +121,7 @@ class ComicRepository
                 ->getData()
                 ->getResults()[0];
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 
@@ -148,7 +148,7 @@ class ComicRepository
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
-            return array();
+            return [];
         }
     }
 }
