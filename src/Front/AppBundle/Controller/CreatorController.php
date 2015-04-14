@@ -44,8 +44,8 @@ class CreatorController extends Controller
       ];
       $response = new JsonResponse();
       $response->setData(
-      [
-          'data' => $data
+          [
+              'data' => $data
           ]
       );
 

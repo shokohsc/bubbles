@@ -51,7 +51,8 @@ class WeekController extends Controller
         return $this->render('front/comic/list.html.twig',
             [
                 'collection'  => $collection
-            ]);
+            ]
+        );
     }
 
 }
