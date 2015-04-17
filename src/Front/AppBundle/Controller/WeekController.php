@@ -43,16 +43,22 @@ class WeekController extends Controller
      *
      * @return Symfony\Component\HttpFoundation\Response
      */
-    public function weekComicsAction($date = null)
-    {
-        $date = null === $date ? Carbon::now() : Carbon::parse($date);
-        $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
-
-        return $this->render('front/comic/list.html.twig',
-            [
-                'collection'  => $collection
-            ]
-        );
-    }
+     public function weekComicsAction($date = null)
+     {
+         $date = null === $date ? Carbon::now() : Carbon::parse($date);
+         $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
+         $exposedCollection = [];
+         foreach($collection as $comic) {
+             $exposedCollection[] = $this->get('app.comic_exposer')->exposeProperties($comic);
+         }
+         $response = new JsonResponse();
+         $response->setData($exposedCollection);
+         return $response;
+         // return $this->render('front/comic/list.html.twig',
+         //     [
+         //         'collection'  => $collection
+         //     ]
+         // );
+     }
 
 }

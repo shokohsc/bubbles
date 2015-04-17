@@ -51,19 +51,79 @@
 
 {% block javascripts %}
 
-    <script type="text/javascript">
-
-        $.ajax({
-            url: Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
-            type: 'get',
-            dataType: 'html',
-            success: function(data, textStatus, jqXHR){
-              $('#comic-list').html(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown){},
-            complete: function( jqXHR, textStatus ){}
+    <script type="text/jsx">
+        var Comic = React.createClass({
+          render: function() {
+            return (
+                <div className="comic-item-list">
+                    <a href={Routing.generate('comics', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>
+                        <img
+                          id={this.props.comic.id.comicId}
+                          className="img-thumbnail"
+                          src={this.props.comic.thumbnail.path + '/portrait_incredible.' + this.props.comic.thumbnail.extension}
+                          alt={this.props.comic.title}
+                          height="324"
+                          width="216"
+                        />
+                    </a>
+                    <strong>
+                      <a href={Routing.generate('comics', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>{this.props.comic.title}</a>
+                    </strong>
+                </div>
+            );
+          }
         });
-
+        var ComicList = React.createClass({
+          render: function() {
+            var comicNodes = this.props.data.map(function(comic, index) {
+              return (
+                <Comic comic={comic} key={index}>
+                <div>
+                    {comic}
+                </div>
+                </Comic>
+              );
+            });
+            return (
+              <div id="comic-list" className="text-center">
+                {comicNodes}
+              </div>
+            );
+          }
+        });
+        var ComicBox = React.createClass({
+          loadComicsFromServer: function() {
+            $.ajax({
+              url: this.props.url,
+              dataType: 'json',
+              success: function(data) {
+                this.setState({data: data});
+              }.bind(this),
+              error: function(xhr, status, err) {
+                console.error(this.props.url, status, err.toString());
+              }.bind(this)
+            });
+          },
+          getInitialState: function() {
+            return {data: []};
+          },
+          componentDidMount: function() {
+            this.loadComicsFromServer();
+            setInterval(this.loadComicsFromServer, this.props.pollInterval);
+          },
+          render: function() {
+            return (
+                <div>
+                    <h1 className="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
+                    <ComicList data={this.state.data} />
+                </div>
+            );
+          }
+        });
+        React.render(
+          <ComicBox url={Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' })} pollInterval={200000} />,
+          document.getElementById('content')
+        );
     </script>
 
 {% endblock %}
