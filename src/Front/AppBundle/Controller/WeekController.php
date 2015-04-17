@@ -50,6 +50,7 @@ class WeekController extends Controller
          $exposedCollection = [];
          foreach($collection as $comic) {
              $exposedCollection[] = $this->get('app.comic_exposer')->exposeProperties($comic);
+            //  $exposedCollection[] = $this->get('marvel.tojson')->encode($comic);
          }
          $response = new JsonResponse();
          $response->setData($exposedCollection);

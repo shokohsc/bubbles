@@ -20,25 +20,25 @@
     <nav class="text-center">
       <ul class="pagination">
         <li>
-          <a href="{{ path('released', {
+          <a class="released" data-href="{{ path('released', {
           'day':   date|previousMonth('day'),
           'month': date|previousMonth('month'),
           'year':  date|previousMonth('year') }) }}">-{{ 'pagination.month'|trans|lower }}</a>
         </li>
         <li>
-          <a href="{{ path('released', {
+          <a class="released" data-href="{{ path('released', {
           'day':   date|previousWeek('day'),
           'month': date|previousWeek('month'),
           'year':  date|previousWeek('year') }) }}">-{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
-          <a href="{{ path('released', {
+          <a class="released" data-href="{{ path('released', {
           'day':   date|nextWeek('day'),
           'month': date|nextWeek('month'),
           'year':  date|nextWeek('year') }) }}">+{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
-          <a href="{{ path('released', {
+          <a class="released" data-href="{{ path('released', {
           'day':   date|nextMonth('day'),
           'month': date|nextMonth('month'),
           'year':  date|nextMonth('year') }) }}">+{{ 'pagination.month'|trans|lower }}</a>
@@ -56,7 +56,7 @@
           render: function() {
             return (
                 <div className="comic-item-list">
-                    <a href={Routing.generate('comics', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>
+                    <a href={Routing.generate('comic', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>
                         <img
                           id={this.props.comic.id.comicId}
                           className="img-thumbnail"
@@ -67,7 +67,7 @@
                         />
                     </a>
                     <strong>
-                      <a href={Routing.generate('comics', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>{this.props.comic.title}</a>
+                      <a href={Routing.generate('comic', { id: this.props.comic.id.comicId })} title={this.props.comic.title}>{this.props.comic.title}</a>
                     </strong>
                 </div>
             );
@@ -121,7 +121,7 @@
           }
         });
         React.render(
-          <ComicBox url={Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' })} pollInterval={200000} />,
+          <ComicBox url={Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' })} pollInterval={8640000} />,
           document.getElementById('content')
         );
     </script>
