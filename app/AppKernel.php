@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Octante\MarvelAPIBundle\OctanteMarvelAPIBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
+            new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
             new Front\AppBundle\AppBundle(),
         );
 
