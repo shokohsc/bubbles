@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8add5f34d1d2b79726a998caa997d407",
+    "hash": "2f1c75285549926412b222b72a60b255",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1238,21 +1238,27 @@
         },
         {
             "name": "octante/marvel-api-bundle",
-            "version": "1.0.4",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octante/MarvelAPIBundle.git",
-                "reference": "deecbd6318a655a850334a924f7ab0668139d0d4"
+                "reference": "636856ced38c4a81cfd0e5eb26ea7176de9e1c36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octante/MarvelAPIBundle/zipball/deecbd6318a655a850334a924f7ab0668139d0d4",
-                "reference": "deecbd6318a655a850334a924f7ab0668139d0d4",
+                "url": "https://api.github.com/repos/octante/MarvelAPIBundle/zipball/636856ced38c4a81cfd0e5eb26ea7176de9e1c36",
+                "reference": "636856ced38c4a81cfd0e5eb26ea7176de9e1c36",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "symfony/framework-bundle": "2.*"
+                "symfony/framework-bundle": "~2.3",
+                "symfony/serializer": "~2.3"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "1.4.2",
+                "mmoreram/php-formatter": "1.0.4",
+                "phpunit/phpunit": "4.5.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -1276,7 +1282,7 @@
                 "api",
                 "marvel"
             ],
-            "time": "2015-04-06 09:14:55"
+            "time": "2015-04-17 23:24:01"
         },
         {
             "name": "psr/log",

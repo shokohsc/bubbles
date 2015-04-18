@@ -4,7 +4,7 @@ namespace Front\AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Carbon\Carbon;
 
 class WeekController extends Controller
@@ -39,27 +39,24 @@ class WeekController extends Controller
     /**
      * Get comics matching the date
      *
-     * @Route("get/week/{date}", name="get_week_comics", options={"expose"=true})
+     * @Route("api/week/{date}", name="get_week_comics", options={"expose"=true})
      *
      * @return Symfony\Component\HttpFoundation\Response
      */
      public function weekComicsAction($date = null)
      {
          $date = null === $date ? Carbon::now() : Carbon::parse($date);
+
          $collection = $this->get('app.comic_repository')->findAllByReleaseDate($date);
-         $exposedCollection = [];
-         foreach($collection as $comic) {
-             $exposedCollection[] = $this->get('app.comic_exposer')->exposeProperties($comic);
-            //  $exposedCollection[] = $this->get('marvel.tojson')->encode($comic);
-         }
-         $response = new JsonResponse();
-         $response->setData($exposedCollection);
+         $collection = $this->get('marvel.tojson')->encode($collection);
+
+         $response = new Response(
+             $collection,
+             Response::HTTP_OK,
+             array('content-type' => 'text/json')
+         );
+
          return $response;
-         // return $this->render('front/comic/list.html.twig',
-         //     [
-         //         'collection'  => $collection
-         //     ]
-         // );
      }
 
 }

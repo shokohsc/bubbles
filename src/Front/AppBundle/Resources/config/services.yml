@@ -26,6 +26,3 @@ services:
         class: Front\AppBundle\Twig\AppTwigExtension
         tags:
             - { name: twig.extension }
-
-    app.comic_exposer:
-        class: Front\AppBundle\Service\ComicService\ComicPropertiesExposerService
