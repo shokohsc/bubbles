@@ -14,10 +14,8 @@
 
     <script type="text/jsx">
         var ReleasePagination = React.createClass({
-            handleClick: function() {
-                var date = this.refs.release-date.title;
-                console.log(date);
-                // display(date);
+            releaseDateComics: function(e) {
+                this.props.func(e.target.value);
             },
             render: function() {
               return (
@@ -25,16 +23,16 @@
                     <nav className="text-center col-xs-12">
                       <ul className="pagination">
                         <li>
-                          <a href="#" onClick={this.handleClick.bind(this, this.props.dates.previousMonth)} ref="release-date" title={this.props.dates.previousMonth} >-{{ 'pagination.month'|trans|lower }}</a>
+                          <button className="btn btn-default" onClick={this.releaseDateComics} value={this.props.dates.previousMonth}>-{{ 'pagination.month'|trans|lower }}</button>
                         </li>
                         <li>
-                          <a href="#" onClick={this.handleClick.bind(this, this.props.dates.previousWeek)} ref="release-date" title={this.props.dates.previousWeek} >-{{ 'pagination.week'|trans|lower }}</a>
+                          <button className="btn btn-default" onClick={this.releaseDateComics} value={this.props.dates.previousWeek}>-{{ 'pagination.week'|trans|lower }}</button>
                         </li>
                         <li>
-                          <a href="#" onClick={this.handleClick.bind(this, this.props.dates.nextWeek)} ref="release-date" title={this.props.dates.nextWeek} >+{{ 'pagination.week'|trans|lower }}</a>
+                          <button className="btn btn-default" onClick={this.releaseDateComics} value={this.props.dates.nextWeek}>+{{ 'pagination.week'|trans|lower }}</button>
                         </li>
                         <li>
-                          <a href="#" onClick={this.handleClick.bind(this, this.props.dates.nextMonth)} ref="release-date" title={this.props.dates.nextMonth} >+{{ 'pagination.month'|trans|lower }}</a>
+                          <button className="btn btn-default" onClick={this.releaseDateComics} value={this.props.dates.nextMonth}>+{{ 'pagination.month'|trans|lower }}</button>
                         </li>
                       </ul>
                     </nav>
@@ -44,15 +42,15 @@
         });
 
         var ComicBox = React.createClass({
-          loadComicsFromServer: function() {
+          loadComicsFromServer: function(date) {
             $.ajax({
-              url: this.props.url,
+              url: Routing.generate('get_week_comics', { date: date }),
               dataType: 'json',
               success: function(data) {
                 this.setState({data: data});
               }.bind(this),
               error: function(xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
+                console.error(Routing.generate('get_week_comics', { date: date }), status, err.toString());
               }.bind(this)
             });
           },
@@ -60,7 +58,7 @@
             return {data: []};
           },
           componentDidMount: function() {
-            this.loadComicsFromServer();
+            this.loadComicsFromServer(this.props.date);
             setInterval(this.loadComicsFromServer, this.props.pollInterval);
           },
           render: function() {
@@ -68,12 +66,12 @@
                 <div>
                     <h1 className="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
                     <ComicList data={this.state.data} />
-                    <ReleasePagination dates={[
-                        {'nextWeek': new Date({{ date|nextWeek('year')}}, {{ date|nextWeek('month')}}, {{ date|nextWeek('day')}})},
-                        {'previousWeek': new Date({{ date|previousWeek('year')}}, {{ date|previousWeek('month')}}, {{ date|previousWeek('day')}})},
-                        {'nextMonth': new Date({{ date|nextMonth('year')}}, {{ date|nextMonth('month')}}, {{ date|nextMonth('day')}})},
-                        {'previousMonth': new Date({{ date|previousMonth('year')}}, {{ date|previousMonth('month')}}, {{ date|previousMonth('day')}})}
-                    ]}
+                    <ReleasePagination dates={ {
+                        'nextWeek': new Date({{ date|nextWeek('year')}}, {{ date|nextWeek('month')}}, {{ date|nextWeek('day')}}),
+                        'previousWeek': new Date({{ date|previousWeek('year')}}, {{ date|previousWeek('month')}}, {{ date|previousWeek('day')}}),
+                        'nextMonth': new Date({{ date|nextMonth('year')}}, {{ date|nextMonth('month')}}, {{ date|nextMonth('day')}}),
+                        'previousMonth': new Date({{ date|previousMonth('year')}}, {{ date|previousMonth('month')}}, {{ date|previousMonth('day')}})
+                    } } func={this.loadComicsFromServer}
                     />
                 </div>
             );
@@ -82,7 +80,7 @@
 
         function display(date){
             React.render(
-              <ComicBox url={Routing.generate('get_week_comics', { date: date })} pollInterval={8640000} />,
+              <ComicBox date={date} pollInterval={8640000} />,
               document.getElementById('content')
             );
         };
