@@ -24,7 +24,7 @@ class ComicController extends Controller
   {
       $comic = $this->get('shoko.comic.repository')->findOneById($id);
       $data = [
-          'title' => $comic->getFullName(),
+          'title' => $comic->getTitle(),
       ];
       $response = new JsonResponse();
       $response->setData(
