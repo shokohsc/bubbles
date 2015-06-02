@@ -1,0 +1,23 @@
+parameters:
+    comics_per_page: 20
+
+services:
+    shoko.comic.repository:
+        class: Shoko\ApiBundle\Repository\ComicRepository
+        arguments: [@marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    shoko.serie.repository:
+        class: Shoko\ApiBundle\Repository\SerieRepository
+        arguments: [@marvel.series, @marvel.series_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    shoko.creator.repository:
+        class: Shoko\ApiBundle\Repository\CreatorRepository
+        arguments: [@marvel.creators, @marvel.creators_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    shoko.character.repository:
+        class: Shoko\ApiBundle\Repository\CharacterRepository
+        arguments: [@marvel.characters, @marvel.characters_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    shoko.event.repository:
+        class: Shoko\ApiBundle\Repository\EventRepository
+        arguments: [@marvel.events, @marvel.events_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]

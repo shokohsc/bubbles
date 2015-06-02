@@ -21,7 +21,8 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
-            new Front\AppBundle\AppBundle(),
+            new Shoko\ApiBundle\ApiBundle(),
+            new Shoko\AppBundle\AppBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

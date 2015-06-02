@@ -66,12 +66,12 @@ doctrine:
         auto_mapping: true
 
 # Swiftmailer Configuration
-swiftmailer:
-    transport: "%mailer_transport%"
-    host:      "%mailer_host%"
-    username:  "%mailer_user%"
-    password:  "%mailer_password%"
-    spool:     { type: memory }
+# swiftmailer:
+#     transport: "%mailer_transport%"
+#     host:      "%mailer_host%"
+#     username:  "%mailer_user%"
+#     password:  "%mailer_password%"
+#     spool:     { type: memory }
 
 # Configure I18N Bundle
 jms_i18n_routing:
@@ -83,18 +83,3 @@ jms_i18n_routing:
 octante_marvel_api:
     public_key: "%marvel_public_key%"
     private_key: "%marvel_private_key%"
-
-# Fos Cache Http Bundle
-fos_http_cache:
-    cache_control:
-        defaults:
-            overwrite: true
-        rules:
-            # match everything to set defaults
-            -
-                match:
-                    path: ^/
-                headers:
-                    overwrite: false
-                    cache_control: { public: true, max_age: 86400, s_maxage: 86400 }
-                    last_modified: "-1 day"

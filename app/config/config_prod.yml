@@ -26,7 +26,22 @@ monolog:
 
 services:
     kernel.listener.AppEventListener:
-        class: Front\AppBundle\EventListener\AppExceptionListener
+        class: Shoko\AppBundle\EventListener\AppExceptionListener
         arguments: [@twig, @translator]
         tags:
             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+# Fos Cache Http Bundle
+fos_http_cache:
+    cache_control:
+        defaults:
+            overwrite: true
+        rules:
+            # match everything to set defaults
+            -
+                match:
+                    path: ^/
+                headers:
+                    overwrite: false
+                    cache_control: { public: true, max_age: 86400, s_maxage: 86400 }
+                    last_modified: "-1 day"

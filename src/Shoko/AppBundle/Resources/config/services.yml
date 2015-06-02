@@ -1,0 +1,5 @@
+services:
+    app.twig.app_twig_extension:
+        class: Shoko\AppBundle\Twig\AppTwigExtension
+        tags:
+            - { name: twig.extension }
