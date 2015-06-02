@@ -1,6 +1,6 @@
 <?php
 
-namespace Front\AppBundle\Twig;
+namespace Shoko\AppBundle\Twig;
 
 class AppTwigExtension extends \Twig_Extension
 {

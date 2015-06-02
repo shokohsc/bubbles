@@ -1,6 +1,6 @@
 <?php
 
-namespace Front\AppBundle\EventListener;
+namespace Shoko\AppBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
 use Symfony\Component\HttpFoundation\Response;

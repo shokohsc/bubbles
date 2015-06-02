@@ -1,6 +1,6 @@
 <?php
 
-namespace Front\AppBundle;
+namespace Shoko\AppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Front\AppBundle\DependencyInjection;
+namespace Shoko\AppBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

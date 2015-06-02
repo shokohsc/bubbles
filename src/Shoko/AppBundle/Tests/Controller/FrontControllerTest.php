@@ -1,10 +1,10 @@
 <?php
 
-namespace Front\AppBundle\Tests\Controller;
+namespace Shoko\AppBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class FrontControllerTest extends WebTestCase
+class ShokoControllerTest extends WebTestCase
 {
     public function testIndex()
     {

@@ -5,7 +5,7 @@ parameters:
 
 # services:
 #     kernel.listener.AppEventListener:
-#         class: Front\AppBundle\EventListener\AppExceptionListener
+#         class: Shoko\AppBundle\EventListener\AppExceptionListener
 #         arguments: [@twig, @translator]
 #         tags:
 #             - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
