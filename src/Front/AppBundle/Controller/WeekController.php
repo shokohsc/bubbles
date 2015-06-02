@@ -26,7 +26,7 @@ class WeekController extends Controller
         setlocale(LC_TIME, $locale.'_'.strtoupper($locale));
 
         $date = Carbon::createFromDate($year, $month, $day);
-        $title = $date->diffForHumans(Carbon::now());
+        $title = $date->diffForHumans();
 
         return $this->render('front/week/week.html.twig',
             [
