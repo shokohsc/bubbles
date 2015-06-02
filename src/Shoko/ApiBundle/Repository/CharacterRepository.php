@@ -1,6 +1,6 @@
 <?php
 
-namespace Shoko\AppBundle\Repository;
+namespace Shoko\ApiBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;

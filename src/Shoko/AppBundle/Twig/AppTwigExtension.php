@@ -14,10 +14,10 @@ class AppTwigExtension extends \Twig_Extension
         return array(
             new \Twig_SimpleFilter('resourceId', array($this, 'resourceIdFilter')),
             new \Twig_SimpleFilter('htmlDecode', array($this, 'htmlDecodeFilter')),
-            new \Twig_SimpleFilter('previousWeek', array($this, 'previousWeekFilter')),
-            new \Twig_SimpleFilter('nextWeek', array($this, 'nextWeekFilter')),
-            new \Twig_SimpleFilter('previousMonth', array($this, 'previousMonthFilter')),
-            new \Twig_SimpleFilter('nextMonth', array($this, 'nextMonthFilter')),
+            new \Twig_SimpleFilter('subWeek', array($this, 'subWeekFilter')),
+            new \Twig_SimpleFilter('addWeek', array($this, 'addWeekFilter')),
+            new \Twig_SimpleFilter('subMonth', array($this, 'subMonthFilter')),
+            new \Twig_SimpleFilter('addMonth', array($this, 'addMonthFilter')),
         );
     }
 
@@ -53,7 +53,7 @@ class AppTwigExtension extends \Twig_Extension
      * @param string $partOfDate
      * @return Carbon\Carbon
      */
-    public function previousWeekFilter($date, $partOfDate)
+    public function subWeekFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
             case 'day':
@@ -72,7 +72,7 @@ class AppTwigExtension extends \Twig_Extension
      * @param string $partOfDate
      * @return Carbon\Carbon
      */
-    public function nextWeekFilter($date, $partOfDate)
+    public function addWeekFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
             case 'day':
@@ -91,7 +91,7 @@ class AppTwigExtension extends \Twig_Extension
      * @param string $partOfDate
      * @return Carbon\Carbon
      */
-    public function previousMonthFilter($date, $partOfDate)
+    public function subMonthFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
             case 'day':
@@ -110,7 +110,7 @@ class AppTwigExtension extends \Twig_Extension
      * @param string $partOfDate
      * @return Carbon\Carbon
      */
-    public function nextMonthFilter($date, $partOfDate)
+    public function addMonthFilter($date, $partOfDate)
     {
         switch ($partOfDate) {
             case 'day':

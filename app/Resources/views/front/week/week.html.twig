@@ -21,27 +21,27 @@
       <ul class="pagination">
         <li>
           <a href="{{ path('released', {
-          'day':   date|previousMonth('day'),
-          'month': date|previousMonth('month'),
-          'year':  date|previousMonth('year') }) }}">-{{ 'pagination.month'|trans|lower }}</a>
+          'day':   date|subMonth('day'),
+          'month': date|subMonth('month'),
+          'year':  date|subMonth('year') }) }}">-{{ 'pagination.month'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
-          'day':   date|previousWeek('day'),
-          'month': date|previousWeek('month'),
-          'year':  date|previousWeek('year') }) }}">-{{ 'pagination.week'|trans|lower }}</a>
+          'day':   date|subWeek('day'),
+          'month': date|subWeek('month'),
+          'year':  date|subWeek('year') }) }}">-{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
-          'day':   date|nextWeek('day'),
-          'month': date|nextWeek('month'),
-          'year':  date|nextWeek('year') }) }}">+{{ 'pagination.week'|trans|lower }}</a>
+          'day':   date|addWeek('day'),
+          'month': date|addWeek('month'),
+          'year':  date|addWeek('year') }) }}">+{{ 'pagination.week'|trans|lower }}</a>
         </li>
         <li>
           <a href="{{ path('released', {
-          'day':   date|nextMonth('day'),
-          'month': date|nextMonth('month'),
-          'year':  date|nextMonth('year') }) }}">+{{ 'pagination.month'|trans|lower }}</a>
+          'day':   date|addMonth('day'),
+          'month': date|addMonth('month'),
+          'year':  date|addMonth('year') }) }}">+{{ 'pagination.month'|trans|lower }}</a>
         </li>
       </ul>
     </nav>
@@ -54,7 +54,7 @@
     <script type="text/javascript">
 
         $.ajax({
-            url: Routing.generate('get_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
+            url: Routing.generate('api_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
             type: 'get',
             dataType: 'html',
             success: function(data, textStatus, jqXHR){

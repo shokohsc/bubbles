@@ -43,7 +43,7 @@
     <script type="text/javascript">
 
         $.ajax({
-            url: Routing.generate('get_search_' + '{{ entity }}', { q: '{{ q }}', page: '{{ page }}' }),
+            url: Routing.generate('api_search_' + '{{ entity }}', { q: '{{ q }}', page: '{{ page }}' }),
             type: 'get',
             dataType: 'html',
             success: function(data, textStatus, jqXHR){

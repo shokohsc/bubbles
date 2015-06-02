@@ -1,27 +1,4 @@
-parameters:
-    comics_per_page: 20
-
 services:
-    app.comic_repository:
-        class: Shoko\AppBundle\Repository\ComicRepository
-        arguments: [@marvel.comics, @marvel.comics_query, %comics_per_page%]
-
-    app.serie_repository:
-        class: Shoko\AppBundle\Repository\SerieRepository
-        arguments: [@marvel.series, @marvel.series_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
-
-    app.creator_repository:
-        class: Shoko\AppBundle\Repository\CreatorRepository
-        arguments: [@marvel.creators, @marvel.creators_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
-
-    app.character_repository:
-        class: Shoko\AppBundle\Repository\CharacterRepository
-        arguments: [@marvel.characters, @marvel.characters_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
-
-    app.event_repository:
-        class: Shoko\AppBundle\Repository\EventRepository
-        arguments: [@marvel.events, @marvel.events_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
-
     app.twig.app_twig_extension:
         class: Shoko\AppBundle\Twig\AppTwigExtension
         tags:

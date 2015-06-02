@@ -1,14 +1,14 @@
 <?php
 
-namespace Shoko\AppBundle\Repository;
+namespace Shoko\ApiBundle\Repository;
 
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
-use Octante\MarvelAPIBundle\Repositories\EventsRepository;
-use Octante\MarvelAPIBundle\Model\Query\EventQuery;
+use Octante\MarvelAPIBundle\Repositories\CreatorsRepository;
+use Octante\MarvelAPIBundle\Model\Query\CreatorQuery;
 
-class EventRepository
+class CreatorRepository
 {
     /**
      * Number of comics displayed
@@ -18,16 +18,16 @@ class EventRepository
     private $comicsPerPage;
 
     /**
-     * EventsRepository
+     * CreatorsRepository
      *
-     * @var EventsRepository
+     * @var CreatorsRepository
      */
     private $repository;
 
     /**
-     * EventQuery
+     * CreatorQuery
      *
-     * @var EventQuery
+     * @var CreatorQuery
      */
     private $query;
 
@@ -46,15 +46,15 @@ class EventRepository
     private $comicQuery;
 
     /**
-     * EventRepository constructor
+     * CreatorRepository constructor
      *
-     * @param EventsRepository $repository
-     * @param EventQuery       $query
+     * @param CreatorsRepository $repository
+     * @param CreatorQuery       $query
      * @param ComicsRepository $comicRepository
      * @param ComicQuery       $comicQuery
      * @param integer          $comicsPerPage
      */
-    public function __construct(EventsRepository $repository, EventQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
+    public function __construct(CreatorsRepository $repository, CreatorQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
     {
         $this->repository = $repository;
         $this->query = $query;
@@ -64,7 +64,7 @@ class EventRepository
     }
 
     /**
-     * Find all comics matching event id
+     * Find all comics matching creator id
      *
      * @param string $id
      * @param string $page
@@ -74,7 +74,7 @@ class EventRepository
     {
         $comics_per_page = $this->comicsPerPage;
         try {
-            $this->comicQuery->setEvents($id);
+            $this->comicQuery->setCreators($id);
             $this->comicQuery->setFormat('comic');
             $this->comicQuery->setFormatType('comic');
             $this->comicQuery->setNoVariants(true);
@@ -92,16 +92,16 @@ class EventRepository
     }
 
     /**
-     * Find one event matching id
+     * Find one creator matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Collections\EventsCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\CreatorsCollection|array
      */
     public function findOneById($id)
     {
         try {
             return $this->repository
-                ->getEventById(intval($id))
+                ->getCreatorById(intval($id))
                 ->getData()
                 ->getResults()[0];
         } catch (Exception $e) {
@@ -110,7 +110,7 @@ class EventRepository
     }
 
     /**
-     * Find all events matching query
+     * Find all characters matching query
      *
      * @param string $query input from search form
      * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
@@ -120,12 +120,12 @@ class EventRepository
          $comics_per_page = $this->comicsPerPage;
          try {
             $this->query->setNameStartsWith($query);
-            $this->query->setOrderBy('-startDate');
+            $this->query->setOrderBy('firstName');
             $this->query->setLimit($comics_per_page);
             $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
             return $this->repository
-                ->getEvents($this->query)
+                ->getCreators($this->query)
                 ->getData()
                 ->getResults();
         } catch (Exception $e) {
