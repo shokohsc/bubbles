@@ -65,7 +65,5 @@
 {% endblock %}
 
 {% block javascripts %}
-  {% javascripts '@AppBundle/Resources/public/js/*' %}
-    <script type="text/javascript" src="{{ asset_url }}" />
-  {% endjavascripts %}
+  <script type="text/javascript" src="{{ asset('js/comic.js') }}" />
 {% endblock %}

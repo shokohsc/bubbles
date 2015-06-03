@@ -1,9 +1,4 @@
 /web/bundles/
-/web/css/*
-/web/js/*
-/web/images/*
-/web/fonts/*
-/web/assets/*
 /web/favicon.ico
 /web/favicon.png
 /app/bootstrap.php.cache
