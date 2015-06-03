@@ -6,22 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Dimitri Pommier">
         <meta name="description" content="{{ 'base.content'|trans|title }}">
-        {% image '@AppBundle/Resources/public/images/favicon.png' output='favicon.png' %}
-          <link rel="shortcut icon" href="{{ asset_url }}" />
-        {% endimage %}
+        <link rel="shortcut icon" href="{{ asset('favicon.png') }}" />
         <title>{% block title %}{{ 'base.title'|trans|title }}{% endblock %}</title>
 
         <!-- Latest compiled and minified CSS -->
         <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-        {% block stylesheets %}
-          {% stylesheets '@AppBundle/Resources/public/css/*' %}
-            <link type="text/css" rel="stylesheet" href="{{ asset_url }}" />
-          {% endstylesheets %}
+        <!-- Magnific-popup css -->
+        <link type="text/css" rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}" />
+        <!-- Main css -->
+        <link type="text/css" rel="stylesheet" href="{{ asset('css/main.css') }}" />
+        <!-- Loading css -->
+        <link type="text/css" rel="stylesheet" href="{{ asset('css/loading.css') }}" />
 
-          {% stylesheets '@AppBundle/Resources/public/fonts/Code New Roman.otf' %}
-          {% endstylesheets %}
-        {% endblock %}
+        {% block stylesheets %}{% endblock %}
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,6 +32,7 @@
         <script src="http://fb.me/react-0.13.3.js"></script>
         <!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
         <script src="http://fb.me/JSXTransformer-0.13.3.js"></script>
+
     </head>
     <body>
 
@@ -59,11 +58,10 @@
         <!-- Magnific-popup Lightbox CDN -->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 
-        {% block javascripts %}
-          {% javascripts '@AppBundle/Resources/public/js/main.js' %}
-            <script type="text/javascript" src="{{ asset_url }}" />
-          {% endjavascripts %}
-        {% endblock %}
+        <!-- main.js -->
+        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+        {% block javascripts %}{% endblock %}
 
     </body>
 </html>
