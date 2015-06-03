@@ -32,24 +32,6 @@ class FrontController extends Controller
     }
 
     /**
-     * Comic
-     *
-     * @Route("/comic/{id}", name="comic", requirements={"id" = "\d+"})
-     *
-     * @param string $id  comic id
-     * @return Symfony\Component\HttpFoundation\Response
-     */
-    public function comicAction($id)
-    {
-        $comic = $this->get('shoko.comic.repository')->findOneById($id);
-        return $this->render('front/comic/comic.html.twig',
-            [
-                'comic' => $comic,
-            ]
-        );
-    }
-
-    /**
      * Comics for that week
      *
      * @Route("/released/{day}/{month}/{year}", name="released", requirements={"day" = "\d+", "month" = "\d+", "year" = "\d+"})
@@ -95,82 +77,6 @@ class FrontController extends Controller
                 'q'       => $q,
                 'entity'  => $entity,
                 'page'    => $page,
-            ]
-        );
-    }
-
-    /**
-     * Comics from Character
-     *
-     * @Route("/character/{id}/{page}", name="character", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
-     *
-     * @param string $id  character id
-     * @param string $page  pagination
-     * @return Symfony\Component\HttpFoundation\Response
-     */
-    public function characterAction($id, $page)
-    {
-        return $this->render('front/character/character.html.twig',
-            [
-                'id'          => $id,
-                'page'        => $page,
-            ]
-        );
-    }
-
-    /**
-     * Comics from Creator
-     *
-     * @Route("/creator/{id}/{page}", name="creator", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
-     *
-     * @param string $id  creator id
-     * @param string $page  pagination
-     * @return Symfony\Component\HttpFoundation\Response
-     */
-    public function creatorAction($id, $page)
-    {
-        return $this->render('front/creator/creator.html.twig',
-            [
-                'id'          => $id,
-                'page'        => $page,
-            ]
-        );
-    }
-
-    /**
-     * Comics from Event
-     *
-     * @Route("/event/{id}/{page}", name="event", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
-     *
-     * @param string $id  event id
-     * @param string $page  pagination
-     * @return Symfony\Component\HttpFoundation\Response
-     */
-    public function eventAction($id, $page)
-    {
-        return $this->render('front/event/event.html.twig',
-            [
-                'id'          => $id,
-                'page'        => $page,
-            ]
-        );
-    }
-
-    /**
-     * Comics from Serie
-     *
-     * @Route("/serie/{id}/{page}", name="serie", defaults={"page" = 1}, requirements={"id" = "\d+", "page" = "\d+"})
-     *
-     * @param string $id  serie id
-     * @param string $page  pagination
-     * @return Symfony\Component\HttpFoundation\Response
-     */
-    public function serieAction($id, $page)
-    {
-        return $this->render('front/serie/serie.html.twig',
-            [
-                'id'          => $id,
-                'page'        => $page,
             ]
         );
     }
