@@ -65,5 +65,13 @@
 {% endblock %}
 
 {% block javascripts %}
-  <script type="text/javascript" src="{{ asset('js/comic.js') }}" />
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+        $('.lightbox').magnificPopup({type:'image'});
+    });
+
+  </script>
+
 {% endblock %}
