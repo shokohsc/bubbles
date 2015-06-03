@@ -5,9 +5,6 @@ namespace Shoko\AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-/**
- * @Route("/creators")
- */
 class CreatorController extends Controller
 {
 
