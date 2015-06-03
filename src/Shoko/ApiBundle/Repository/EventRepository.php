@@ -113,7 +113,7 @@ class EventRepository
      * Find all events matching query
      *
      * @param string $query input from search form
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\EventsCollection|array
      */
      public function findAllByQuery($query, $page)
      {

@@ -1,0 +1,2021 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2015 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2015 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2015 MARVEL</a>",
+  "etag": "1fc50c7ad272ae4af5328c3ddd025bdc65ac5d5c",
+  "data": {
+    "offset": 0,
+    "limit": 100,
+    "total": 17,
+    "count": 17,
+    "results": [
+      {
+        "id": 51300,
+        "digitalId": 0,
+        "title": "All-New X-Men (2012) #40",
+        "issueNumber": 40,
+        "variantDescription": "",
+        "description": "Who are the Utopians? And what secret do they hold that pertains to the future of mutantkind? The All-New X-Men may regret finding out!",
+        "modified": "2015-04-16T12:59:30-0400",
+        "isbn": "",
+        "upc": "75960607900104011",
+        "diamondCode": "FEB150820",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Who are the Utopians? And what secret do they hold that pertains to the future of mutantkind? The All-New X-Men may regret finding out!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51300",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51300/all-new_x-men_2012_40?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/All-New-X-Men-40/digital-comic/37692?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/16449",
+          "name": "All-New X-Men (2012 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/a0/552fe957aaeb4",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/a0/552fe957aaeb4",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/00/54b56ef3832e9",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51300/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9018",
+              "name": "Mahmud Asrar",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/24",
+              "name": "Brian Michael Bendis",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12462",
+              "name": "Andrea Sorrentino",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51300/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51300/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114177",
+              "name": "cover from All-New X-Men (2012) #40",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114178",
+              "name": "story from All-New X-Men (2012) #40",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51300/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51329,
+        "digitalId": 0,
+        "title": "Amazing Spider-Man (2014) #17.1",
+        "issueNumber": 17.1,
+        "variantDescription": "",
+        "description": "WHO HEEDS THE HAMMERHEAD?! Not Spidey, apparently. The criminal underworld of New York City is on fire and Spidey and the Wraith hope to contain it. Tough luck, you two. ",
+        "modified": "2015-04-16T13:37:43-0400",
+        "isbn": "",
+        "upc": "75960608141700211",
+        "diamondCode": "FEB150724",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "WHO HEEDS THE HAMMERHEAD?! Not Spidey, apparently. The criminal underworld of New York City is on fire and Spidey and the Wraith hope to contain it. Tough luck, you two. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51329",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51329/amazing_spider-man_2014_17.1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-17-1/digital-comic/37693?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/17285",
+          "name": "Amazing Spider-Man (2014 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/53384",
+            "name": "Amazing Spider-Man (2014) #17.1 (Dell'otto Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/20/552feae9734d9",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/20/552feae9734d9",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/f0/54d24acc2339c",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51329/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12208",
+              "name": "Arthur Adams",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/412",
+              "name": "Carlo Barberi",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/954",
+              "name": "Gerry Conway",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51329/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51329/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114235",
+              "name": "cover from Amazing Spider-Man (2014) #17.1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114236",
+              "name": "story from Amazing Spider-Man (2014) #17.1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51329/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51348,
+        "digitalId": 0,
+        "title": "Amazing X-Men (2013) #19",
+        "issueNumber": 19,
+        "variantDescription": "",
+        "description": "Has the Juggernaut returned? Is this the last stand of Colossus?",
+        "modified": "2015-04-16T13:46:49-0400",
+        "isbn": "",
+        "upc": "75960607957501911",
+        "diamondCode": "FEB150824",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Has the Juggernaut returned? Is this the last stand of Colossus?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51348",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51348/amazing_x-men_2013_19?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-X-Men-19/digital-comic/37694?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/18142",
+          "name": "Amazing X-Men (2013 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/552ff4b879a27",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/552ff4b879a27",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/80/54d250b9634d7",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51348/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12466",
+              "name": "Jorge Fornes",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/803",
+              "name": "Chris Yost",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51348/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51348/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114273",
+              "name": "cover from Amazing X-Men (2013) #19",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114274",
+              "name": "story from Amazing X-Men (2013) #19",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51348/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51448,
+        "digitalId": 0,
+        "title": "Avengers World (2014) #20",
+        "issueNumber": 20,
+        "variantDescription": "",
+        "description": "The fall of The Avengers! Namor’s fury unleashed! The Cabal rises…no world is safe! ",
+        "modified": "2015-04-16T13:53:14-0400",
+        "isbn": "",
+        "upc": "75960607979702011",
+        "diamondCode": "FEB150717",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The fall of The Avengers! Namor’s fury unleashed! The Cabal rises…no world is safe! "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51448",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51448/avengers_world_2014_20?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Avengers-World-20/digital-comic/37696?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/18398",
+          "name": "Avengers World (2014 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/552ff5e441ae2",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/552ff5e441ae2",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/03/551d9396e1810",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51448/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12459",
+              "name": "Frank Barbiere",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11748",
+              "name": "Marco Checchetto",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7718",
+              "name": "SANFORD GREENE",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51448/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51448/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114473",
+              "name": "cover from Avengers World (2014) #20",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114474",
+              "name": "story from Avengers World (2014) #20",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51448/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 53435,
+        "digitalId": 0,
+        "title": "Avengers: Millennium (2015) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "At a secret Hydra installation hidden away in rural Japan, the Avengers discover a time-portal that sends them on an adventure that spans millennia. But what kind of bad guys have a time machine they don’t use to change the past? Bad guys who know they win... The only thing standing between our immutable past and our wasted, ruined future are the Avengers, finally reunited to battle a doomsday weapon thousands of years in the hatching. ",
+        "modified": "2015-04-16T14:01:14-0400",
+        "isbn": "",
+        "upc": "759606082651000411",
+        "diamondCode": "FEB150696",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "At a secret Hydra installation hidden away in rural Japan, the Avengers discover a time-portal that sends them on an adventure that spans millennia. But what kind of bad guys have a time machine they don’t use to change the past? Bad guys who know they win... The only thing standing between our immutable past and our wasted, ruined future are the Avengers, finally reunited to battle a doomsday weapon thousands of years in the hatching. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/53435",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/53435/avengers_millennium_2015_4?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Avengers-Millennium-4/digital-comic/37972?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20023",
+          "name": "Avengers: Millennium (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/80/552ff7966d924",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/80/552ff7966d924",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/80/54d2549f1bdc6",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53435/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12452",
+              "name": "Mike Costa",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12500",
+              "name": "Carmine DiGiandomenico",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53435/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53435/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118220",
+              "name": "cover from Avengers: Millennium (2015) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118221",
+              "name": "story from Avengers: Millennium (2015) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53435/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51456,
+        "digitalId": 0,
+        "title": "Avengers: Operation Hydra (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "Before next summer’s blockbuster film, join the Avengers – Captain America, Iron Man, Thor, Hawkeye, Black Widow, and the Hulk-- as they set off on an all-new adventure against a secret Hydra splinter cell! Black Widow’s discovered a startling development, but what exactly is Hydra up to? It’ll take teamwork to topple Hydra’s latest plot…but only one Avenger has the skill needed to save the day! PLUS: Reprinting Avengers #16, presenting the story that brought Quicksilver and Scarlet Witch onto the team for the first time! PLUS PLUS: This cover will be featured as an AVENGERS COLORING POSTER. ",
+        "modified": "2015-04-16T14:21:22-0400",
+        "isbn": "",
+        "upc": "75960608157800111",
+        "diamondCode": "FEB150687",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 48,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Before next summer’s blockbuster film, join the Avengers – Captain America, Iron Man, Thor, Hawkeye, Black Widow, and the Hulk-- as they set off on an all-new adventure against a secret Hydra splinter cell! Black Widow’s discovered a startling development, but what exactly is Hydra up to? It’ll take teamwork to topple Hydra’s latest plot…but only one Avenger has the skill needed to save the day! PLUS: Reprinting Avengers #16, presenting the story that brought Quicksilver and Scarlet Witch onto the team for the first time! PLUS PLUS: This cover will be featured as an AVENGERS COLORING POSTER. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51456",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51456/avengers_operation_hydra_2015_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Avengers-Operation-Hydra-1/digital-comic/37697?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19304",
+          "name": "Avengers: Operation Hydra (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/70/552ffbc3d3db9",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/70/552ffbc3d3db9",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/20/54d256c208d42",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51456/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12501",
+              "name": "Corona Pilgrim",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/434",
+              "name": "Michael Ryan",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51456/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51456/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114489",
+              "name": "cover from Avengers: Operation Hydra (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114490",
+              "name": "story from Avengers: Operation Hydra (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51456/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51536,
+        "digitalId": 0,
+        "title": "Black Widow (2014) #17",
+        "issueNumber": 17,
+        "variantDescription": "",
+        "description": "THE SPY WHO CAME IN FROM THE COLD! Natasha has been invited to see the beast from within: will she accept? Past and present collide as both young and current Natasha decide who controls the future.",
+        "modified": "2015-04-16T15:17:52-0400",
+        "isbn": "",
+        "upc": "75960607956801711",
+        "diamondCode": "FEB150809",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "THE SPY WHO CAME IN FROM THE COLD! Natasha has been invited to see the beast from within: will she accept? Past and present collide as both young and current Natasha decide who controls the future."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51536",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51536/black_widow_2014_17?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Black-Widow-17/digital-comic/37698?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/18138",
+          "name": "Black Widow (2014 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/551d71fdd2d25",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/553008d48cf08",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/551d71fdd2d25",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51536/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11799",
+              "name": "Nathan Edmondson",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5160",
+              "name": "Phil Noto",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51536/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51536/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114649",
+              "name": "cover from Black Widow (2014) #17",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114650",
+              "name": "story from Black Widow (2014) #17",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51536/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51902,
+        "digitalId": 0,
+        "title": "Guardians of the Galaxy (2013) #26",
+        "issueNumber": 26,
+        "variantDescription": "",
+        "description": "It seems like the Guardians have forgotten something in all the cosmic craziness that’s been going on… Oh…that’s right…Peter got elected President of Spartax…wait WHAT?! Looks like he’s done a GREAT job escaping his father’s legacy. Guess he can even screw that up…",
+        "modified": "2015-04-20T11:28:14-0400",
+        "isbn": "",
+        "upc": "75960607830102611",
+        "diamondCode": "FEB150746",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "It seems like the Guardians have forgotten something in all the cosmic craziness that’s been going on… Oh…that’s right…Peter got elected President of Spartax…wait WHAT?! Looks like he’s done a GREAT job escaping his father’s legacy. Guess he can even screw that up…"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51902",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51902/guardians_of_the_galaxy_2013_26?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Guardians-of-the-Galaxy-26/digital-comic/37699?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/16410",
+          "name": "Guardians of the Galaxy (2013 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/53393",
+            "name": "Guardians of the Galaxy (2013) #26 (Gerads Wtd Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/a0/553514e108202",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/a0/553514e108202",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/20/54d25a1300c32",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51902/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/24",
+              "name": "Brian Michael Bendis",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11912",
+              "name": "Valerio Schiti",
+              "role": "artist"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51902/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51902/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115381",
+              "name": "cover from Guardians of the Galaxy (2013) #26",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115382",
+              "name": "story from Guardians of the Galaxy (2013) #26",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51902/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51911,
+        "digitalId": 0,
+        "title": "Guardians of the Galaxy & X-Men: The Black Vortex Omega (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "When an entire planet, and potentially the entire galaxy, is caught in the crosshairs of Knife’s cosmically empowered forces, the Guardians and the X-Men face their final test. With billions of lives at stake, our heroes are forced to make the ultimate sacrifice. But in gaining the power to potentially defeat Knife, by submitting to the Black Vortex, could they have given up their humanity forever?",
+        "modified": "2015-04-16T15:24:50-0400",
+        "isbn": "",
+        "upc": "759606081791000111",
+        "diamondCode": "FEB150741",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "When an entire planet, and potentially the entire galaxy, is caught in the crosshairs of Knife’s cosmically empowered forces, the Guardians and the X-Men face their final test. With billions of lives at stake, our heroes are forced to make the ultimate sacrifice. But in gaining the power to potentially defeat Knife, by submitting to the Black Vortex, could they have given up their humanity forever?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51911",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51911/guardians_of_the_galaxy_x-men_the_black_vortex_omega_2015_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Guardians-of-the-Galaxy-X-Men-The-Black-Vortex-Omega-1/digital-comic/37701?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19446",
+          "name": "Guardians of the Galaxy & X-Men: The Black Vortex Omega (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/55300b94eaf01",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/55300b94eaf01",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/00/54d25baec63d3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51911/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11530",
+              "name": "Sam Humphries",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/649",
+              "name": "Ed McGuinness",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51911/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51911/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115399",
+              "name": "cover from Guardians of the Galaxy & X-Men: The Black Vortex Omega (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115400",
+              "name": "story from Guardians of the Galaxy & X-Men: The Black Vortex Omega (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51911/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51966,
+        "digitalId": 0,
+        "title": "Hulk (2014) #15",
+        "issueNumber": 15,
+        "variantDescription": "",
+        "description": "The battle between Doc Green & Red Hulk changes the Marvel Universe forever! Doc Green and Red Hulk’s grudge match breaks a few things. Doc Green proves once and for all: science is difficult, even for the smartest of us. The US military makes a surprising change to their gamma-monster policy. ",
+        "modified": "2015-04-20T11:47:12-0400",
+        "isbn": "",
+        "upc": "75960608056401511",
+        "diamondCode": "FEB150795",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The battle between Doc Green & Red Hulk changes the Marvel Universe forever! Doc Green and Red Hulk’s grudge match breaks a few things. Doc Green proves once and for all: science is difficult, even for the smartest of us. The US military makes a surprising change to their gamma-monster policy. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51966",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51966/hulk_2014_15?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Hulk-15/digital-comic/37702?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/18834",
+          "name": "Hulk (2014 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/55351f09088fb",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/55351f09088fb",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/90/54d25e70aa204",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51966/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/87",
+              "name": "Mark Bagley",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11680",
+              "name": "Gerry Duggan",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51966/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51966/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115509",
+              "name": "cover from Hulk (2014) #15",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115510",
+              "name": "story from Hulk (2014) #15",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51966/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 51989,
+        "digitalId": 0,
+        "title": "Inhuman Special (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "INHUMAN ERROR CONTINUES! The story linking AMAZING SPIDER-MAN, INHUMAN and ALL-NEW CAPTAIN AMERICA hits a fever pitch as a character who’s been around for more than 75 years returns to threaten the Marvel Universe. You haven’t seen all the effects of the Terrigen Cloud yet and this one is about to destroy New York City! ",
+        "modified": "2015-04-20T11:52:25-0400",
+        "isbn": "",
+        "upc": "75960608250600111",
+        "diamondCode": "FEB150673",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "INHUMAN ERROR CONTINUES! The story linking AMAZING SPIDER-MAN, INHUMAN and ALL-NEW CAPTAIN AMERICA hits a fever pitch as a character who’s been around for more than 75 years returns to threaten the Marvel Universe. You haven’t seen all the effects of the Terrigen Cloud yet and this one is about to destroy New York City! "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/51989",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/51989/inhuman_special_2015_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Inhuman-Special-1/digital-comic/37703?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19472",
+          "name": "Inhuman Special (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/03/55351fd809716",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/03/55351fd809716",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/70/5485f0c6ab8c3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51989/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12472",
+              "name": "Jamal Campbell",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12503",
+              "name": "Ryan Lee",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12438",
+              "name": "Jeff Loveness",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51989/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51989/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115555",
+              "name": "cover from Inhuman Special (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115556",
+              "name": "story from Inhuman Special (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/51989/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 52174,
+        "digitalId": 0,
+        "title": "Marvel Universe Guardians of the Galaxy (2015) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": "Based on the hit new series, follow the further adventures of the Guardians of the Galaxy! Learn more about the most dangerous heroes in the galaxy! Continuing the adaptation of the red-hot animated shorts! ",
+        "modified": "2015-04-20T12:15:02-0400",
+        "isbn": "",
+        "upc": "759606081401000311",
+        "diamondCode": "FEB150757",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Based on the hit new series, follow the further adventures of the Guardians of the Galaxy! Learn more about the most dangerous heroes in the galaxy! Continuing the adaptation of the red-hot animated shorts! "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/52174",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/52174/marvel_universe_guardians_of_the_galaxy_2015_3?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19561",
+          "name": "Marvel Universe Guardians of the Galaxy (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/03/5535250e84a08",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/03/5535250e84a08",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/54d2784cd1754",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52174/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "writer"
+            }
+          ],
+          "returned": 1
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52174/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52174/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115925",
+              "name": "cover from Marvel Universe Guardians of the Galaxy (2015) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115926",
+              "name": "story from Marvel Universe Guardians of the Galaxy (2015) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52174/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 52655,
+        "digitalId": 0,
+        "title": "Star Wars (2015) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "THE GREATEST SPACE ADVENTURE OF ALL TIME CONTINUES! Luke Skywalker is NOT a Jedi—not yet, at least. He’s only ever met one Jedi in his life...and he died. So, Luke’s quest leads him back to Obi-Wan’s hut...on Tatooine. 32 PGS./Rated T …$3.99 Star Wars © Lucasfilm Ltd. & TM. All rights reserved. Used under authorization. Text and illustrations for Star Wars are © 2015 Lucasfilm Ltd. ",
+        "modified": "2015-04-20T12:21:18-0400",
+        "isbn": "",
+        "upc": "75960608113400411",
+        "diamondCode": "FEB150684",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "THE GREATEST SPACE ADVENTURE OF ALL TIME CONTINUES! Luke Skywalker is NOT a Jedi—not yet, at least. He’s only ever met one Jedi in his life...and he died. So, Luke’s quest leads him back to Obi-Wan’s hut...on Tatooine. 32 PGS./Rated T …$3.99 Star Wars © Lucasfilm Ltd. & TM. All rights reserved. Used under authorization. Text and illustrations for Star Wars are © 2015 Lucasfilm Ltd. "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/52655",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/52655/star_wars_2015_4?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Star-Wars-4/digital-comic/37708?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19242",
+          "name": "Star Wars (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/03/5534f156b2544",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/03/5534f156b2544",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/54d27e0e43516",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52655/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11463",
+              "name": "Jason Aaron",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/162",
+              "name": "John Cassaday",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52655/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52655/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/116887",
+              "name": "cover from Star Wars (2015) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/116888",
+              "name": "story from Star Wars (2015) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52655/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/327",
+              "name": "Star Wars"
+            }
+          ],
+          "returned": 1
+        }
+      },
+      {
+        "id": 52789,
+        "digitalId": 0,
+        "title": "The Unbeatable Squirrel Girl (2015) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "The final showdown between Galactus and Squirrel Girl is here! It’s the Power Cosmic versus the Power Chestnut: WHO WILL WIN? Also, Squirrel Girl is late for class. So there’s TWO disasters coming!!",
+        "modified": "2015-04-20T12:31:49-0400",
+        "isbn": "",
+        "upc": "75960608177600411",
+        "diamondCode": "FEB150779",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The final showdown between Galactus and Squirrel Girl is here! It’s the Power Cosmic versus the Power Chestnut: WHO WILL WIN? Also, Squirrel Girl is late for class. So there’s TWO disasters coming!!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/52789",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/52789/the_unbeatable_squirrel_girl_2015_4?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/The-Unbeatable-Squirrel-Girl-4/digital-comic/37709?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19750",
+          "name": "The Unbeatable Squirrel Girl (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/55352918a4e4d",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/55352918a4e4d",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/54d28573c0b5f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52789/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12464",
+              "name": "Erica Henderson",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12465",
+              "name": "Ryan North",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52789/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52789/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117155",
+              "name": "cover from The Unbeatable Squirrel Girl (2015) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117156",
+              "name": "story from The Unbeatable Squirrel Girl (2015) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52789/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 53584,
+        "digitalId": 0,
+        "title": "True Believers: Armor Wars (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "Reprinting material from IRON MAN (1968) #225.",
+        "modified": "2015-04-20T12:59:32-0400",
+        "isbn": "978-0-7851-9428-6",
+        "upc": "75960608268100111",
+        "diamondCode": "FEB150767",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Reprinting material from IRON MAN (1968) #225."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/53584",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/53584/true_believers_armor_wars_2015_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20050",
+          "name": "True Believers: Armor Wars (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 1
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/54d287ae002f2",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/03/54ff505813154",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/54d287ae002f2",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53584/creators",
+          "items": [],
+          "returned": 0
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53584/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53584/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118443",
+              "name": "cover from True Believers: Armor Wars (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118444",
+              "name": "story from True Believers: Armor Wars (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53584/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 53587,
+        "digitalId": 0,
+        "title": "True Believers: Infinity Gauntlet (2015) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "Reprinting material from INFINITY GAUNTLET #1.",
+        "modified": "2015-04-27T16:19:55-0400",
+        "isbn": "978-0-7851-9429-3",
+        "upc": "75960608271100111",
+        "diamondCode": "FEB150760",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Reprinting material from INFINITY GAUNTLET #1."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/53587",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/53587/true_believers_infinity_gauntlet_2015_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20053",
+          "name": "True Believers: Infinity Gauntlet (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 1
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/54d2888fa9391",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/70/54ff51ce1a359",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/54d2888fa9391",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53587/creators",
+          "items": [],
+          "returned": 0
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53587/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53587/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118449",
+              "name": "cover from True Believers: Infinity Gauntlet (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118450",
+              "name": "story from True Believers: Infinity Gauntlet (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/53587/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 52929,
+        "digitalId": 0,
+        "title": "Wolverines (2015) #15",
+        "issueNumber": 15,
+        "variantDescription": "",
+        "description": "Daken is tracking down the monster who stole his healing factor – SIPHON – through the mountains of Japan, and in this tracking starts to come into his own. Incapacitated, but not alone, he encounters the Ghost Samurai! Will X-23 help Daken’s new mission? Or impede it?",
+        "modified": "2015-04-20T13:13:05-0400",
+        "isbn": "",
+        "upc": "75960608127101511",
+        "diamondCode": "FEB150828",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Daken is tracking down the monster who stole his healing factor – SIPHON – through the mountains of Japan, and in this tracking starts to come into his own. Incapacitated, but not alone, he encounters the Ghost Samurai! Will X-23 help Daken’s new mission? Or impede it?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/52929",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/52929/wolverines_2015_15?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverines-15/digital-comic/37710?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/19794",
+          "name": "Wolverines (2015 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2015-04-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2015-04-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/03/553531e931b58",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/03/553531e931b58",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/f0/54d38202debb5",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52929/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1054",
+              "name": "Juan Doe",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12442",
+              "name": "Ray Fawkes",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12371",
+              "name": "Charles Soule",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12499",
+              "name": "Guillem March",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52929/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52929/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117435",
+              "name": "cover from Wolverines (2015) #15",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117436",
+              "name": "story from Wolverines (2015) #15",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/52929/events",
+          "items": [],
+          "returned": 0
+        }
+      }
+    ]
+  }
+}

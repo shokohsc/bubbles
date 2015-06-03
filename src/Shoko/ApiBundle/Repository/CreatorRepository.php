@@ -113,7 +113,7 @@ class CreatorRepository
      * Find all characters matching query
      *
      * @param string $query input from search form
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\CreatorsCollection|array
      */
      public function findAllByQuery($query, $page)
      {

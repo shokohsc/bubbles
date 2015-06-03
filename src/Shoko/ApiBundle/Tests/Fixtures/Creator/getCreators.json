@@ -1,0 +1,1672 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2015 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2015 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2015 MARVEL</a>",
+  "etag": "9c3ef33554acb1520f783027ec30a3ee84abb38f",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 16,
+    "count": 16,
+    "results": [
+      {
+        "id": 5653,
+        "firstName": "Aaron",
+        "middleName": "",
+        "lastName": "Stanford",
+        "suffix": "",
+        "fullName": "Aaron Stanford",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/5653",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/5653/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/5653/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/5653/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/5653/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/5653/aaron_stanford?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 11278,
+        "firstName": "DARCY",
+        "middleName": "MEGAN",
+        "lastName": "STANGER",
+        "suffix": "",
+        "fullName": "DARCY MEGAN STANGER",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/11278",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11278/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11278/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11278/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/80482",
+              "name": "Interior #80482",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11278/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/11278/darcy_megan_stanger?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 914,
+        "firstName": "John",
+        "middleName": "",
+        "lastName": "Stanisci",
+        "suffix": "",
+        "fullName": "John Stanisci",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/914",
+        "comics": {
+          "available": 39,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/914/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/3497",
+              "name": "Araٌa Vol. 3: Night of the Hunter (Digest)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/3066",
+              "name": "Arana: The Heart of the Spider (2005) #11"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7382",
+              "name": "Cable (1993) #106"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/1043",
+              "name": "Cable Vol. II: The End (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/16874",
+              "name": "Incredible Hulk Annual (1976) #17"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/19863",
+              "name": "Iron Man Annual (1976) #12"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/5262",
+              "name": "Marvel Adventures the Avengers (2006) #6"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/5435",
+              "name": "Marvel Adventures the Avengers (2006) #7"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/5984",
+              "name": "Marvel Adventures the Avengers Vol. 2: Mischief (Digest)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10167",
+              "name": "Marvel Comics Presents (1988) #83"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10183",
+              "name": "Marvel Comics Presents (1988) #98"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10019",
+              "name": "Marvel Comics Presents (1988) #107"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10021",
+              "name": "Marvel Comics Presents (1988) #109"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10023",
+              "name": "Marvel Comics Presents (1988) #110"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10024",
+              "name": "Marvel Comics Presents (1988) #111"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10025",
+              "name": "Marvel Comics Presents (1988) #112"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10028",
+              "name": "Marvel Comics Presents (1988) #115"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10050",
+              "name": "Marvel Comics Presents (1988) #135"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10063",
+              "name": "Marvel Comics Presents (1988) #147"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/10081",
+              "name": "Marvel Comics Presents (1988) #163"
+            }
+          ],
+          "returned": 20
+        },
+        "series": {
+          "available": 16,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/914/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1562",
+              "name": "Araٌa Vol. 3: Night of the Hunter (2006)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/853",
+              "name": "Arana: The Heart of the Spider (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1995",
+              "name": "Cable (1993 - 2002)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/103",
+              "name": "Cable Vol. II: The End (2002)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2983",
+              "name": "Incredible Hulk Annual (1976 - 1994)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3723",
+              "name": "Iron Man Annual (1976 - 1994)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1107",
+              "name": "Marvel Adventures the Avengers (2006 - 2009)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1907",
+              "name": "Marvel Adventures the Avengers Vol. 2: Mischief (2007)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2039",
+              "name": "Marvel Comics Presents (1988 - 1995)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/921",
+              "name": "Ororo: Before the Storm (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1536",
+              "name": "Ororo: Before the Storm (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2271",
+              "name": "Peter Parker, the Spectacular Spider-Man (1976 - 1998)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1086",
+              "name": "Untold Tales of the New Universe (2006)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1756",
+              "name": "Untold Tales of the New Universe (2006)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/7057",
+              "name": "Wolverine: Weapon X (2009 - Present)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1910",
+              "name": "Wolverine: Weapon X Premiere (2007)"
+            }
+          ],
+          "returned": 16
+        },
+        "stories": {
+          "available": 37,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/914/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/4459",
+              "name": "5 of 6",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/4924",
+              "name": "4 of 4 - 4XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5973",
+              "name": "3 of 5 - 5XLS Living in the '80s",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/6095",
+              "name": "1 of 1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/6097",
+              "name": "1 of 1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22725",
+              "name": "Bad Moon Rising [Return of the Braineaters Part 1 of 6]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22737",
+              "name": "Battle on the Brooklyn Bridge [Return of the Braineaters Part 3 of 6]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22749",
+              "name": "Undercover at the Black Moon Bar and Grill [Return of the Brainbeaters]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22755",
+              "name": "Roadkill [Return of the Braineaters Part 5 of 6]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22761",
+              "name": "Showdown [Return of the Brainbeaters]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22780",
+              "name": "... At The Dark End Of The Street",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22912",
+              "name": "Legacy",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/22988",
+              "name": "Serpent's Teeth",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/23090",
+              "name": "Time Wounds All Heals [Smells Like Teen Spirit]",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/23604",
+              "name": "The Distance",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/23698",
+              "name": "Worthy of the Name",
+              "type": ""
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/24184",
+              "name": "How to Find an A-Bomb",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29915",
+              "name": "Web of Carnage, Part 4 of 4: Inner Demons",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29916",
+              "name": "Blood Brothers, Part 4 of 6",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29917",
+              "name": "Blood Brothers, Part 4 of 6: Leap of Faith",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 20
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/914/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/29",
+              "name": "Infinity War"
+            }
+          ],
+          "returned": 1
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/914/john_stanisci?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 8802,
+        "firstName": "John",
+        "middleName": "Stanisci -",
+        "lastName": "Stanisci",
+        "suffix": "",
+        "fullName": "John Stanisci - Stanisci",
+        "modified": "2013-04-02T17:10:32-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/8802",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8802/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8802/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8802/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8802/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/8802/john_stanisci_-_stanisci?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 8611,
+        "firstName": "Lau ",
+        "middleName": "Pei Ching",
+        "lastName": "Stanley",
+        "suffix": "",
+        "fullName": "Lau Pei Ching Stanley",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/8611",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8611/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8611/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8611/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/8611/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/8611/lau_pei_ching_stanley?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 11048,
+        "firstName": "Sebastian",
+        "middleName": "",
+        "lastName": "Stan",
+        "suffix": "",
+        "fullName": "Sebastian Stan",
+        "modified": "2013-08-30T15:20:02-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/03/5220f051826d9",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/11048",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11048/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11048/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11048/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11048/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/11048/sebastian_stan?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Lee",
+        "suffix": "",
+        "fullName": "Stan Lee",
+        "modified": "2014-05-02T14:54:58-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/4bc37d9d8f541",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/30",
+        "comics": {
+          "available": 2975,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/4455",
+              "name": "All-New Official Handbook of the Marvel Universe A to Z (2006) #7"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/5373",
+              "name": "All-New Official Handbook of the Marvel Universe A to Z (2006) #11"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6325",
+              "name": "All-New Official Handbook of the Marvel Universe a to Z: Update (2007) #2"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12555",
+              "name": "All-Winners Comics (1941) #1"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12566",
+              "name": "All-Winners Comics (1941) #2"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12568",
+              "name": "All-Winners Comics (1941) #3"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12569",
+              "name": "All-Winners Comics (1941) #4"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12563",
+              "name": "All-Winners Comics (1941) #17"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12564",
+              "name": "All-Winners Comics (1941) #18"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12565",
+              "name": "All-Winners Comics (1941) #19"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12567",
+              "name": "All-Winners Comics (1941) #21"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17722",
+              "name": "Amazing Adult Fantasy (1961) #7"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17723",
+              "name": "Amazing Adult Fantasy (1961) #8"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17724",
+              "name": "Amazing Adult Fantasy (1961) #9"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17717",
+              "name": "Amazing Adult Fantasy (1961) #10"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17718",
+              "name": "Amazing Adult Fantasy (1961) #11"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17719",
+              "name": "Amazing Adult Fantasy (1961) #12"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17720",
+              "name": "Amazing Adult Fantasy (1961) #13"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/17721",
+              "name": "Amazing Adult Fantasy (1961) #14"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/23245",
+              "name": "Amazing Adventures (1970) #1"
+            }
+          ],
+          "returned": 20
+        },
+        "series": {
+          "available": 647,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1023",
+              "name": "All-New Official Handbook of the Marvel Universe A to Z (2006)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1147",
+              "name": "All-New Official Handbook of the Marvel Universe a to Z: Update (2007)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2114",
+              "name": "All-Winners Comics (1941 - 1947)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3616",
+              "name": "Amazing Adult Fantasy (1961 - 1962)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3617",
+              "name": "Amazing Adventures (1961)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/6666",
+              "name": "Amazing Adventures (1970 - 1976)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2987",
+              "name": "Amazing Fantasy (1962)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/15280",
+              "name": "Amazing Fantasy 15: Spider-Man! (2011 - 2012)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2707",
+              "name": "Amazing Fantasy Omnibus (2007)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1987",
+              "name": "Amazing Spider-Man (1963 - 1998)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+              "name": "Amazing Spider-Man (1999 - 2013)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2984",
+              "name": "Amazing Spider-Man Annual (1964 - 2009)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/18084",
+              "name": "Amazing Spider-Man Epic Collection: Cosmic Adventures (2013)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/18316",
+              "name": "Amazing Spider-Man Epic Collection: Ghosts of the Past (2014)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/18146",
+              "name": "Amazing Spider-Man Epic Collection: Great Power (2014)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/19263",
+              "name": "Amazing Spider-Man Epic Collection: Round Robin (2015)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1967",
+              "name": "Amazing Spider-Man Omnibus Vol. 1 (2007)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1970",
+              "name": "Amazing Spider-Man Omnibus Vol. 1 (Book Market (2007)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1489",
+              "name": "Amazing Spider-Man Vol. 10: New Avengers (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/318",
+              "name": "Amazing Spider-Man Vol. 6 (2004)"
+            }
+          ],
+          "returned": 20
+        },
+        "stories": {
+          "available": 8191,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29",
+              "name": "Caught in the heart of a nuclear explosion, mild-mannered scientist Bruce Banner finds himself ر during moments of extreme stres",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/31",
+              "name": "Featuring the birth of an unlikely hero and the early adventures that paved the way for the mega-popular media icon that Spider-",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/32",
+              "name": "Spider-Man's earliest adventures continue with classic stories featuring the Vulture, Dr. Octopus, Mysterio and the Shocker.",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/33",
+              "name": "In this volume, Peter faces some of his greatest challenges and his most harrowing foes such as Doc Ock and the Kingpin. Featuri",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/34",
+              "name": "Spider-Man's earliest adventures continue with tales to surprise and delight. Appearances by Iceman, Morbius, the Prowler, Green",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/35",
+              "name": "Telepathic teacher Charles Xavier assembles his first recruits ر Cyclops, Angel, Iceman, Beast and Marvel Girl ر and trains them",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/43",
+              "name": "Presenting the first adventures of Spider-Man, Wolverine, Daredevil, the Hulk, the Fantastic Four and other Marvel icons.",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/44",
+              "name": "One-eyed war-horse Nick Fury isn't quite ready to retire  ر and when it all hits the fan, S.H.I.E.L.D. realizes that there's onl",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/58",
+              "name": "Nick Fury finds himself at odds with the covert company he's run for many years ر or thought he's run.",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/63",
+              "name": "Two unlucky cops draw the unenviable task of capturing the Punisher, while the ruthless Ma Gnucci and her gang will stop at noth",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/64",
+              "name": "Following a team-up with Spider-Man, the Punisher heads to the remote scrap of dirt known as Grand Nixon Island to take down an ",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/71",
+              "name": "In this shocking and moving story, the Green Goblin and Spider-Man face off atop the George Washington Bridge, with Gwen's life ",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/72",
+              "name": "Tormented by his unstoppable alter ego, Bruce Banner has nowhere to hide. Having located the man-like monstrosity that is the Hu",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/107",
+              "name": "This collection gathers the team-ups and battles between Spider-Man and Superman, the Hulk and Batman, and the X-Men and the New",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/108",
+              "name": "Featuring team-ups and battles between Hulk and Superman, Generation X and Gen 13, Team X and Team 7, Daredevil and Batman, and ",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/115",
+              "name": "Re-presenting the formation of the Avengers, the revival of Captain America, enemies such as the Sub-Mariner, and Kang the Conqu",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/150",
+              "name": "Hope ر it's the one thing Proessor X offers to troubled mutants cast out from human society. But while they heal from their late",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/186",
+              "name": "New Printing in time for the movie!\r\nCaught in the heart of a nuclear explosion, mild-mannered scientist Bruce Banner finds hims",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/188",
+              "name": "New Printing in time for the movie!\r\nThe second volume containing the Hulk’s early adventures with appearances by the Sub-Marine",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/207",
+              "name": "This remastered edition collects the first-ever full reprinting of THE FANTASTIC FOUR (Vol. 1) #1-10, including never-before rep",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 20
+        },
+        "events": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/30/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+              "name": "Civil War"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/251",
+              "name": "House of M"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/266",
+              "name": "Other - Evolve or Die"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/269",
+              "name": "Secret Invasion"
+            }
+          ],
+          "returned": 4
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/30/stan_lee?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 10991,
+        "firstName": "STAN",
+        "middleName": "LEE DBA SL",
+        "lastName": "PRODUCTIONS",
+        "suffix": "",
+        "fullName": "STAN LEE DBA SL PRODUCTIONS",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/10991",
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/10991/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/34082",
+              "name": "What If? 200 (2010) #1"
+            }
+          ],
+          "returned": 1
+        },
+        "series": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/10991/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/11545",
+              "name": "What If? 200 (2010)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/10991/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/76149",
+              "name": "Interior #76149",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/10991/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/10991/stan_lee_dba_sl_productions?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 9455,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Woch",
+        "suffix": "",
+        "fullName": "Stan Woch",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/9455",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9455/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9455/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9455/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9455/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/9455/stan_woch?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 9454,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Sakai",
+        "suffix": "",
+        "fullName": "Stan Sakai",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/4bb4086588d89",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/9454",
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9454/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/31489",
+              "name": "Strange Tales (Hardcover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/25921",
+              "name": "Strange Tales (2009) #3"
+            }
+          ],
+          "returned": 2
+        },
+        "series": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9454/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/8098",
+              "name": "Strange Tales (2009 - 2010)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/9260",
+              "name": "Strange Tales (2010 - Present)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9454/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/57127",
+              "name": "Cover #57127",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/57128",
+              "name": "Interior #57128",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/71667",
+              "name": "Interior #71667",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/119211",
+              "name": "story from Star Wars Tales (1999) #14",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 4
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/9454/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/9454/stan_sakai?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 7242,
+        "firstName": "Stan",
+        "middleName": "Lee original",
+        "lastName": "story.",
+        "suffix": "",
+        "fullName": "Stan Lee original story.",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/7242",
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/7242/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/20758",
+              "name": "Dead of Night (1973) #2"
+            }
+          ],
+          "returned": 1
+        },
+        "series": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/7242/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3898",
+              "name": "Dead of Night (1973)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/7242/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/44516",
+              "name": "The House That Fear Built",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/44518",
+              "name": "The Girl Who Didn't Exist!",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/44519",
+              "name": "The Frightened Man!",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 3
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/7242/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/7242/stan_lee_original_story.?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 6639,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Drake",
+        "suffix": "",
+        "fullName": "Stan Drake",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/6639",
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/6639/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/19830",
+              "name": "Marvel Fanfare (1982) #53"
+            }
+          ],
+          "returned": 1
+        },
+        "series": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/6639/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3719",
+              "name": "Marvel Fanfare (1982 - 1992)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/6639/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/42438",
+              "name": "portfolio piece",
+              "type": ""
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/6639/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/6639/stan_drake?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 4144,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Kaye",
+        "suffix": "",
+        "fullName": "Stan Kaye",
+        "modified": "2007-01-02T00:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/4144",
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/4144/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8487",
+              "name": "Deadpool (1997) #32"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/33655",
+              "name": "Star Comics: All-Star Collection Vol. 4 (Trade Paperback)"
+            }
+          ],
+          "returned": 2
+        },
+        "series": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/4144/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2005",
+              "name": "Deadpool (1997 - 2002)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/11436",
+              "name": "Star Comics: All-Star Collection Vol. 4 (2010 - Present)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/4144/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/24585",
+              "name": "Deadpool (1997) #32",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/75715",
+              "name": "Interior #75715",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/4144/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/4144/stan_kaye?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 962,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Goldberg",
+        "suffix": "",
+        "fullName": "Stan Goldberg",
+        "modified": "2013-03-29T14:51:21-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/4bc5d63f546c2",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/962",
+        "comics": {
+          "available": 95,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/962/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6503",
+              "name": "Amazing Spider-Man (1963) #118"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6535",
+              "name": "Amazing Spider-Man (1963) #147"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/16886",
+              "name": "Amazing Spider-Man Annual (1964) #12"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/16890",
+              "name": "Amazing Spider-Man Annual (1964) #16"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6963",
+              "name": "Avengers (1963) #109"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/6970",
+              "name": "Avengers (1963) #115"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7542",
+              "name": "Captain America (1968) #161"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7564",
+              "name": "Captain America (1968) #183"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/7566",
+              "name": "Captain America (1968) #185"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/5660",
+              "name": "Captain America and the Falcon: Nomad (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8129",
+              "name": "Daredevil (1963) #15"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8207",
+              "name": "Daredevil (1963) #22"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8452",
+              "name": "Daredevil (1963) #99"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8075",
+              "name": "Daredevil (1963) #100"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/8095",
+              "name": "Daredevil (1963) #119"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/20329",
+              "name": "Defenders (1972) #22"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/2523",
+              "name": "Essential Ghost Rider Vol. 1 (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/1585",
+              "name": "Essential Peter Parker, the Spectacular Spider-Man Vol. (Trade Paperback)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12932",
+              "name": "Fantastic Four (1961) #133"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12934",
+              "name": "Fantastic Four (1961) #135"
+            }
+          ],
+          "returned": 20
+        },
+        "series": {
+          "available": 39,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/962/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1987",
+              "name": "Amazing Spider-Man (1963 - 1998)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2984",
+              "name": "Amazing Spider-Man Annual (1964 - 2009)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1991",
+              "name": "Avengers (1963 - 1996)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1996",
+              "name": "Captain America (1968 - 1996)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1766",
+              "name": "Captain America and the Falcon: Nomad (2006)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2002",
+              "name": "Daredevil (1963 - 1998)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/3743",
+              "name": "Defenders (1972 - 1986)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1552",
+              "name": "Essential Ghost Rider Vol. 1 (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1427",
+              "name": "Essential Peter Parker, the Spectacular Spider-Man Vol. (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2121",
+              "name": "Fantastic Four (1961 - 1998)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/13440",
+              "name": "FF (2010 - 2012)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2021",
+              "name": "Incredible Hulk (1962 - 1999)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2029",
+              "name": "Iron Man (1968 - 1996)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/2034",
+              "name": "Love Romances (1949 - 1961)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/19089",
+              "name": "Marvel 75th Anniversary Celebration (2014)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/6676",
+              "name": "Marvel Feature (1971 - 1973)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1538",
+              "name": "Marvel Masterworks: Captain Marvel Vol. 1 (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1439",
+              "name": "Marvel Masterworks: Daredevil Vol. 3 (2005)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/293",
+              "name": "Marvel Masterworks: Daredevil Vol. II - 2nd Edition (1st) (2004)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/1703",
+              "name": "Marvel Masterworks: The Amazing Spider-Man Vol. (2006)"
+            }
+          ],
+          "returned": 20
+        },
+        "stories": {
+          "available": 282,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/962/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/4834",
+              "name": "Cover #4834",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/4835",
+              "name": "Interior #4835",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/7326",
+              "name": "MWM 44; TOS 73; AVE 35, 57-58, 100; Sub-Mariner 8, 14; NBE 12; CMV 19; X-Men 164; COD 4; Amazing Adv; INC 147; FF 119, 176; DL 1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/9987",
+              "name": "My Heart Cried Out!",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/9991",
+              "name": "Carlotta",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10337",
+              "name": "Cover #10337",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10340",
+              "name": "I Am a Vampire",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10405",
+              "name": "Cover #10405",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10408",
+              "name": "The Busybody",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10440",
+              "name": "Cover #10440",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10442",
+              "name": "The Smile of Mrs. Orko",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10477",
+              "name": "My Friend Koogelle",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10484",
+              "name": "Music In the Air",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10498",
+              "name": "From Outer Space",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10505",
+              "name": "Music Master",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10547",
+              "name": "The Stone",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10564",
+              "name": "Planet X",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/10581",
+              "name": "Muscle Man",
+              "type": "text story"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12482",
+              "name": "Thundra at Dawn",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12486",
+              "name": "The Eternity Machine",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 20
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/962/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/962/stan_goldberg?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 12508,
+        "firstName": "Stan",
+        "middleName": "",
+        "lastName": "Manoukian",
+        "suffix": "",
+        "fullName": "Stan Manoukian",
+        "modified": "1969-12-31T19:00:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/12508",
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/12508/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53778",
+              "name": "Classic Star Wars: Han Solo At Stars' End (1997) #2"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53779",
+              "name": "Classic Star Wars: Han Solo At Stars' End (1997) #3"
+            }
+          ],
+          "returned": 2
+        },
+        "series": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/12508/series",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/series/20104",
+              "name": "Classic Star Wars: Han Solo At Stars' End (1997)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/12508/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118784",
+              "name": "cover from Classic Star Wars: Han Solo At Stars' End (1997) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118786",
+              "name": "cover from Classic Star Wars: Han Solo At Stars' End (1997) #3",
+              "type": "cover"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/12508/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/12508/stan_manoukian?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      },
+      {
+        "id": 11286,
+        "firstName": "Stanley",
+        "middleName": "",
+        "lastName": "Tucci",
+        "suffix": "",
+        "fullName": "Stanley Tucci",
+        "modified": "2013-08-30T15:32:43-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/03/5220f349788a1",
+          "extension": "jpg"
+        },
+        "resourceURI": "http://gateway.marvel.com/v1/public/creators/11286",
+        "comics": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11286/comics",
+          "items": [],
+          "returned": 0
+        },
+        "series": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11286/series",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11286/stories",
+          "items": [],
+          "returned": 0
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/creators/11286/events",
+          "items": [],
+          "returned": 0
+        },
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/creators/11286/stanley_tucci?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ]
+      }
+    ]
+  }
+}

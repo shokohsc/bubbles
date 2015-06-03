@@ -1,0 +1,1975 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2015 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2015 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2015 MARVEL</a>",
+  "etag": "a83350389f448fd221ff44d934608c020e792779",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 91,
+    "count": 20,
+    "results": [
+      {
+        "id": 19323,
+        "title": "Avengers: Ultron Forever (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19323",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19323/avengers_ultron_forever_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-03-24T14:41:21-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19323/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/16",
+              "name": "Alan Davis",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19323/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19323/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114583",
+              "name": "cover from Avengers: Ultron Forever (2015) #1 (MOVIE VARIANT B)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114584",
+              "name": "story from Avengers: Ultron Forever (2015) #1 (MOVIE VARIANT B)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19323/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51503",
+              "name": "Avengers: Ultron Forever (2015) #1 (Au Movie Connecting Variant B)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19323/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 20063,
+        "title": "Avengers Vs (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/20063",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/20063/avengers_vs_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-05-01T16:26:16-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20063/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5039",
+              "name": "Wellinton Alves",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8317",
+              "name": "Dario Brizuela",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/658",
+              "name": "Ron Lim",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "writer"
+            }
+          ],
+          "returned": 5
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20063/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20063/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118501",
+              "name": "cover from Avengers Vs (2015) #1 (TBD ARTIST VARIANT C)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118502",
+              "name": "story from Avengers Vs (2015) #1 (TBD ARTIST VARIANT C)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20063/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53613",
+              "name": "Avengers Vs (2015) #1 (Lim Variant)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20063/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19326,
+        "title": "Avengers: Ultron Forever (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19326",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19326/avengers_ultron_forever_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-03-24T15:28:27-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19326/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/16",
+              "name": "Alan Davis",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7190",
+              "name": "Skottie Young",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19326/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19326/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114589",
+              "name": "cover from Avengers: Ultron Forever (2015) #1 (YOUNG VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114590",
+              "name": "story from Avengers: Ultron Forever (2015) #1 (YOUNG VARIANT)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19326/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51506",
+              "name": "Avengers: Ultron Forever (2015) #1 (Young Variant)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19326/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19919,
+        "title": "Avengers: Ultron Forever (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19919",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19919/avengers_ultron_forever_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-03-24T15:16:49-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19919/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/16",
+              "name": "Alan Davis",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9137",
+              "name": "Mike McKone",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19919/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19919/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117892",
+              "name": "cover from Avengers: Ultron Forever (2015) #1 (AVENGERS AOU MOVIE VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117893",
+              "name": "story from Avengers: Ultron Forever (2015) #1 (AVENGERS AOU MOVIE VARIANT)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19919/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53189",
+              "name": "Avengers: Ultron Forever (2015) #1 (Mckone Avengers Variant)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19919/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19987,
+        "title": "Avengers: Operation Hydra (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19987",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19987/avengers_operation_hydra_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-04-16T15:05:50-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19987/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/196",
+              "name": "Jack Kirby",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12501",
+              "name": "Corona Pilgrim",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19987/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19987/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117989",
+              "name": "cover from Avengers: Operation Hydra (2015) #1 (KIRBY CLASSIC VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117990",
+              "name": "story from Avengers: Operation Hydra (2015) #1 (KIRBY CLASSIC VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/121296",
+              "name": "cover from Avengers: Operation Hydra (2015) #1 (KIRBY EL CAPITAN VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/121297",
+              "name": "story from Avengers: Operation Hydra (2015) #1 (KIRBY EL CAPITAN VARIANT)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 4
+        },
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19987/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53297",
+              "name": "Avengers: Operation Hydra (2015) #1 (Kirby Classic Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/55080",
+              "name": "Avengers: Operation Hydra (2015) #1 (Kirby El Capitan Variant)"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19987/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19303,
+        "title": "Avengers: No More Bullying (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19303",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19303/avengers_no_more_bullying_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-02-11T12:00:14-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/a0/54db8a0a74d10",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19303/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11401",
+              "name": "various",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11680",
+              "name": "Gerry Duggan",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9233",
+              "name": "Paul Renaud",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19303/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19303/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114485",
+              "name": "cover from Avengers: No More Bullying (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114486",
+              "name": "story from Avengers: No More Bullying (2015) #1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114487",
+              "name": "cover from Avengers: No More Bullying (2015) #1 (CAMPION VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114488",
+              "name": "story from Avengers: No More Bullying (2015) #1 (CAMPION VARIANT)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 4
+        },
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19303/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51454",
+              "name": "Avengers: No More Bullying (2015) #1"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51455",
+              "name": "Avengers: No More Bullying (2015) #1 (Campion Variant)"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19303/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 20023,
+        "title": "Avengers: Millennium (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/20023",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/20023/avengers_millennium_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "Rated T+",
+        "type": "limited",
+        "modified": "2015-04-06T12:17:05-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/5522b15835ce2",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20023/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12452",
+              "name": "Mike Costa",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12500",
+              "name": "Carmine DiGiandomenico",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/827",
+              "name": "Carmine Di Giandomenico",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20023/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20023/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118214",
+              "name": "cover from Avengers: Millennium (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118215",
+              "name": "story from Avengers: Millennium (2015) #1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118216",
+              "name": "cover from Avengers: Millennium (2015) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118217",
+              "name": "story from Avengers: Millennium (2015) #2",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118218",
+              "name": "cover from Avengers: Millennium (2015) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118219",
+              "name": "story from Avengers: Millennium (2015) #3",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118220",
+              "name": "cover from Avengers: Millennium (2015) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118221",
+              "name": "story from Avengers: Millennium (2015) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 8
+        },
+        "comics": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20023/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53432",
+              "name": "Avengers: Millennium (2015) #1"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53433",
+              "name": "Avengers: Millennium (2015) #2"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53434",
+              "name": "Avengers: Millennium (2015) #3"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53435",
+              "name": "Avengers: Millennium (2015) #4"
+            }
+          ],
+          "returned": 4
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20023/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19304,
+        "title": "Avengers: Operation Hydra (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19304",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19304/avengers_operation_hydra_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-05-05T11:41:31-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/60/5548e45b91c99",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19304/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12501",
+              "name": "Corona Pilgrim",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/434",
+              "name": "Michael Ryan",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19304/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19304/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114489",
+              "name": "cover from Avengers: Operation Hydra (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114490",
+              "name": "story from Avengers: Operation Hydra (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19304/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51456",
+              "name": "Avengers: Operation Hydra (2015) #1"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19304/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 20060,
+        "title": "Avengers Vs (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/20060",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/20060/avengers_vs_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-04-24T12:16:40-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/b0/553a6c3b7b311",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20060/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5039",
+              "name": "Wellinton Alves",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8317",
+              "name": "Dario Brizuela",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/658",
+              "name": "Ron Lim",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/444",
+              "name": "Tom Raney",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20060/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20060/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118495",
+              "name": "cover from Avengers Vs (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118496",
+              "name": "story from Avengers Vs (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20060/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53610",
+              "name": "Avengers Vs (2015) #1"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20060/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19321,
+        "title": "Avengers: Ultron Forever (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19321",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19321/avengers_ultron_forever_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-04-06T12:18:51-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/5522b1a770bbf",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19321/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/16",
+              "name": "Alan Davis",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19321/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19321/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114579",
+              "name": "cover from Avengers: Ultron Forever (2015) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114580",
+              "name": "story from Avengers: Ultron Forever (2015) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19321/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51501",
+              "name": "Avengers: Ultron Forever (2015) #1"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19321/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 20061,
+        "title": "Avengers Vs (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/20061",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/20061/avengers_vs_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-05-01T10:10:00-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20061/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5039",
+              "name": "Wellinton Alves",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8317",
+              "name": "Dario Brizuela",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/658",
+              "name": "Ron Lim",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/434",
+              "name": "Michael Ryan",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20061/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20061/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118497",
+              "name": "cover from Avengers Vs (2015) #1 (TBD ARTIST VARIANT A)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118498",
+              "name": "story from Avengers Vs (2015) #1 (TBD ARTIST VARIANT A)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20061/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53611",
+              "name": "Avengers Vs (2015) #1 (Ryan Variant)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20061/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19322,
+        "title": "Avengers: Ultron Forever (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19322",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19322/avengers_ultron_forever_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-03-24T14:29:37-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19322/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/16",
+              "name": "Alan Davis",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12174",
+              "name": "Al Ewing",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19322/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19322/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114581",
+              "name": "cover from Avengers: Ultron Forever (2015) #1 (MOVIE VARIANT A)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114582",
+              "name": "story from Avengers: Ultron Forever (2015) #1 (MOVIE VARIANT A)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19322/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51502",
+              "name": "Avengers: Ultron Forever (2015) #1 (Au Movie Connecting Variant C)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19322/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 20062,
+        "title": "Avengers Vs (2015 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/20062",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/20062/avengers_vs_2015_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2015,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-05-01T16:19:13-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20062/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5039",
+              "name": "Wellinton Alves",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8317",
+              "name": "Dario Brizuela",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12502",
+              "name": "Andrea Divito",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/658",
+              "name": "Ron Lim",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4994",
+              "name": "Kalman Andrasofszky",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20062/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20062/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118499",
+              "name": "cover from Avengers Vs (2015) #1 (TBD ARTIST VARIANT B)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118500",
+              "name": "story from Avengers Vs (2015) #1 (TBD ARTIST VARIANT B)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20062/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/53612",
+              "name": "Avengers Vs (2015) #1 (Andrasofszky Variant)"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/20062/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18911,
+        "title": "Avengers & X-Men: Axis (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18911",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18911/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2014-11-18T14:47:53-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18911/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2879",
+              "name": "Adam Kubert",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18911/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18911/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113296",
+              "name": "story from Days of Future Now (2015) #7",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117606",
+              "name": "AVENGERS & X-MEN: AXIS #7 ",
+              "type": "cover"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18911/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/50606",
+              "name": "Avengers & X-Men: Axis (2014) #7"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18911/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18912,
+        "title": "Avengers & X-Men: Axis (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18912",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18912/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2014-11-18T14:49:15-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18912/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "artist"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18912/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18912/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113297",
+              "name": "cover from Days of Future Now (2015) #8",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113298",
+              "name": "story from Days of Future Now (2015) #8",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18912/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/50607",
+              "name": "Avengers & X-Men: Axis (2014) #8"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18912/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18904,
+        "title": "Avengers & X-Men: Axis (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18904",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18904/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2014-12-04T14:00:38-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/f0/542b003d46f64",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18904/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2879",
+              "name": "Adam Kubert",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18904/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18904/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113281",
+              "name": "cover from Days of Future Now (2014) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113282",
+              "name": "story from Days of Future Now (2014) #1",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/117927",
+              "name": "Avengers & X-Men: Axis (2014) #9",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/118207",
+              "name": "AVENGERS & X-MEN: AXIS 9 (AX, WITH DIGITAL CODE)",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 4
+        },
+        "comics": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18904/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51168",
+              "name": "Avengers & X-Men: Axis (2014) #9"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/50599",
+              "name": "Avengers & X-Men: Axis (2014) #1"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18904/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/320",
+              "name": "Axis"
+            }
+          ],
+          "returned": 1
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18922,
+        "title": "AVENGERS & X-MEN: AXIS (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18922",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18922/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "Rated T+",
+        "type": "limited",
+        "modified": "2014-11-13T16:37:00-0500",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 11,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18922/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2133",
+              "name": "Tom Brevoort",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/312",
+              "name": "Mike Deodato",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/425",
+              "name": "Greg Land",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/182",
+              "name": "Esad Ribic",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11912",
+              "name": "Valerio Schiti",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1156",
+              "name": "Ryan Stegman",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/277",
+              "name": "Terry Dodson",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2879",
+              "name": "Adam Kubert",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 11
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18922/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 13,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18922/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114417",
+              "name": "cover from Days of Future Now (2014) #6 (RIBIC INVERSION VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114418",
+              "name": "story from Days of Future Now (2014) #6 (RIBIC INVERSION VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114419",
+              "name": "cover from Days of Future Now (2014) #6 (SCHITI YOUNG GUNS VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114420",
+              "name": "story from Days of Future Now (2014) #6 (SCHITI YOUNG GUNS VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114421",
+              "name": "cover from Days of Future Now (2014) #7 (LAND INVERSION VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114422",
+              "name": "story from Days of Future Now (2014) #7 (LAND INVERSION VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114423",
+              "name": "cover from Days of Future Now (2014) #7 (STEGMAN YOUNG GUNS VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114424",
+              "name": "story from Days of Future Now (2014) #7 (STEGMAN YOUNG GUNS VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114425",
+              "name": "cover from Days of Future Now (2014) #8 (YU INVERSION VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114426",
+              "name": "story from Days of Future Now (2014) #8 (YU INVERSION VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114427",
+              "name": "cover from Days of Future Now (2014) #8 (DEODATO VARIANT)",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114428",
+              "name": "story from Days of Future Now (2014) #8 (DEODATO VARIANT)",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114429",
+              "name": "cover from Days of Future Now (2014) #9",
+              "type": "cover"
+            }
+          ],
+          "returned": 13
+        },
+        "comics": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18922/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51420",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #6 (Ribic Inversion Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51421",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #6 (Schiti Young Guns Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51422",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #7 (Land Inversion Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51423",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #7 (Stegman Young Guns Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51425",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #8 (Deodato Variant)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51424",
+              "name": "AVENGERS & X-MEN: AXIS (2014) #8 (Yu Inversion Variant)"
+            }
+          ],
+          "returned": 6
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18922/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18906,
+        "title": "Avengers & X-Men: Axis (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18906",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18906/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2014-09-19T10:33:43-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18906/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2879",
+              "name": "Adam Kubert",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18906/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18906/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113285",
+              "name": "cover from Days of Future Now (2014) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113286",
+              "name": "story from Days of Future Now (2014) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18906/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/50601",
+              "name": "Avengers & X-Men: Axis (2014) #2"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18906/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/320",
+              "name": "Axis"
+            }
+          ],
+          "returned": 1
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 19294,
+        "title": "Avengers Now! (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/19294",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/19294/avengers_now_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2015-04-09T17:28:11-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/5526ee7b02bb2",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19294/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/902",
+              "name": "Jeff Christiansen",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10004",
+              "name": "Mike O'Sullivan",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9408",
+              "name": "Sara Pichelli",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19294/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19294/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114451",
+              "name": "cover from Avengers Now! (2014) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/114452",
+              "name": "story from Avengers Now! (2014) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19294/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/51437",
+              "name": "Avengers Now! (2014) #1"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/19294/events",
+          "items": [],
+          "returned": 0
+        },
+        "next": null,
+        "previous": null
+      },
+      {
+        "id": 18907,
+        "title": "Avengers & X-Men: Axis (2014 - Present)",
+        "description": null,
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/18907",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/series/18907/avengers_x-men_axis_2014_-_present?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "startYear": 2014,
+        "endYear": 2099,
+        "rating": "",
+        "type": "ongoing",
+        "modified": "2014-09-24T10:05:14-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+          "extension": "jpg"
+        },
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18907/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "artist"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18907/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18907/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113287",
+              "name": "cover from Days of Future Now (2014) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/113288",
+              "name": "story from Days of Future Now (2014) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "comics": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18907/comics",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/comics/50602",
+              "name": "Avengers & X-Men: Axis (2014) #3"
+            }
+          ],
+          "returned": 1
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/series/18907/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/320",
+              "name": "Axis"
+            }
+          ],
+          "returned": 1
+        },
+        "next": null,
+        "previous": null
+      }
+    ]
+  }
+}
