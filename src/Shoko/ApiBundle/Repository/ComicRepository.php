@@ -61,7 +61,7 @@ class ComicRepository
      * Find all released comics the week containing the $date
      *
      * @param Carbon $date
-     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
+     * @return array
      */
     public function findAllByReleaseDate(Carbon $date)
     {
@@ -81,7 +81,7 @@ class ComicRepository
      * Find one comic matching id
      *
      * @param string $id comic id
-     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Entities\Comic
      */
     public function findOneById($id)
     {
@@ -95,7 +95,7 @@ class ComicRepository
      * Find all comics matching query
      *
      * @param string $query input from search form
-     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
+     * @return array
      */
      public function findAllByQuery($query, $page)
      {

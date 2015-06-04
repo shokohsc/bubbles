@@ -1,6 +1,4 @@
 /web/bundles/
-/web/favicon.ico
-/web/favicon.png
 /app/bootstrap.php.cache
 /app/cache/*
 /app/config/parameters.yml

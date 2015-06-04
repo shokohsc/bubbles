@@ -4,27 +4,24 @@ namespace Shoko\ApiBundle\Tests\Repository;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Shoko\ApiBundle\Repository\ComicRepository;
-
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Carbon\Carbon;
 
 class ComicRepositoryTest extends \PHPUnit_Framework_TestCase
 {
       private $client;
-      private $repositoryMock;
       private $queryMock;
+      private $comicsPerPage;
 
       public function setUp()
       {
         $this->client = $this->getMockBuilder('Octante\MarvelAPIBundle\Lib\Client')
             ->disableOriginalConstructor()
             ->getMock();
-        $this->repositoryMock = $this->getMockBuilder('Octante\MarvelAPIBundle\Repositories\ComicsRepository')
-            ->disableOriginalConstructor()
-            ->getMock();
         $this->queryMock = $this->getMockBuilder('Octante\MarvelAPIBundle\Model\Query\ComicQuery')
             ->disableOriginalConstructor()
             ->getMock();
+        $this->comicsPerPage = 20;
       }
 
       /**
@@ -61,36 +58,49 @@ class ComicRepositoryTest extends \PHPUnit_Framework_TestCase
       {
         $jsonResponse = file_get_contents(__DIR__ . '/../Fixtures/Comic/getComicsDate.json');
         $this->client
-            ->expects($this->once())
+            ->expects($this->any())
             ->method('send')
             ->will($this->returnValue($jsonResponse));
         $sut = new ComicsRepository($this->client);
-        $comics = $sut->getComics($this->queryMock);// Apr 27, 2015
-        $this->assertInstanceOf('Octante\MarvelAPIBundle\Model\Collections\ComicsCollection', $comics);
+        $stubComics = $sut->getComics($this->queryMock);// Apr 27, 2015
+
+        $sutComicsRepository = new ComicsRepository($this->client);
+        $repository = new ComicRepository($sut, $this->queryMock, $this->comicsPerPage);
+        $comics = $repository->findAllByReleaseDate(Carbon::parse('Apr 27, 2015'), 1);
+        $this->assertEquals($stubComics->getData()->getResults(), $comics);
       }
 
       public function testFindOneById()
       {
         $jsonResponse = file_get_contents(__DIR__ . '/../Fixtures/Comic/getComic.json');
         $this->client
-            ->expects($this->once())
+            ->expects($this->any())
             ->method('send')
             ->will($this->returnValue($jsonResponse));
+
         $sut = new ComicsRepository($this->client);
-        $comic = $sut->getComicById(52237);// Moon Knight (2014) #15
-        $this->assertInstanceOf('Octante\MarvelAPIBundle\Model\Collections\ComicsCollection', $comic);
+        $stubComic = $sut->getComicById(52237);// Moon Knight (2014) #15
+
+        $repository = new ComicRepository($sut, $this->queryMock, $this->comicsPerPage);
+        $comic = $repository->findOneById(18468);
+        $this->assertInstanceOf('Octante\MarvelAPIBundle\Model\Entities\Comic', $comic);
+        $this->assertEquals($stubComic->getData()->getResults()[0], $comic);
       }
 
       public function testFindAllByQuery()
       {
         $jsonResponse = file_get_contents(__DIR__ . '/../Fixtures/Comic/getComics.json');
         $this->client
-            ->expects($this->once())
+            ->expects($this->any())
             ->method('send')
             ->will($this->returnValue($jsonResponse));
+
         $sut = new ComicsRepository($this->client);
-        $comics = $sut->getComics($this->queryMock);// wolverine
-        $this->assertInstanceOf('Octante\MarvelAPIBundle\Model\Collections\ComicsCollection', $comics);
+        $stubComics = $sut->getComics($this->queryMock);// wolverine
+
+        $repository = new ComicRepository($sut, $this->queryMock, $this->comicsPerPage);
+        $comics = $repository->findAllByQuery('wolverine', 1);
+        $this->assertEquals($stubComics->getData()->getResults(), $comics);
       }
 
 }

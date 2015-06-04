@@ -43,6 +43,7 @@ penciller (cover): "penciller (cover)"
 colorist: colorist
 inker: inker
 letterer: letterer
+editor: editor
 
 serie:
     pagination:
