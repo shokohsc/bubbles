@@ -9,7 +9,7 @@ env:
   - SYMFONY_VERSION=2.6.*
   - SYMFONY_VERSION=dev-master
 before_script: composer install
-script: phpunit --coverage-text
+script: phpunit -c app --coverage-text
 notifications:
   email:
     - shokohsc@gmail.com
