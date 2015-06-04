@@ -74,22 +74,18 @@ class SerieRepository
     public function findAllComicsById($id, $page)
     {
         $comics_per_page = $this->comicsPerPage;
-        try {
-            $this->comicQuery->setSeries($id);
-            $this->comicQuery->setFormat('comic');
-            $this->comicQuery->setFormatType('comic');
-            $this->comicQuery->setNoVariants(true);
-            $this->comicQuery->setOrderBy('-issueNumber');
-            $this->comicQuery->setLimit($comics_per_page);
-            $this->comicQuery->setOffset(($page * $comics_per_page) - $comics_per_page);
+        $this->comicQuery->setSeries($id);
+        $this->comicQuery->setFormat('comic');
+        $this->comicQuery->setFormatType('comic');
+        $this->comicQuery->setNoVariants(true);
+        $this->comicQuery->setOrderBy('-issueNumber');
+        $this->comicQuery->setLimit($comics_per_page);
+        $this->comicQuery->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return $this->comicRepository
-                ->getComics($this->comicQuery)
-                ->getData()
-                ->getResults();
-        } catch (Exception $e) {
-            return [];
-        }
+        return $this->comicRepository
+            ->getComics($this->comicQuery)
+            ->getData()
+            ->getResults();
     }
 
     /**
@@ -100,14 +96,10 @@ class SerieRepository
      */
     public function findOneById($id)
     {
-        try {
-            return $this->repository
-                ->getSerieById(intval($id))
-                ->getData()
-                ->getResults()[0];
-        } catch (Exception $e) {
-            return [];
-        }
+        return $this->repository
+            ->getSerieById(intval($id))
+            ->getData()
+            ->getResults()[0];
     }
 
     /**
@@ -118,20 +110,16 @@ class SerieRepository
      */
     public function findAllByQuery($query, $page)
     {
-        $comics_per_page = $this->comicsPerPage;
-        try {
-            $this->query->setTitleStartsWith($query);
-            $this->query->setOrderBy('-startYear');
-            $this->query->setContains('comic');
-            $this->query->setLimit($comics_per_page);
-            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+          $comics_per_page = $this->comicsPerPage;
+          $this->query->setTitleStartsWith($query);
+          $this->query->setOrderBy('-startYear');
+          $this->query->setContains('comic');
+          $this->query->setLimit($comics_per_page);
+          $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return $this->repository
-                ->getSeries($this->query)
-                ->getData()
-                ->getResults();
-        } catch (Exception $e) {
-            return [];
-        }
+          return $this->repository
+              ->getSeries($this->query)
+              ->getData()
+              ->getResults();
     }
 }

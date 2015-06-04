@@ -3,20 +3,13 @@
 namespace Shoko\ApiBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Translation\TranslatorInterface;
 use Octante\MarvelAPIBundle\Exceptions\CurlErrorCodeException;
 
 class ApiExceptionListener
 {
-  /**
-   * Twig Environment
-   *
-   * @var \Twig_Environment
-   */
-  private $twig;
-
   /**
    * Translator
    *
@@ -25,13 +18,11 @@ class ApiExceptionListener
   private $translator;
 
     /**
-     * AppExceptionListener constructor
-     * @param \Twig_Environment $twig
+     * ApiExceptionListener constructor
      * @param TranslatorInterface $translator
      */
-    public function __construct(\Twig_Environment $twig, TranslatorInterface $translator)
+    public function __construct(TranslatorInterface $translator)
     {
-        $this->twig = $twig;
         $this->translator = $translator;
     }
 
@@ -45,18 +36,16 @@ class ApiExceptionListener
         $exception = $event->getException();
         if ($exception instanceof NotFoundHttpException || $exception instanceof CurlErrorCodeException) {
             $args = [
-                    'title' => $this->translator->trans("error.404.title"),
                     'code' => '404',
                     'message' => $this->translator->trans("error.404.message"),
                     ];
         } else {
             $args = [
-                    'title' => $this->translator->trans("error.500.title"),
                     'code' => '500',
                     'message' => $this->translator->trans("error.500.message"),
                     ];
         }
-        $response = new Response($this->twig->render('front/error.html.twig', $args));
+        $response = new JsonResponse(['error' => $args], $args['code']);
         $event->setResponse($response);
     }
 }

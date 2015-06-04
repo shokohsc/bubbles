@@ -24,7 +24,8 @@ class EventController extends Controller
   {
       $event = $this->get('shoko.event.repository')->findOneById($id);
       $data = [
-          'title' => $event->getTitle(),
+        'code' => 200,
+        'title' => $event->getTitle(),
       ];
       $response = new JsonResponse();
       $response->setData(

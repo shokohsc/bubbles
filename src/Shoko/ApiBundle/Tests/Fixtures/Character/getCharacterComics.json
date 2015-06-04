@@ -1,0 +1,3790 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2015 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2015 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2015 MARVEL</a>",
+  "etag": "42be7dd597fd340b59db0a9ff0c451ceed79bd64",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 25,
+    "count": 20,
+    "results": [
+      {
+        "id": 46684,
+        "digitalId": 28758,
+        "title": "Venom (2011) #32",
+        "issueNumber": 32,
+        "variantDescription": "",
+        "description": "• TOXIN’S IN PHILLY. THE DEVIL’S IN JERSEY. VENOM’S GOING TO WAR.",
+        "modified": "2013-02-26T13:56:52-0500",
+        "isbn": "",
+        "upc": "75960607565203211",
+        "diamondCode": "JAN130718",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "• TOXIN’S IN PHILLY. THE DEVIL’S IN JERSEY. VENOM’S GOING TO WAR."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/46684",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/46684/venom_2011_32?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-32/digital-comic/28758?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=28758&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/28758?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2013-03-06T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2013-02-20T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-09-02T00:00:08-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2013-03-06T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/511c62fd8c203",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/511c62fd8c203",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/50d23f8ab51f7",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/46684/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/663",
+              "name": "Shane Davis",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11354",
+              "name": "Declan Shalvey",
+              "role": "artist"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/46684/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/46684/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/104962",
+              "name": "cover from Venom (2011) #32",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/104963",
+              "name": "story from Venom (2011) #32",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/46684/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 40634,
+        "digitalId": 27518,
+        "title": "Venom (2011) #23",
+        "issueNumber": 23,
+        "variantDescription": "",
+        "description": "<ul><li>The Avengers task Venom with bringing in Damion Hellstrom &ndash; but who are THE MONSTERS OF EVIL?!</li><li>Rising star Cullen Bunn (WOLVERINE) teams with the Spider-verse&rsquo;s newest young gun, Thony Silas (ENDS OF THE EARTH) for a new dawn in the life of Flash Thompson!</li></ul>",
+        "modified": "2012-08-09T16:19:44-0400",
+        "isbn": "",
+        "upc": "5960607565-02311",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li>The Avengers task Venom with bringing in Damion Hellstrom &ndash; but who are THE MONSTERS OF EVIL?!</li><li>Rising star Cullen Bunn (WOLVERINE) teams with the Spider-verse&rsquo;s newest young gun, Thony Silas (ENDS OF THE EARTH) for a new dawn in the life of Flash Thompson!</li></ul>"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40634",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/40634/venom_2011_23?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-23/digital-comic/27518?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27518&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27518?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-08-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-08-01T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-07-31T11:24:47-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-08-22T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/502419dd2a754",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/502419dd2a754",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40634/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "Writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/661",
+              "name": "Patrick Zircher",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40634/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40634/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92090",
+              "name": "Cover #92090",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92091",
+              "name": "Interior #92091",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40634/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 40637,
+        "digitalId": 27399,
+        "title": "Venom (2011) #22",
+        "issueNumber": 22,
+        "variantDescription": "",
+        "description": "The Savage Six took their shot – now Venom takes his! With his darkest secrets exposed to those he loves, Flash Thompson has one name on his hit list: Jack O’Lantern!\n",
+        "modified": "2013-03-08T14:14:58-0500",
+        "isbn": "",
+        "upc": "5960607565-02211",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li>With his darkest secrets exposed to those he loves, Flash Thompson has one name on his hit list: Jack O&rsquo;Lantern!</li><li>Series co-creator Rick Remender takes his final bow while Declan Shalvey (DARK AVENGERS) joins the book for Flash Thompson&rsquo;s defining hour as a hero!</li></ul>"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "The Savage Six took their shot – now Venom takes his! With his darkest secrets exposed to those he loves, Flash Thompson has one name on his hit list: Jack O’Lantern!\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40637",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/40637/venom_2011_22?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-22/digital-comic/27399?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27399&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27399?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-08-08T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-07-18T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-03-08T14:14:33-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-08-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/80/500ef0f01527b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/80/500ef0f01527b",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40637/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11354",
+              "name": "Declan Shalvey",
+              "role": "artist"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40637/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40637/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92096",
+              "name": "Cover #92096",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92097",
+              "name": "Interior #92097",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40637/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 37342,
+        "digitalId": 25583,
+        "title": "Secret Avengers (2010) #23",
+        "issueNumber": 23,
+        "variantDescription": "",
+        "description": "Who are The Descendants?\n",
+        "modified": "2012-01-30T15:04:52-0500",
+        "isbn": "",
+        "upc": "5960607014-02311",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2153-9898",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; The Shocking Conclusion To The Dark Avengers Saga!\r\n&bull; Will One Of The Dark Avengers Become A New Avenger?!\r\n&bull; &hellip;And Will There Be A Shocking Fatality In The Avengers Battle Of The Year?!!\r\n"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Who are The Descendants?\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/37342",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/37342/secret_avengers_2010_23?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Secret-Avengers-23/digital-comic/25583?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25583&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25583?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9799",
+          "name": "Secret Avengers (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-03-28T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-03-05T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-10-22T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-02-22T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/00/4f74968a2db73",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/00/4f74968a2db73",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/37342/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/249",
+              "name": "Art Adams",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8520",
+              "name": "Gabriel Hardman",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/37342/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+              "name": "Avengers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/37342/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/82709",
+              "name": "Secret Avengers (2010) #23",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/82710",
+              "name": "Interior #82710",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/37342/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 40639,
+        "digitalId": 25405,
+        "title": "Venom (2011) #13",
+        "issueNumber": 13,
+        "variantDescription": "",
+        "description": "CIRCLE OF FOUR PART 1 Venom, X-23, Red Hulk, Ghost Rider join forces to battle an enemy they could never face alone!\n",
+        "modified": "2013-02-15T12:28:42-0500",
+        "isbn": "",
+        "upc": "5960607565-01311",
+        "diamondCode": "DEC110636",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull;The circle of four begins here!<br />&bull; PART ONE OF A SIX PART EVENT!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "CIRCLE OF FOUR PART 1 Venom, X-23, Red Hulk, Ghost Rider join forces to battle an enemy they could never face alone!\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40639",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/40639/venom_2011_13?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-13/digital-comic/25405?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25405&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25405?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42302",
+            "name": "Venom (2011) #13 (Simonson Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42310",
+            "name": "Venom (2011) #13 (Simonson Sketch Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42303",
+            "name": "Venom (2011) #13 (Moore Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-02-01T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-01-18T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-03-04T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-02-01T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/4f26edfa0ac75",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/4f26edfa0ac75",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/a0/4f07502ab4bbf",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/60/4f074ff579573",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/4f074fae65758",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40639/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1133",
+              "name": "Stefano Caselli",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4991",
+              "name": "Frank Martin",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/832",
+              "name": "Val Staples",
+              "role": "colorist"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40639/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009318",
+              "name": "Ghost Rider (Johnny Blaze)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011360",
+              "name": "Red Hulk"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40639/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92100",
+              "name": "Venom (2011) #13",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/92101",
+              "name": "Interior #92101",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/40639/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 38588,
+        "digitalId": 24939,
+        "title": "Venom (2011) #10",
+        "issueNumber": 10,
+        "variantDescription": "",
+        "description": "The death of a loved one reminds Flash Thompson that his secret identity is in the hands of the villainous Crime-Master – and the only way to take his life back is to go rogue. But Captain America is out to shut him down.\n",
+        "modified": "2012-11-14T13:08:43-0500",
+        "isbn": "",
+        "upc": "5960607565-01011",
+        "diamondCode": "OCT110634",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "NEW DIRECTION. NEW ARTIST. OLD SOLDIERS. Rick Remender welcomes Lan Medina (PUNISHER) with AMERICAN BADNESS!SPIDER-ISLAND has changed everything and now the death of a loved one reminds Flash Thompson that his secret identity is in the hands of the villainous Crime-Master – and the only way to take his life back is to go rogue.  But CAPTAIN AMERICA is out to shut him down. It's a good old fashioned road trip with Flash Thompson and an alien symbiote!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "The death of a loved one reminds Flash Thompson that his secret identity is in the hands of the villainous Crime-Master – and the only way to take his life back is to go rogue. But Captain America is out to shut him down.\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38588",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38588/venom_2011_10?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-10/digital-comic/24939?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=24939&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/24939?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-12-07T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-11-23T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-01-22T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-12-07T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/b0/4e78ca3dede3f",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/f0/4ec2b7e3e11bf",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/4ec2b7bad895f",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4ec2b78f4a5ea",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/40/4ec2b770ebc7d",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/70/4ec2b7292d3fe",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/b0/4e78ca3dede3f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38588/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/872",
+              "name": "Marte Gracia",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8076",
+              "name": "Lan Medina",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38588/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009220",
+              "name": "Captain America"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38588/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/94778",
+              "name": "Venom #10 Story",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/94779",
+              "name": "Venom #10 Cover",
+              "type": "cover"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38588/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 38592,
+        "digitalId": 23844,
+        "title": "Venom (2011) #7",
+        "issueNumber": 7,
+        "variantDescription": "",
+        "description": "Project Rebirth has been infested – and Venom’s going under DEEP cover to start exterminating some bugs starting with Anti-Venom! Tom Fowler (AGE OF HEROES) and Rick Remender (X-FORCE) bring you all the heart-stopping action and heart-wrenching drama as this summer’s Spidey Crossover continues!",
+        "modified": "2012-11-14T13:05:35-0500",
+        "isbn": "",
+        "upc": "5960607565-00711",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Project Rebirth has been infested – and Venom’s going under DEEP cover to start exterminating some bugs starting with Anti-Venom! Tom Fowler (AGE OF HEROES) and Rick Remender (X-FORCE) bring you all the heart-stopping action and heart-wrenching drama as this summer’s Spidey Crossover continues!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38592",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38592/venom_2011_7?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-7/digital-comic/23844?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=23844&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/23844?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-09-28T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-09-05T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-01-08T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-09-28T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/10/4e7ced78b836b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/10/4e7ced78b836b",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/4e5e4af2196f6",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/c0/4e5e4abfbf676",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/b0/4e5e4a9125c95",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/80/4df667c066a1e",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38592/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4014",
+              "name": "Axel Alonso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11647",
+              "name": "Tom Brennan",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11307",
+              "name": "Tom Fowler",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1143",
+              "name": "John Rauch",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38592/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009692",
+              "name": "Toxin (Eddie Brock)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38592/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93607",
+              "name": "Venom (2011) #7 cover",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93608",
+              "name": "Venom #7",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38592/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/305",
+              "name": "Spider-Island"
+            }
+          ],
+          "returned": 1
+        }
+      },
+      {
+        "id": 35529,
+        "digitalId": 23715,
+        "title": "Amazing Spider-Man (1999) #669",
+        "issueNumber": 669,
+        "variantDescription": "",
+        "description": "SPIDER-ISLAND PART THREE How can the heroes of NYC hope to contain millions of spider-powered New Yorkers? Also, a dangerous new role for Venom. And… is that a Six-armed Shocker?! All this plus: one of Spider-Island’s biggest mysteries revealed!  \n",
+        "modified": "2012-01-04T13:15:04-0500",
+        "isbn": "",
+        "upc": "5960604716-66911",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "\"SPIDER-ISLAND\" PART THREE!\nThe infestation has spread Big Time!  How can the heroes of NYC hope to contain millions of spider-powered New Yorkers?  A dangerous new role for Venom. And… is that a Six-armed Shocker?! All this plus: One of Spider-Island’s biggest mysteries revealed!  Who is this threat from Peter Parker’s past?!  And what is their involvement in all of this?!\nPHEW! This is a lot of comic!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "SPIDER-ISLAND PART THREE How can the heroes of NYC hope to contain millions of spider-powered New Yorkers? Also, a dangerous new role for Venom. And… is that a Six-armed Shocker?! All this plus: one of Spider-Island’s biggest mysteries revealed!  \n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/35529",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/35529/amazing_spider-man_1999_669?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-669/digital-comic/23715?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=23715&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/23715?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41318",
+            "name": "Amazing Spider-Man (1999) #669 (Architect Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41319",
+            "name": "Amazing Spider-Man (1999) #669 (Architect Sketch Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41817",
+            "name": "Amazing Spider-Man (1999) #669 (Slott Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-09-14T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-08-22T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-01-30T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-09-14T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4e68c106a8d51",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4e68c106a8d51",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/4dee6f1c8dd35",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35529/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/429",
+              "name": "Carlos Alberto cruz Cuevas",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+              "name": "Edgar Delgado",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+              "name": "Humberto Ramos",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35529/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+              "name": "Avengers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011258",
+              "name": "Carlie Cooper"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009372",
+              "name": "J. Jonah Jameson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011288",
+              "name": "Jackal"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009459",
+              "name": "Mr. Fantastic"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009585",
+              "name": "Shocker (Herman Schultz)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009692",
+              "name": "Toxin (Eddie Brock)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 9
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35529/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78577",
+              "name": "Amazing Spider-man (1999) #669",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78578",
+              "name": "Amazing Spider-Man (1999) #669 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35529/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/305",
+              "name": "Spider-Island"
+            }
+          ],
+          "returned": 1
+        }
+      },
+      {
+        "id": 35532,
+        "digitalId": 23470,
+        "title": "Amazing Spider-Man (1999) #668",
+        "issueNumber": 668,
+        "variantDescription": "",
+        "description": "SPIDER-ISLAND PART TWO Spider-powered New York citizens! Spider-powered criminals! And Peter Parker fighting alongside Manhattan biggest super heroes—as Peter Parker?  ",
+        "modified": "2012-01-04T13:14:14-0500",
+        "isbn": "",
+        "upc": "5960604716-66811",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Spider-Island PART TWO! Spider-powered New York citizens! Spider-powered criminals! And Peter Parker fighting alongside Manhattan biggest super heroes—as Peter Parker?  The most sensational spider-ific summer event continues!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "SPIDER-ISLAND PART TWO Spider-powered New York citizens! Spider-powered criminals! And Peter Parker fighting alongside Manhattan biggest super heroes—as Peter Parker?  "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/35532",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/35532/amazing_spider-man_1999_668?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-668/digital-comic/23470?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=23470&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/23470?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41759",
+            "name": "Amazing Spider-Man (1999) #668 (2nd Printing Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-08-31T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-08-08T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-01-30T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-08-31T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/20/4ea039e1770af",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/20/4ea039e1770af",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/a0/4dcd95aa26f6f",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/4dcc368188c6c",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35532/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+              "name": "Edgar Delgado",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/447",
+              "name": "Victor Olazaba",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+              "name": "Humberto Ramos",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 17,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35532/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+              "name": "Captain Marvel (Carol Danvers)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011258",
+              "name": "Carlie Cooper"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009241",
+              "name": "Cloak"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009306",
+              "name": "Firestar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009338",
+              "name": "Hawkeye"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009367",
+              "name": "Iron Fist (Danny Rand)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+              "name": "Iron Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009372",
+              "name": "J. Jonah Jameson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011288",
+              "name": "Jackal"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009708",
+              "name": "Mary Jane Watson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009490",
+              "name": "May Parker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009459",
+              "name": "Mr. Fantastic"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009157",
+              "name": "Spider-Girl (Anya Corazon)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009608",
+              "name": "Spider-Woman (Jessica Drew)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 17
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35532/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78581",
+              "name": "Amazing Spider-Man (1999) #668",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78582",
+              "name": "Amazing Spider-Man (1999) #668 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35532/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/305",
+              "name": "Spider-Island"
+            }
+          ],
+          "returned": 1
+        }
+      },
+      {
+        "id": 38593,
+        "digitalId": 22997,
+        "title": "Venom (2011) #5",
+        "issueNumber": 5,
+        "variantDescription": "",
+        "description": "THE HOTTEST NEW BOOK IN COMICS IS BACK WITH A SPIDER-ISLAND PRELUDE! Can the new Venom and Peter Parker (The Amazing Spider-Man) put aside their differences to help save a man from himself? Plus Betty Brant, crusading blogger and gal pal to Flash Thompson may be onto the secrets behind the infestation kicking off this summer's Spider-Blockbuster! Rick Remender (X-FORCE) joins Tony Moore (FRANKEN-CASTLE) and Tom Fowler (I AM AN AVENGER) for the next crucial chapter in the life of Flash Thompson!",
+        "modified": "2012-11-14T13:03:13-0500",
+        "isbn": "",
+        "upc": "5960607565-00511",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "THE HOTTEST NEW BOOK IN COMICS IS BACK WITH A SPIDER-ISLAND PRELUDE! Can the new Venom and Peter Parker (The Amazing Spider-Man) put aside their differences to help save a man from himself? Plus Betty Brant, crusading blogger and gal pal to Flash Thompson may be onto the secrets behind the infestation kicking off this summer's Spider-Blockbuster! Rick Remender (X-FORCE) joins Tony Moore (FRANKEN-CASTLE) and Tom Fowler (I AM AN AVENGER) for the next crucial chapter in the life of Flash Thompson!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38593",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38593/venom_2011_5?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-5/digital-comic/22997?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=22997&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/22997?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41760",
+            "name": "Venom (2011) #5 (2nd Printing Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-07-27T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-07-04T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-01-04T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-01-04T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/4d9cc1c44d381",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/80/4e0c9d6eb1c8e",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/4e0c9d3917d5d",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/4e0c9d0b3b237",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/4d9cc1c44d381",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38593/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11307",
+              "name": "Tom Fowler",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38593/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38593/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/90946",
+              "name": "Venom #5",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/91156",
+              "name": "Venom #5 Interior",
+              "type": ""
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38593/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 39969,
+        "digitalId": 0,
+        "title": "Venom: Flashpoint (2011) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": "Collecting AMAZING SPIDER-MAN (1963) #654.1 and material from #654, and VENOM (2011) #1.",
+        "modified": "2011-07-14T17:46:10-0400",
+        "isbn": "",
+        "upc": "5960607682-00111",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 56,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Collecting AMAZING SPIDER-MAN (1963) #654.1 and material from #654, and VENOM (2011) #1."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39969",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/39969/venom_flashpoint_2011_1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/14809",
+          "name": "Venom: Flashpoint (2011)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-07-20T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-07-05T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4d9cd7340e82d",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4d9cd7340e82d",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39969/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/894",
+              "name": "Marcos Martin",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+              "name": "Humberto Ramos",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39969/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39969/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/90705",
+              "name": "Cover #90705",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/90706",
+              "name": "Interior #90706",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39969/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 35503,
+        "digitalId": 25030,
+        "title": "Amazing Spider-Man (1999) #665",
+        "issueNumber": 665,
+        "variantDescription": "",
+        "description": "\"INFESTED\" ENDS WITH SPIDEY AT THE \"CROSSROADS\"! As Spider-Man, he's a member of the FF and TWO different Avengers teams.  As Peter Parker, he works all hours on his dream job at Horizon Labs.  That doesn't leave him with much time for anything or anyone else.  This is where he pays the price. In this landmark issue, one of Peter's greatest sins-- comes back to haunt him. And the life of someone dear to him hangs in the balance. Plus: With New York's Infestation complete, the run-up to Spider-Island is over. Prepare for hell to break loose.",
+        "modified": "2011-10-20T09:15:08-0400",
+        "isbn": "",
+        "upc": "5960604716-66511",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "\"INFESTED\" ENDS WITH SPIDEY AT THE \"CROSSROADS\"! As Spider-Man, he's a member of the FF and TWO different Avengers teams.  As Peter Parker, he works all hours on his dream job at Horizon Labs.  That doesn't leave him with much time for anything or anyone else.  This is where he pays the price. In this landmark issue, one of Peter's greatest sins-- comes back to haunt him. And the life of someone dear to him hangs in the balance. Plus: With New York's Infestation complete, the run-up to Spider-Island is over. Prepare for hell to break loose."
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/35503",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/35503/amazing_spider-man_1999_665?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-665/digital-comic/25030?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25030&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25030?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/40025",
+            "name": "Amazing Spider-Man (1999) #665 (AMAZING SPIDER-MAN 665 I AM CAPTAIN AMERICA VARIANT)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-07-13T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-06-20T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-01-23T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-11-22T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/4ea01f0fa1794",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/4ea01f0fa1794",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/04/4df8fdaee9673",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/80/4df8fd6be8549",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/f0/4df8fd4ca65d7",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/20/4df8fd232be30",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/04/4df8fcd66d8c8",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4dee80cd3b3c9",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/00/4dee809a06da0",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/40/4dee806613cbd",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/4d9f1fe8ccdac",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35503/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1141",
+              "name": "Giuseppe Camuncoli",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1156",
+              "name": "Ryan Stegman",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/872",
+              "name": "Marte Gracia",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1143",
+              "name": "John Rauch",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/272",
+              "name": "Paolo Rivera",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 12,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35503/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010325",
+              "name": "Betty Brant"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+              "name": "Captain Marvel (Carol Danvers)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011258",
+              "name": "Carlie Cooper"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009366",
+              "name": "Invisible Woman"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009372",
+              "name": "J. Jonah Jameson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009708",
+              "name": "Mary Jane Watson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009490",
+              "name": "May Parker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009459",
+              "name": "Mr. Fantastic"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009662",
+              "name": "Thing"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 12
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35503/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78513",
+              "name": "Amazing Spider-Man (1999) #665",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78514",
+              "name": "Amazing Spider-Man (1999) #665 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35503/events",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/events/305",
+              "name": "Spider-Island"
+            }
+          ],
+          "returned": 1
+        }
+      },
+      {
+        "id": 38595,
+        "digitalId": 22006,
+        "title": "Venom (2011) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": "The long awaited grudge match between Venom and Spider-Man is here! Big action! Big intrigue! All presented in the mighty Marvel fashion! Rick Remender (X-Force, Punisher) and Tony Moore (Punisher, The Walking Dead) bring you a knock down street brawl for the ages in the closing chapter of the first arc of Marvel's hottest new series!",
+        "modified": "2012-11-14T13:01:52-0500",
+        "isbn": "",
+        "upc": "5960607565-00411",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "The long awaited grudge match between Venom and Spider-Man is here! Big action! Big intrigue! All presented in the mighty Marvel fashion! Rick Remender (X-Force, Punisher) and Tony Moore (Punisher, The Walking Dead) bring you a knock down street brawl for the ages in the closing chapter of the first arc of Marvel's hottest new series!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38595",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38595/venom_2011_4?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-4/digital-comic/22006?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=22006&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/22006?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/39730",
+            "name": "Venom (2011) #4 (I Am Captain America Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-06-29T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-05-30T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-01-01T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-01-03T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/4d88d2304c477",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/4d88d2304c477",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38595/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9137",
+              "name": "Mike McKone",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38595/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38595/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/90478",
+              "name": "Venom #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/90535",
+              "name": "Venom #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38595/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 38597,
+        "digitalId": 21218,
+        "title": "Venom (2011) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": "Flash has lost control of the symbiote! Jack-O'-Lantern and his enigmatic boss are poised to flood the black market with?weaponized Antarctic Vibranium! With his military handler's finger on the self-destruct button, can Flash overcome his temper to regain control over Venom and save the world from descending into chaos before he's blown to pieces?",
+        "modified": "2012-11-12T13:48:47-0500",
+        "isbn": "",
+        "upc": "5960607565-00311",
+        "diamondCode": "MAR110661",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Flash has lost control of the symbiote! Jack-O'-Lantern and his enigmatic boss are poised to flood the black market with?weaponized Antarctic Vibranium! With his military handler's finger on the self-destruct button, can Flash overcome his temper to regain control over Venom and save the world from descending into chaos before he's blown to pieces?"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38597",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38597/venom_2011_3?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-3/digital-comic/21218?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=21218&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/21218?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/39221",
+            "name": "Venom (2011) #3 (X-Men Art Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-05-25T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-05-02T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-12-31T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-01-03T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/0/03/4d5197104c432",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/60/4db6cf673d888",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/80/4db598479dd7d",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/f0/4db596bc466ef",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/c0/4db5968746b1a",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/0/03/4d5197104c432",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38597/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/312",
+              "name": "Mike Deodato",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11307",
+              "name": "Tom Fowler",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38597/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38597/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/89221",
+              "name": "Cover Venom #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/89891",
+              "name": "Venom (2011) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38597/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 38596,
+        "digitalId": 20678,
+        "title": "Venom (2011) #2",
+        "issueNumber": 2,
+        "variantDescription": "",
+        "description": "A mysterious super villain has weaponized Antarctic. Vibranium to sell to dictators, madmen and terrorists across the globe. To stop this WMD, the US military unleashes the enhanced black ops agent Venom! First stop on his hunt: The Savage Land! But who’s hunting who? Venom soon discovers that death stalks these jungles; Kraven the Hunter stalks these jungles! Rick Remender (UNCANNY X-FORCE, PUNISHER) and Tony Moore (PUNISHER, The Walking Dead) give you ringside seats to the grittiest, down-and-dirtiest brawl of the year! Venom vs. Kraven the Hunter!",
+        "modified": "2012-11-12T13:39:06-0500",
+        "isbn": "",
+        "upc": "5960607565-00211",
+        "diamondCode": "FEB110554",
+        "ean": "",
+        "issn": "2159-3124",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "A mysterious super villain has weaponized Antarctic. Vibranium to sell to dictators, madmen and terrorists across the globe. To stop this WMD, the US military unleashes the enhanced black ops agent Venom! First stop on his hunt: The Savage Land! But who’s hunting who? Venom soon discovers that death stalks these jungles; Kraven the Hunter stalks these jungles! Rick Remender (UNCANNY X-FORCE, PUNISHER) and Tony Moore (PUNISHER, The Walking Dead) give you ringside seats to the grittiest, down-and-dirtiest brawl of the year! Venom vs. Kraven the Hunter!"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38596",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/38596/venom_2011_2?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Venom-2/digital-comic/20678?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=20678&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/20678?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13911",
+          "name": "Venom (2011 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41391",
+            "name": "Venom (2011) #2 (2nd Printing Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-04-27T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-04-04T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-12-28T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-01-03T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/a0/4d35a8353f74d",
+          "extension": "jpg"
+        },
+        "images": [],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38596/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9586",
+              "name": "Tony Moore",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11835",
+              "name": "Rick Remender",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38596/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38596/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/84735",
+              "name": "Cover #84735",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/84736",
+              "name": "Interior #84736",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/38596/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 39291,
+        "digitalId": 19302,
+        "title": "Amazing Spider-Man (1999) #654.1",
+        "issueNumber": 654.1,
+        "variantDescription": "",
+        "description": "START READING with this POINT ONE issue! Witness the birth of a new Spider-Man in the start of a brand-new story arc! Bonded to the dangerous and powerful Venom symbiote, this new webslinger is showing Peter Parker up in the hero department! ",
+        "modified": "2012-02-28T10:03:15-0500",
+        "isbn": "",
+        "upc": "",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Special POINT ONE issue. \nSTART READING with this Point One issue to learn the new meaning for great power and great responsibility! Witness the birth of a new Spider-Man in the start of a brand-new story arc! Bonded to the dangerous and powerful Venom symbiote, this new webslinger is showing Peter Parker up in the hero department! Plus, who will Spider-Man turn to in his darkest hour? Believe us, it’s not who you think! \nRated A …$2.99\n"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "START READING with this POINT ONE issue! Witness the birth of a new Spider-Man in the start of a brand-new story arc! Bonded to the dangerous and powerful Venom symbiote, this new webslinger is showing Peter Parker up in the hero department! "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39291",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/39291/amazing_spider-man_1999_654.1?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-654-1/digital-comic/19302?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=19302&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/19302?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-02-16T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "-0001-11-30T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2011-07-12T09:17:02-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-07-13T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/00/4e983d6b67c4b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/00/4e983d6b67c4b",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/b0/4d51b8dbaac1f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39291/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/429",
+              "name": "Carlos Alberto cruz Cuevas",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+              "name": "Edgar Delgado",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/72",
+              "name": "Humberto Ramos",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7413",
+              "name": "PAULO SIQUEIRA",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39291/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009165",
+              "name": "Avengers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010325",
+              "name": "Betty Brant"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009708",
+              "name": "Mary Jane Watson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 5
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39291/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/89207",
+              "name": "Amazing Spider-Man (1999) #654.1 ",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/89209",
+              "name": "Amazing Spider-Man (1999) #654.1 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/39291/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 35521,
+        "digitalId": 19212,
+        "title": "Amazing Spider-Man (1999) #654",
+        "issueNumber": 654,
+        "variantDescription": "",
+        "description": "Amazing Spider-Man #654",
+        "modified": "2013-04-02T14:35:45-0400",
+        "isbn": "",
+        "upc": "5960604716-65411",
+        "diamondCode": "DEC100571",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Amazing Spider-Man #654"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/35521",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/35521/amazing_spider-man_1999_654?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-654/digital-comic/19212?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=19212&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/19212?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/39595",
+            "name": "Amazing Spider-Man (1999) #654 (2nd Printing Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2011-02-09T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-01-26T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-11-01T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/f0/4e98371088799",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/f0/4e98371088799",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/70/4d52d8b7a673a",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 10,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35521/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/498",
+              "name": "Greg Adams",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/783",
+              "name": "Roland Paris",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1133",
+              "name": "Stefano Caselli",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1430",
+              "name": "Ronan Cliquet",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10106",
+              "name": "Fabio D'Auria",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/872",
+              "name": "Marte Gracia",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7894",
+              "name": "Fred Van Lente",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 10
+        },
+        "characters": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35521/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010338",
+              "name": "Captain Marvel (Carol Danvers)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009367",
+              "name": "Iron Fist (Danny Rand)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009372",
+              "name": "J. Jonah Jameson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009378",
+              "name": "Jessica Jones"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009215",
+              "name": "Luke Cage"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009490",
+              "name": "May Parker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009662",
+              "name": "Thing"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 9
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35521/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78607",
+              "name": "Amazing Spider-Man (1999) #654",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/78608",
+              "name": "Amazing Spider-Man (1999) #654 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/35521/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 30322,
+        "digitalId": 17302,
+        "title": "Amazing Spider-Man (1999) #647",
+        "issueNumber": 647,
+        "variantDescription": "",
+        "description": "BRAND NEW DAY is over! While recent events may have drastically changed Peter and his friends, the ol' Parker luck is still around…",
+        "modified": "2011-10-06T14:54:46-0400",
+        "isbn": "",
+        "upc": "5960604716-64711",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 64,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "BRAND NEW DAY is over! While recent events may have drastically changed Peter and his friends, the ol' Parker luck is still around…"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "This is it!  After 101 issues, the writing team of Spidey Web-Heads says good-bye as the historic era known as BRAND NEW DAY comes to an end in a triple-sized SPECTACULAR!  \r\nOver the past three years, he's faced New Ways to Die, a Gauntlet, and a Grim Hunt, and, through it all, Spider-Man has stood stronger than ever.  But while recent events may have drastically changed Peter and his friends, the ol' Parker luck threatens a turn for the even-worse at any second. One thing�s for certain though, the sun is setting on the Wall-Crawler's Brand New Day, and tomorrow begins right here! \r\nRated A �$4.99"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/30322",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/30322/amazing_spider-man_1999_647?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-647/digital-comic/17302?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=17302&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/17302?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/37071",
+            "name": "Amazing Spider-Man (1999) #647 (MCNIVEN VARIANT)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2010-11-03T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2010-10-14T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2011-10-04T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-10-04T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4e85e9b1005b6",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4e85e9b1005b6",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/4c58756a689aa",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/d0/4c4dd8b11bbf3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 19,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30322/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11398",
+              "name": "Adam Archer",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/465",
+              "name": "Paul Azaceta",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11309",
+              "name": "Mike Del Mundo",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9089",
+              "name": "Max Fiumara",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/438",
+              "name": "Karl Kesel",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4330",
+              "name": "Graham Nolan",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10288",
+              "name": "Marko Djurdjevic",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/428",
+              "name": "Antonio Fabela",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/774",
+              "name": "Morry Hollowell",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4953",
+              "name": "Bob Gale",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/644",
+              "name": "Marc Guggenheim",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2428",
+              "name": "Joe Kelly",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/626",
+              "name": "Dan Slott",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7894",
+              "name": "Fred Van Lente",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/119",
+              "name": "Mark Waid",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10409",
+              "name": "Zeb Wells",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/837",
+              "name": "Mark Pennington",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            }
+          ],
+          "returned": 19
+        },
+        "characters": {
+          "available": 11,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30322/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011258",
+              "name": "Carlie Cooper"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009276",
+              "name": "Doctor Octopus"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009486",
+              "name": "Harry Osborn"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009372",
+              "name": "J. Jonah Jameson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011288",
+              "name": "Jackal"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009382",
+              "name": "Juggernaut"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009708",
+              "name": "Mary Jane Watson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009325",
+              "name": "Norman Osborn"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010788",
+              "name": "Venom (Mac Gargan)"
+            }
+          ],
+          "returned": 11
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30322/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/69470",
+              "name": "Amazing Spider-Man (1999) #647",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/69471",
+              "name": "Amazing Spider-Man (1999) #647 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30322/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 30317,
+        "digitalId": 16000,
+        "title": "Amazing Spider-Man (1999) #642",
+        "issueNumber": 642,
+        "variantDescription": "",
+        "description": "ORIGIN OF THE SPECIES PART 1 When Norman Osborn’s baby is born, every villain on the planet wants the first ever strain of pure Goblin blood, leaving Spider-Man’s friends and family exposed to a sinister plan…",
+        "modified": "2011-10-04T10:15:42-0400",
+        "isbn": "",
+        "upc": "5960604716-64211",
+        "diamondCode": "JUL100529",
+        "ean": "",
+        "issn": "0274-5232",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "ORIGIN OF THE SPECIES PART 1 When Norman Osborn’s baby is born, every villain on the planet wants the first ever strain of pure Goblin blood, leaving Spider-Man’s friends and family exposed to a sinister plan…"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "A five part spider-odyssey begins in ORIGIN OF THE SPECIES!\r\nWith Peter Parker’s ONE MOMENT IN TIME behind him and Mary Jane back in his life, Spidey finds himself ready for a new start…but the various threads of his life since his BRAND NEW DAY are about to crash together violently. When Norman Osborn’s baby is born… every villain on the planet wants the first ever strain of pure Goblin blood, leaving Spider-Man’s friends and family exposed to a Sinister plan that threatens to bring down every strand or Peter’s life that’s been stitched together\r\ncarefully over the past few years. It may be a cliché to say it…but after ORIGIN OF THE SPECIES absolutely nothing will be the same. Also this issue, we begin a series of covers by the brilliant Marko Djurdjevic that when all put together will form a giant wall-sized Spider poster featuring the people in Spider-Man’s life! Plus…the Spidey Sunday feature continues breaking the 4th wall of Web-swinging Wonder by legends Stan Lee and Marcos Martin (well, Stan’s a legend…Marcos is just a man who draws like one.)\r\nRated A …$2.99"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/30317",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/30317/amazing_spider-man_1999_642?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-642/digital-comic/16000?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=16000&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/16000?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/36664",
+            "name": "Amazing Spider-Man (1999) #642 (JRSR VARIANT)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2010-09-09T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2010-08-19T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2011-08-22T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-10-04T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/70/4e8617f05ee99",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/70/4e8617f05ee99",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/00/4c58758903c7a",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/60/4c52d52a84933",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/4c52d5244f8bd",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/00/4c52d51e2f451",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4c52d517911df",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/c0/4c52d37f031da",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/10/4c52d372abf09",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/f0/4c125127259ad",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/90/4c0fae274ee86",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30317/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/465",
+              "name": "Paul Azaceta",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10288",
+              "name": "Marko Djurdjevic",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1117",
+              "name": "Javier Rodriguez",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9471",
+              "name": "Stephen Wacker",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/119",
+              "name": "Mark Waid",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 12,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30317/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011258",
+              "name": "Carlie Cooper"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009276",
+              "name": "Doctor Octopus"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009287",
+              "name": "Electro"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009334",
+              "name": "Hammerhead"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009486",
+              "name": "Harry Osborn"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009708",
+              "name": "Mary Jane Watson"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011241",
+              "name": "Menace"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011244",
+              "name": "Mr. Negative"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009558",
+              "name": "Sandman"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009692",
+              "name": "Toxin (Eddie Brock)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 12
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30317/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/69460",
+              "name": "Amazing Spider-Man (1999) #642",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/69461",
+              "name": "Amazing Spider-Man (1999) #642 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/30317/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 28227,
+        "digitalId": 13911,
+        "title": "Amazing Spider-Man (1999) #622",
+        "issueNumber": 622,
+        "variantDescription": "",
+        "description": "As the Gauntlet rages on around him, the spotlight is on Peter Parker’s original archenemy-turned-best friend, Flash Thompson. Plus, Morbius The Living Vampire throws down with Spidey!",
+        "modified": "2011-09-29T15:01:33-0400",
+        "isbn": "",
+        "upc": "5960604716-62211",
+        "diamondCode": "DEC090477",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "As the Gauntlet rages on around him, the spotlight is on Peter Parker’s original archenemy-turned-best friend, Flash Thompson. Plus, Morbius The Living Vampire throws down with Spidey!"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "As the Gauntlet rages on around him, the spotlight is on Peter Parker’s original archenemy-turned-best friend, Flash Thompson.  Since losing his legs in service to his country, Flash Thompson’s not been deterred by his physical limitations.  But even a hero can have his limits.  Greg Weisman, one of the brains behind the smash TV hit Spectacular Spider-Man, teams with Luke Ross (CAPTAIN AMERICA) to bring a touching story of Flash Thompson coming to terms with his new life. Then, Fred Van Lente and Joe Quinones (WEDNESDAY COMICS) bring Spider-Man face-to-face with Morbius, The Living Vampire!\r\nRated A …$3.99"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/28227",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/28227/amazing_spider-man_1999_622?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Amazing-Spider-Man-622/digital-comic/13911?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=13911&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/13911?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2010-02-24T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2010-02-04T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2010-10-01T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2011-04-19T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 2.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/d0/4e84c0b87f6fa",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/d0/4e84c0b87f6fa",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/e0/4badc51db53b9",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/b0/4badc01c7d26e",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/28227/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/648",
+              "name": "Simone Bianchi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5003",
+              "name": "Simone Peruzzi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10090",
+              "name": "Joe Quinones",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2338",
+              "name": "Luke Ross",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7894",
+              "name": "Fred Van Lente",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10174",
+              "name": "Greg Weisman",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/28227/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010325",
+              "name": "Betty Brant"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009185",
+              "name": "Black Cat"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009404",
+              "name": "Lizard"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009454",
+              "name": "Morbius"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009610",
+              "name": "Spider-Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009663",
+              "name": "Venom (Flash Thompson)"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/28227/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/61676",
+              "name": "Amazing Spider-Man (1999) #622",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/61677",
+              "name": "Amazing Spider-Man (1999) #622 - Int",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/28227/events",
+          "items": [],
+          "returned": 0
+        }
+      }
+    ]
+  }
+}

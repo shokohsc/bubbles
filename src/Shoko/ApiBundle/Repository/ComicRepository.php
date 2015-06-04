@@ -65,46 +65,16 @@ class ComicRepository
      */
     public function findAllByReleaseDate(Carbon $date)
     {
-        try {
-            $this->query->setFormat('comic');
-            $this->query->setFormatType('comic');
-            $this->query->setNoVariants(true);
-            $this->query->setDateRange($this->getReleaseDateRange($date));
-            $this->query->setOrderBy('title');
-            $this->query->setLimit(100);
-
-            return $this->repository
-                ->getComics($this->query)
-                ->getData()
-                ->getResults();
-        } catch (Exception $e) {
-            return [];
-        }
-    }
-
-    /**
-     * Find all comics from the beginning of the serie
-     *
-     * @param string $id matching serie id
-     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
-     */
-    public function findAllByStartUntilNow($id)
-    {
-        try {
-            $this->query->setFormat('comic');
-            $this->query->setFormatType('comic');
-            $this->query->setNoVariants(true);
-            $this->query->setSeries($id);
-            $this->query->setDateRange(Carbon::create(1939, 01, 01)->toDateString().','.Carbon::now()->toDateString());
-            $this->query->setOrderBy('-issueNumber');
-
-            return $this->repository
-                ->getComics($this->query)
-                ->getData()
-                ->getResults();
-        } catch (Exception $e) {
-            return [];
-        }
+        $this->query->setFormatType('comic');
+        $this->query->setFormat('comic');
+        $this->query->setNoVariants(true);
+        $this->query->setDateRange($this->getReleaseDateRange($date));
+        $this->query->setOrderBy('title');
+        $this->query->setLimit(100);
+        return $this->repository
+            ->getComics($this->query)
+            ->getData()
+            ->getResults();
     }
 
     /**
@@ -115,40 +85,32 @@ class ComicRepository
      */
     public function findOneById($id)
     {
-        try {
-            return $this->repository
-                ->getComicById(intval($id))
-                ->getData()
-                ->getResults()[0];
-        } catch (Exception $e) {
-            return [];
-        }
+        return $this->repository
+            ->getComicById(intval($id))
+            ->getData()
+            ->getResults()[0];
     }
 
     /**
      * Find all comics matching query
      *
      * @param string $query input from search form
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
      */
      public function findAllByQuery($query, $page)
      {
-         $comics_per_page = $this->comicsPerPage;
-        try {
-            $this->query->setTitleStartsWith($query);
-            $this->query->setOrderBy('-onsaleDate');
-            $this->query->setFormat('comic');
-            $this->query->setFormatType('comic');
-            $this->query->setNoVariants(true);
-            $this->query->setLimit($comics_per_page);
-            $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+        $comics_per_page = $this->comicsPerPage;
+        $this->query->setTitleStartsWith($query);
+        $this->query->setOrderBy('-onsaleDate');
+        $this->query->setFormat('comic');
+        $this->query->setFormatType('comic');
+        $this->query->setNoVariants(true);
+        $this->query->setLimit($comics_per_page);
+        $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
 
-            return $this->repository
-                ->getComics($this->query)
-                ->getData()
-                ->getResults();
-        } catch (Exception $e) {
-            return [];
-        }
+        return $this->repository
+            ->getComics($this->query)
+            ->getData()
+            ->getResults();
     }
 }

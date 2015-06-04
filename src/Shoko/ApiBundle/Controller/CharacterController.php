@@ -24,8 +24,9 @@ class CharacterController extends Controller
   {
       $character = $this->get('shoko.character.repository')->findOneById($id);
       $data = [
-          'name' => $character->getName()
-          ];
+        'code' => 200,
+        'name' => $character->getName()
+      ];
       $response = new JsonResponse();
       $response->setData(
           [

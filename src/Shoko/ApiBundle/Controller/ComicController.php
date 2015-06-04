@@ -4,6 +4,7 @@ namespace Shoko\ApiBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Carbon\Carbon;
 
 /**
@@ -24,7 +25,8 @@ class ComicController extends Controller
   {
       $comic = $this->get('shoko.comic.repository')->findOneById($id);
       $data = [
-          'title' => $comic->getTitle(),
+        'code' => 200,
+        'title' => $comic->getTitle(),
       ];
       $response = new JsonResponse();
       $response->setData(

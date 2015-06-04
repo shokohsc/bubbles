@@ -1,0 +1,3011 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2015 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2015 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2015 MARVEL</a>",
+  "etag": "eb5bd5178b23e11c4b936299d72f2da5ec7ec2b5",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 634,
+    "count": 20,
+    "results": [
+      {
+        "id": 32767,
+        "digitalId": 0,
+        "title": "Wolverine (2010) #900",
+        "issueNumber": 900,
+        "variantDescription": "",
+        "description": "X-Man. Avenger. Soldier. And that's just the HALF of it. In this atomic-sized special, superstar David Finch leads a platoon of comic's most talented creators in giving the Canadian killer a 21-gun salute. Ninjas, bar-room brawls, Morlocks and pirates (yes, PIRATES!): this issue sees the most marvelous mutant of all put through the paces. And if five-all new tales of Snikt-tastic action wasn't enough, there's classic reprints featuring some of Logan's greatest hits!\r\nNew & Reprint/Parental Advisory …$4.99",
+        "modified": "-0001-11-30T00:00:00-0500",
+        "isbn": "",
+        "upc": "5960606812-90011",
+        "diamondCode": "MAR100603",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 104,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "X-Man. Avenger. Soldier. And that's just the HALF of it. In this atomic-sized special, superstar David Finch leads a platoon of comic's most talented creators in giving the Canadian killer a 21-gun salute. Ninjas, bar-room brawls, Morlocks and pirates (yes, PIRATES!): this issue sees the most marvelous mutant of all put through the paces. And if five-all new tales of Snikt-tastic action wasn't enough, there's classic reprints featuring some of Logan's greatest hits!\r\nNew & Reprint/Parental Advisory …$4.99"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/32767",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/32767/wolverine_2010_900?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2010-05-12T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2010-04-22T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/4baaaa61b8ba6",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/4baaaa61b8ba6",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 10,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/32767/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10062",
+              "name": "Marc Bernardin",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/759",
+              "name": "C. B. Cebulski",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/682",
+              "name": "Todd Dezago",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8367",
+              "name": "Dean Motter",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10306",
+              "name": "Matt Yocum",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10063",
+              "name": "Jake Bilbao",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8684",
+              "name": "Jason Craig",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/248",
+              "name": "David Finch",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10131",
+              "name": "Pow Rodrix",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/7431",
+              "name": "GREG SCOTT",
+              "role": "penciller"
+            }
+          ],
+          "returned": 10
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/32767/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+              "name": "Iron Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/32767/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/73871",
+              "name": "Cover #73871",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/73873",
+              "name": "Interior #73873",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/32767/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41241,
+        "digitalId": 28232,
+        "title": "Wolverine (2010) #317",
+        "issueNumber": 317,
+        "variantDescription": "",
+        "description": "In order to save the Dreaming Maiden, Wolverine must face nightmares while asleep and while awake! But is the Dreaming Maiden too dangerous to be saved? And what will be the fate of the mysterious Covenant?\n",
+        "modified": "2013-02-22T11:51:48-0500",
+        "isbn": "",
+        "upc": "75960607152431711",
+        "diamondCode": "OCT120665",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "FINAL ISSUE!\n\n\n And what will be the fate of the mysterious Covenant?<ul><li>In order to save the Dreaming Maiden, Wolverine must face nightmares while asleep and while awake!</li><li>But is the Dreaming Maiden too dangerous to be saved?</li></ul>"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "In order to save the Dreaming Maiden, Wolverine must face nightmares while asleep and while awake! But is the Dreaming Maiden too dangerous to be saved? And what will be the fate of the mysterious Covenant?\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41241",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41241/wolverine_2010_317?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-317/digital-comic/28232?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=28232&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/28232?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/45621",
+            "name": "Wolverine (2010) #317 (Ferry Final Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-12-12T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-11-28T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-06-17T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-12-12T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/10/50883ed4dcb11",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/10/50883ed4dcb11",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41241/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/548",
+              "name": "Andrew Hennessy",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/809",
+              "name": "Dave Meikis",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/837",
+              "name": "Mark Pennington",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/480",
+              "name": "Cam Smith",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/561",
+              "name": "Wil Quintana",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8715",
+              "name": "Jeanine Schaefer",
+              "role": "editor"
+            }
+          ],
+          "returned": 9
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41241/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41241/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93343",
+              "name": "Cover #93343",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93344",
+              "name": "Interior #93344",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41241/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41243,
+        "digitalId": 28006,
+        "title": "Wolverine (2010) #316",
+        "issueNumber": 316,
+        "variantDescription": "",
+        "description": "Wolverine and Elsa Bloodstone discover the Floating Castle! With the Covenant on their trail, can Wolverine keep the Dreaming Maiden alive, or will Elsa betray him? Meanwhile, Melita makes a discovery that will change Wolverine – and her – forever!\n",
+        "modified": "2013-02-22T11:49:37-0500",
+        "isbn": "",
+        "upc": "75960607152431611",
+        "diamondCode": "SEP120665",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "Wolverine and Elsa Bloodstone discover the Floating Castle!\n\n\n<ul><li>With the Covenant hot on their trail, can Wolverine keep the Deaming Maiden alive? Or will Elsa betray him?</li><li>Meanwhile, Melita makes a discovery that will change Wolverine &ndash; and her &ndash; forever!</li></ul>"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Wolverine and Elsa Bloodstone discover the Floating Castle! With the Covenant on their trail, can Wolverine keep the Dreaming Maiden alive, or will Elsa betray him? Meanwhile, Melita makes a discovery that will change Wolverine – and her – forever!\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41243",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41243/wolverine_2010_316?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-316/digital-comic/28006?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=28006&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/28006?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-11-21T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-11-07T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-05-27T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-11-21T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/502406a71f039",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/502406a71f039",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41243/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/520",
+              "name": "Rainier Beredo",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/561",
+              "name": "Wil Quintana",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/809",
+              "name": "Dave Meikis",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/480",
+              "name": "Cam Smith",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8715",
+              "name": "Jeanine Schaefer",
+              "role": "editor"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41243/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41243/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93347",
+              "name": "Cover #93347",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93348",
+              "name": "Interior #93348",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41243/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41244,
+        "digitalId": 27867,
+        "title": "Wolverine (2010) #315",
+        "issueNumber": 315,
+        "variantDescription": "",
+        "description": "• Wolverine vs. Murderous Lion in a no-holds barred Kung-Fu throwdown!\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n",
+        "modified": "2013-06-26T14:04:13-0400",
+        "isbn": "",
+        "upc": "75960607152431511",
+        "diamondCode": "AUG120664",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "• Wolverine vs. Murderous Lion in a no-holds barred Kung-Fu throwdown!\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41244",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41244/wolverine_2010_315?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-315/digital-comic/27867?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27867&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27867?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-10-24T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-10-10T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-07-31T08:42:41-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-10-24T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/80/507c6492d263d",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/80/507c6492d263d",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41244/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/520",
+              "name": "Rainier Beredo",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10159",
+              "name": "Michael Del Mundo",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/809",
+              "name": "Dave Meikis",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8715",
+              "name": "Jeanine Schaefer",
+              "role": "editor"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41244/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41244/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93349",
+              "name": "Cover #93349",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93350",
+              "name": "Interior #93350",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41244/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41242,
+        "digitalId": 27798,
+        "title": "Wolverine (2010) #314",
+        "issueNumber": 314,
+        "variantDescription": "",
+        "description": "• All new jumping on point!\n• How is Wolverine connected to the secret society known as the Covenant?\nIssue #315\n• Wolverine vs. Murderous Lion in a no-holds barred Kung-Fu throwdown!\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n",
+        "modified": "2013-06-26T14:04:13-0400",
+        "isbn": "",
+        "upc": "75960607152431411",
+        "diamondCode": "AUG120663",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "• All new jumping on point!\n• How is Wolverine connected to the secret society known as the Covenant?\nIssue #315\n• Wolverine vs. Murderous Lion in a no-holds barred Kung-Fu throwdown!\n• Martial arts, super science, and sorcery--Melita uncovers the secrets of the Covenant.\n• Who is the Dreaming Maiden... and why does the mysterious Covenant want her dead?\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41242",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41242/wolverine_2010_314?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-314/digital-comic/27798?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27798&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27798?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-10-10T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-09-26T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-10-10T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/a0/5060d11641f1f",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/a0/5060d11641f1f",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41242/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/520",
+              "name": "Rainier Beredo",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10159",
+              "name": "Michael Del Mundo",
+              "role": "artist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/809",
+              "name": "Dave Meikis",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8715",
+              "name": "Jeanine Schaefer",
+              "role": "editor"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41242/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41242/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93345",
+              "name": "Cover #93345",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93346",
+              "name": "Interior #93346",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41242/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41245,
+        "digitalId": 27732,
+        "title": "Wolverine (2010) #313",
+        "issueNumber": 313,
+        "variantDescription": "",
+        "description": "* The stunning conclusion to SABRETOOH REBORN!\n* What does Romulus offer Sabretooth that can compare to his lifelong vendetta against Wolverine?\n* Wolverine must make a decision: stop Sabretooth or Romulus…and live with the lives that are lost in the wake of that decision.\n",
+        "modified": "2013-03-08T15:03:34-0500",
+        "isbn": "",
+        "upc": "5960607152-31311",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "* The stunning conclusion to SABRETOOH REBORN!\n* What does Romulus offer Sabretooth that can compare to his lifelong vendetta against Wolverine?\n* Wolverine must make a decision: stop Sabretooth or Romulus…and live with the lives that are lost in the wake of that decision.\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41245",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41245/wolverine_2010_313?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-313/digital-comic/27732?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27732&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27732?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43196",
+            "name": "Wolverine (2010) #313 (Tbd Artist Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-09-26T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-09-03T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-03-18T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-09-26T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/80/5052071ecbbd3",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/80/5052071ecbbd3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41245/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/648",
+              "name": "Simone Bianchi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/18",
+              "name": "Jeph Loeb",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41245/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41245/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93351",
+              "name": "Cover #93351",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93352",
+              "name": "Interior #93352",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41245/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41246,
+        "digitalId": 27524,
+        "title": "Wolverine (2010) #312",
+        "issueNumber": 312,
+        "variantDescription": "",
+        "description": "<ul><li>Sabretooth is back &ndash; but which one is the real one?</li><li>Where has Sabretooth been and whose side is he on this time?</li><li>The identity of the red-headed woman who came to Wolverine&rsquo;s rescue is revealed!</li></ul>",
+        "modified": "2013-03-08T14:20:41-0500",
+        "isbn": "",
+        "upc": "5960607152-31211",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li>Sabretooth is back &ndash; but which one is the real one?</li><li>Where has Sabretooth been and whose side is he on this time?</li><li>The identity of the red-headed woman who came to Wolverine&rsquo;s rescue is revealed!</li></ul>"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41246",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41246/wolverine_2010_312?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-312/digital-comic/27524?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27524&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27524?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43197",
+            "name": "Wolverine (2010) #312 (Tbd Artist Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-08-22T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-08-01T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-03-08T14:20:34-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-08-22T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/c0/5024206e6dce1",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/c0/5024206e6dce1",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41246/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/648",
+              "name": "Simone Bianchi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/18",
+              "name": "Jeph Loeb",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41246/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41246/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93353",
+              "name": "Cover #93353",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93354",
+              "name": "Interior #93354",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41246/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41247,
+        "digitalId": 27345,
+        "title": "Wolverine (2010) #311",
+        "issueNumber": 311,
+        "variantDescription": "",
+        "description": "Sabretooth is back! Where has Sabretooth been and whose side is he on this time? The identity of the red-headed woman who came to Wolverine’s rescue is revealed!\n",
+        "modified": "2013-03-08T14:20:19-0500",
+        "isbn": "",
+        "upc": "5960607152-31111",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li>Sabretooth is back &ndash; but which one is the real one?</li><li>Where has Sabretooth been and whose side is he on this time?</li><li>The identity of the red-headed woman who came to Wolverine&rsquo;s rescue is revealed!</li></ul>"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Sabretooth is back! Where has Sabretooth been and whose side is he on this time? The identity of the red-headed woman who came to Wolverine’s rescue is revealed!\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41247",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41247/wolverine_2010_311?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-311/digital-comic/27345?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27345&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27345?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43198",
+            "name": "Wolverine (2010) #311 (Tbd Artist Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-08-08T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-07-18T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-03-08T14:20:07-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-08-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/500ef3e7954ab",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/500ef3e7954ab",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41247/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/648",
+              "name": "Simone Bianchi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/18",
+              "name": "Jeph Loeb",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41247/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41247/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93355",
+              "name": "Cover #93355",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93356",
+              "name": "Interior #93356",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41247/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41248,
+        "digitalId": 27092,
+        "title": "Wolverine (2010) #310",
+        "issueNumber": 310,
+        "variantDescription": "",
+        "description": "The long-awaited sequel to EVOLUTION! How did Sabretooth survive his beheading all those years ago?\n",
+        "modified": "2013-04-05T15:39:09-0400",
+        "isbn": "",
+        "upc": "5960607152-31011",
+        "diamondCode": "MAY120718",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li> The long-awaited sequel to EVOLUTION\n</li><li> How did Sabretooth survive his beheading all those years ago?</li></ul>\n"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "The long-awaited sequel to EVOLUTION! How did Sabretooth survive his beheading all those years ago?\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41248",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41248/wolverine_2010_310?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-310/digital-comic/27092?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27092&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27092?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43201",
+            "name": "Wolverine (2010) #310 (Mcguinness Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43202",
+            "name": "Wolverine (2010) #310 (Platt Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43199",
+            "name": "Wolverine (2010) #310 (Blank Cover Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/43200",
+            "name": "Wolverine (2010) #310 (Sketch Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-07-04T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-06-20T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-07-04T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/20/4fdf8dac8aa0c",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/20/4fdf8dac8aa0c",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41248/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/648",
+              "name": "Simone Bianchi",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/18",
+              "name": "Jeph Loeb",
+              "role": "writer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41248/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009554",
+              "name": "Sabretooth"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41248/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93357",
+              "name": "Cover #93357",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93358",
+              "name": "Interior #93358",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41248/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41252,
+        "digitalId": 27192,
+        "title": "Wolverine (2010) #309",
+        "issueNumber": 309,
+        "variantDescription": "",
+        "description": "<ul><li> An untold tale of the Wolverine!\n</li><li> Wolverine takes Elixir under his wing\n</li><li> After M-Day, not all depowered mutants found their way in the world,\nand one of them comes back for Wolverine</li></ul>\n",
+        "modified": "2013-04-03T10:05:22-0400",
+        "isbn": "",
+        "upc": "5960607152-30911",
+        "diamondCode": "MAY120717",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li> An untold tale of the Wolverine!\n</li><li> Wolverine takes Elixir under his wing\n</li><li> After M-Day, not all depowered mutants found their way in the world,\nand one of them comes back for Wolverine</li></ul>\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41252",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41252/wolverine_2010_309?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-309/digital-comic/27192?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=27192&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/27192?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-07-18T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-07-04T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T10:05:02-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-07-18T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/4ff1f7bbb893d",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/4ff1f7bbb893d",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41252/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10936",
+              "name": "Rafael Albuquerque",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11306",
+              "name": "Jason Latour",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/182",
+              "name": "Esad Ribic",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41252/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41252/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93365",
+              "name": "Cover #93365",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93366",
+              "name": "Interior #93366",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41252/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41249,
+        "digitalId": 26822,
+        "title": "Wolverine (2010) #308",
+        "issueNumber": 308,
+        "variantDescription": "",
+        "description": "Wolverine versus Dr. Rot for control of Wolverine’s brain. Can Wolverine destroy the last vestiges of Weapon X’s programming?\n",
+        "modified": "2013-04-05T15:37:41-0400",
+        "isbn": "",
+        "upc": "5960607152-30811",
+        "diamondCode": "APR120670",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Wolverine versus Dr. Rot for control of Wolverine’s brain. Can Wolverine destroy the last vestiges of Weapon X’s programming?\n"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<ul><li> Wolverine versus Dr. Rot for control of Wolverine’s brain</li><li> Can Wolverine destroy the last vestiges of Weapon X’s programming? </li><ul>"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41249",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41249/wolverine_2010_308?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-308/digital-comic/26822?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=26822&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/26822?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42928",
+            "name": "Wolverine (2010) #308 (Asm in Motion Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-06-20T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-06-06T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-06-20T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/70/4fd766d2183ab",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/70/4fd766d2183ab",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41249/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8221",
+              "name": "Chris Samnee",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41249/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41249/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93359",
+              "name": "Cover #93359",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93360",
+              "name": "Interior #93360",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41249/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41250,
+        "digitalId": 26547,
+        "title": "Wolverine (2010) #307",
+        "issueNumber": 307,
+        "variantDescription": "",
+        "description": "With Dr. Rot back in the picture, Wolverine must discover the secret behind Rot's twisted family and how they are connected. Meanwhile, FBI Agent Wells circles closer to the truth behind the brutal murders he's investigating. \n",
+        "modified": "2013-04-03T10:04:14-0400",
+        "isbn": "",
+        "upc": "5960607152-30711",
+        "diamondCode": "MAR120618",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "With Dr. Rot back in the picture, Wolverine must discover the secret behind Rot's twisted family and how they are connected. Meanwhile, FBI Agent Wells circles closer to the truth behind the brutal murders he's investigating. \n"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "\t\"<ul><li> DR. ROT IS BACK!</li><li> Discover the secret behind Rot's twisted family.and what Wolverine's\nconnection is.</li><li> FBI Agent Wells is circling closer to the truth behind the brutal murders he's investigating. And Wolverine is his lead suspect!</li></ul>\t "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41250",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41250/wolverine_2010_307?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-307/digital-comic/26547?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=26547&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/26547?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-05-30T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-05-16T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-22T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-05-30T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/90/4fb2a3be0a275",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/90/4fb2a3be0a275",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41250/creators",
+          "items": [],
+          "returned": 0
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41250/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41250/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93361",
+              "name": "Cover #93361",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93362",
+              "name": "Interior #93362",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41250/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41253,
+        "digitalId": 26369,
+        "title": "Wolverine (2010) #306",
+        "issueNumber": 306,
+        "variantDescription": "",
+        "description": "Dr. Rot makes his twisted return! How is Wolverine connected to the mad doctor? Meanwhile as FBI Agent Wells continues to circle in on the killer in a string of brutal killings, all signs seem to point to Wolverine!",
+        "modified": "2013-04-05T15:37:24-0400",
+        "isbn": "",
+        "upc": "5960607152-30611",
+        "diamondCode": "MAR120617",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Dr. Rot makes his twisted return! How is Wolverine connected to the mad doctor? Meanwhile as FBI Agent Wells continues to circle in on the killer in a string of brutal killings, all signs seem to point to Wolverine!"
+          },
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "\t\"<ul><li> DR. ROT IS BACK!</li><li> Discover the secret behind Rot's twisted family.and what Wolverine's\nconnection is.</li><li> FBI Agent Wells is circling closer to the truth behind the brutal murders he's investigating. And Wolverine is his lead suspect!</li></ul>\t "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41253",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41253/wolverine_2010_306?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-306/digital-comic/26369?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=26369&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/26369?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-05-09T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-04-25T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-05-09T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/4fabf349b2303",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/4fabf349b2303",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41253/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8221",
+              "name": "Chris Samnee",
+              "role": "penciller (cover)"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41253/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41253/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93367",
+              "name": "Wolverine (2010) #306",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93368",
+              "name": "Interior #93368",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41253/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41251,
+        "digitalId": 26207,
+        "title": "Wolverine (2010) #305",
+        "issueNumber": 305,
+        "variantDescription": "",
+        "description": "&bull; All New Jumping On Point!\r\n&bull; Written By Rising Star Cullen Bunn (Fear Itself: The Fearless, The Damned, The Sixth Gun) \r\n",
+        "modified": "2013-04-05T15:36:56-0400",
+        "isbn": "",
+        "upc": "5960607152-30511",
+        "diamondCode": "FEB120629",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; All New Jumping On Point!\r\n&bull; Written By Rising Star Cullen Bunn (Fear Itself: The Fearless, The Damned, The Sixth Gun) \r\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41251",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41251/wolverine_2010_305?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-305/digital-comic/26207?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=26207&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/26207?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-04-25T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-04-11T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2013-04-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-04-25T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/4f188a69421a3",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/90/4f88833fabbcb",
+            "extension": "png"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/4f188a69421a3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41251/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10023",
+              "name": "Cullen Bunn",
+              "role": "Writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/357",
+              "name": "Jim Cheung",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "Letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/559",
+              "name": "Paul Pelletier",
+              "role": "penciller"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41251/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41251/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93363",
+              "name": "Cover #93363",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93364",
+              "name": "Interior #93364",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41251/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41254,
+        "digitalId": 26124,
+        "title": "Wolverine (2010) #304",
+        "issueNumber": 304,
+        "variantDescription": "",
+        "description": "&bull; Final Issue In Jason Aaron&rsquo;s Acclaimed Run!\r\n&bull; The Tables Turn As Wolverine Comes After Sabretooth\r\n&bull; Guest-Starring Mystique And A Host Of Marvel U Villains\r\n",
+        "modified": "2012-08-20T16:07:46-0400",
+        "isbn": "",
+        "upc": "5960607152-30411",
+        "diamondCode": "FEB120627",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; Final Issue In Jason Aaron&rsquo;s Acclaimed Run!\r\n&bull; The Tables Turn As Wolverine Comes After Sabretooth\r\n&bull; Guest-Starring Mystique And A Host Of Marvel U Villains\r\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41254",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41254/wolverine_2010_304?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-304/digital-comic/26124?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=26124&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/26124?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42522",
+            "name": "Wolverine (2010) #304 (Avengers Art Appreciation Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-04-11T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-03-28T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-10-03T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-04-11T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/10/4f85a5773481e",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/10/4f85a5773481e",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/c0/4f1872ad5efc7",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41254/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11463",
+              "name": "Jason Aaron",
+              "role": "Writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/452",
+              "name": "Chris Eliopoulos",
+              "role": "Letterer"
+            }
+          ],
+          "returned": 2
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41254/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41254/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93369",
+              "name": "Cover #93369",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93370",
+              "name": "Interior #93370",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41254/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41259,
+        "digitalId": 25828,
+        "title": "Wolverine (2010) #303",
+        "issueNumber": 303,
+        "variantDescription": "",
+        "description": "Logan, Yukio, and Amiko invade the secret cave headquarters of The Hand to save The Silver Samurai. The big finale of The Hand/Yakuza War! The puppetmaster is finally revealed. This ending will forever change the landscape for Wolverine in Japan. \n",
+        "modified": "2012-08-20T16:06:29-0400",
+        "isbn": "",
+        "upc": "5960607152-30311",
+        "diamondCode": "JAN120700",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; Logan, Yukio And Amiko Invade The Secret Cave Headquarters Of The Hand To Save The Silver Samurai \r\n&bull; The Big Finale Of The Hand/Yakuza War! \r\n&bull; The Puppetmaster Is Finally Revealed\r\n&bull; This Ending Will Forever Change The Landscape For Wolverine In Japan.\r\n"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Logan, Yukio, and Amiko invade the secret cave headquarters of The Hand to save The Silver Samurai. The big finale of The Hand/Yakuza War! The puppetmaster is finally revealed. This ending will forever change the landscape for Wolverine in Japan. \n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41259",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41259/wolverine_2010_303?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-303/digital-comic/25828?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25828&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25828?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-03-21T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-03-07T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-10-03T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-03-21T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/00/4f68c98c12a9c",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/00/4f68c98c12a9c",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41259/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11463",
+              "name": "Jason Aaron",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8737",
+              "name": "Jerome Opena",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/448",
+              "name": "Billy Tan",
+              "role": "penciller"
+            }
+          ],
+          "returned": 3
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41259/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41259/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93379",
+              "name": "Cover #93379",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93380",
+              "name": "Interior #93380",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41259/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41258,
+        "digitalId": 25698,
+        "title": "Wolverine (2010) #302",
+        "issueNumber": 302,
+        "variantDescription": "",
+        "description": "&bull; Logan, Yukio And Amiko Invade The Secret Cave Headquarters Of The Hand To Save The Silver Samurai \r\n&bull; The Big Finale Of The Hand/Yakuza War! \r\n&bull; The Puppetmaster Is Finally Revealed\r\n&bull; This Ending Will Forever Change The Landscape For Wolverine In Japan.\r\n",
+        "modified": "2012-08-13T11:19:12-0400",
+        "isbn": "",
+        "upc": "5960607152-30211",
+        "diamondCode": "JAN120699",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; Logan, Yukio And Amiko Invade The Secret Cave Headquarters Of The Hand To Save The Silver Samurai \r\n&bull; The Big Finale Of The Hand/Yakuza War! \r\n&bull; The Puppetmaster Is Finally Revealed\r\n&bull; This Ending Will Forever Change The Landscape For Wolverine In Japan.\r\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41258",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41258/wolverine_2010_302?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-302/digital-comic/25698?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25698&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25698?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-03-07T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-02-22T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-09-04T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-03-07T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/4ee276b019292",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/4ee276b019292",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41258/creators",
+          "items": [],
+          "returned": 0
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41258/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41258/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93377",
+              "name": "Cover #93377",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93378",
+              "name": "Interior #93378",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41258/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41256,
+        "digitalId": 25506,
+        "title": "Wolverine (2010) #301",
+        "issueNumber": 301,
+        "variantDescription": "",
+        "description": "The new Silver Samurai faces Wolverine while one of Wolverine’s fiercest foes returns to make matters even worse! Meanwhile, the war between The Hand and the Yakuza threatens all of Tokyo.\n",
+        "modified": "2012-02-01T17:17:10-0500",
+        "isbn": "",
+        "upc": "5960607152-30111",
+        "diamondCode": "DEC110667",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "&bull; The new Silver Samurai faces Wolverine!\r\n<br />&bull; The war between The Hand and the Yakuza threatens all of Tokyo\r\n<br />&bull; One of Wolverine&rsquo;s fiercest foes returns to make matters even worse!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "The new Silver Samurai faces Wolverine while one of Wolverine’s fiercest foes returns to make matters even worse! Meanwhile, the war between The Hand and the Yakuza threatens all of Tokyo.\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41256",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41256/wolverine_2010_301?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-301/digital-comic/25506?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25506&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "inAppLink",
+            "url": "http://applink.marvel.com/issue/25506?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-02-15T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2012-02-01T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-09-04T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2012-02-15T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 1.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/d0/4ebc09456df9c",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/d0/4ebc09456df9c",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41256/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11463",
+              "name": "Jason Aaron",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/6170",
+              "name": "Olivier Coipel",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10051",
+              "name": "Steven Sanders",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/448",
+              "name": "Billy Tan",
+              "role": "artist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/426",
+              "name": "Jason Keith",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/361",
+              "name": "Cory Petit",
+              "role": "letterer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41256/characters",
+          "items": [],
+          "returned": 0
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41256/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93373",
+              "name": "Cover #93373",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93374",
+              "name": "Interior #93374",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41256/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 41257,
+        "digitalId": 25207,
+        "title": "Wolverine (2010) #300",
+        "issueNumber": 300,
+        "variantDescription": "",
+        "description": "Extra-sized 300th issue event! Wolverine travels to Tokyo to confront his most dangerous enemy yet. And a new Silver Samurai rises to take his place! Featuring Wolverine’s daughter!\n",
+        "modified": "2013-04-03T10:01:26-0400",
+        "isbn": "",
+        "upc": "5960607152-30011",
+        "diamondCode": "NOV110566",
+        "ean": "",
+        "issn": "2161-0339",
+        "format": "Comic",
+        "pageCount": 56,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": "<br>EXTRA-SIZED 300th ISSUE EVENT!\r\n<br>An all-new, soon-to-be-classic Wolverine story starts here!\r\n<br>Wolverine travels to Tokyo to confront his most dangerous enemy yet.\r\n<br>And a new Silver Samurai rises to take his place...along with Wolverine's daughter!"
+          },
+          {
+            "type": "issue_preview_text",
+            "language": "en-us",
+            "text": "Extra-sized 300th issue event! Wolverine travels to Tokyo to confront his most dangerous enemy yet. And a new Silver Samurai rises to take his place! Featuring Wolverine’s daughter!\n"
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41257",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/41257/wolverine_2010_300?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Wolverine-300/digital-comic/25209?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=25207&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9962",
+          "name": "Wolverine (2010 - 2012)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41296",
+            "name": "Wolverine (2010) #300 (Wraparound Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41295",
+            "name": "Wolverine (2010) #300 (Tbd Artist Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/42114",
+            "name": "Wolverine (2010) #300 (Secret Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/41294",
+            "name": "Wolverine (2010) #300 (Blank Cover Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2012-01-11T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2011-12-28T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2012-08-08T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/51000a5c9b889",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/40/51000a5c9b889",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/4eea43813d24f",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/4eea43631b883",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/c0/4eea4342eaad4",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/4eea4315679b9",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41257/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/2879",
+              "name": "Adam Kubert",
+              "role": "artist"
+            }
+          ],
+          "returned": 1
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41257/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41257/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93375",
+              "name": "Cover #93375",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/93376",
+              "name": "Interior #93376",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/41257/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 14135,
+        "digitalId": 7633,
+        "title": "Wolverine (1988) #189",
+        "issueNumber": 189,
+        "variantDescription": "",
+        "description": null,
+        "modified": "-0001-11-30T00:00:00-0500",
+        "isbn": "",
+        "upc": "",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 0,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/14135",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/14135/wolverine_1988_189?utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=7633&utm_campaign=apiRef&utm_source=027daece1db989412205090cabfd6eed"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2262",
+          "name": "Wolverine (1988 - 2003)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2003-06-01T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "-0001-11-30T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2009-01-14T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 0
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/b0/4c3662dd0431b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/b0/4c3662dd0431b",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/14135/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4014",
+              "name": "Axel Alonso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/6229",
+              "name": "John Miesegaes",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4593",
+              "name": "Warren Simons",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/338",
+              "name": "Staz Johnson",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11553",
+              "name": "Danny K. Miki",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/182",
+              "name": "Esad Ribic",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/350",
+              "name": "Richard Starkings",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4207",
+              "name": "Avalon Studio",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/344",
+              "name": "Daniel Way",
+              "role": "writer"
+            }
+          ],
+          "returned": 9
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/14135/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009368",
+              "name": "Iron Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/14135/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/28771",
+              "name": "Good Cop Bad Cop Part 2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/28772",
+              "name": "Previously",
+              "type": "recap"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/28773",
+              "name": "Good Cop/Bad Cop Part 2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 3
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/14135/events",
+          "items": [],
+          "returned": 0
+        }
+      }
+    ]
+  }
+}
