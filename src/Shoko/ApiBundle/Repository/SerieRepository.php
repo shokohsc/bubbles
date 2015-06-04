@@ -69,7 +69,7 @@ class SerieRepository
      *
      * @param string $id
      * @param string $page
-     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
+     * @return array
      */
     public function findAllComicsById($id, $page)
     {
@@ -92,7 +92,7 @@ class SerieRepository
      * Find one serie matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return Octante\MarvelAPIBundle\Model\Entities\Serie
      */
     public function findOneById($id)
     {
@@ -106,7 +106,7 @@ class SerieRepository
      * Find all series matching query
      *
      * @param string $query input from search form
-     * @return Octante\MarvelAPIBundle\Model\Collections\SeriesCollection|array
+     * @return array
      */
     public function findAllByQuery($query, $page)
     {

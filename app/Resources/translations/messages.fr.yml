@@ -43,6 +43,7 @@ penciller (cover): "crayon (couverture)"
 colorist: couleur
 inker: encreur
 letterer: lettres
+editor: éditeur
 
 serie:
     pagination:
