@@ -24,7 +24,8 @@ class SerieController extends Controller
   {
       $serie = $this->get('shoko.serie.repository')->findOneById($id);
       $data = [
-          'title' => $serie->getTitle(),
+        'code' => 200,
+        'title' => $serie->getTitle()
       ];
       $response = new JsonResponse();
       $response->setData(

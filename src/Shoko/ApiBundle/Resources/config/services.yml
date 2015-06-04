@@ -21,3 +21,9 @@ services:
     shoko.event.repository:
         class: Shoko\ApiBundle\Repository\EventRepository
         arguments: [@marvel.events, @marvel.events_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
+
+    kernel.listener.ApiEventListener:
+        class: Shoko\ApiBundle\EventListener\ApiExceptionListener
+        arguments: [@translator]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

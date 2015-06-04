@@ -24,7 +24,8 @@ class CreatorController extends Controller
   {
       $creator = $this->get('shoko.creator.repository')->findOneById($id);
       $data = [
-          'fullName' => $creator->getFullName(),
+        'code' => 200,
+        'fullName' => $creator->getFullName(),
       ];
       $response = new JsonResponse();
       $response->setData(
