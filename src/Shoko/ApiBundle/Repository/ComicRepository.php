@@ -58,6 +58,26 @@ class ComicRepository
     }
 
     /**
+     * Find all released comics the week containing the $date
+     *
+     * @param Carbon $date
+     * @return Octante\MarvelAPIBundle\Model\Collections\ComicsCollection|array
+     */
+    public function findAllByReleaseDate(Carbon $date)
+    {
+        $this->query->setFormatType('comic');
+        $this->query->setFormat('comic');
+        $this->query->setNoVariants(true);
+        $this->query->setDateRange($this->getReleaseDateRange($date));
+        $this->query->setOrderBy('title');
+        $this->query->setLimit(100);
+        return $this->repository
+            ->getComics($this->query)
+            ->getData()
+            ->getResults();
+    }
+
+    /**
      * Find one comic matching id
      *
      * @param string $id comic id
