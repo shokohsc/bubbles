@@ -7,7 +7,7 @@ api:
     resource: @ApiBundle/Controller/
     type:     annotation
     prefix:   /api/
-    schemes:  [%httpProtocol%]
+    # schemes:  [%httpProtocol%]
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
