@@ -45,3 +45,6 @@ fos_http_cache:
                     overwrite: false
                     cache_control: { public: true, max_age: 86400, s_maxage: 86400 }
                     last_modified: "-1 day"
+
+parameters:
+    httpProtocol: https
