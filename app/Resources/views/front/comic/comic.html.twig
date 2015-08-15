@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="row">
-      <a class="col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.getThumbnail().path }}/detail.{{ comic.getThumbnail().getExtension() }}">
+      <a class="col-xs-12 col-sm-4 col-md-3 lightbox" href="{{ comic.getThumbnail().path|https }}/detail.{{ comic.getThumbnail().getExtension() }}">
         {% include 'front/comic/image.html.twig' %}
       </a>
       <div class="col-xs-12 col-sm-8 col-md-9">

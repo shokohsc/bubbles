@@ -12,6 +12,7 @@ class AppTwigExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
+            new \Twig_SimpleFilter('https', array($this, 'httpsFilter')),
             new \Twig_SimpleFilter('resourceId', array($this, 'resourceIdFilter')),
             new \Twig_SimpleFilter('htmlDecode', array($this, 'htmlDecodeFilter')),
             new \Twig_SimpleFilter('subWeek', array($this, 'subWeekFilter')),
@@ -19,6 +20,17 @@ class AppTwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('subMonth', array($this, 'subMonthFilter')),
             new \Twig_SimpleFilter('addMonth', array($this, 'addMonthFilter')),
         );
+    }
+
+    /**
+     * Filter to make http link to https
+     *
+     * @param  string $path
+     * @return string
+     */
+    public function httpsFilter($path)
+    {
+        return str_replace('http://', 'https://', $path);
     }
 
     /**
