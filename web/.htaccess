@@ -45,12 +45,12 @@ DirectoryIndex app.php
     RewriteRule .? %{ENV:BASE}/app.php [L]
 
     ##Force SSL
-    RewriteCond %{SERVER_PORT} != 443
     #Normal way (in case you need to deploy to NON-heroku)
     RewriteCond %{HTTPS} !=on
     #Heroku way
     RewriteCond %{HTTP:X-Forwarded-Proto} !https
     #If neither above conditions are met, redirect to https
+    RewriteCond %{SERVER_PORT} != 443
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
