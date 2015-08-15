@@ -43,6 +43,12 @@ DirectoryIndex app.php
 
     # Rewrite all other queries to the front controller.
     RewriteRule .? %{ENV:BASE}/app.php [L]
+
+    ##Force SSL for everyone but legacy production
+    RewriteCond %{HTTP_HOST} ^bubbles-comics.herokuapp.com$
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
