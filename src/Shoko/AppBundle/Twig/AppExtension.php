@@ -2,7 +2,10 @@
 
 namespace Shoko\AppBundle\Twig;
 
-class AppTwigExtension extends \Twig_Extension
+/**
+ * AppExtension class.
+ */
+class AppExtension extends \Twig_Extension
 {
     /**
      * Get filters defined

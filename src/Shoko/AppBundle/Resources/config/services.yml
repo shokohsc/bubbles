@@ -1,5 +1,5 @@
 services:
-    app.twig.app_twig_extension:
-        class: Shoko\AppBundle\Twig\AppTwigExtension
+    app.twig.app_extension:
+        class: Shoko\AppBundle\Twig\AppExtension
         tags:
             - { name: twig.extension }
