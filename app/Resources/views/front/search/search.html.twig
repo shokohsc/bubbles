@@ -3,19 +3,13 @@
 {% block title %} {{ 'search.results'|trans|capitalize }} {{ q|lower }} {% endblock %}
 
 {% block content %}
-
-  <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ q|lower }}</h1>
-
-  <div id="serie-list" class="text-center">
-
-      {% include 'front/loading.html.twig' %}
-
-  </div>
-
+<h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ q|lower }}</h1>
+<div id="serie-list" class="text-center">
+    {% include 'front/loading.html.twig' %}
+</div>
 {% endblock %}
 
 {% block pagination %}
-
     <div class="row">
       <nav>
         <ul class="pager">
@@ -26,7 +20,6 @@
             </a>
           </li>
           {% endif %}
-
           <li>
             <a href="{{ path('search', {'q' : app.request.get('q'), 'page': app.request.get('page') + 1, 'entity': app.request.get('entity') }) }}">
               {{ 'serie.pagination.older'|trans|capitalize }} <span class="glyphicon glyphicon-chevron-right"></span>
@@ -35,7 +28,6 @@
         </ul>
       </nav>
     </div>
-
 {% endblock %}
 
 {% block javascripts %}

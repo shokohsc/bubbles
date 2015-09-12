@@ -3,10 +3,10 @@
 {% block title %} {{ title|title }} {% endblock %}
 
 {% block content %}
-  <h1 class="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
-  <div id="comic-list" class="text-center">
-      {% include 'front/loading.html.twig' %}
-  </div>
+<h1 class="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
+<div id="comic-list" class="text-center">
+    {% include 'front/loading.html.twig' %}
+</div>
 {% endblock %}
 
 {% block pagination %}
