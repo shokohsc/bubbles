@@ -39,20 +39,13 @@
 {% endblock %}
 
 {% block javascripts %}
-
-    <script type="text/javascript">
-
-        $.ajax({
-            url: Routing.generate('api_search_' + '{{ entity }}', { q: '{{ q }}', page: '{{ page }}' }),
-            type: 'get',
-            dataType: 'html',
-            success: function(data, textStatus, jqXHR){
-              $('#serie-list').html(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown){},
-            complete: function( jqXHR, textStatus ){}
-        });
-
-    </script>
-
+<script type="text/javascript">
+    $.ajax({
+        url: Routing.generate('api_search_' + '{{ entity }}', { q: '{{ q }}', page: '{{ page }}' }),
+        type: 'get',
+        dataType: 'html'
+    }).done(function(data) {
+        $('#serie-list').html(data);
+    });
+</script>
 {% endblock %}

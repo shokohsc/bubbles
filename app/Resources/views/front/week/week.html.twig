@@ -50,20 +50,13 @@
 {% endblock %}
 
 {% block javascripts %}
-
-    <script type="text/javascript">
-
-        $.ajax({
-            url: Routing.generate('api_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
-            type: 'get',
-            dataType: 'html',
-            success: function(data, textStatus, jqXHR){
-              $('#comic-list').html(data);
-            },
-            error: function(jqXHR, textStatus, errorThrown){},
-            complete: function( jqXHR, textStatus ){}
-        });
-
-    </script>
-
+<script type="text/javascript">
+  $.ajax({
+      url: Routing.generate('api_week_comics', { date: '{{ date.format('d-m-Y') }}' }),
+      type: 'get',
+      dataType: 'html'
+  }).done(function(data) {
+      $('#comic-list').html(data);
+  });
+</script>
 {% endblock %}
