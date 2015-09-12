@@ -1,13 +1,10 @@
 {% for character in collection %}
-  <div id="characters" class="list">
-
-      <a href="{{ path('character', {'id':character.getId().getCharacterId()}) }}" title="{{ character.getName()|title }}">
-        {% include 'front/character/image.html.twig' %}
-      </a>
-
-      <strong>
-        <a href="{{ path('character', {'id':character.getId().getCharacterId()}) }}" title="{{ character.getName()|title }}">{{ character.getName()|title }}</a>
-      </strong>
-
-  </div>
+<div id="characters" class="list">
+    <a href="{{ path('character', {'id':character.getId().getCharacterId()}) }}" title="{{ character.getName()|title }}">
+      {% include 'front/character/image.html.twig' %}
+    </a>
+    <strong>
+      <a href="{{ path('character', {'id':character.getId().getCharacterId()}) }}" title="{{ character.getName()|title }}">{{ character.getName()|title }}</a>
+    </strong>
+</div>
 {% endfor %}

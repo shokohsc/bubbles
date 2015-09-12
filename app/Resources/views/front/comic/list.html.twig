@@ -1,13 +1,10 @@
 {% for comic in collection %}
-  <div id="comics" class="list">
-
-      <a href="{{ path('comic', {'id':comic.getId().getComicId()}) }}" title="{{ comic.getTitle()|title }}">
-        {% include 'front/comic/image.html.twig' %}
-      </a>
-
-      <strong>
-        <a href="{{ path('comic', {'id':comic.getId().getComicId()}) }}" title="{{ comic.getTitle()|title }}">{{ comic.getTitle()|title }}</a>
-      </strong>
-
-  </div>
+<div id="comics" class="list">
+    <a href="{{ path('comic', {'id':comic.getId().getComicId()}) }}" title="{{ comic.getTitle()|title }}">
+      {% include 'front/comic/image.html.twig' %}
+    </a>
+    <strong>
+      <a href="{{ path('comic', {'id':comic.getId().getComicId()}) }}" title="{{ comic.getTitle()|title }}">{{ comic.getTitle()|title }}</a>
+    </strong>
+</div>
 {% endfor %}

@@ -1,13 +1,10 @@
 {% for creator in collection %}
-  <div id="creators" class="list">
-
-      <a href="{{ path('creator', {'id':creator.getId().getCreatorId()}) }}" title="{{ creator.getFullName()|title }}">
-        {% include 'front/creator/image.html.twig' %}
-      </a>
-
-      <strong>
-        <a href="{{ path('creator', {'id':creator.getId().getCreatorId()}) }}" title="{{ creator.getFullName()|title }}">{{ creator.getFullName()|title }}</a>
-      </strong>
-
-  </div>
+<div id="creators" class="list">
+    <a href="{{ path('creator', {'id':creator.getId().getCreatorId()}) }}" title="{{ creator.getFullName()|title }}">
+      {% include 'front/creator/image.html.twig' %}
+    </a>
+    <strong>
+      <a href="{{ path('creator', {'id':creator.getId().getCreatorId()}) }}" title="{{ creator.getFullName()|title }}">{{ creator.getFullName()|title }}</a>
+    </strong>
+</div>
 {% endfor %}
