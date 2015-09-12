@@ -19,7 +19,7 @@ class CharacterController extends Controller
    */
   public function characterAction($id, $page)
   {
-      return $this->render('front/character/character.html.twig',
+      return $this->render('front/character/comics.html.twig',
           [
               'id'          => $id,
               'page'        => $page,

@@ -19,7 +19,7 @@ class CreatorController extends Controller
    */
   public function creatorAction($id, $page)
   {
-      return $this->render('front/creator/creator.html.twig',
+      return $this->render('front/creator/comics.html.twig',
           [
               'id'          => $id,
               'page'        => $page,

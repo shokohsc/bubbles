@@ -19,7 +19,7 @@ class EventController extends Controller
    */
   public function eventAction($id, $page)
   {
-      return $this->render('front/event/event.html.twig',
+      return $this->render('front/event/comics.html.twig',
           [
               'id'          => $id,
               'page'        => $page,

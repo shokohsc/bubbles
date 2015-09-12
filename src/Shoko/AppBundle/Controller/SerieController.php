@@ -19,7 +19,7 @@ class SerieController extends Controller
    */
   public function serieAction($id, $page)
   {
-      return $this->render('front/serie/serie.html.twig',
+      return $this->render('front/serie/comics.html.twig',
           [
               'id'          => $id,
               'page'        => $page,
