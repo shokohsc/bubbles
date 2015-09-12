@@ -32,7 +32,6 @@
 <script type="text/javascript">
   $.ajax({
     url: Routing.generate('api_character', { id: {{ id }} }),
-    type: 'get',
     dataType: 'json'
   }).done(function(data) {
       document.title = data.name;
@@ -41,7 +40,6 @@
 
   $.ajax({
       url: Routing.generate('api_character_comics', {'id': '{{id}}', 'page': '{{page}}' }),
-      type: 'get',
       dataType: 'html'
   }).done(function(data) {
       $('#comics').html(data);
