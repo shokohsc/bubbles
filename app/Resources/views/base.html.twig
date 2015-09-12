@@ -28,11 +28,6 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- The core React library -->
-        <script src="//fb.me/react-0.13.3.js"></script>
-        <!-- In-browser JSX transformer, remove when pre-compiling JSX. -->
-        <script src="//fb.me/JSXTransformer-0.13.3.js"></script>
-
     </head>
     <body>
 
@@ -54,9 +49,6 @@
         <!-- FOSRoutingBundle -->
         <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
         <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
-
-        <!-- Magnific-popup Lightbox CDN -->
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 
         <!-- main.js -->
         <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
