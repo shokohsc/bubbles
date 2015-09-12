@@ -28,11 +28,7 @@ class CreatorController extends Controller
         'fullName' => $creator->getFullName(),
       ];
       $response = new JsonResponse();
-      $response->setData(
-          [
-              'data' => $data
-          ]
-      );
+      $response->setData([$data]);
 
       return $response;
   }

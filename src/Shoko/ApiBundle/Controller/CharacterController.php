@@ -28,11 +28,7 @@ class CharacterController extends Controller
         'name' => $character->getName()
       ];
       $response = new JsonResponse();
-      $response->setData(
-          [
-              'data' => $data
-          ]
-      );
+      $response->setData([$data]);
 
       return $response;
   }

@@ -35,8 +35,8 @@
     type: 'get',
     dataType: 'json'
   }).done(function(data) {
-      document.title = data.data.fullName;
-      $('h1').text(data.data.fullName);
+      document.title = data.fullName;
+      $('h1').text(data.fullName);
   });
 
   $.ajax({

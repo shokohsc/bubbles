@@ -28,11 +28,7 @@ class SerieController extends Controller
         'title' => $serie->getTitle()
       ];
       $response = new JsonResponse();
-      $response->setData(
-          [
-              'data' => $data
-          ]
-      );
+      $response->setData([$data]);
 
       return $response;
   }
