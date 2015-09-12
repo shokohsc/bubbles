@@ -4,7 +4,7 @@
 
 {% block content %}
 <h1 class="text-center">{{ 'search.results'|trans|capitalize }} {{ q|lower }}</h1>
-<div id="serie-list" class="text-center">
+<div id="results" class="text-center">
     {% include 'front/loading.html.twig' %}
 </div>
 {% endblock %}
@@ -37,7 +37,7 @@
         type: 'get',
         dataType: 'html'
     }).done(function(data) {
-        $('#serie-list').html(data);
+        $('#results').html(data);
     });
 </script>
 {% endblock %}

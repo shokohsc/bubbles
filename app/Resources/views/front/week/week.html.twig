@@ -4,7 +4,7 @@
 
 {% block content %}
 <h1 class="text-center">{{ 'comics.release'|trans|capitalize }} {{ date.formatLocalized('%b %e, %Y')|title }}</h1>
-<div id="comic-list" class="text-center">
+<div id="comics" class="text-center">
     {% include 'front/loading.html.twig' %}
 </div>
 {% endblock %}
@@ -49,7 +49,7 @@
       type: 'get',
       dataType: 'html'
   }).done(function(data) {
-      $('#comic-list').html(data);
+      $('#comics').html(data);
   });
 </script>
 {% endblock %}
