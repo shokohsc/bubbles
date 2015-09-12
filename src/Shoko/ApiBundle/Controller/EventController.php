@@ -28,7 +28,7 @@ class EventController extends Controller
         'title' => $event->getTitle(),
       ];
       $response = new JsonResponse();
-      $response->setData([$data]);
+      $response->setData($data);
 
       return $response;
   }
