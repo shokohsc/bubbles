@@ -1,5 +1,5 @@
 {% for character in collection %}
-  <div class="comic-item-list">
+  <div id="characters" class="list">
 
       <a href="{{ path('character', {'id':character.getId().getCharacterId()}) }}" title="{{ character.getName()|title }}">
         {% include 'front/character/image.html.twig' %}

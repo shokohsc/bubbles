@@ -1,5 +1,5 @@
 {% for serie in collection %}
-  <div class="comic-item-list">
+  <div id="series" class="list">
 
       <a href="{{ path('serie', {'id':serie.getId().getSerieId()}) }}" title="{{ serie.getTitle()|title }}">
         {% include 'front/serie/image.html.twig' %}

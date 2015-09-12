@@ -23,17 +23,17 @@ footer{
 .code-new-roman {
   font-family: code-new-roman;
 }
-.comic-item-list{
+.list{
   width: 216px;
   height: 350px;
   margin-bottom: 20px;
   display: inline-block;
 }
-.comic-item-list a{
+.list a{
   width: 216px;
   float: left;
 }
-.comic-item-list a:hover img{
+.list a:hover img{
   background: #EB2025;
 }
 .mfp-img{

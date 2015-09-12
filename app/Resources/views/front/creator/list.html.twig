@@ -1,5 +1,5 @@
 {% for creator in collection %}
-  <div class="comic-item-list">
+  <div id="creators" class="list">
 
       <a href="{{ path('creator', {'id':creator.getId().getCreatorId()}) }}" title="{{ creator.getFullName()|title }}">
         {% include 'front/creator/image.html.twig' %}

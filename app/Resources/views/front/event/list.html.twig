@@ -1,5 +1,5 @@
 {% for event in collection %}
-  <div class="comic-item-list">
+  <div id="events" class="list">
 
       <a href="{{ path('event', {'id':event.getId().getEventId()}) }}" title="{{ event.getTitle()|title }}">
         {% include 'front/event/image.html.twig' %}
