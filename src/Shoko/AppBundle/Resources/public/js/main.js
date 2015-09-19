@@ -21,3 +21,32 @@ $(document).ready(function() {
     ga('create', 'UA-55046906-2', 'auto');
     ga('send', 'pageview');
 });
+
+$(document).on('click', '.lightbox', function(e) {
+    $(this).magnificPopup({type:'image'});
+});
+
+var load_comic = function(e) {
+    e.preventDefault();
+    var id = $(this).attr('data-id');
+    $.ajax({
+        url: Routing.generate('comic', { id: id })
+    }).done(function(data) {
+        $('#content').html(data);
+    });
+};
+$(document).on('click', '.comic-link', load_comic);
+
+var load_serie = function(e) {
+    var id = $(this).attr('data-id');
+    var title = $(this).text();
+    $.ajax({
+        url: Routing.generate('api_serie_comics', { id: id })
+    }).done(function(data) {
+        $('#content').html('');
+        $('#content').append('<h1 class="text-center">'+title+'</h1>');
+        $('#content').append(data);
+    });
+    e.preventDefault();
+};
+$(document).on('click', '.serie-link', load_serie);

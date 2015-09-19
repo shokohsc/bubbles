@@ -1,10 +1,10 @@
 {% for serie in collection %}
 <div id="series" class="list">
-    <a href="{{ path('serie', {'id':serie.getId().getSerieId()}) }}" title="{{ serie.getTitle()|title }}">
+    <a href="#" class="serie-link" data-id="{{ serie.getId().getSerieId() }}" title="{{ serie.getName()|title }}">
       {% include 'front/serie/image.html.twig' %}
     </a>
     <strong>
-      <a href="{{ path('serie', {'id':serie.getId().getSerieId()}) }}" title="{{ serie.getTitle()|title }}">{{ serie.getTitle()|title }}</a>
+      <a href="#" class="serie-link" data-id="{{ serie.getId().getSerieId() }}" title="{{ serie.getName()|title }}">{{ serie.getTitle()|title }}</a>
     </strong>
 </div>
 {% endfor %}

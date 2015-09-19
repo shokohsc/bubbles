@@ -11,7 +11,7 @@ class ComicController extends Controller
   /**
    * Comic
    *
-   * @Route("/comic/{id}", name="comic", requirements={"id" = "\d+"})
+   * @Route("/comic/{id}", name="comic", requirements={"id" = "\d+"}, options={"expose"=true})
    *
    * @param string $id  comic id
    * @return Symfony\Component\HttpFoundation\Response
