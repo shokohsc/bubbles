@@ -7,6 +7,9 @@ use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Carbon\Carbon;
 
+/**
+ * ComicRepository class.
+ */
 class ComicRepository
 {
     /**
@@ -47,6 +50,7 @@ class ComicRepository
      * Get Release date range from the given date
      *
      * @param Carbon $date
+     *
      * @return string
      */
     protected function getReleaseDateRange(Carbon $date)
@@ -61,7 +65,8 @@ class ComicRepository
      * Find all released comics the week containing the $date
      *
      * @param Carbon $date
-     * @return array
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
      */
     public function findAllByReleaseDate(Carbon $date)
     {
@@ -73,29 +78,29 @@ class ComicRepository
         $this->query->setLimit(100);
         return $this->repository
             ->getComics($this->query)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 
     /**
      * Find one comic matching id
      *
      * @param string $id comic id
-     * @return Octante\MarvelAPIBundle\Model\Entities\Comic
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
      */
     public function findOneById($id)
     {
         return $this->repository
             ->getComicById(intval($id))
-            ->getData()
-            ->getResults()[0];
+            ->getData();
     }
 
     /**
      * Find all comics matching query
      *
      * @param string $query input from search form
-     * @return array
+     * 
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
      */
      public function findAllByQuery($query, $page)
      {
@@ -110,7 +115,6 @@ class ComicRepository
 
         return $this->repository
             ->getComics($this->query)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 }

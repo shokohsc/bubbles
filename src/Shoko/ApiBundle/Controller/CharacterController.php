@@ -11,28 +11,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  */
 class CharacterController extends Controller
 {
-
-  /**
-   * Get Character entity
-   *
-   * @Route("/{id}", name="api_character", requirements={"id" = "\d+"}, options={"expose"=true})
-   *
-   * @param string $id character id
-   * @return JsonResponse
-   */
-  public function getAction($id)
-  {
-      $character = $this->get('shoko.character.repository')->findOneById($id);
-      $data = [
-        'code' => 200,
-        'name' => $character->getName()
-      ];
-      $response = new JsonResponse();
-      $response->setData($data);
-
-      return $response;
-  }
-
   /**
    *  Get comics belonging to the character matching id
    *
@@ -43,12 +21,11 @@ class CharacterController extends Controller
   public function comicsAction($id, $page)
   {
       $collection = $this->get('shoko.character.repository')->findAllComicsById($id, $page);
+      $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
-      return $this->render('front/comic/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+      return new JsonResponse([
+          'comics' => $comics,
+      ], 200);
   }
 
 }

@@ -8,6 +8,9 @@ use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\CharactersRepository;
 use Octante\MarvelAPIBundle\Model\Query\CharacterQuery;
 
+/**
+ * CharacterRepository class.
+ */
 class CharacterRepository
 {
     /**
@@ -68,7 +71,8 @@ class CharacterRepository
      *
      * @param string $id
      * @param string $page
-     * @return array
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CharacterDataContainer
      */
     public function findAllComicsById($id, $page)
     {
@@ -83,29 +87,29 @@ class CharacterRepository
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 
     /**
      * Find one character matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Entities\Character
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CharacterDataContainer
      */
     public function findOneById($id)
     {
         return $this->repository
             ->getCharacterById(intval($id))
-            ->getData()
-            ->getResults()[0];
+            ->getData();
     }
 
     /**
      * Find all characters matching query
      *
      * @param string $query input from search form
-     * @return array
+     * 
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CharacterDataContainer
      */
      public function findAllByQuery($query, $page)
      {
@@ -117,7 +121,6 @@ class CharacterRepository
 
         return $this->repository
             ->getCharacters($this->query)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 }

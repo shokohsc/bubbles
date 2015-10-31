@@ -43,7 +43,7 @@ class SerieRepositoryTest extends \PHPUnit_Framework_TestCase
 
         $sutComicsRepository = new ComicsRepository($this->client);
         $repository = new SerieRepository($sut, $this->queryMock, $sutComicsRepository, $this->comicQueryMock, $this->comicsPerPage);
-        $comics = $repository->findAllComicsById(12339, 1);
+        $comics = $repository->findAllComicsById(12339, 1)->getResults();
         $this->assertEquals($stubComics->getData()->getResults(), $comics);
       }
 
@@ -59,7 +59,7 @@ class SerieRepositoryTest extends \PHPUnit_Framework_TestCase
         $stubSerie = $sut->getSerieById(18468);// Ms. Marvel (2014 - Present)
 
         $repository = new SerieRepository($sut, $this->queryMock, $this->comicRepositoryMock, $this->comicQueryMock, $this->comicsPerPage);
-        $serie = $repository->findOneById(18468);
+        $serie = $repository->findOneById(18468)->getResults()[0];
         $this->assertInstanceOf('Octante\MarvelAPIBundle\Model\Entities\Serie', $serie);
         $this->assertEquals($stubSerie->getData()->getResults()[0], $serie);
       }
@@ -76,7 +76,7 @@ class SerieRepositoryTest extends \PHPUnit_Framework_TestCase
         $stubSeries = $sut->getSeries($this->queryMock);// avengers
 
         $repository = new SerieRepository($sut, $this->queryMock, $this->comicRepositoryMock, $this->comicQueryMock, $this->comicsPerPage);
-        $series = $repository->findAllByQuery('avengers', 1);
+        $series = $repository->findAllByQuery('avengers', 1)->getResults();
         $this->assertEquals($stubSeries->getData()->getResults(), $series);
       }
 

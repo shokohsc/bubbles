@@ -8,6 +8,9 @@ use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\CreatorsRepository;
 use Octante\MarvelAPIBundle\Model\Query\CreatorQuery;
 
+/**
+ * CreatorRepository class.
+ */
 class CreatorRepository
 {
     /**
@@ -68,7 +71,8 @@ class CreatorRepository
      *
      * @param string $id
      * @param string $page
-     * @return array
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CreatorDataContainer
      */
     public function findAllComicsById($id, $page)
     {
@@ -83,29 +87,29 @@ class CreatorRepository
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 
     /**
      * Find one creator matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Entities\Creator
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CreatorDataContainer
      */
     public function findOneById($id)
     {
         return $this->repository
             ->getCreatorById(intval($id))
-            ->getData()
-            ->getResults()[0];
+            ->getData();
     }
 
     /**
      * Find all characters matching query
      *
      * @param string $query input from search form
-     * @return array
+     * 
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\CreatorDataContainer
      */
      public function findAllByQuery($query, $page)
      {
@@ -117,7 +121,6 @@ class CreatorRepository
 
           return $this->repository
               ->getCreators($this->query)
-              ->getData()
-              ->getResults();
+              ->getData();
     }
 }

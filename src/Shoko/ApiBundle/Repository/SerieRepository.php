@@ -8,6 +8,9 @@ use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\SeriesRepository;
 use Octante\MarvelAPIBundle\Model\Query\SerieQuery;
 
+/**
+ * SerieRepository class.
+ */
 class SerieRepository
 {
     /**
@@ -69,7 +72,8 @@ class SerieRepository
      *
      * @param string $id
      * @param string $page
-     * @return array
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\SerieDataContainer
      */
     public function findAllComicsById($id, $page)
     {
@@ -84,29 +88,29 @@ class SerieRepository
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 
     /**
      * Find one serie matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Entities\Serie
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\SerieDataContainer
      */
     public function findOneById($id)
     {
         return $this->repository
             ->getSerieById(intval($id))
-            ->getData()
-            ->getResults()[0];
+            ->getData();
     }
 
     /**
      * Find all series matching query
      *
      * @param string $query input from search form
-     * @return array
+     * 
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\SerieDataContainer
      */
     public function findAllByQuery($query, $page)
     {
@@ -119,7 +123,6 @@ class SerieRepository
 
           return $this->repository
               ->getSeries($this->query)
-              ->getData()
-              ->getResults();
+              ->getData();
     }
 }

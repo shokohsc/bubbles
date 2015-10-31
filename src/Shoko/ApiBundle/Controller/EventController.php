@@ -11,28 +11,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  */
 class EventController extends Controller
 {
-
-  /**
-   * Get Event entity
-   *
-   * @Route("/{id}", name="api_event", requirements={"id" = "\d+"}, options={"expose"=true})
-   *
-   * @param string $id event id
-   * @return JsonResponse
-   */
-  public function getAction($id)
-  {
-      $event = $this->get('shoko.event.repository')->findOneById($id);
-      $data = [
-        'code' => 200,
-        'title' => $event->getTitle(),
-      ];
-      $response = new JsonResponse();
-      $response->setData($data);
-
-      return $response;
-  }
-
   /**
    *  Get comics belonging to the event matching id
    *
@@ -43,12 +21,11 @@ class EventController extends Controller
   public function comicsAction($id, $page)
   {
       $collection = $this->get('shoko.event.repository')->findAllComicsById($id, $page);
+      $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
-      return $this->render('front/comic/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+      return new JsonResponse([
+          'comics' => $comics,
+      ], 200);
   }
 
 }

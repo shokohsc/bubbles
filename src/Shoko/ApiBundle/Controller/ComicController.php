@@ -12,18 +12,18 @@ use Carbon\Carbon;
  */
 class ComicController extends Controller
 {
-
   /**
    * Get Comic entity
    *
    * @Route("/{id}", name="api_comic", requirements={"id" = "\d+"}, options={"expose"=true})
    *
    * @param string $id comic id
+   *
    * @return JsonResponse
    */
   public function getAction($id)
   {
-      $comic = $this->get('shoko.comic.repository')->findOneById($id);
+      $comic = $this->get('shoko.comic.repository')->findOneById($id)[0];
       $data = [
         'code' => 200,
         'title' => $comic->getTitle(),
@@ -49,12 +49,19 @@ class ComicController extends Controller
   {
       $date = null === $date ? Carbon::now() : Carbon::parse($date);
       $collection = $this->get('shoko.comic.repository')->findAllByReleaseDate($date);
+      $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
-      return $this->render('front/comic/list.html.twig',
-          [
-              'collection'  => $collection
-          ]
-      );
+      $locale = $this->get('request')->getLocale();
+      setlocale(LC_TIME, $locale.'_'.strtoupper($locale));
+
+      $title = $this->get('translator')->trans('comics.release') .' '. $date->formatLocalized('%b %e, %Y');
+
+      return new JsonResponse([
+          'title' => $title,
+          'comics' => $comics,
+          // 'locale' => $locale,
+          // 'date' => $date,
+      ], 200);
   }
 
 }

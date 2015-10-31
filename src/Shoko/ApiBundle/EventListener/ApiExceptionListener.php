@@ -8,6 +8,9 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Translation\TranslatorInterface;
 use Octante\MarvelAPIBundle\Exceptions\CurlErrorCodeException;
 
+/**
+ * ApiExceptionListener class.
+ */
 class ApiExceptionListener
 {
   /**
@@ -18,7 +21,8 @@ class ApiExceptionListener
   private $translator;
 
     /**
-     * ApiExceptionListener constructor
+     * ApiExceptionListener constructor.
+     *
      * @param TranslatorInterface $translator
      */
     public function __construct(TranslatorInterface $translator)
@@ -27,7 +31,7 @@ class ApiExceptionListener
     }
 
     /**
-     * onKernelException
+     * onKernelException.
      *
      * @param GetResponseForExceptionEvent $event
      */
@@ -36,16 +40,16 @@ class ApiExceptionListener
         $exception = $event->getException();
         if ($exception instanceof NotFoundHttpException || $exception instanceof CurlErrorCodeException) {
             $args = [
-                    'code' => '404',
+                    'code' => 404,
                     'message' => $this->translator->trans("error.404.message"),
                     ];
         } else {
             $args = [
-                    'code' => '500',
+                    'code' => 500,
                     'message' => $this->translator->trans("error.500.message"),
                     ];
         }
-        $response = new JsonResponse(['error' => $args], $args['code']);
+        $response = new JsonResponse(['error' => $args['message']], $args['code']);
         $event->setResponse($response);
     }
 }

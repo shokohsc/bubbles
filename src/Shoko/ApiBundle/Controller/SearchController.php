@@ -11,7 +11,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  */
 class SearchController extends Controller
 {
-
   /**
    *  Get series matching the search query
    *
@@ -21,13 +20,14 @@ class SearchController extends Controller
    */
   public function seriesAction($q, $page)
   {
-      $collection = $this->get('shoko.serie.repository')->findAllByQuery(urlencode($q), $page);
+    $collection = $this->get('shoko.serie.repository')->findAllByQuery(urlencode($q), $page);
+    $comics = json_decode($this->get('marvel.tojson')->encode($collection));
+    $title = $this->get('translator')->trans('search.results').' '.strtolower($q);
 
-      return $this->render('front/serie/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+    return new JsonResponse([
+        'title' => $title,
+        'comics' => $comics,
+    ], 200);
   }
 
   /**
@@ -39,13 +39,14 @@ class SearchController extends Controller
    */
   public function charactersAction($q, $page)
   {
-      $collection = $this->get('shoko.character.repository')->findAllByQuery(urlencode($q), $page);
+    $collection = $this->get('shoko.character.repository')->findAllByQuery(urlencode($q), $page);
+    $comics = json_decode($this->get('marvel.tojson')->encode($collection));
+    $title = $this->get('translator')->trans('search.results').' '.strtolower($q);
 
-      return $this->render('front/character/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+    return new JsonResponse([
+        'title' => $title,
+        'comics' => $comics,
+    ], 200);
   }
 
   /**
@@ -57,13 +58,14 @@ class SearchController extends Controller
    */
   public function comicsAction($q, $page)
   {
-      $collection = $this->get('shoko.comic.repository')->findAllByQuery(urlencode($q), $page);
+    $collection = $this->get('shoko.comic.repository')->findAllByQuery(urlencode($q), $page);
+    $comics = json_decode($this->get('marvel.tojson')->encode($collection));
+    $title = $this->get('translator')->trans('search.results').' '.strtolower($q);
 
-      return $this->render('front/comic/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+    return new JsonResponse([
+        'title' => $title,
+        'comics' => $comics,
+    ], 200);
   }
 
   /**
@@ -75,13 +77,14 @@ class SearchController extends Controller
    */
   public function creatorsAction($q, $page)
   {
-      $collection = $this->get('shoko.creator.repository')->findAllByQuery(urlencode($q), $page);
+    $collection = $this->get('shoko.creator.repository')->findAllByQuery(urlencode($q), $page);
+    $comics = json_decode($this->get('marvel.tojson')->encode($collection));
+    $title = $this->get('translator')->trans('search.results').' '.strtolower($q);
 
-      return $this->render('front/creator/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+    return new JsonResponse([
+        'title' => $title,
+        'comics' => $comics,
+    ], 200);
   }
 
   /**
@@ -94,12 +97,13 @@ class SearchController extends Controller
   public function eventsAction($q, $page)
   {
       $collection = $this->get('shoko.event.repository')->findAllByQuery(urlencode($q), $page);
+      $comics = json_decode($this->get('marvel.tojson')->encode($collection));
+      $title = $this->get('translator')->trans('search.results').' '.strtolower($q);
 
-      return $this->render('front/event/list.html.twig',
-          [
-              'collection'  => $collection,
-          ]
-      );
+      return new JsonResponse([
+          'title' => $title,
+          'comics' => $comics,
+      ], 200);
   }
 
 

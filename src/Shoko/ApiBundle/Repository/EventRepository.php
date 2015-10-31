@@ -8,6 +8,9 @@ use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\EventsRepository;
 use Octante\MarvelAPIBundle\Model\Query\EventQuery;
 
+/**
+ * EventRepository class.
+ */
 class EventRepository
 {
     /**
@@ -68,7 +71,8 @@ class EventRepository
      *
      * @param string $id
      * @param string $page
-     * @return array
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\EventDataContainer
      */
     public function findAllComicsById($id, $page)
     {
@@ -83,29 +87,29 @@ class EventRepository
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
-            ->getData()
-            ->getResults();
+            ->getData();
     }
 
     /**
      * Find one event matching id
      *
      * @param string $id
-     * @return Octante\MarvelAPIBundle\Model\Entities\Event
+     *
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\EventDataContainer
      */
     public function findOneById($id)
     {
         return $this->repository
             ->getEventById(intval($id))
-            ->getData()
-            ->getResults()[0];
+            ->getData();
     }
 
     /**
      * Find all events matching query
      *
      * @param string $query input from search form
-     * @return array
+     * 
+     * @return Octante\MarvelAPIBundle\Model\DataContainer\EventDataContainer
      */
      public function findAllByQuery($query, $page)
      {
@@ -117,7 +121,6 @@ class EventRepository
 
           return $this->repository
               ->getEvents($this->query)
-              ->getData()
-              ->getResults();
+              ->getData();
     }
 }
