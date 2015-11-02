@@ -21,11 +21,11 @@ class CreatorController extends Controller
   public function comicsAction($id, $page)
   {
       $collection = $this->get('shoko.creator.repository')->findAllComicsById($id, $page);
-      $creator = $this->get('shoko.creator.repository')->findOneById($id);
       $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
       return new JsonResponse([
           'comics' => $comics,
+          'creatorId' => $id,
       ], 200);
   }
 

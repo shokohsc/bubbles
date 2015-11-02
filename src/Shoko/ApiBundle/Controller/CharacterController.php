@@ -25,6 +25,7 @@ class CharacterController extends Controller
 
       return new JsonResponse([
           'comics' => $comics,
+          'characterId' => $id
       ], 200);
   }
 

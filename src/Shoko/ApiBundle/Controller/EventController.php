@@ -25,6 +25,7 @@ class EventController extends Controller
 
       return new JsonResponse([
           'comics' => $comics,
+          'eventId' => $id,
       ], 200);
   }
 

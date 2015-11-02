@@ -25,6 +25,7 @@ class SerieController extends Controller
 
       return new JsonResponse([
           'comics' => $comics,
+          'serieId' => $id,
       ], 200);
   }
 
