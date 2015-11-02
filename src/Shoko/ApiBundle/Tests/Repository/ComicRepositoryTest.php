@@ -75,24 +75,9 @@ class ComicRepositoryTest extends \PHPUnit_Framework_TestCase
         $this->client->send(Argument::any())->willReturn($jsonResponse);
         $sut = new ComicsRepository($this->client->reveal());
         $stubComics = $sut->getComics($this->queryMock->reveal());// Apr 27, 2015
-        $sutComicsRepository = new ComicsRepository($this->client->reveal());
         $repository = new ComicRepository($sut, $this->queryMock->reveal(), $this->comicsPerPage);
         $comics = $repository->findAllByReleaseDate(Carbon::parse('Apr 27, 2015'), 1);
         $this->assertEquals($stubComics->getData()->getResults(), $comics->getResults());
-
-
-        // $jsonResponse = file_get_contents(__DIR__ . '/../Fixtures/Comic/getComicsDate.json');
-        // $this->client
-        //     ->expects($this->any())
-        //     ->method('send')
-        //     ->will($this->returnValue($jsonResponse));
-        // $sut = new ComicsRepository($this->client);
-        // $stubComics = $sut->getComics($this->queryMock);// Apr 27, 2015
-        //
-        // $sutComicsRepository = new ComicsRepository($this->client);
-        // $repository = new ComicRepository($sut, $this->queryMock, $this->comicsPerPage);
-        // $comics = $repository->findAllByReleaseDate(Carbon::parse('Apr 27, 2015'), 1);
-        // $this->assertEquals($stubComics->getData()->getResults(), $comics->getResults());
       }
 
       /**
