@@ -56,11 +56,11 @@ search:
 error:
     backward: page précédente
     404:
-        title: bubbles s'est perdu
-        message: deadpool dit que tu t'es perdu.
+        title: Bubbles s'est perdu
+        message: Deadpool dit que tu t'es perdu.
     500:
-        title: bubble s'est planté
-        message: deadpool dit qu'on s'est perdu.
+        title: Bubbles s'est planté
+        message: Deadpool dit qu'on s'est perdu.
 
 about:
     title: a propos de Bubbles

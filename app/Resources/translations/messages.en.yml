@@ -56,11 +56,11 @@ search:
 error:
     backward: head back
     404:
-        title: bubbles is lost
-        message: deadpool says you lost your way.
+        title: Bubbles is lost
+        message: Deadpool says you lost your way.
     500:
-        title: bubble stumbled
-        message: deadpool says we lost our way.
+        title: Bubbles stumbled
+        message: Deadpool says we lost our way.
 
 about:
     title: about bubbles
