@@ -49,7 +49,7 @@ class ApiExceptionListener
                     'message' => $this->translator->trans("error.500.message"),
                     ];
         }
-        $response = new JsonResponse(['error' => $args['message']], $args['code']);
+        $response = new JsonResponse($args['message'], $args['code']);
         $event->setResponse($response);
     }
 }
