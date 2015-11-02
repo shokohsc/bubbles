@@ -109,7 +109,7 @@ class CreatorRepositoryTest extends \PHPUnit_Framework_TestCase
         $sut = new CreatorsRepository($this->client->reveal());
         $stubCreators = $sut->getCreators($this->queryMock->reveal());// stan
         $repository = new CreatorRepository($sut, $this->queryMock->reveal(), $this->comicRepositoryMock->reveal(), $this->comicQueryMock->reveal(), $this->comicsPerPage);
-        $creators = $repository->findAllByQuery('spider', 1);
+        $creators = $repository->findAllByQuery('stan', 1);
         $this->assertEquals($stubCreators->getData()->getResults(), $creators->getResults());
       }
 

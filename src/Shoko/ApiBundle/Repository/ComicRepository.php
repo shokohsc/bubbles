@@ -53,7 +53,7 @@ class ComicRepository
      *
      * @return string
      */
-    protected function getReleaseDateRange(Carbon $date)
+    public function getReleaseDateRange(Carbon $date)
     {
         $end = $date->toDateString();
         $start = $date->copy()->subDays(6)->toDateString();
@@ -99,7 +99,7 @@ class ComicRepository
      * Find all comics matching query
      *
      * @param string $query input from search form
-     * 
+     *
      * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
      */
      public function findAllByQuery($query, $page)

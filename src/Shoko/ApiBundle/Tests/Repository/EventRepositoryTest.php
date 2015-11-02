@@ -109,7 +109,7 @@ class EventRepositoryTest extends \PHPUnit_Framework_TestCase
         $sut = new EventsRepository($this->client->reveal());
         $stubEvents = $sut->getEvents($this->queryMock->reveal());// secret
         $repository = new EventRepository($sut, $this->queryMock->reveal(), $this->comicRepositoryMock->reveal(), $this->comicQueryMock->reveal(), $this->comicsPerPage);
-        $events = $repository->findAllByQuery('spider', 1);
+        $events = $repository->findAllByQuery('secret', 1);
         $this->assertEquals($stubEvents->getData()->getResults(), $events->getResults());
       }
 
