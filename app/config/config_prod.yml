@@ -18,13 +18,6 @@ monolog:
         console:
             type:  console
 
-services:
-    kernel.listener.AppEventListener:
-        class: Shoko\AppBundle\EventListener\AppExceptionListener
-        arguments: [@twig, @translator]
-        tags:
-            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
-
 # Fos Cache Http Bundle
 fos_http_cache:
     cache_control:
@@ -39,3 +32,10 @@ fos_http_cache:
                     overwrite: false
                     cache_control: { public: true, max_age: 86400, s_maxage: 86400 }
                     last_modified: "-1 day"
+
+services:
+  kernel.listener.ApiEventListener:
+    class: Shoko\ApiBundle\EventListener\ApiExceptionListener
+    arguments: [@translator]
+    tags:
+      - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

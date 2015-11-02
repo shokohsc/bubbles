@@ -23,10 +23,12 @@
         "ext-PDO": "*",
         "ext-soap": "*",
         "octante/marvel-api-bundle": "~1.0",
-        "friendsofsymfony/http-cache-bundle": "~1.0"
+        "friendsofsymfony/http-cache-bundle": "~1.0",
+        "nelmio/cors-bundle": "^1.4"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "phpspec/prophecy-phpunit": "~1.0"
     },
     "scripts": {
         "post-root-package-install": [
