@@ -24,7 +24,8 @@
         "ext-soap": "*",
         "octante/marvel-api-bundle": "~1.0",
         "friendsofsymfony/http-cache-bundle": "~1.0",
-        "nelmio/cors-bundle": "^1.4"
+        "nelmio/cors-bundle": "^1.4",
+        "symfony/assetic-bundle": "^2.7"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",
