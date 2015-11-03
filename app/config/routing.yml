@@ -1,3 +1,7 @@
+app:
+    path:     /
+    defaults: { _controller: ApiBundle:Front:index }
+
 api:
     resource: @ApiBundle/Controller/
     type:     annotation
