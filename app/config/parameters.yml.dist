@@ -19,5 +19,5 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    marvel_public_key: your_public_marvel_api_key
-    marvel_private_key: your_secret_marvel_api_key
+#    marvel_public_key: your_public_marvel_api_key
+#    marvel_private_key: your_secret_marvel_api_key
