@@ -21,11 +21,11 @@
                 <div class="input-group">
                   <div class="input-group-btn search-panel">
                       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <span id="search_concept">Serie</span> <span class="caret"></span>
+                        <span id="search_concept">Series</span> <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu" role="menu">
                           <li><a href="#comics" title="comics">Comic</a></li>
-                          <li><a href="#series" title="series">Serie</a></li>
+                          <li><a href="#series" title="series">Series</a></li>
                           <li><a href="#characters" title="characters">Character</a></li>
                           <li><a href="#creators" title="creators">Creator</a></li>
                           <li><a href="#events" title="events">Event</a></li>
@@ -47,8 +47,8 @@
   <script>
     $(document).on('click', '.search-panel .dropdown-menu a',  function(e) {
       e.preventDefault()
-      var param = $(this).attr("href").replace("#","")
-      var concept = $(this).text()
+      var param   = $(this).attr("href").replace("#",""),
+          concept = $(this).text()
       $('.search-panel span#search_concept').text(concept)
       $('#entity').val(param.toLowerCase())
     })
