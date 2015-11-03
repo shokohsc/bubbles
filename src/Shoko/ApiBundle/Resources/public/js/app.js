@@ -14,7 +14,7 @@ String.prototype.useHttps = function() {
 }
 
 var mount = function(mount, tag, route, id, page, options) {
-  var protocol = 'https://',
+  var protocol = location.protocol+'//',
       host     = location.host+'/',
       endpoint = 'api/'+route+'/',
       url      = protocol+host+endpoint+id,
