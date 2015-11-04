@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#week" title="Homepage">Bubbles</a>
+        <a class="navbar-brand" href="#" title="Bubbles">Bubbles</a>
       </div>
 
       <div id="navbar" class="navbar-collapse collapse" role="navigation">

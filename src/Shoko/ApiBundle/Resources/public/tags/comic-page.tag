@@ -1,7 +1,7 @@
 <bubbles-comic>
   <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3 ">
-      <a class="lightbox" href="{ comic.thumbnail.path }/detail.{ comic.thumbnail.extension }">
+      <a data-lightbox="cover" data-title="{ comic.title.title() }" href="{ comic.thumbnail.path.useHttps() }/detail.{ comic.thumbnail.extension }">
         <img
           id="incredible_{ comic.id.comicId }"
           class="img-thumbnail"
@@ -57,11 +57,8 @@
 
   <script>
     this.comic = this.opts.comic.results[0]
-    $(document).on('click', '.lightbox', function(e) {
-      $(this).magnificPopup({type:'image'})
-      e.preventDefault()
-    })
-    this.on('update', function() {
+    this.on('mount', function() {
+      document.title = undefined !== pageTitle ? pageTitle : $(this.root).find('h2').text().trim()
       $(document).on('click', 'a.title[title]', function() {
         pageTitle = $(this).attr('title')
       })
