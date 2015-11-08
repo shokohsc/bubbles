@@ -8,7 +8,7 @@ navbar:
         input: recherche
         entity:
             comic: comic
-            serie: série
+            series: série
             creator: auteur
             event: évènement
             character: personnage
@@ -30,11 +30,11 @@ comics:
 
 comic:
     published: publié
-    serie: série
+    series: série
     creator:
         cover: couverture
     characters: personnage(s)
-    events: évènements
+    events: évènement(s)
 
 artist: artiste
 writer: auteur
@@ -44,11 +44,6 @@ colorist: couleur
 inker: encreur
 letterer: lettres
 editor: éditeur
-
-serie:
-    pagination:
-        newer: plus jeune
-        older: plus vieux
 
 search:
     results: résultats pour
@@ -80,5 +75,6 @@ about:
         marvel: pour utliser une API avec laquelle s'amuser.
         redpanda: pour ses nombreuses astuces et conseils.
         sensiolabs: pour leurs outils avec lesquels coder.
+        riotjs: pour leur mini framework.
         bootstrap: pour leur framework.
         openfonts: pour cette police.

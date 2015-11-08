@@ -8,7 +8,7 @@ navbar:
         input: search
         entity:
             comic: comic
-            serie: serie
+            series: series
             creator: creator
             event: event
             character: character
@@ -30,11 +30,11 @@ comics:
 
 comic:
     published: published
-    serie: serie
+    series: series
     creator:
         cover: cover
     characters: character(s)
-    events: events
+    events: event(s)
 
 artist: artist
 writer: writer
@@ -44,11 +44,6 @@ colorist: colorist
 inker: inker
 letterer: letterer
 editor: editor
-
-serie:
-    pagination:
-        newer: newer
-        older: older
 
 search:
     results: results for
@@ -80,5 +75,6 @@ about:
         marvel: for providing an API that I can enjoy while coding.
         redpanda: for his numerous tips and advices.
         sensiolabs: for their coding tools.
+        riotjs: for their tiny framework.
         bootstrap: for their framework.
         openfonts: for this font.
