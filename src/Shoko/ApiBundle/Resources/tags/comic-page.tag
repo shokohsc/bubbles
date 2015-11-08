@@ -18,17 +18,17 @@
       </h2>
       <table class="table table-condensed">
         <tr>
-          <td><strong>Published</strong></td>
+          <td><strong>{ Translator.trans('comic.published') }</strong></td>
           <td><a href="#week/{ moment(comic.dates[0].date).format('DD-MM-YYYY') }" title="Released as of { moment(comic.dates[0].date).format('MMM Do, YYYY') }">{ moment(comic.dates[0].date).format('MMMM Do, YYYY') }</a></td>
         </tr>
 
         <tr>
-          <td><strong>Serie</strong></td>
+          <td><strong>{ Translator.trans('comic.series') }</strong></td>
           <td><a href="#series/{ comic.series.resourceURI.resourceURIToId() }" class="title" title="{ comic.series.name.title() }">{ comic.series.name.title() }</a></td>
         </tr>
 
         <tr if={ comic.events.items.length }>
-          <td><strong>Events</strong></td>
+          <td><strong>{ Translator.trans('comic.events') }</strong></td>
           <td>
             <span each={ comic.events.items }>
               <a href="#events/{ resourceURI.resourceURIToId() }" class="title label label-primary" title="{ name.title() }">{ name.title() }</a>
@@ -37,12 +37,12 @@
         </tr>
 
         <tr each={ comic.creators.items }>
-          <td><strong>{ role.title() }</strong></td>
+          <td><strong>{ { Translator.trans(role) } }</strong></td>
           <td><a href="#creators/{ resourceURI.resourceURIToId() }" class="title" title="{ name.title() }">{ name.title() }</a></td>
         </tr>
 
         <tr if={ comic.characters.items.length }>
-          <td><strong>Characters</strong></td>
+          <td><strong>{ Translator.trans('comic.characters') }</strong></td>
           <td>
             <span each={ comic.characters.items }>
               <a href="#characters/{ resourceURI.resourceURIToId() }" class="title label label-primary" title="{ name.title() }">{ name.title() }</a>
@@ -51,7 +51,7 @@
         </tr>
       </table>
 
-      <p><raw comic={comic}/></p>
+      <p><raw html={ comic.description }/></p>
     </div>
   </div>
 
@@ -69,7 +69,7 @@
 <raw>
   var self = this,
       updateHTML = function(){
-        self.root.innerHTML = self.opts.comic.description || ""
+        self.root.innerHTML = self.opts.html || ""
       }
   updateHTML()
   this.on("updated", updateHTML)

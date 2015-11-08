@@ -1,55 +1,55 @@
 base:
-    title: welcome to bubbles
-    content: comics releases
+    title: Welcome to Bubbles
+    content: Marvel Comics Releases
 
 navbar:
-    navigation: toggle navigation
+    navigation: Toggle navigation
     search:
-        input: search
+        input: Search
         entity:
-            comic: comic
-            series: series
-            creator: creator
-            event: event
-            character: character
-    about: about
+            comic: Comic
+            series: Series
+            creator: Creator
+            event: Event
+            character: Character
+    about: About
 
-home: home
+home: Home
 
 credits:
-    provided: data provided by
-    powered: powered by
+    provided: Data provided by
+    powered: Powered by
 
 pagination:
     week: week
     month: month
 
 comics:
-    release: released as of
-    this_week: this week
+    release: Released as of
+    this_week: This week
 
 comic:
-    published: published
-    series: series
+    published: Publishing date
+    series: Series
     creator:
-        cover: cover
-    characters: character(s)
-    events: event(s)
+        cover: Cover
+    characters: Character(s)
+    events: Event(s)
 
-artist: artist
-writer: writer
-penciller: penciller
-penciller (cover): "penciller (cover)"
-colorist: colorist
-inker: inker
-letterer: letterer
-editor: editor
+artist: Artist
+writer: Writer
+penciller: Penciller
+penciller (cover): "Penciller (Cover)"
+colorist: Colorist
+inker: Inker
+letterer: Letterer
+editor: Editor
 
 search:
-    results: results for
+    results: Results for
 
 error:
-    backward: head back
+    backward: Head back
     404:
         title: Bubbles is lost
         message: Deadpool says you lost your way.
@@ -58,18 +58,18 @@ error:
         message: Deadpool says we lost our way.
 
 about:
-    title: about bubbles
+    title: About bubbles
     what:
-        question: what is this ?
+        question: What is this ?
         answer: Bubbles is meant to display marvel.com/comics.
     who:
-        question: who am I ?
+        question: Who am I ?
         answer: I am a 29 years old web developer who lives in France near Paris.
     why:
-        question: why did I do that ?
+        question: Why did I do that ?
         answer: "This is Symfony practice, check out my <a href=\"//shokohsc.github.io\">resume</a>."
     thanks:
-        main: thanks
+        main: Thanks
         iThank: I would like to thank
         heroku: for hosting this project.
         marvel: for providing an API that I can enjoy while coding.

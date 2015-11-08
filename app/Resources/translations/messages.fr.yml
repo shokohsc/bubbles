@@ -1,55 +1,55 @@
 base:
-    title: bienvenue chez bubbles
-    content: sorties de comics
+    title: Bienvenue chez Bubbles
+    content: Sorties de comics Marvel
 
 navbar:
-    navigation: afficher la navigation
+    navigation: Afficher la navigation
     search:
-        input: recherche
+        input: Recherche
         entity:
-            comic: comic
-            series: série
-            creator: auteur
-            event: évènement
-            character: personnage
-    about: a propos
+            comic: Comic
+            series: Série
+            creator: Auteur
+            event: Evènement
+            character: Personnage
+    about: A propos
 
-home: accueil
+home: Accueil
 
 credits:
-    provided: données obtenues par
-    powered: propulsé par
+    provided: Données obtenues par
+    powered: Propulsé par
 
 pagination:
     week: semaine
     month: mois
 
 comics:
-    release: sorties :
-    this_week: cette semaine
+    release: Sorties
+    this_week: Cette semaine
 
 comic:
-    published: publié
-    series: série
+    published: Date de publication
+    series: Série
     creator:
-        cover: couverture
-    characters: personnage(s)
-    events: évènement(s)
+        cover: Couverture
+    characters: Personnage(s)
+    events: Evènement(s)
 
-artist: artiste
-writer: auteur
-penciller: crayon
-penciller (cover): "crayon (couverture)"
-colorist: couleur
-inker: encreur
-letterer: lettres
-editor: éditeur
+artist: Artiste
+writer: Auteur
+penciller: Crayon
+penciller (cover): "Crayon (Couverture)"
+colorist: Couleur
+inker: Encreur
+letterer: Lettres
+editor: Editeur
 
 search:
-    results: résultats pour
+    results: Résultats pour
 
 error:
-    backward: page précédente
+    backward: Page précédente
     404:
         title: Bubbles s'est perdu
         message: Deadpool dit que tu t'es perdu.
@@ -58,19 +58,19 @@ error:
         message: Deadpool dit qu'on s'est perdu.
 
 about:
-    title: a propos de Bubbles
+    title: A propos de Bubbles
     what:
-        question: qu'est-ce donc ?
+        question: Qu'est-ce donc ?
         answer: Bubbles reflète marvel.com/comics.
     who:
-        question: qui suis-je ?
+        question: Qui suis-je ?
         answer: Je suis un développeur de 29 ans qui vit en France près de Paris.
     why:
-        question: pourquoi ça ?
+        question: Pourquoi ça ?
         answer: "C'est un entrainement à Symfony et plus encore, regardez mon <a href=\"//shokohsc.github.io\">cv</a>."
     thanks:
-        main: remerciements
-        iThank: j'aimerais remercier
+        main: Remerciements
+        iThank: J'aimerais remercier
         heroku: pour héberger ce projet.
         marvel: pour utliser une API avec laquelle s'amuser.
         redpanda: pour ses nombreuses astuces et conseils.

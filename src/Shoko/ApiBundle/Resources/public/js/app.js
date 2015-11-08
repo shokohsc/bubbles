@@ -39,14 +39,14 @@ var routing = function(collection, id, page, options) {
   riot.mount('div#content', 'bubbles-loading')
   if (collection === 'about') {
     riot.mount('div#content', 'bubbles-about')
-    document.title = 'About Bubbles'
+    document.title = Translator.trans('about.title')
   } else if (collection === 'comics') {
     mount('div#content', 'bubbles-comic', collection, id)
   } else if (collection === 'week') {
     mount('div#content', 'bubbles-week', 'comics/'+collection, id)
   } else if (collection === 'search') {
     mount('div#content', 'bubbles-search', collection, id, page, options)
-  } else if (collection !== '') {
+  } else if (collection !== '' && collection !== 'home') {
     mount('div#content', 'bubbles-'+collection, collection, id+'/comics', page)
   } else {
     mount('div#content', 'bubbles-week', 'comics/week')

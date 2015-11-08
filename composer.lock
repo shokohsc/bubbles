@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69336572c229672dbedfe9de5debcb28",
-    "content-hash": "190e25d96c0469bac79496f3e35e9c24",
+    "hash": "72705638ad5488c6d15090d6ed2a181e",
+    "content-hash": "05ac892c4662232a526c7d3453e6e7ac",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1562,6 +1562,64 @@
                 "templating"
             ],
             "time": "2015-10-29 23:29:01"
+        },
+        {
+            "name": "willdurand/js-translation-bundle",
+            "version": "v2.4.0",
+            "target-dir": "Bazinga/Bundle/JsTranslationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/BazingaJsTranslationBundle.git",
+                "reference": "e4740aa4dd2b221ec678d5072b7168234785658f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/BazingaJsTranslationBundle/zipball/e4740aa4dd2b221ec678d5072b7168234785658f",
+                "reference": "e4740aa4dd2b221ec678d5072b7168234785658f",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "~2.3",
+                "symfony/finder": "~2.3",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/intl": "~2.3"
+            },
+            "replace": {
+                "willdurand/expose-translation-bundle": "2.4.*"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "~2.3",
+                "symfony/twig-bundle": "~2.3",
+                "symfony/yaml": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Bazinga\\Bundle\\JsTranslationBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "will+git@drnd.me"
+                }
+            ],
+            "description": "A pretty nice way to expose your translation messages to your JavaScript.",
+            "keywords": [
+                "javascript",
+                "symfony",
+                "translation"
+            ],
+            "time": "2015-10-27 10:05:55"
         }
     ],
     "packages-dev": [

@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Octante\MarvelAPIBundle\OctanteMarvelAPIBundle(),
             new FOS\HttpCacheBundle\FOSHttpCacheBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
             new Shoko\ApiBundle\ApiBundle(),
         );
 
