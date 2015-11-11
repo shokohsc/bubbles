@@ -37,7 +37,7 @@
         </tr>
 
         <tr each={ comic.creators.items }>
-          <td><strong>{ { Translator.trans(role) } }</strong></td>
+          <td><strong>{ Translator.trans(role) }</strong></td>
           <td><a href="#creators/{ resourceURI.resourceURIToId() }" class="title" title="{ name.title() }">{ name.title() }</a></td>
         </tr>
 
