@@ -68,5 +68,6 @@ ga('send', 'pageview');
 riot.mount('bubbles-navbar')
 riot.mount('div#content', 'bubbles-loading')
 riot.mount('bubbles-footer')
+riot.route.start(true)
 riot.route(routing)
 riot.route.exec(routing)
