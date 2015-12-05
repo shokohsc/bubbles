@@ -2,6 +2,7 @@
 
 namespace Shoko\ApiBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -18,7 +19,7 @@ class SearchController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function seriesAction($q, $page)
+  public function seriesAction(Request $request, $q, $page)
   {
     $collection = $this->get('shoko.serie.repository')->findAllByQuery(urlencode($q), $page);
     $comics = json_decode($this->get('marvel.tojson')->encode($collection));
@@ -40,7 +41,7 @@ class SearchController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function charactersAction($q, $page)
+  public function charactersAction(Request $request, $q, $page)
   {
     $collection = $this->get('shoko.character.repository')->findAllByQuery(urlencode($q), $page);
     $comics = json_decode($this->get('marvel.tojson')->encode($collection));
@@ -62,7 +63,7 @@ class SearchController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function comicsAction($q, $page)
+  public function comicsAction(Request $request, $q, $page)
   {
     $collection = $this->get('shoko.comic.repository')->findAllByQuery(urlencode($q), $page);
     $comics = json_decode($this->get('marvel.tojson')->encode($collection));
@@ -84,7 +85,7 @@ class SearchController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function creatorsAction($q, $page)
+  public function creatorsAction(Request $request, $q, $page)
   {
     $collection = $this->get('shoko.creator.repository')->findAllByQuery(urlencode($q), $page);
     $comics = json_decode($this->get('marvel.tojson')->encode($collection));
@@ -106,7 +107,7 @@ class SearchController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function eventsAction($q, $page)
+  public function eventsAction(Request $request, $q, $page)
   {
       $collection = $this->get('shoko.event.repository')->findAllByQuery(urlencode($q), $page);
       $comics = json_decode($this->get('marvel.tojson')->encode($collection));

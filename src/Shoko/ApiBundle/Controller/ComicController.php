@@ -2,6 +2,7 @@
 
 namespace Shoko\ApiBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -21,7 +22,7 @@ class ComicController extends Controller
    *
    * @return JsonResponse
    */
-  public function getAction($id)
+  public function getAction(Request $request, $id)
   {
       $comic = $this->get('shoko.comic.repository')->findOneById($id);
       $comic = json_decode($this->get('marvel.tojson')->encode($comic));
@@ -38,13 +39,13 @@ class ComicController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function weekAction($date = null)
+  public function weekAction(Request $request, $date = null)
   {
       $dateTarget = null === $date || 'undefined' === $date ? Carbon::now() : Carbon::parse($date);
       $collection = $this->get('shoko.comic.repository')->findAllByReleaseDate($dateTarget);
       $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
-      $locale = $this->get('request')->getLocale();
+      $locale = $request->getLocale();
       setlocale(LC_TIME, $locale.'_'.strtoupper($locale));
 
       $title = $this->get('translator')->trans('comics.release') .' '. $dateTarget->formatLocalized('%b %e, %Y');

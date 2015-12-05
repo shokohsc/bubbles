@@ -2,6 +2,7 @@
 
 namespace Shoko\ApiBundle\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -18,7 +19,7 @@ class CharacterController extends Controller
    *
    * @return Symfony\Component\HttpFoundation\Response
    */
-  public function comicsAction($id, $page)
+  public function comicsAction(Request $request, $id, $page)
   {
       $collection = $this->get('shoko.character.repository')->findAllComicsById($id, $page);
       $comics = json_decode($this->get('marvel.tojson')->encode($collection));
