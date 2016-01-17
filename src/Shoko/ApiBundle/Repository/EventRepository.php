@@ -2,7 +2,6 @@
 
 namespace Shoko\ApiBundle\Repository;
 
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\EventsRepository;
@@ -14,48 +13,48 @@ use Octante\MarvelAPIBundle\Model\Query\EventQuery;
 class EventRepository
 {
     /**
-     * Number of comics displayed
+     * Number of comics displayed.
      *
-     * @var integer
+     * @var int
      */
     private $comicsPerPage;
 
     /**
-     * EventsRepository
+     * EventsRepository.
      *
      * @var EventsRepository
      */
     private $repository;
 
     /**
-     * EventQuery
+     * EventQuery.
      *
      * @var EventQuery
      */
     private $query;
 
     /**
-     * ComicsRepository
+     * ComicsRepository.
      *
      * @var ComicsRepository
      */
     private $comicRepository;
 
     /**
-     * ComicQuery
+     * ComicQuery.
      *
      * @var ComicQuery
      */
     private $comicQuery;
 
     /**
-     * EventRepository constructor
+     * EventRepository constructor.
      *
      * @param EventsRepository $repository
      * @param EventQuery       $query
      * @param ComicsRepository $comicRepository
      * @param ComicQuery       $comicQuery
-     * @param integer          $comicsPerPage
+     * @param int              $comicsPerPage
      */
     public function __construct(EventsRepository $repository, EventQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
     {
@@ -63,11 +62,11 @@ class EventRepository
         $this->query = $query;
         $this->comicRepository = $comicRepository;
         $this->comicQuery = $comicQuery;
-        $this->comicsPerPage  = $comicsPerPage;
+        $this->comicsPerPage = $comicsPerPage;
     }
 
     /**
-     * Find all comics matching event id
+     * Find all comics matching event id.
      *
      * @param string $id
      * @param string $page
@@ -76,14 +75,14 @@ class EventRepository
      */
     public function findAllComicsById($id, $page)
     {
-        $comics_per_page = $this->comicsPerPage;
+        $comicsPerPage = $this->comicsPerPage;
         $this->comicQuery->setEvents($id);
         $this->comicQuery->setFormat('comic');
         $this->comicQuery->setFormatType('comic');
         $this->comicQuery->setNoVariants(true);
         $this->comicQuery->setOrderBy('-onsaleDate');
-        $this->comicQuery->setLimit($comics_per_page);
-        $this->comicQuery->setOffset(($page * $comics_per_page) - $comics_per_page);
+        $this->comicQuery->setLimit($comicsPerPage);
+        $this->comicQuery->setOffset(($page * $comicsPerPage) - $comicsPerPage);
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
@@ -91,7 +90,7 @@ class EventRepository
     }
 
     /**
-     * Find one event matching id
+     * Find one event matching id.
      *
      * @param string $id
      *
@@ -104,23 +103,24 @@ class EventRepository
             ->getData();
     }
 
-    /**
-     * Find all events matching query
-     *
-     * @param string $query input from search form
-     * 
-     * @return Octante\MarvelAPIBundle\Model\DataContainer\EventDataContainer
-     */
+     /**
+      * Find all events matching query.
+      *
+      * @param string $query input from search form
+      * @param string $page
+      * 
+      * @return Octante\MarvelAPIBundle\Model\DataContainer\EventDataContainer
+      */
      public function findAllByQuery($query, $page)
      {
-          $comics_per_page = $this->comicsPerPage;
-          $this->query->setNameStartsWith($query);
-          $this->query->setOrderBy('-startDate');
-          $this->query->setLimit($comics_per_page);
-          $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+         $comicsPerPage = $this->comicsPerPage;
+         $this->query->setNameStartsWith($query);
+         $this->query->setOrderBy('-startDate');
+         $this->query->setLimit($comicsPerPage);
+         $this->query->setOffset(($page * $comicsPerPage) - $comicsPerPage);
 
-          return $this->repository
+         return $this->repository
               ->getEvents($this->query)
               ->getData();
-    }
+     }
 }

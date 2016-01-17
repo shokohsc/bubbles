@@ -2,7 +2,6 @@
 
 namespace Shoko\ApiBundle\Repository;
 
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Carbon\Carbon;
@@ -13,28 +12,28 @@ use Carbon\Carbon;
 class ComicRepository
 {
     /**
-     * Number of comics displayed
+     * Number of comics displayed.
      *
-     * @var integer
+     * @var int
      */
     private $comicsPerPage;
 
     /**
-     * ComicsRepository
+     * ComicsRepository.
      *
      * @var ComicsRepository
      */
     private $repository;
 
     /**
-     * ComicQuery
+     * ComicQuery.
      *
      * @var ComicQuery
      */
     private $query;
 
     /**
-     * ComicRepository constructor
+     * ComicRepository constructor.
      *
      * @param ComicsRepository $repository
      * @param ComicQuery       $query
@@ -43,11 +42,11 @@ class ComicRepository
     {
         $this->repository = $repository;
         $this->query = $query;
-        $this->comicsPerPage  = $comicsPerPage;
+        $this->comicsPerPage = $comicsPerPage;
     }
 
     /**
-     * Get Release date range from the given date
+     * Get Release date range from the given date.
      *
      * @param Carbon $date
      *
@@ -62,7 +61,7 @@ class ComicRepository
     }
 
     /**
-     * Find all released comics the week containing the $date
+     * Find all released comics the week containing the $date.
      *
      * @param Carbon $date
      *
@@ -76,13 +75,14 @@ class ComicRepository
         $this->query->setDateRange($this->getReleaseDateRange($date));
         $this->query->setOrderBy('title');
         $this->query->setLimit(100);
+
         return $this->repository
             ->getComics($this->query)
             ->getData();
     }
 
     /**
-     * Find one comic matching id
+     * Find one comic matching id.
      *
      * @param string $id comic id
      *
@@ -95,26 +95,27 @@ class ComicRepository
             ->getData();
     }
 
-    /**
-     * Find all comics matching query
-     *
-     * @param string $query input from search form
-     *
-     * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
-     */
+     /**
+      * Find all comics matching query.
+      *
+      * @param string $query input from search form
+      * @param string $page
+      *
+      * @return Octante\MarvelAPIBundle\Model\DataContainer\ComicDataContainer
+      */
      public function findAllByQuery($query, $page)
      {
-        $comics_per_page = $this->comicsPerPage;
-        $this->query->setTitleStartsWith($query);
-        $this->query->setOrderBy('-onsaleDate');
-        $this->query->setFormat('comic');
-        $this->query->setFormatType('comic');
-        $this->query->setNoVariants(true);
-        $this->query->setLimit($comics_per_page);
-        $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+         $comicsPerPage = $this->comicsPerPage;
+         $this->query->setTitleStartsWith($query);
+         $this->query->setOrderBy('-onsaleDate');
+         $this->query->setFormat('comic');
+         $this->query->setFormatType('comic');
+         $this->query->setNoVariants(true);
+         $this->query->setLimit($comicsPerPage);
+         $this->query->setOffset(($page * $comicsPerPage) - $comicsPerPage);
 
-        return $this->repository
+         return $this->repository
             ->getComics($this->query)
             ->getData();
-    }
+     }
 }

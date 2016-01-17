@@ -2,7 +2,6 @@
 
 namespace Shoko\ApiBundle\Repository;
 
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Octante\MarvelAPIBundle\Repositories\ComicsRepository;
 use Octante\MarvelAPIBundle\Model\Query\ComicQuery;
 use Octante\MarvelAPIBundle\Repositories\SeriesRepository;
@@ -14,48 +13,48 @@ use Octante\MarvelAPIBundle\Model\Query\SerieQuery;
 class SerieRepository
 {
     /**
-     * Number of comics displayed
+     * Number of comics displayed.
      *
-     * @var integer
+     * @var int
      */
     private $comicsPerPage;
 
     /**
-     * SeriesRepository
+     * SeriesRepository.
      *
      * @var SeriesRepository
      */
     private $repository;
 
     /**
-     * SerieQuery
+     * SerieQuery.
      *
      * @var SerieQuery
      */
     private $query;
 
     /**
-     * ComicsRepository
+     * ComicsRepository.
      *
      * @var ComicsRepository
      */
     private $comicRepository;
 
     /**
-     * ComicQuery
+     * ComicQuery.
      *
      * @var ComicQuery
      */
     private $comicQuery;
 
     /**
-     * SerieRepository constructor
+     * SerieRepository constructor.
      *
      * @param SeriesRepository $repository
      * @param SerieQuery       $query
      * @param ComicsRepository $comicRepository
      * @param ComicQuery       $comicQuery
-     * @param integer          $comicsPerPage
+     * @param int              $comicsPerPage
      */
     public function __construct(SeriesRepository $repository, SerieQuery $query, ComicsRepository $comicRepository, ComicQuery $comicQuery, $comicsPerPage)
     {
@@ -63,12 +62,11 @@ class SerieRepository
         $this->query = $query;
         $this->comicRepository = $comicRepository;
         $this->comicQuery = $comicQuery;
-        $this->comicsPerPage  = $comicsPerPage;
+        $this->comicsPerPage = $comicsPerPage;
     }
 
-
     /**
-     * Find all comics matching serie id
+     * Find all comics matching serie id.
      *
      * @param string $id
      * @param string $page
@@ -77,14 +75,14 @@ class SerieRepository
      */
     public function findAllComicsById($id, $page)
     {
-        $comics_per_page = $this->comicsPerPage;
+        $comicsPerPage = $this->comicsPerPage;
         $this->comicQuery->setSeries($id);
         $this->comicQuery->setFormat('comic');
         $this->comicQuery->setFormatType('comic');
         $this->comicQuery->setNoVariants(true);
         $this->comicQuery->setOrderBy('-issueNumber');
-        $this->comicQuery->setLimit($comics_per_page);
-        $this->comicQuery->setOffset(($page * $comics_per_page) - $comics_per_page);
+        $this->comicQuery->setLimit($comicsPerPage);
+        $this->comicQuery->setOffset(($page * $comicsPerPage) - $comicsPerPage);
 
         return $this->comicRepository
             ->getComics($this->comicQuery)
@@ -92,7 +90,7 @@ class SerieRepository
     }
 
     /**
-     * Find one serie matching id
+     * Find one serie matching id.
      *
      * @param string $id
      *
@@ -106,22 +104,23 @@ class SerieRepository
     }
 
     /**
-     * Find all series matching query
+     * Find all series matching query.
      *
      * @param string $query input from search form
-     * 
+     * @param string $page
+     *
      * @return Octante\MarvelAPIBundle\Model\DataContainer\SerieDataContainer
      */
     public function findAllByQuery($query, $page)
     {
-          $comics_per_page = $this->comicsPerPage;
-          $this->query->setTitleStartsWith($query);
-          $this->query->setOrderBy('-startYear');
-          $this->query->setContains('comic');
-          $this->query->setLimit($comics_per_page);
-          $this->query->setOffset(($page * $comics_per_page) - $comics_per_page);
+        $comicsPerPage = $this->comicsPerPage;
+        $this->query->setTitleStartsWith($query);
+        $this->query->setOrderBy('-startYear');
+        $this->query->setContains('comic');
+        $this->query->setLimit($comicsPerPage);
+        $this->query->setOffset(($page * $comicsPerPage) - $comicsPerPage);
 
-          return $this->repository
+        return $this->repository
               ->getSeries($this->query)
               ->getData();
     }
