@@ -3,7 +3,7 @@ app:
     defaults: { _controller: ApiBundle:Front:index }
 
 api:
-    resource: @ApiBundle/Controller/
+    resource: "@ApiBundle/Controller/"
     type:     annotation
     prefix:   /api/
 
