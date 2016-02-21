@@ -4,28 +4,32 @@
  * Prototypes *
  **************/
 
- /**
-  * First letter of any word uppercase, then lowercase
-  * @return string
-  */
- String.prototype.title = function() {
-   var string = this.toString().toLowerCase()
+/**
+ * First letter of any word uppercase, then lowercase
+ * @return string
+ */
+String.prototype.title = function() {
+  var string = this.toString().toLowerCase()
 
-   return string.replace(/(^([a-zA-Z\p{M}]))|([ -][a-zA-Z\p{M}])/g, function($charOne){
-     return $charOne.toUpperCase()
-   })
- }
+  return string.replace(/(^([a-zA-Z\p{M}]))|([ -][a-zA-Z\p{M}])/g, function($charOne){
+    return $charOne.toUpperCase()
+  })
+}
 
- /**
-  * Replace http:// by https:// in String
-  * @return string
-  */
- String.prototype.encrypt = function() {
-   var string = this.toString()
+/**
+ * Replace http:// by https:// in String
+ * @return string
+ */
+String.prototype.encrypt = function() {
+  var string = this.toString()
 
-   return string.replace('http://', 'https://')
- }
+  return string.replace('http://', 'https://')
+}
 
+/**
+ * Transform resourceURI to Id
+ * @return string
+ */
 String.prototype.resourceURIToId = function() {
   var string = this.toString()
   return string.split('/').reverse()[0]
@@ -63,11 +67,21 @@ function mount(tag, options) {
  * @param  string id
  * @param  string action
  */
-function handler(collection, id, action) {
+function handler(collection, id, resource, page) {
   var fn = routes[collection || 'home']
-  fn ? fn(id, action) : mount('bubbles-error')
+  fn ? fn(id, resource, page) : mount('bubbles-error')
 }
 
+/**
+ * Synchronize title
+ */
+function syncTitle() {
+  if (pageTitle !== undefined ) {
+    $('h1.text-center').text(pageTitle)
+    document.title = pageTitle
+  }
+  pageTitle = undefined
+}
 
 /*******************
  * AbstractService *
@@ -105,7 +119,7 @@ class AbstractService {
 
     return $.ajax({
       url: url
-    }).fail(function(xhr) {
+    }).fail(function(xhr, text, error) {
       mount('bubbles-error', xhr)
     })
   }
@@ -133,7 +147,7 @@ class ComicService extends AbstractService{
   /**
    * Fetch week comics
    * @param  string id
-   * @return Object
+   * @return Promise
    */
   fetchWeek(date) {
     this.url = this.url+'/'+date
@@ -141,6 +155,11 @@ class ComicService extends AbstractService{
     return this.serve('week', date)
   }
 
+  /**
+   * Fetch comic
+   * @param  int id
+   * @return Promise
+   */
   fetchComic(id) {
     return this.serve(id)
   }
@@ -160,12 +179,14 @@ class SerieService extends AbstractService{
   }
 
   /**
-   * Fetch serie
+   * Fetch serie comics
    * @param string id
-   * @return Object
+   * @param string resource
+   * @param int    page
+   * @return Promise
    */
-  fetchSerie(id) {
-    return this.serve(id)
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
   }
 }
 
@@ -183,23 +204,133 @@ class CreatorService extends AbstractService{
   }
 
   /**
-   * Fetch creator
+   * Fetch creator comics
    * @param string id
-   * @return Object
+   * @param string resource
+   * @param int    page
+   * @return Promise
    */
-  fetchCreator(id) {
-    return this.serve(id)
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+}
+
+/**
+ * CharacterService class.
+ */
+class CharacterService extends AbstractService{
+
+  /**
+   * CharacterService constructor method.
+   * @return CharacterService
+   */
+  constructor() {
+    super('characters')
+  }
+
+  /**
+   * Fetch character comics
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+}
+
+/**
+ * EventService class.
+ */
+class EventService extends AbstractService{
+
+  /**
+   * EventService constructor method.
+   * @return EventService
+   */
+  constructor() {
+    super('events')
+  }
+
+  /**
+   * Fetch character comics
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+}
+
+/**
+ * SearchService class.
+ */
+class SearchService extends AbstractService{
+
+  /**
+   * SearchService constructor method.
+   * @return SearchService
+   */
+  constructor() {
+    super('search')
+  }
+
+  /**
+   * Fetch series
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchSeries(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+
+  /**
+   * Fetch comics
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
   }
 
   /**
    * Fetch creators
-   * @return Object
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
    */
-  fetchCreators() {
-    var query = riot.route.query()
-        query = $.param(query)
+  fetchCreators(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
 
-    return this.serve(undefined, undefined, query)
+  /**
+   * Fetch characters
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchCharacters(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+
+  /**
+   * Fetch events
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchEvents(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
   }
 }
 
@@ -227,29 +358,67 @@ var serieService = new SerieService()
 var creatorService = new CreatorService()
 
 /**
+ * characterService
+ * @type CharacterService
+ */
+var characterService = new CharacterService()
+
+/**
+ * eventService
+ * @type EventService
+ */
+var eventService = new EventService()
+
+/**
+ * searchService
+ * @type SearchService
+ */
+var searchService = new SearchService()
+
+/**
  * Home route definition
  * @param  string id
- * @param  string action
- * @return Object
+ * @param  string resource
+ * @param  int    page
  */
-routes.home = function(id, action) {
+routes.home = function(id, resource, page) {
   mount('bubbles-loading')
-  comicService.fetchWeek(id).done(function(week) {
-    mount('bubbles-week', week)
+  comicService.fetchWeek(id).done(function(comics) {
+    mount('bubbles-week', comics)
   })
 }
 
 /**
+ * Comic route definition
+ * @param  string id
+ * @param  string resource
+ * @param  int    page
+ */
+routes.comics = function(id, resource, page) {
+  mount('bubbles-loading')
+  if (id && parseInt(id)) {
+    comicService.fetchComic(id, resource, page).done(function(comic) {
+      mount('bubbles-comic', comic)
+      syncTitle()
+    })
+  } else {
+    mount('bubbles-error')
+  }
+}
+
+
+/**
  * Serie route definition
  * @param  string id
- * @param  string action
- * @return Object
+ * @param  string resource
+ * @param  int    page
  */
-routes.series = function(id, action) {
+routes.series = function(id, resource, page) {
   mount('bubbles-loading')
-  if (id && !id.match(/=/)) {
-    serieService.fetchSerie(id).done(function(serie) {
-      mount('bubbles-serie', {serie: serie})
+  if (id && parseInt(id)) {
+    serieService.fetchComics(id, resource, page).done(function(comics) {
+      mount('bubbles-series', comics)
+      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -259,30 +428,111 @@ routes.series = function(id, action) {
 /**
  * Creator route definition
  * @param  string id
- * @param  string action
- * @return Object
+ * @param  string resource
+ * @param  int    page
  */
-routes.creators = function(id, action) {
+routes.creators = function(id, resource, page) {
   mount('bubbles-loading')
-  if (id && !id.match(/=/)) {
-    creatorService.fetchCreator(id).done(function(creator) {
-      mount('bubbles-creator', {creator: creator})
+  if (id && parseInt(id)) {
+    creatorService.fetchComics(id, resource, page).done(function(comics) {
+      mount('bubbles-creators', comics)
+      syncTitle()
     })
   } else {
-    creatorService.fetchCreators().done(function(creators) {
-      mount('bubbles-creators', {creators: creators})
+    mount('bubbles-error')
+  }
+}
+
+/**
+ * Character route definition
+ * @param  string id
+ * @param  string resource
+ * @param  int    page
+ */
+routes.characters = function(id, resource, page) {
+  mount('bubbles-loading')
+  if (id && parseInt(id)) {
+    characterService.fetchComics(id, resource, page).done(function(comics) {
+      mount('bubbles-characters', comics)
+      syncTitle()
     })
+  } else {
+    mount('bubbles-error')
+  }
+}
+
+/**
+ * Event route definition
+ * @param  string id
+ * @param  string resource
+ * @param  int    page
+ */
+routes.events = function(id, resource, page) {
+  mount('bubbles-loading')
+  if (id && parseInt(id)) {
+    eventService.fetchComics(id, resource, page).done(function(comics) {
+      mount('bubbles-events', comics)
+      syncTitle()
+    })
+  } else {
+    mount('bubbles-error')
+  }
+}
+
+/**
+ * Search route definition
+ * @param  string id
+ * @param  string resource
+ * @param  int    page
+ */
+routes.search = function(id, resource, page) {
+  mount('bubbles-loading')
+  switch (id) {
+    case 'series':
+      searchService.fetchSeries(id, resource, page).done(function(search) {
+        mount('bubbles-search', search)
+        syncTitle()
+      })
+      break;
+    case 'comics':
+      searchService.fetchComics(id, resource, page).done(function(search) {
+        mount('bubbles-search', search)
+        syncTitle()
+      })
+      break;
+    case 'creators':
+      searchService.fetchCreators(id, resource, page).done(function(search) {
+        mount('bubbles-search', search)
+        syncTitle()
+      })
+      break;
+    case 'characters':
+      searchService.fetchCharacters(id, resource, page).done(function(search) {
+        mount('bubbles-search', search)
+        syncTitle()
+      })
+      break;
+    case 'events':
+      searchService.fetchEvents(id, resource, page).done(function(search) {
+        mount('bubbles-search', search)
+        syncTitle()
+      })
+      break;
+    default:
+      mount('bubbles-error')
   }
 }
 
 /**
  * About route definition
  * @param  string id
- * @param  string action
+ * @param  string resource
+ * @param  int    page
  * @return Object
  */
-routes.about = function(id, action) {
+routes.about = function(id, resource, page) {
     mount('bubbles-about')
+    document.title = Translator.trans('about.title')
 }
 
 
@@ -290,6 +540,11 @@ routes.about = function(id, action) {
 /***********
  * Run app *
  ***********/
+
+ if (pageTitle === undefined) {
+   var pageTitle = undefined
+ }
+
 riot.mount('*')
 riot.route(handler)
 riot.route.start(true)

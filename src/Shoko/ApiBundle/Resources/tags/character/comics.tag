@@ -6,7 +6,7 @@
   <script>
     $(this.pagination).twbsPagination({
       totalPages: Math.ceil(opts.comics.total / 10),
-      href: '#characters/'+opts.characterId+'/{{number}}'
+      href: '#characters/'+opts.characterId+'/comics/{{number}}'
     }).find('ul.pagination > li > a').each(function(i, el) {
       $(el).addClass('title').attr('title', pageTitle)
     })
