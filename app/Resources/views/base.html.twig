@@ -9,10 +9,9 @@
         <link rel="shortcut icon" href="favicon.png" />
         <title>Bubbles</title>
 
-        <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.css">
-        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/api/css/main.css') }}" />
-        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/api/css/loading.css') }}" />
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/css/assets.min.css') }}" />
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/code-new-roman" type="text/css"/>
+        <link type="text/css" rel="stylesheet" href="{{ asset('bundles/css/style.min.css') }}" />
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,16 +26,11 @@
         <div id="content" class="container"></div>
         <bubbles-footer></bubbles-footer>
 
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-        <script type="text/javascript" src="//esimakin.github.io/twbs-pagination/js/jquery.twbsPagination.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
-
         <script src="{{ asset('bundles/bazingajstranslation/js/translator.min.js') }}"></script>
         <script src="{{ url('bazinga_jstranslation_js', {}, true) }}"></script>
-        <script src="{{ asset('bundles/api/js/tags.js') }}"></script>
-        <script src="{{ asset('bundles/api/js/app.js') }}"></script>
+        <script src="{{ asset('bundles/js/assets.min.js') }}"></script>
+        <script src="{{ asset('bundles/js/tags.js') }}"></script>
+        <script src="{{ asset('bundles/js/app.min.js') }}"></script>
     </body>
 </html>

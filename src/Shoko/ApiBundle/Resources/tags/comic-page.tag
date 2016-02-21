@@ -1,11 +1,11 @@
 <bubbles-comic>
   <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-3 ">
-      <a data-lightbox="cover" data-title="{ comic.title.title() }" href="{ comic.thumbnail.path.useHttps() }/detail.{ comic.thumbnail.extension }">
+      <a data-lightbox="cover" data-title="{ comic.title.title() }" href="{ comic.thumbnail.path.encrypt() }/detail.{ comic.thumbnail.extension }">
         <img
           id="incredible_{ comic.id.comicId }"
           class="img-thumbnail"
-          src="{ comic.thumbnail.path.useHttps() }/portrait_incredible.{ comic.thumbnail.extension }"
+          src="{ comic.thumbnail.path.encrypt() }/portrait_incredible.{ comic.thumbnail.extension }"
           alt="{ title }"
           height="324"
           width="216"

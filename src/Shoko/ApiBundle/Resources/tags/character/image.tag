@@ -2,7 +2,7 @@
   <img
     id="incredible_{ id.characterId }"
     class="img-thumbnail"
-    src="{ thumbnail.path.useHttps() }/portrait_incredible.{ thumbnail.extension }"
+    src="{ thumbnail.path.encrypt() }/portrait_incredible.{ thumbnail.extension }"
     alt="{ title }"
     height="324"
     width="216"

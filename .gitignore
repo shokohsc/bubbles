@@ -9,3 +9,11 @@
 /build/
 /vendor/
 /bin/
+/vendor/
+/web/bundles/
+/web/fonts/
+/web/images/
+/node_modules/
+/bower_components/
+npm-debug.log
+.DS_Store
