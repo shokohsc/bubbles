@@ -35,7 +35,7 @@
     "watch": "watch 'npm run app' ./src/Shoko/ApiBundle/Resources/ ./app/Resources/",
     "livereload": "livereload ./web/bundles/js/ ./web/bundles/css/",
     "build": "npm run clean && npm run assets && npm run app",
-    "preinstall": "rm -rf ./web/bundles && mkdir ./web/bundles ./web/bundles/js ./web/bundles/css ./web/bundles/fonts",
+    "preinstall": "rm -rf ./web/bundles ./web/fonts ./web/images && mkdir ./web/fonts ./web/images ./web/bundles ./web/bundles/js ./web/bundles/css",
     "postinstall": "bower install && npm run assets",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
