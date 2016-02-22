@@ -15,8 +15,8 @@
   </div>
 
   <script>
-    this.status = opts.status > 400 ? opts.status : 500
-    this.message = opts.status > 400 ? opts.responseJSON : 'Deadpool hit his ultimate, server down !'
+    this.status = opts.xhr.status
+    this.message = opts.xhr.status < 500 ? opts.xhr.responseJSON : Translator.trans('error.500.server')
     this.on('update', function() {
       document.title = Translator.trans('error.500.title')
     })

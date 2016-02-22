@@ -5,7 +5,7 @@
 
   <script>
     $(this.pagination).twbsPagination({
-      totalPages: Math.ceil(opts.comics.total / 10),
+      totalPages: opts.comics.total !== 0 ? Math.ceil(opts.comics.total / 10) : 1,
       href: '#creators/'+opts.creatorId+'/comics/{{number}}'
     }).find('ul.pagination > li > a').each(function(i, el) {
       $(el).addClass('title').attr('title', pageTitle)

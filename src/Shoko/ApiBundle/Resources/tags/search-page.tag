@@ -9,8 +9,10 @@
 
   <script>
     $(this.pagination).twbsPagination({
-      totalPages: Math.ceil(opts.comics.total / 10),
+      totalPages: opts.comics.total !== 0 ? Math.ceil(opts.comics.total / 10) : 1,
       href: '#search/'+opts.entity+'/'+opts.q+'/{{number}}'
+    }).find('ul.pagination > li > a').each(function(i, el) {
+      $(el).addClass('title').attr('title', pageTitle)
     })
     this.on('update', function() {
       $(document).on('click', 'a.title[title]', function() {

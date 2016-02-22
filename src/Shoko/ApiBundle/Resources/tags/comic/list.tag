@@ -8,4 +8,5 @@
           <a href="#comics/{ id.comicId }" class="title" title="{ title.title() }">{ title.title() }</a>
         </strong>
     </div>
+  </div>
 </comic-list>

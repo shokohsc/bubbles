@@ -56,6 +56,7 @@ error:
     500:
         title: Bubbles s'est planté
         message: Deadpool dit qu'on s'est perdu.
+        server: Deadpool active son attaque... serveur mort !
 
 about:
     title: A propos de Bubbles

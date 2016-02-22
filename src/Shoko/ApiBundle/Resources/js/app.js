@@ -74,11 +74,12 @@ function handler(collection, id, resource, page) {
 
 /**
  * Synchronize title
+ * @param Object data
  */
-function syncTitle() {
-  if (pageTitle !== undefined ) {
-    $('h1.text-center').text(pageTitle)
-    document.title = pageTitle
+function syncTitle(data) {
+  if (pageTitle || data) {
+    $('h1.text-center').text(pageTitle || data.title)
+    document.title = pageTitle || data.title
   }
   pageTitle = undefined
 }
@@ -107,20 +108,18 @@ class AbstractService {
    * Serve ajax call
    * @param  string id
    * @param  string page
-   * @param  string query
    * @return Promise
    */
-  serve(id, page, query) {
+  serve(id, page) {
     var self      = this,
         url       = this.protocol+this.host+this.endpoint,
         url       = (id === undefined) ? url : url+'/'+id,
-        url       = (page === undefined) ? url : url+'/'+page,
-        url       = (query === undefined) ? url : url+'?'+query
+        url       = (page === undefined) ? url : url+'/'+page
 
     return $.ajax({
       url: url
-    }).fail(function(xhr, text, error) {
-      mount('bubbles-error', xhr)
+    }).fail(function(xhr) {
+      mount('bubbles-error', {xhr: xhr})
     })
   }
 }
@@ -491,31 +490,31 @@ routes.search = function(id, resource, page) {
     case 'series':
       searchService.fetchSeries(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle()
+        syncTitle(search)
       })
       break;
     case 'comics':
       searchService.fetchComics(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle()
+        syncTitle(search)
       })
       break;
     case 'creators':
       searchService.fetchCreators(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle()
+        syncTitle(search)
       })
       break;
     case 'characters':
       searchService.fetchCharacters(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle()
+        syncTitle(search)
       })
       break;
     case 'events':
       searchService.fetchEvents(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle()
+        syncTitle(search)
       })
       break;
     default:
@@ -545,70 +544,20 @@ routes.about = function(id, resource, page) {
    var pageTitle = undefined
  }
 
+/**
+ * Mount all the tags !!!!
+ * @param  string '*'
+ */
 riot.mount('*')
+
+/**
+ * Changes the browser URL and notifies all the listeners assigned with
+ * @param  Object handler
+ */
 riot.route(handler)
+
+/**
+ * Start listening the url changes.
+ * @param  bool
+ */
 riot.route.start(true)
-
-
-
-
-
-
-// var mount = function(mount, tag, route, id, page, options) {
-//   var protocol = location.protocol+'//',
-//       host     = location.host+'/',
-//       endpoint = 'api/'+route+'/',
-//       url      = protocol+host+endpoint+id,
-//       url      = (page === undefined) ? url : url+'/'+page,
-//       url      = (options === undefined) ? url : url+'/'+options
-//
-//   $.ajax({
-//     url: url
-//   }).done(function(data) {
-//     riot.mount(mount, tag, data)
-//     if (pageTitle !== undefined ) {
-//       $('h1.text-center').text(pageTitle)
-//       document.title = pageTitle
-//     }
-//     pageTitle = undefined
-//   }).fail(function(xhr, text, error) {
-//     riot.mount('div#content', 'bubbles-error', xhr)
-//   })
-// }
-//
-// var routing = function(collection, id, page, options) {
-//   riot.mount('div#content', 'bubbles-loading')
-//   if (collection === 'about') {
-//     riot.mount('div#content', 'bubbles-about')
-//     document.title = Translator.trans('about.title')
-//   } else if (collection === 'comics') {
-//     mount('div#content', 'bubbles-comic', collection, id)
-//   } else if (collection === 'week') {
-//     mount('div#content', 'bubbles-week', 'comics/'+collection, id)
-//   } else if (collection === 'search') {
-//     mount('div#content', 'bubbles-search', collection, id, page, options)
-//   } else if (collection !== '' && collection !== 'week') {
-//     mount('div#content', 'bubbles-'+collection, collection, id+'/comics', page)
-//   } else {
-//     mount('div#content', 'bubbles-week', 'comics/week')
-//   }
-// }
-//
-// if (pageTitle === undefined) {
-//   var pageTitle = undefined
-// }
-//
-// //google-analytics
-// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-// ga('create', 'UA-55046906-2', 'auto');
-// ga('send', 'pageview');
-//
-// riot.mount('bubbles-navbar')
-// riot.mount('div#content', 'bubbles-loading')
-// riot.mount('bubbles-footer')
-// riot.route.start(true)
-// riot.route(routing)
-// riot.route.exec(routing)
