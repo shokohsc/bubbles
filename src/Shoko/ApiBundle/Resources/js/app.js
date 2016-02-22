@@ -52,13 +52,26 @@ var currentTag = null
 var routes = {}
 
 /**
+ * Synchronize title
+ * @param Object data
+ */
+function syncTitle(data) {
+  if (undefined !== pageTitle || (data && data.hasOwnProperty('title'))) {
+    $('h1.text-center').text(pageTitle || data.title)
+    document.title = pageTitle || data.title
+  }
+  pageTitle = undefined
+}
+
+/**
  * Mount tag
  * @param  string tag
- * @param  string options
+ * @param  Object options
  */
 function mount(tag, options) {
   currentTag && currentTag.unmount(true)
   currentTag = riot.mount('#content', tag, options)[0]
+  syncTitle(options)
 }
 
 /**
@@ -70,18 +83,6 @@ function mount(tag, options) {
 function handler(collection, id, resource, page) {
   var fn = routes[collection || 'home']
   fn ? fn(id, resource, page) : mount('bubbles-error')
-}
-
-/**
- * Synchronize title
- * @param Object data
- */
-function syncTitle(data) {
-  if (pageTitle || data) {
-    $('h1.text-center').text(pageTitle || data.title)
-    document.title = pageTitle || data.title
-  }
-  pageTitle = undefined
 }
 
 /*******************
@@ -398,7 +399,6 @@ routes.comics = function(id, resource, page) {
   if (id && parseInt(id)) {
     comicService.fetchComic(id, resource, page).done(function(comic) {
       mount('bubbles-comic', comic)
-      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -417,7 +417,6 @@ routes.series = function(id, resource, page) {
   if (id && parseInt(id)) {
     serieService.fetchComics(id, resource, page).done(function(comics) {
       mount('bubbles-series', comics)
-      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -435,7 +434,6 @@ routes.creators = function(id, resource, page) {
   if (id && parseInt(id)) {
     creatorService.fetchComics(id, resource, page).done(function(comics) {
       mount('bubbles-creators', comics)
-      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -453,7 +451,6 @@ routes.characters = function(id, resource, page) {
   if (id && parseInt(id)) {
     characterService.fetchComics(id, resource, page).done(function(comics) {
       mount('bubbles-characters', comics)
-      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -471,7 +468,6 @@ routes.events = function(id, resource, page) {
   if (id && parseInt(id)) {
     eventService.fetchComics(id, resource, page).done(function(comics) {
       mount('bubbles-events', comics)
-      syncTitle()
     })
   } else {
     mount('bubbles-error')
@@ -490,33 +486,28 @@ routes.search = function(id, resource, page) {
     case 'series':
       searchService.fetchSeries(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle(search)
       })
-      break;
+      break
     case 'comics':
       searchService.fetchComics(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle(search)
       })
-      break;
+      break
     case 'creators':
       searchService.fetchCreators(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle(search)
       })
-      break;
+      break
     case 'characters':
       searchService.fetchCharacters(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle(search)
       })
-      break;
+      break
     case 'events':
       searchService.fetchEvents(id, resource, page).done(function(search) {
         mount('bubbles-search', search)
-        syncTitle(search)
       })
-      break;
+      break
     default:
       mount('bubbles-error')
   }
