@@ -10,5 +10,6 @@
     }).find('ul.pagination > li > a').each(function(i, el) {
       $(el).addClass('title').attr('title', pageTitle)
     })
+    this.mixin(TitleMixin)
   </script>
 </bubbles-events>

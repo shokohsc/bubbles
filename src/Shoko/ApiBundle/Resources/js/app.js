@@ -32,58 +32,10 @@ String.prototype.encrypt = function() {
  */
 String.prototype.resourceURIToId = function() {
   var string = this.toString()
+
   return string.split('/').reverse()[0]
 }
 
-/******************
- * Routes Handler *
- ******************/
-
-/**
- * currentTag
- * @type string
- */
-var currentTag = null
-
-/**
- * routes
- * @type Object
- */
-var routes = {}
-
-/**
- * Synchronize title
- * @param Object data
- */
-function syncTitle(data) {
-  if (undefined !== pageTitle || (data && data.hasOwnProperty('title'))) {
-    $('h1.text-center').text(pageTitle || data.title)
-    document.title = pageTitle || data.title
-  }
-  pageTitle = undefined
-}
-
-/**
- * Mount tag
- * @param  string tag
- * @param  Object options
- */
-function mount(tag, options) {
-  currentTag && currentTag.unmount(true)
-  currentTag = riot.mount('#content', tag, options)[0]
-  syncTitle(options)
-}
-
-/**
- * Routes handler
- * @param  string collection
- * @param  string id
- * @param  string action
- */
-function handler(collection, id, resource, page) {
-  var fn = routes[collection || 'home']
-  fn ? fn(id, resource, page) : mount('bubbles-error')
-}
 
 /*******************
  * AbstractService *
@@ -123,8 +75,18 @@ class AbstractService {
       mount('bubbles-error', {xhr: xhr})
     })
   }
-}
 
+  /**
+   * Fetch comics
+   * @param string id
+   * @param string resource
+   * @param int    page
+   * @return Promise
+   */
+  fetchComics(id, resource, page) {
+    return this.serve(id+'/'+resource, page)
+  }
+}
 
 
 /*********************
@@ -146,12 +108,11 @@ class ComicService extends AbstractService{
 
   /**
    * Fetch week comics
-   * @param  string id
+   * @param  string           id
+   * @param  undefined|string data
    * @return Promise
    */
   fetchWeek(date) {
-    this.url = this.url+'/'+date
-
     return this.serve('week', date)
   }
 
@@ -177,17 +138,6 @@ class SerieService extends AbstractService{
   constructor() {
     super('series')
   }
-
-  /**
-   * Fetch serie comics
-   * @param string id
-   * @param string resource
-   * @param int    page
-   * @return Promise
-   */
-  fetchComics(id, resource, page) {
-    return this.serve(id+'/'+resource, page)
-  }
 }
 
 /**
@@ -201,17 +151,6 @@ class CreatorService extends AbstractService{
    */
   constructor() {
     super('creators')
-  }
-
-  /**
-   * Fetch creator comics
-   * @param string id
-   * @param string resource
-   * @param int    page
-   * @return Promise
-   */
-  fetchComics(id, resource, page) {
-    return this.serve(id+'/'+resource, page)
   }
 }
 
@@ -227,17 +166,6 @@ class CharacterService extends AbstractService{
   constructor() {
     super('characters')
   }
-
-  /**
-   * Fetch character comics
-   * @param string id
-   * @param string resource
-   * @param int    page
-   * @return Promise
-   */
-  fetchComics(id, resource, page) {
-    return this.serve(id+'/'+resource, page)
-  }
 }
 
 /**
@@ -251,17 +179,6 @@ class EventService extends AbstractService{
    */
   constructor() {
     super('events')
-  }
-
-  /**
-   * Fetch character comics
-   * @param string id
-   * @param string resource
-   * @param int    page
-   * @return Promise
-   */
-  fetchComics(id, resource, page) {
-    return this.serve(id+'/'+resource, page)
   }
 }
 
@@ -335,9 +252,59 @@ class SearchService extends AbstractService{
 }
 
 
-/*********************
- * Route definitions *
- *********************/
+/****************
+ * Tags Handler *
+ ****************/
+
+/**
+ * currentTag
+ * @type string
+ */
+var currentTag = null
+
+/**
+ * routes
+ * @type Object
+ */
+var routes = {}
+
+/**
+ * Synchronize title
+ * @param Object data
+ */
+function syncTitle(data) {
+  if (pageTitle || (data && data.hasOwnProperty('title'))) {
+    $('h1.text-center').text(pageTitle || data.title)
+    document.title = pageTitle || data.title
+  }
+  pageTitle = undefined
+}
+
+/**
+ * Mount tag
+ * @param  string tag
+ * @param  Object options
+ */
+function mount(tag, options) {
+  currentTag && currentTag.unmount(true)
+  currentTag = riot.mount('#content', tag, options)[0]
+}
+
+/**
+ * Routes handler
+ * @param  string collection
+ * @param  string id
+ * @param  string action
+ */
+function handler(collection, id, resource, page) {
+  var fn = routes[collection || 'home']
+  fn ? fn(id, resource, page) : mount('bubbles-error')
+}
+
+
+/******************
+ * Routes Handler *
+ ******************/
 
 /**
  * comicService
@@ -383,7 +350,20 @@ var searchService = new SearchService()
  */
 routes.home = function(id, resource, page) {
   mount('bubbles-loading')
-  comicService.fetchWeek(id).done(function(comics) {
+  comicService.fetchWeek().done(function(comics) {
+    mount('bubbles-week', comics)
+  })
+}
+
+/**
+ * Week route definition
+ * @param  string id
+ * @param  string resource
+ * @param  int    page
+ */
+routes.week = function(id, resource, page) {
+  mount('bubbles-loading')
+  comicService.fetchWeek(id, resource, page).done(function(comics) {
     mount('bubbles-week', comics)
   })
 }
@@ -404,7 +384,6 @@ routes.comics = function(id, resource, page) {
     mount('bubbles-error')
   }
 }
-
 
 /**
  * Serie route definition
@@ -526,7 +505,6 @@ routes.about = function(id, resource, page) {
 }
 
 
-
 /***********
  * Run app *
  ***********/
@@ -534,6 +512,25 @@ routes.about = function(id, resource, page) {
  if (pageTitle === undefined) {
    var pageTitle = undefined
  }
+
+/**
+ * Synchronize title mixin
+ * @type Object
+ */
+ var TitleMixin = {
+   init: function() {
+     this.on('mount', function(options) {
+       syncTitle(options)
+     })
+   }
+ }
+
+/**
+ * Share TitleMixin mixin
+ * @param  string 'TitleMixin'
+ * @param  Object TitleMixin
+ */
+riot.mixin('TitleMixin', TitleMixin)
 
 /**
  * Mount all the tags !!!!

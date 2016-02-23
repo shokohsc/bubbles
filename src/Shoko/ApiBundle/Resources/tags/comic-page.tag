@@ -19,7 +19,7 @@
       <table class="table table-condensed">
         <tr>
           <td><strong>{ Translator.trans('comic.published') }</strong></td>
-          <td><a href="#home/{ moment(comic.dates[0].date).format('DD-MM-YYYY') }" title="Released as of { moment(comic.dates[0].date).format('MMM Do, YYYY') }">{ moment(comic.dates[0].date).format('MMMM Do, YYYY') }</a></td>
+          <td><a href="#week/{ moment(comic.dates[0].date).format('DD-MM-YYYY') }" title="Released as of { moment(comic.dates[0].date).format('MMM Do, YYYY') }">{ moment(comic.dates[0].date).format('MMMM Do, YYYY') }</a></td>
         </tr>
 
         <tr>
