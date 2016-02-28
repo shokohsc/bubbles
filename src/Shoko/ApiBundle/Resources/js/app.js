@@ -55,6 +55,7 @@ class AbstractService {
     this.protocol  = location.protocol+'//'
     this.host      = location.host+'/'
     this.endpoint  = 'api/'+endpoint
+    this.url       = this.protocol+this.host+this.endpoint
   }
 
   /**
@@ -64,8 +65,7 @@ class AbstractService {
    * @return Promise
    */
   serve(id, page) {
-    var self      = this,
-        url       = this.protocol+this.host+this.endpoint,
+    var url       = self.url,
         url       = (id === undefined) ? url : url+'/'+id,
         url       = (page === undefined) ? url : url+'/'+page
 
@@ -207,17 +207,6 @@ class SearchService extends AbstractService{
   }
 
   /**
-   * Fetch comics
-   * @param string id
-   * @param string resource
-   * @param int    page
-   * @return Promise
-   */
-  fetchComics(id, resource, page) {
-    return this.serve(id+'/'+resource, page)
-  }
-
-  /**
    * Fetch creators
    * @param string id
    * @param string resource
@@ -344,11 +333,8 @@ var searchService = new SearchService()
 
 /**
  * Home route definition
- * @param  string id
- * @param  string resource
- * @param  int    page
  */
-routes.home = function(id, resource, page) {
+routes.home = function() {
   mount('bubbles-loading')
   comicService.fetchWeek().done(function(comics) {
     mount('bubbles-week', comics)
@@ -357,13 +343,11 @@ routes.home = function(id, resource, page) {
 
 /**
  * Week route definition
- * @param  string id
- * @param  string resource
- * @param  int    page
+ * @param  string date
  */
-routes.week = function(id, resource, page) {
+routes.week = function(date) {
   mount('bubbles-loading')
-  comicService.fetchWeek(id, resource, page).done(function(comics) {
+  comicService.fetchWeek(date).done(function(comics) {
     mount('bubbles-week', comics)
   })
 }
@@ -494,12 +478,9 @@ routes.search = function(id, resource, page) {
 
 /**
  * About route definition
- * @param  string id
- * @param  string resource
- * @param  int    page
  * @return Object
  */
-routes.about = function(id, resource, page) {
+routes.about = function() {
     mount('bubbles-about')
     document.title = Translator.trans('about.title')
 }
