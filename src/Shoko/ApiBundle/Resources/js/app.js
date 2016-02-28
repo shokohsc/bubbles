@@ -65,7 +65,7 @@ class AbstractService {
    * @return Promise
    */
   serve(id, page) {
-    var url       = self.url,
+    var url       = this.url,
         url       = (id === undefined) ? url : url+'/'+id,
         url       = (page === undefined) ? url : url+'/'+page
 
