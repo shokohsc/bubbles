@@ -19,3 +19,4 @@ parameters:
 
 #    marvel_public_key: your_public_marvel_api_key
 #    marvel_private_key: your_secret_marvel_api_key
+#    ga_id: your_google_analytics_id

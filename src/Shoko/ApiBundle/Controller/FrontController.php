@@ -19,6 +19,10 @@ class FrontController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('base.html.twig');
+        $gaId = $this->getParameter('ga_id');
+
+        return $this->render('base.html.twig', array(
+          'ga_id' => $gaId,
+        ));
     }
 }

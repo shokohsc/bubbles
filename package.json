@@ -14,8 +14,7 @@
     "clean": "rm -rf ./web/bundles ./web/fonts ./web/images",
 
     "dir:assets": "mkdir -p ./web/fonts ./web/images ./web/bundles ./web/bundles/js ./web/bundles/css",
-
-    "concat:assets:js": "concat-cli -f ./bower_components/jquery/dist/jquery.js ./bower_components/bootstrap/dist/js/bootstrap.js ./bower_components/moment/min/moment-with-locales.js ./bower_components/twbs-pagination/jquery.twbsPagination.js ./bower_components/lightbox2/dist/js/lightbox.js -o ./web/bundles/assets.js",
+    "concat:assets:js": "concat-cli -f ./bower_components/jquery/dist/jquery.js ./bower_components/bootstrap/dist/js/bootstrap.js ./bower_components/moment/min/moment-with-locales.js ./bower_components/twbs-pagination/jquery.twbsPagination.js ./bower_components/lightbox2/dist/js/lightbox.js ./node_modules/riot/riot+compiler.js -o ./web/bundles/assets.js",
     "concat:assets:css": "concat-cli -f ./bower_components/bootstrap/dist/css/bootstrap.css ./bower_components/bootstrap/dist/css/bootstrap-theme.css ./bower_components/lightbox2/dist/css/lightbox.css -o ./web/bundles/assets.css",
     "concat:assets": "npm run concat:assets:js & npm run concat:assets:css",
 
@@ -28,8 +27,7 @@
     "preminify:assets": "npm run concat:assets",
     "minify:assets": "npm run minify:assets:js & npm run minify:assets:css",
     "remove:assets": "rm ./web/bundles/assets.css ./web/bundles/assets.js",
-
-    "preassets" : "npm run dir:assets",
+    "preassets": "npm run dir:assets",
     "assets": "npm run minify:assets & npm run copy:assets",
 
 
@@ -43,7 +41,7 @@
     "remove:app": "rm ./web/bundles/style.css ./web/bundles/app.js",
 
     "riot": "riot ./src/Shoko/ApiBundle/Resources/tags ./web/bundles/js/tags.js",
-
+    "postriot":"concat-cli -f  ./web/bundles/js/tags.js ./node_modules/riotgear/dist/rg-ga/rg-ga.js -o ./web/bundles/js/tags+ga.js",
     "preapp": "npm run minify:app",
     "app": "npm run riot",
 
@@ -77,7 +75,8 @@
     "concat-cli": "^4.0.0",
     "less": "^2.6.0",
     "minifier": "^0.7.1",
-    "riot": "^2.3.15"
+    "riot": "^2.3.16",
+    "riotgear": "^3.3.1"
   },
   "devDependencies": {
     "livereload": "^0.4.1",
