@@ -25,7 +25,11 @@ class ComicController extends Controller
      */
     public function getAction(Request $request, $id)
     {
-        $comic = $this->get('shoko.comic.repository')->findOneById($id);
+        $comic = apcu_fetch('comic-'.$id);
+        if (!$comic) {
+          $comic = $this->get('shoko.comic.repository')->findOneById($id);
+          apcu_add('comic-'.$id, $comic, 600);
+        }
         $comic = json_decode($this->get('marvel.tojson')->encode($comic));
 
         return new JsonResponse([
@@ -46,7 +50,11 @@ class ComicController extends Controller
     public function weekAction(Request $request, $date = null)
     {
         $dateTarget = null === $date || 'undefined' === $date ? Carbon::now() : Carbon::parse($date);
-        $collection = $this->get('shoko.comic.repository')->findAllByReleaseDate($dateTarget);
+        $collection = apcu_fetch('comic-week-'.$date);
+        if (!$collection) {
+          $collection = $this->get('shoko.comic.repository')->findAllByReleaseDate($dateTarget);
+          apcu_add('comic-week-'.$date, $collection, 600);
+        }
         $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
         $locale = $request->getLocale();

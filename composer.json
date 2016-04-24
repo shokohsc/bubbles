@@ -24,6 +24,7 @@
         "ext-mbstring": "*",
         "ext-PDO": "*",
         "ext-soap": "*",
+        "ext-apcu": "*",
         "nesbot/carbon": "^1.21",
         "octante/marvel-api-bundle": "^1.0",
         "friendsofsymfony/http-cache-bundle": "^1.3",

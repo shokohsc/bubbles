@@ -25,7 +25,11 @@ class CharacterController extends Controller
      */
     public function comicsAction(Request $request, $id, $page)
     {
-        $collection = $this->get('shoko.character.repository')->findAllComicsById($id, $page);
+        $collection = apcu_fetch('character-'.$id.'-'.$page);
+        if (!$collection) {
+          $collection = $this->get('shoko.character.repository')->findAllComicsById($id, $page);
+          apcu_add('character-'.$id.'-'.$page, $collection, 600);
+        }
         $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
         return new JsonResponse([
