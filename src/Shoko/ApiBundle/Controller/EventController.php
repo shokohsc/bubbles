@@ -25,11 +25,7 @@ class EventController extends Controller
      */
     public function comicsAction(Request $request, $id, $page)
     {
-        $collection = apcu_fetch('event-'.$id.'-'.$page);
-        if (!$collection) {
-          $collection = $this->get('shoko.event.repository')->findAllComicsById($id, $page);
-          apcu_add('event-'.$id.'-'.$page, $collection, 600);
-        }
+        $collection = $this->get('shoko.event.repository')->findAllComicsById($id, $page);
         $comics = json_decode($this->get('marvel.tojson')->encode($collection));
 
         return new JsonResponse([
