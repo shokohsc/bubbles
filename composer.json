@@ -2,6 +2,7 @@
     "name": "shokohsc/bubbles",
     "license": "proprietary",
     "type": "project",
+    "description": "Bubbles website",
     "autoload": {
         "psr-4": {
             "": "src/"
