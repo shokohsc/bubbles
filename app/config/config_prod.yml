@@ -36,7 +36,7 @@ fos_http_cache:
                     last_modified: "-1 day"
 
 services:
-  kernel.listener.ApiEventListener:
+  kernel.listener.api_exception_listener:
     class: Shoko\ApiBundle\EventListener\ApiExceptionListener
     arguments: [@translator]
     tags:
