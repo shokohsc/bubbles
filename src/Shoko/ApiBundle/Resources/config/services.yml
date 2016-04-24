@@ -21,8 +21,3 @@ services:
     shoko.event.repository:
         class: Shoko\ApiBundle\Repository\EventRepository
         arguments: [@marvel.events, @marvel.events_query, @marvel.comics, @marvel.comics_query, %comics_per_page%]
-
-    kernel.listener.request_origin_listener:
-        class: Shoko\ApiBundle\EventListener\RequestOriginListener
-        tags:
-          - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
