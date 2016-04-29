@@ -32,7 +32,7 @@
 
 
     "less": "lessc ./src/Shoko/ApiBundle/Resources/less/style.less ./web/bundles/style.css",
-    "babel": "babel ./src/Shoko/ApiBundle/Resources/js/app.js -o ./web/bundles/app.js",
+    "babel": "babel ./src/Shoko/ApiBundle/Resources/js/**/*.js ./src/Shoko/ApiBundle/Resources/js/app.js -o ./web/bundles/app.js",
 
     "minify:app:js": "minify --output ./web/bundles/js/app.min.js ./web/bundles/app.js",
     "minify:app:css": "minify --output ./web/bundles/css/style.min.css ./web/bundles/style.css",
