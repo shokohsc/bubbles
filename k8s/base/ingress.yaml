@@ -2,16 +2,16 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ouistity
+  name: bubbles
 spec:
   rules:
-  - host: ouistity.cluster.local
+  - host: bubbles.cluster.local
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: ouistity
+            name: bubbles
             port:
               number: 80

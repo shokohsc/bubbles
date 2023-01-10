@@ -1,14 +1,25 @@
 <template>
-  <router-view />
+    <Header />
+    <router-view />
+    <Footer />
 </template>
 
 <script>
-export default {};
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import 'virtual:fonts.css'
+
+export default {
+  components: {
+    Header,
+    Footer
+  }
+};
 </script>
 
 <style>
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Code New Roman";
 }
 body::-webkit-scrollbar {
   display: none;

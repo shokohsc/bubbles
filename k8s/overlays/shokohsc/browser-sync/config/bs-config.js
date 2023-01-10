@@ -13,13 +13,24 @@
  |
  */
 module.exports = {
-  "open": false,
-  "files": false,
-  "watch": false,
-  "https": false,
-  "proxy": {
-      "target": "localhost/",
-      "ws": true
+  ui: {
+    port: 3001
   },
-  "cors": true
+  open: false,
+  files: false,
+  watch: false,
+  https: false,
+  proxy: {
+    target: "bubbles.bubbles:80",
+    ws: true
+  },
+  cors: true,
+  listen: "0.0.0.0",
+  port: 3000,
+  logPrefix: "Bubbles",
+  logLevel: "debug",
+  logConnections: true,
+  socket: {
+    port: 443
+  }
 };
