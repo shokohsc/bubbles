@@ -16,7 +16,7 @@ export default {}
 
 <style>
 footer {
-  background-color: #0a0a0a !important;
+  background-color: #23232e !important;
   color: #fff !important;
 }
 footer div p strong {
