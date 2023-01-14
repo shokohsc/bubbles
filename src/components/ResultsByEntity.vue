@@ -67,8 +67,8 @@
         if (!this.loaded)
           return 'Loading'
         if (this.hasResults)
-          return `Results for '${this.$route.query.q}'`
-        return `No results for '${this.$route.query.q}'`
+          return `${this.store.entity} results for '${this.$route.query.q}'`
+        return `No ${this.store.entity} results for '${this.$route.query.q}'`
       },
       totalPages: function() {
         return Math.ceil(this.total / this.pageSize)
@@ -89,6 +89,7 @@
           this.store.$patch({ page: this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1 })
           this.store.$patch({ entity: this.$route.params.entity ? this.$route.params.entity : 'series' })
           await this.fetchData(this.store.page)
+          document.title = this.title(`Bubbles - ${this.formattedTitle}`)
         },
         { immediate: true }
       )

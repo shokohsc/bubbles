@@ -62,6 +62,7 @@
         async () => {
           this.date = this.$route.query.hasOwnProperty('date') ? this.$route.query.date : ''
           await this.fetchData(this.date)
+          document.title = this.title(`Bubbles - ${this.formattedDate}`)
         },
         { immediate: true }
       )

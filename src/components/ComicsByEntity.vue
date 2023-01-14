@@ -7,7 +7,7 @@
     <div class="pagination">
       <Paginate
         :page-count="totalPages"
-        :click-handler="fetchData"
+        :click-handler="paginate"
         :prev-text="'Prev'"
         :next-text="'Next'"
         :container-class="'pagination-list is-justify-content-center'"
@@ -25,6 +25,7 @@
 import api from '../api';
 import Paginate from './Paginate.vue';
 import List from './Comic/List.vue';
+import { useComicsStore } from '../stores/comics'
 
 export default {
   components: {
@@ -34,7 +35,7 @@ export default {
   data() {
     return {
       loaded: false,
-      page: 1,
+      store: useComicsStore(),
       total: 0,
       pageSize: 10,
       comics: [],
@@ -43,6 +44,9 @@ export default {
     }
   },
   computed: {
+    page: function() {
+      return parseInt(this.store.page)
+    },
     hasComics: function() {
       return 0 < this.comics.length
     },
@@ -57,14 +61,16 @@ export default {
       return Math.ceil(this.total / this.pageSize)
     }
   },
-  created() {
+  async created() {
     window.scrollTo(0, 0);
+    this.store.$patch({ page: this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1 })
     this.entityId = this.$route.params.id
     this.$watch(
       () => this.$route.query.page,
       async () => {
-        this.page = this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1
-        Promise.all([this.fetchEntityData(this.entityId), this.fetchData(this.page)])
+        this.store.$patch({ page: this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1 })
+        await Promise.all([this.fetchEntityData(this.entityId), this.fetchData(this.store.page)])
+        document.title = this.title(`Bubbles - ${this.formattedTitle}`)
       },
       { immediate: true }
     )
@@ -78,7 +84,7 @@ export default {
     async fetchData(page = 1, pageSize = 10) {
       this.loaded = false
       try {
-        this.page = page
+        this.store.$patch({ page: page })
         this.comics = []
         const response = await api[`${this.$route.params.entity}Comics`](this.entityId, pageSize, page)
         this.total = response.data.total
@@ -102,6 +108,9 @@ export default {
       } catch (e) {
         console.log(e);
       }
+    },
+    async paginate(page = 1) {
+      this.$router.push({ name: 'EntityComics', params: { entity: this.$route.params.entity }, query: { page: page }})
     }
   }
 }

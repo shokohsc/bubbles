@@ -111,9 +111,7 @@
           </tr>
         </table>
 
-        <p class="has-text-light">
-          {{ comic.description }}
-        </p>
+        <p v-html="comic.description" class="has-text-light" />
       </div>
     </div>
 
@@ -185,6 +183,7 @@
         () => this.$route.params.id,
         async () => {
           await this.fetchData(this.$route.params.id)
+          document.title = this.title(`Bubbles - ${this.comic.title}`)
         },
         { immediate: true }
       )

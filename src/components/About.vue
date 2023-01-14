@@ -26,6 +26,9 @@
 
 <script>
   export default {
+    created: function() {
+      document.title = 'Bubbles - About'
+    },
     computed: {
       whoami: function() {
         var birthday = +new Date(1986, 1, 27);
