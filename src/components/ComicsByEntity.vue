@@ -33,6 +33,7 @@ export default {
   },
   data() {
     return {
+      loaded: false,
       page: 1,
       total: 0,
       pageSize: 10,
@@ -46,6 +47,8 @@ export default {
       return 0 < this.comics.length
     },
     formattedTitle: function() {
+      if (!this.loaded)
+        return 'Loading'
       if (this.hasComics)
         return this.entity?.name || this.entity?.title || this.entity?.fullName
       return "No comics for " + (this.entity?.name || this.entity?.title || this.entity?.fullName)
@@ -73,6 +76,7 @@ export default {
       })
     },
     async fetchData(page = 1, pageSize = 10) {
+      this.loaded = false
       try {
         this.page = page
         this.comics = []
@@ -82,6 +86,7 @@ export default {
           comic.route = { name: 'Comic', params: { id: comic.comicId } }
           this.comics.push(comic);
         });
+        this.loaded = true
         window.scrollTo(0, 0);
       } catch (e) {
         console.log(e);
@@ -101,10 +106,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  li.is-current a {
-    background-color: #485fc7;
-    border-color: #485fc7;
-  }
-</style>

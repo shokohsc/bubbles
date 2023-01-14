@@ -34,6 +34,7 @@
     },
     data() {
       return {
+        loaded: false,
         store: useSearchStore(),
         total: 0,
         pageSize: 10,
@@ -63,6 +64,8 @@
         return 0 < this.results.length
       },
       formattedTitle: function() {
+        if (!this.loaded)
+          return 'Loading'
         if (this.hasResults)
           return `Results for '${this.$route.query.q}'`
         return `No results for '${this.$route.query.q}'`
@@ -97,6 +100,7 @@
         })
       },
       async fetchData(page = 1, pageSize = 10) {
+        this.loaded = false
         try {
           this.store.$patch({ page: page })
           this.results = []
@@ -110,6 +114,7 @@
             result.title = result.title || result.name || result.fullName
             this.results.push(result);
           });
+          this.loaded = true
           window.scrollTo(0, 0);
         } catch (e) {
           console.log(e);
@@ -121,10 +126,3 @@
     }
   }
 </script>
-
-<style>
-  li.is-current a {
-    background-color: #485fc7;
-    border-color: #485fc7;
-  }
-</style>

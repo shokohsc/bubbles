@@ -26,7 +26,7 @@
     <li
       v-for="page in pages"
       :key="page.index"
-      :class="[pageClass, page.selected ? activeClass : '', page.disabled ? disabledClass : '', page.breakView ? breakViewClass : '']"
+      :class="[pageClass, page.disabled ? disabledClass : '', page.breakView ? breakViewClass : '']"
     >
       <a v-if="page.breakView" :class="[pageLinkClass, breakViewLinkClass]" tabindex="0">
         <slot name="breakViewContent">{{ breakViewText }}</slot>
@@ -36,7 +36,7 @@
         v-else
         @click="handlePageSelected(page.index + 1)"
         @keyup.enter="handlePageSelected(page.index + 1)"
-        :class="pageLinkClass"
+        :class="[pageLinkClass, page.selected ? activeClass : '']"
         tabindex="0"
       >{{ page.content }}</a>
     </li>

@@ -50,6 +50,7 @@
     },
     data() {
       return {
+        loaded: false,
         date: '',
         comics: []
       }
@@ -72,6 +73,7 @@
         })
       },
       async fetchData(date = '') {
+        this.loaded = false
         try {
           this.comics = []
           const response = await api.comicsWeek(date)
@@ -80,6 +82,7 @@
             comic.route = { name: 'Comic', params: { id: comic.comicId } }
             this.comics.push(comic);
           });
+          this.loaded = true
           window.scrollTo(0, 0);
         } catch (e) {
           console.log(e);
@@ -91,6 +94,8 @@
         return 0 < this.comics.length
       },
       formattedDate: function() {
+        if (!this.loaded)
+          return 'Loading'
         if (this.hasComics)
           return '' !== this.date ? moment().format('YYYY-MM-DD') === this.date ? 'This week' : `Released on the ${moment(this.date).format('MMM Do, YYYY')}` : ''
         return ''
