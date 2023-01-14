@@ -2,7 +2,7 @@
   <nav class="navbar is-black is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
 
-      <router-link class="navbar-item" to="/" >
+      <router-link class="navbar-item" to="/">
         <button class="button">
           <span class="icon">
             <i class="fas fa-home"></i>
@@ -20,10 +20,10 @@
     <div id="navbar" class="navbar-menu">
 
       <div class="navbar-start">
-        <router-link class="navbar-item has-text-white" to="/" >
+        <router-link class="navbar-item has-text-white" to="/">
           Bubbles
         </router-link>
-        <router-link class="navbar-item has-text-white" to="/about" >
+        <router-link class="navbar-item has-text-white" to="/about">
           About
         </router-link>
       </div>
@@ -55,7 +55,7 @@
         <div class="navbar-item">
           <div class="field">
             <div class="control">
-              <button @click="validate" class="button">
+              <button @click="validate($event)" class="button">
                 <span class="icon">
                   <i class="fas fa-search"></i>
                 </span>
@@ -70,12 +70,23 @@
 </template>
 
 <script>
+import { useSearchStore } from '../stores/search'
+
 export default {
   data() {
     return {
-      q: '',
-      page: 1,
-      entity: '',
+      store: useSearchStore(),
+    }
+  },
+  computed: {
+    q: function() {
+      return this.store.q
+    },
+    page: function() {
+      return this.store.page
+    },
+    entity: function() {
+      return this.store.entity
     }
   },
   created() {
@@ -95,29 +106,19 @@ export default {
       });
     });
     document.addEventListener('keyup', this.keyUp);
-    this.page = this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1
-    this.q = this.$route.query.q ? this.$route.query.q : ''
-    this.entity = this.$route.params.entity ? this.$route.params.entity : 'series'
-    this.$watch(
-      () => [this.$route.query.q, this.$route.params.entity, this.$route.query.page].join(),
-      async () => {
-        this.page = this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1
-        this.entity = this.$route.params.hasOwnProperty('entity') ? this.$route.params.entity : 'series'
-        this.q = this.$route.query.hasOwnProperty('q') ? this.$route.query.q : ''
-        await this.validate()
-      },
-      { immediate: true }
-    )
+    this.store.$patch({ q: this.$route.query.hasOwnProperty('q') ? this.$route.query.q : '' })
+    this.store.$patch({ page: this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1 })
+    this.store.$patch({ entity: this.$route.params.entity ? this.$route.params.entity : 'series' })
   },
   beforeUnmount() {
     document.removeEventListener('keyup', this.keyUp);
   },
   methods: {
     onChange: function(e) {
-      this.entity = e.target.value
+      this.store.$patch({ entity: e.target.value })
     },
     onUpdate: function(e) {
-      this.q = e.target.value
+      this.store.$patch({ q: e.target.value })
     },
     keyUp: function(e) {
       switch (e.keyCode) {
@@ -126,9 +127,9 @@ export default {
           break;
       }
     },
-    async validate() {
-      if (this.q.length > 2) {
-        this.$router.push({ name: 'EntityResults', params: { entity: this.entity }, query: { q: this.q }})
+    async validate(e) {
+      if (this.store.q.length > 2) {
+        this.$router.push({ name: 'EntityResults', params: { entity: this.store.entity }, query: { q: this.store.q, page: 1 }})
       }
     },
   }

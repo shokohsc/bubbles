@@ -27,7 +27,9 @@
     "vite-plugin-fonts": "^0.7.0",
     "vue": "^3.0.5",
     "vue-easy-lightbox": "^1.11.0",
-    "vue-router": "4",
-    "vuejs-paginate-next": "^1.0.2"
+    "vue-router": "4"
+  },
+  "dependencies": {
+    "pinia": "^2.0.28"
   }
 }

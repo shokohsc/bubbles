@@ -9,9 +9,11 @@ import * as Integrations from "@sentry/integrations";
 import getEnv from './utils/env';
 
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router.js'
 
+const pinia = createPinia()
 const app = createApp(App)
 
 if (getEnv('USE_SENTRY') === 'true') {
@@ -38,4 +40,5 @@ if (getEnv('USE_SENTRY') === 'true') {
 }
 
 app.use(router)
+app.use(pinia)
 app.mount('#app')
