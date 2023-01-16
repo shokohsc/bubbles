@@ -17,10 +17,18 @@ export default {
     const params = {
       date: '' !== date ? date : moment().format('YYYY-MM-DD')
     }
-    return api.get('/comics/week', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': moment().isAfter(moment(date)) ? 'public, max-age=86400' : 'no-cache'
+    }
+    return api.get('/comics/week', { params, headers })
   },
   comic(id) {
-    return api.get(`/comics/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/comics/${id}`, { headers })
   },
   comics(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -28,17 +36,29 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/comics', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/comics', { params, headers })
   },
   characterComics(id, pageSize = 10, page = 1) {
     const params = {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get(`/characters/${id}/comics`, { params } )
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/characters/${id}/comics`, { params, headers } )
   },
   character(id) {
-    return api.get(`/characters/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/characters/${id}`, { headers })
   },
   characters(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -46,17 +66,29 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/characters', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/characters', { params, headers })
   },
   creatorComics(id, pageSize = 10, page = 1) {
     const params = {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get(`/creators/${id}/comics`, { params } )
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/creators/${id}/comics`, { params, headers } )
   },
   creator(id) {
-    return api.get(`/creators/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/creators/${id}`, { headers })
   },
   creators(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -64,17 +96,29 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/creators', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/creators', { params, headers })
   },
   eventComics(id, pageSize = 10, page = 1) {
     const params = {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get(`/events/${id}/comics`, { params } )
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/events/${id}/comics`, { params, headers } )
   },
   event(id) {
-    return api.get(`/events/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/events/${id}`, { headers })
   },
   events(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -82,17 +126,29 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/events', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/events', { params, headers })
   },
   serieComics(id, pageSize = 10, page = 1) {
     const params = {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get(`/series/${id}/comics`, { params } )
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/series/${id}/comics`, { params, headers } )
   },
   serie(id) {
-    return api.get(`/series/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/series/${id}`, { headers })
   },
   series(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -100,17 +156,29 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/series', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/series', { params, headers })
   },
   storyComics(id, pageSize = 10, page = 1) {
     const params = {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get(`/stories/${id}/comics`, { params } )
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/stories/${id}/comics`, { params, headers } )
   },
   story(id) {
-    return api.get(`/stories/${id}`)
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get(`/stories/${id}`, { headers })
   },
   stories(query = '', pageSize = 10, page = 1) {
     const params = {
@@ -118,6 +186,10 @@ export default {
       limit: pageSize,
       offset: (pageSize * page) - pageSize
     }
-    return api.get('/stories', { params })
+    const headers = {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Cache-Control': 'public, max-age=86400'
+    }
+    return api.get('/stories', { params, headers })
   }
 }
