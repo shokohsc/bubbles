@@ -15,11 +15,11 @@ const api = axios.create({
 export default {
   comicsWeek(date = '') {
     const params = {
-      date: '' !== date ? date : moment().format('YYYY-MM-DD')
+      date: '' !== date ? moment(date).format('YYYY-MM-DD') : moment().format('YYYY-MM-DD')
     }
     const headers = {
       'X-Requested-With': 'XMLHttpRequest',
-      'Cache-Control': moment().isAfter(moment(date)) ? 'public, max-age=86400' : 'no-cache'
+      'Cache-Control': moment(params.date).isSameOrBefore() ? 'public, max-age=86400' : 'no-cache'
     }
     return api.get('/comics/week', { params, headers })
   },
