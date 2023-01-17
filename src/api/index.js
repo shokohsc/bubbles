@@ -1,6 +1,9 @@
 import axios from 'axios'
 import getEnv from '../utils/env'
-import moment from 'moment'
+import dayjs from 'dayjs'
+import isSameOrBefore from 'dayjs/plugin/isSameOrBefore'
+
+dayjs.extend(isSameOrBefore)
 
 const apiConfig = {
   protocol: window.location.protocol,
@@ -15,11 +18,11 @@ const api = axios.create({
 export default {
   comicsWeek(date = '') {
     const params = {
-      date: '' !== date ? moment(date).format('YYYY-MM-DD') : moment().format('YYYY-MM-DD')
+      date: '' !== date ? dayjs(date).format('YYYY-MM-DD') : dayjs().format('YYYY-MM-DD')
     }
     const headers = {
       'X-Requested-With': 'XMLHttpRequest',
-      'Cache-Control': moment(params.date).isSameOrBefore() ? 'public, max-age=86400' : 'no-cache'
+      'Cache-Control': dayjs(params.date).isSameOrBefore() ? 'public, max-age=86400' : 'no-cache'
     }
     return api.get('/comics/week', { params, headers })
   },

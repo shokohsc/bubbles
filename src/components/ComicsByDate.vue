@@ -1,8 +1,8 @@
 <template>
   <h1 class="title has-text-light has-text-centered">{{ title(formattedDate) }}</h1>
 
-  <section v-if="hasComics">
-    <List :comics="comics" />
+  <section >
+    <List v-if="hasComics" :comics="comics" />
 
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
       <ul class="pagination-list">
@@ -41,7 +41,7 @@
 
 <script>
   import api from '../api';
-  import moment from 'moment';
+  import dayjs from 'dayjs';
   import List from './Comic/List.vue';
 
   export default {
@@ -97,21 +97,19 @@
       formattedDate: function() {
         if (!this.loaded)
           return 'Loading'
-        if (this.hasComics)
-          return '' !== this.date ? moment().format('YYYY-MM-DD') === this.date ? 'This week' : `Released on the ${moment(this.date).format('MMM Do, YYYY')}` : ''
-        return ''
+        return '' !== this.date ? dayjs().format('YYYY-MM-DD') === this.date ? 'This week' : `Released on the ${dayjs(this.date).format('MMM DD, YYYY')}` : ''
       },
       previousMonth: function() {
-        return { name: 'Home', query: { date: moment(this.date).subtract(1, 'months').format('YYYY-MM-DD') } }
+        return { name: 'Home', query: { date: dayjs(this.date).subtract(1, 'months').format('YYYY-MM-DD') } }
       },
       previousWeek: function() {
-        return { name: 'Home', query: { date: moment(this.date).subtract(1, 'weeks').format('YYYY-MM-DD') } }
+        return { name: 'Home', query: { date: dayjs(this.date).subtract(1, 'weeks').format('YYYY-MM-DD') } }
       },
       nextMonth: function() {
-        return { name: 'Home', query: { date: moment(this.date).add(1, 'months').format('YYYY-MM-DD') } }
+        return { name: 'Home', query: { date: dayjs(this.date).add(1, 'months').format('YYYY-MM-DD') } }
       },
       nextWeek: function() {
-        return { name: 'Home', query: { date: moment(this.date).add(1, 'weeks').format('YYYY-MM-DD') } }
+        return { name: 'Home', query: { date: dayjs(this.date).add(1, 'weeks').format('YYYY-MM-DD') } }
       }
     }
   }

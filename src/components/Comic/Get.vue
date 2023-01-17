@@ -125,7 +125,7 @@
 
 <script>
   import api from '../../api';
-  import moment from 'moment';
+  import dayjs from 'dayjs';
   import VueEasyLightbox from 'vue-easy-lightbox';
 
   export default {
@@ -140,10 +140,10 @@
         return this.encrypt(this.comic?.thumbnail?.path) + '/detail.' + this.comic?.thumbnail?.extension
       },
       publishingDate: function() {
-        return moment(this.comic?.dates[0].date).format('MMMM Do, YYYY')
+        return dayjs(this.comic?.dates[0].date).format('MMMM DD, YYYY')
       },
       weekRoute: function() {
-        return { name: "Home", query: { date: moment(this.comic?.dates[0].date).format('YYYY-MM-DD') } }
+        return { name: "Home", query: { date: dayjs(this.comic?.dates[0].date).format('YYYY-MM-DD') } }
       },
       series: function() {
         return this.comic?.series.name
