@@ -6,7 +6,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: ca-cluster-issuer
-    dashboard.shokohsc.home/name: preview
+    dashboard.shokohsc.home/name: preview-bubbles
     dashboard.shokohsc.home/url: https://preview.bubbles.shokohsc.home
     dashboard.shokohsc.home/icon: wrench
 spec:
@@ -21,6 +21,13 @@ spec:
             name: browser-sync
             port:
               number: 3000
+      - path: /browser-sync/socket.io
+        pathType: Prefix
+        backend:
+          service:
+            name: browser-sync
+            port:
+              number: 443
   tls:
   - hosts:
     - preview.bubbles.shokohsc.home
@@ -33,7 +40,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: ca-cluster-issuer
-    dashboard.shokohsc.home/name: browser-sync
+    dashboard.shokohsc.home/name: browser-sync-bubbles
     dashboard.shokohsc.home/url: https://browser-sync.bubbles.shokohsc.home
     dashboard.shokohsc.home/icon: wrench
 spec:
@@ -48,6 +55,13 @@ spec:
             name: browser-sync
             port:
               number: 3001
+      - path: /browser-sync
+        pathType: Prefix
+        backend:
+          service:
+            name: browser-sync
+            port:
+              number: 443
   tls:
   - hosts:
     - browser-sync.bubbles.shokohsc.home

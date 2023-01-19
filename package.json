@@ -22,14 +22,12 @@
     "dayjs": "^1.11.7",
     "es6-promise": "^4.2.8",
     "npm-check-updates": "^16.6.2",
+    "pinia": "^2.0.28",
     "postcss": "^8.3.5",
     "vite": "^3.2.5",
     "vite-plugin-fonts": "^0.7.0",
     "vue": "^3.0.5",
     "vue-easy-lightbox": "^1.11.0",
     "vue-router": "4"
-  },
-  "dependencies": {
-    "pinia": "^2.0.28"
   }
 }

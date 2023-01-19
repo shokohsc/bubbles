@@ -127,7 +127,7 @@ export default {
           break;
       }
     },
-    async validate(e) {
+    async validate(e = null) {
       if (this.store.q.length > 2) {
         this.$router.push({ name: 'EntityResults', params: { entity: this.store.entity }, query: { q: this.store.q, page: 1 }})
       }

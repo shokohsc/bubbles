@@ -13,8 +13,12 @@ spec:
       protocol: TCP
       name: http
     - port: 3001
-      targetPort: browser-sync
+      targetPort: ui
       protocol: TCP
-      name: browser-sync
+      name: ui
+    - port: 443
+      targetPort: wss
+      protocol: TCP
+      name: wss
   selector:
     app: browser-sync

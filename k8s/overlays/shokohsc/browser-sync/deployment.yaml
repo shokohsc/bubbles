@@ -26,8 +26,11 @@ spec:
             - name: http
               containerPort: 3000
               protocol: TCP
-            - name: browser-sync
+            - name: ui
               containerPort: 3001
+              protocol: TCP
+            - name: wss
+              containerPort: 443
               protocol: TCP
           lifecycle:
             postStart:
@@ -43,6 +46,16 @@ spec:
           #         - /bin/sh
           #         - -c
           #         - update-ca-certificates
+          startupProbe:
+            tcpSocket:
+              port: http
+          livenessProbe:
+            tcpSocket:
+              port: http
+          readinessProbe:
+            httpGet:
+              port: http
+              path: /
           resources:
             requests:
               cpu: 10m

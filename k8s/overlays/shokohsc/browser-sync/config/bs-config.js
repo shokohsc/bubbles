@@ -21,11 +21,10 @@ module.exports = {
   watch: false,
   https: false,
   proxy: {
-    target: "bubbles.bubbles:80",
+    target: "bubbles.dev-bubbles:80",
     ws: true
   },
   cors: true,
-  listen: "0.0.0.0",
   port: 3000,
   logPrefix: "Bubbles",
   logLevel: "debug",
