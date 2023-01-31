@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="columns">
+    <div class="columns" v-if="loaded">
 
       <div class="column is-4">
         <figure class="image portrait">
@@ -23,12 +23,12 @@
         </h2>
         <table class="table dark-table is-narrow is-fullwidth">
           <tr class="is-full">
-            <td class="top-table">
+            <td>
               <strong>
                 Publishing date
               </strong>
             </td>
-            <td class="top-table">
+            <td>
               <router-link :to="weekRoute">
                 {{ publishingDate }}
               </router-link>
@@ -83,7 +83,7 @@
           <tr v-if="hasEvents">
             <td>
               <strong>
-                Events
+                Event
               </strong>
             </td>
             <td>
@@ -124,7 +124,7 @@
 </template>
 
 <script>
-  import api from '../../api';
+  import api from '../api';
   import dayjs from 'dayjs';
   import VueEasyLightbox from 'vue-easy-lightbox';
 
@@ -134,44 +134,45 @@
     },
     computed: {
       src: function() {
-        return this.encrypt(this.comic?.thumbnail?.path) + '/portrait_incredible.' + this.comic?.thumbnail?.extension
+        return this.encrypt(this.comic.thumbnail.path || '') + '/portrait_incredible.' + this.comic.thumbnail.extension || ''
       },
       detail: function() {
-        return this.encrypt(this.comic?.thumbnail?.path) + '/detail.' + this.comic?.thumbnail?.extension
+        return this.encrypt(this.comic.thumbnail.path || '') + '/detail.' + this.comic.thumbnail.extension || ''
       },
       publishingDate: function() {
-        return dayjs(this.comic?.dates[0].date).format('MMMM DD, YYYY')
+        return dayjs(this.comic.dates[0].date || null).format('MMMM DD, YYYY')
       },
       weekRoute: function() {
-        return { name: "Home", query: { date: dayjs(this.comic?.dates[0].date).format('YYYY-MM-DD') } }
+        return { name: "Home", query: { date: dayjs(this.comic.dates[0].date || null).format('YYYY-MM-DD') } }
       },
       series: function() {
-        return this.comic?.series.name
+        return this.comic.series.name || ''
       },
       hasEvents: function() {
-        return this.comic?.events?.items.length > 0
+        return this.comic.events.items.length || false
       },
       events: function() {
-        return this.comic?.events?.items
+        return this.comic.events.items || []
       },
       hasCharacters: function() {
-        return this.comic?.characters?.items.length > 0
+        return this.comic.characters.items.length || false
       },
       characters: function() {
-        return this.comic?.characters?.items
+        return this.comic.characters.items || []
       },
       creators: function() {
-        return this.comic?.creators?.items
+        return this.comic.creators.items || []
       },
       hasStories: function() {
-        return this.comic?.stories?.items.length > 0
+        return this.comic.stories.items.length || false
       },
       stories: function() {
-        return this.comic?.stories?.items
+        return this.comic.stories.items || []
       }
     },
     data() {
       return {
+        loaded: false,
         comic: {},
         visible: false,
         index: 0,
@@ -216,11 +217,13 @@
         return { name: "EntityComics", params: { entity: 'story', id: this.resourceURIToId(resourceURI) } }
       },
       async fetchData(comicId) {
+        this.loaded = false
         try {
           const response = await api.comic(comicId)
           this.comic = response.data.comic
           // Remove stories for now
           this.comic.stories.items = []
+          this.loaded = true
         } catch (e) {
           console.log(e);
         }
@@ -254,11 +257,10 @@ table.dark-table tr td strong {
   color: white;
 }
 
-td.top-table {
-  border-top: 1px solid #dbdbdb;
+table.table tr:first-child td {
+  border-top: none;
 }
-
-td.bottom-table {
+table.table tr:last-child td {
   border-bottom: none;
 }
 

@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Home from './components/Home.vue';
 import About from './components/About.vue';
-import Get from './components/Comic/Get.vue';
+import Comic from './components/Comic.vue';
 import Comics from './components/Comics.vue';
 import Results from './components/Results.vue';
 
@@ -20,7 +20,7 @@ const routes = [
   {
     name: 'Comic',
     path: '/comic/:id',
-    component: Get
+    component: Comic
   },
   {
     name: 'EntityComics',
