@@ -126,7 +126,7 @@
 </template>
 
 <script>
-export default ({
+export default {
   data() {
     return {
       innerValue: 1,
@@ -343,5 +343,5 @@ export default ({
       this.selected = this.forcePage
     }
   },
-})
+}
 </script>
