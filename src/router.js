@@ -4,7 +4,6 @@ import Home from './components/Home.vue';
 import About from './components/About.vue';
 import Comic from './components/Comic.vue';
 import Comics from './components/Comics.vue';
-import Results from './components/Results.vue';
 
 const routes = [
   {
@@ -26,11 +25,6 @@ const routes = [
     name: 'EntityComics',
     path: '/:entity/:id/comics',
     component: Comics
-  },
-  {
-    name: 'EntityResults',
-    path: '/search/:entity',
-    component: Results
   },
 ]
 

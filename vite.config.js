@@ -26,7 +26,7 @@ export default defineConfig({
     }),
     sentryVitePlugin({
       org: process.env.SENTRY_ORG || "shokohsc",
-      project: process.env.SENTRY_PROJECT,
+      project: process.env.SENTRY_PROJECT || "bubbles",
       authToken: process.env.SENTRY_AUTH_TOKEN,
       url: "https://glitchtip.shokohsc.home",
       release: {

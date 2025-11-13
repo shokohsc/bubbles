@@ -2,7 +2,8 @@ import { defineStore, acceptHMRUpdate } from 'pinia'
 
 const useComicsStore = defineStore('comics', {
   state: () => ({
-    page: 1
+    page: 1,
+    comics: []
   })
 })
 

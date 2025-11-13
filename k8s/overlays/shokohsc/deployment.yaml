@@ -13,8 +13,8 @@ spec:
             - name: ENV
               value: development
             - name: API_GATEWAY_HOST
-              value: api.comics.shokohsc.home
+              value: api.ouistity.shokohsc.home
             - name: USE_SENTRY
-              value: "true"
+              value: "false"
             - name: SENTRY_DSN
               value: https://2f15ffed2e254ced911e78de9312afe0\@glitchtip.shokohsc.home/1

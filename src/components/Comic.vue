@@ -14,7 +14,7 @@
         <h2 class="title has-text-light">
           {{ comic.title }}
           <small>
-            <a :href="encrypt(comic.urls[0].url)" target="_blank" :title="comic.title">
+            <a :href="encrypt(comic.metadata.url)" target="_blank" :title="comic.title">
               <span class="icon">
                 <i class="fas fa-link" />
               </span>
@@ -22,93 +22,49 @@
           </small>
         </h2>
         <table class="table dark-table is-narrow is-fullwidth">
-          <tr class="is-full">
-            <td>
-              <strong>
-                Publishing date
-              </strong>
-            </td>
-            <td>
-              <router-link :to="weekRoute">
-                {{ publishingDate }}
-              </router-link>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <strong>
-                Series
-              </strong>
-            </td>
-            <td>
-              <router-link :to="serieComicsRoute(comic.series.resourceURI)">
-                {{ title(comic.series.name) }}
-              </router-link>
-            </td>
-          </tr>
-
-          <tr v-for="(creator, index) in creators" :key="index">
-            <td>
-              <strong class="is-capitalized">
-                {{ creator.role }}
-              </strong>
-            </td>
-            <td>
-              <span class="is-capitalized">
-                <router-link :to="creatorComicsRoute(creator.resourceURI)">
-                  {{ title(creator.name) }}
+          <tbody>
+            <tr class="is-full">
+              <td>
+                <strong>
+                  Publishing date
+                </strong>
+              </td>
+              <td>
+                <router-link :to="weekRoute">
+                  {{ publishingDate }}
                 </router-link>
-              </span>
-            </td>
-          </tr>
+              </td>
+            </tr>
 
-          <tr v-if="hasCharacters">
-            <td>
-              <strong>
-                Characters
-              </strong>
-            </td>
-            <td>
-              <div class="tags">
-                <span class="tag is-info is-capitalized" v-for="(character, index) in characters" :key="index">
-                  <router-link class="has-text-light" :to="characterComicsRoute(character.resourceURI)">
-                    {{ character.name }}
+            <tr>
+              <td>
+                <strong>
+                  Series
+                </strong>
+              </td>
+              <td>
+                <router-link :to="serieComicsRoute(comic.metadata.series.id)">
+                  {{ title(comic.metadata.series.title) }}
+                </router-link>
+              </td>
+            </tr>
+
+            <tr v-for="(creator, index) in creators" :key="index">
+              <td>
+                <strong class="is-capitalized">
+                  {{ creator.role }}
+                </strong>
+              </td>
+              <td>
+                <span class="is-capitalized">
+                  <router-link :to="creatorComicsRoute(creator.id)">
+                    {{ title(creator.name) }}
                   </router-link>
-              </span>
-              </div>
-            </td>
-          </tr>
+                </span>
+              </td>
+            </tr>
 
-          <tr v-if="hasEvents">
-            <td>
-              <strong>
-                Event
-              </strong>
-            </td>
-            <td>
-              <span class="is-capitalized" v-for="(event, index) in events" :key="index">
-                <router-link :to="eventComicsRoute(event.resourceURI)">
-                  {{ title(event.name) }}
-                </router-link>
-              </span>
-            </td>
-          </tr>
-
-          <tr v-if="hasStories">
-            <td>
-              <strong>
-                Stories
-              </strong>
-            </td>
-            <td>
-              <span class="is-capitalized" v-for="(story, index) in stories" :key="index">
-                <router-link :to="storyComicsRoute(story.resourceURI)">
-                  {{ title(story.name) }}
-                </router-link>
-              </span>
-            </td>
-          </tr>
+          </tbody>
         </table>
 
         <p v-html="comic.description" class="has-text-light" />
@@ -124,9 +80,9 @@
 </template>
 
 <script>
-  import api from '../api';
   import dayjs from 'dayjs';
   import VueEasyLightbox from 'vue-easy-lightbox';
+  import { useComicsStore } from '../stores/comics'
 
   export default {
     components: {
@@ -134,45 +90,28 @@
     },
     computed: {
       src: function() {
-        return this.encrypt(this.comic.thumbnail.path || '') + '/portrait_incredible.' + this.comic.thumbnail.extension || ''
+        return this.encrypt(this.comic.thumbnail.path || '') + '/portrait_incredible.' + this.comic.thumbnail.extension || ''
       },
       detail: function() {
-        return this.encrypt(this.comic.thumbnail.path || '') + '/detail.' + this.comic.thumbnail.extension || ''
+        return this.encrypt(this.comic.thumbnail.path || '') + '/detail.' + this.comic.thumbnail.extension || ''
       },
       publishingDate: function() {
-        return dayjs(this.comic.dates[0].date || null).format('MMMM DD, YYYY')
+        return dayjs(this.comic.metadata.published_date || null).format('MMMM DD, YYYY')
       },
       weekRoute: function() {
-        return { name: "Home", query: { date: dayjs(this.comic.dates[0].date || null).format('YYYY-MM-DD') } }
+        return { name: "Home", query: { date: dayjs(this.comic.metadata.published_date || null).format('YYYY-MM-DD') } }
       },
       series: function() {
-        return this.comic.series.name || ''
-      },
-      hasEvents: function() {
-        return this.comic.events.items.length || false
-      },
-      events: function() {
-        return this.comic.events.items || []
-      },
-      hasCharacters: function() {
-        return this.comic.characters.items.length || false
-      },
-      characters: function() {
-        return this.comic.characters.items || []
+        return this.comic.metadata.series.title || ''
       },
       creators: function() {
-        return this.comic.creators.items || []
-      },
-      hasStories: function() {
-        return this.comic.stories.items.length || false
-      },
-      stories: function() {
-        return this.comic.stories.items || []
+        return Object.entries(this.comic.metadata.creators).flatMap(([role, persons]) => persons.map(p => ({ role, id: p.id, name: p.title })))
       }
     },
     data() {
       return {
         loaded: false,
+        store: useComicsStore(),
         comic: {},
         visible: false,
         index: 0,
@@ -198,40 +137,26 @@
           return $charOne.toUpperCase()
         })
       },
-      resourceURIToId(resourceURI = '') {
-        return resourceURI.split('/').reverse()[0]
+      serieComicsRoute(id) {
+        return { name: "EntityComics", params: { entity: 'serie', id } }
       },
-      characterComicsRoute(resourceURI) {
-        return { name: "EntityComics", params: { entity: 'character', id: this.resourceURIToId(resourceURI) } }
-      },
-      serieComicsRoute(resourceURI) {
-        return { name: "EntityComics", params: { entity: 'serie', id: this.resourceURIToId(resourceURI) } }
-      },
-      eventComicsRoute(resourceURI) {
-        return { name: "EntityComics", params: { entity: 'event', id: this.resourceURIToId(resourceURI) } }
-      },
-      creatorComicsRoute(resourceURI) {
-        return { name: "EntityComics", params: { entity: 'creator', id: this.resourceURIToId(resourceURI) } }
-      },
-      storyComicsRoute(resourceURI) {
-        return { name: "EntityComics", params: { entity: 'story', id: this.resourceURIToId(resourceURI) } }
+      creatorComicsRoute(id) {
+        return { name: "EntityComics", params: { entity: 'creator', id } }
       },
       async fetchData(comicId) {
         this.loaded = false
         try {
-          const response = await api.comic(comicId)
-          this.comic = response.data.comic
-          // Remove stories for now
-          this.comic.stories.items = []
+          this.comic = this.store.comics.find(comic => comic.comicId === comicId)
+          
           this.loaded = true
         } catch (e) {
           console.log(e);
         }
       },
-      onShow() {
+      onShow() {
         this.visible = true
       },
-      showSingle() {
+      showSingle() {
         this.imgs = [this.detail]
         // or
         // this.imgs  = {
@@ -240,7 +165,7 @@
         // }
         this.onShow()
       },
-      onHide() {
+      onHide() {
         this.visible = false
       }
     }

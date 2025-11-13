@@ -45,6 +45,7 @@
 import api from '../api';
 import dayjs from 'dayjs';
 import List from './Comic/List.vue';
+import { useComicsStore } from '../stores/comics'
 
 export default {
   components: {
@@ -53,6 +54,7 @@ export default {
   data() {
     return {
       loaded: false,
+      store: useComicsStore(),
       date: '',
       comics: []
     }
@@ -62,6 +64,7 @@ export default {
     this.$watch(
       () => this.$route.query.date,
       async () => {
+        this.store.$patch({ comics: [] })
         this.date = this.$route.query.hasOwnProperty('date') ? this.$route.query.date : ''
         await this.fetchData(this.date)
         document.title = this.title(`Bubbles - ${this.formattedDate}`)
@@ -85,6 +88,7 @@ export default {
           comic.route = { name: 'Comic', params: { id: comic.comicId } }
           this.comics.push(comic);
         });
+        this.store.$patch({ comics: this.comics })
         this.loaded = true
         window.scrollTo(0, 0);
       } catch (e) {

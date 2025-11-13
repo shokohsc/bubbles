@@ -70,8 +70,10 @@ export default {
     this.$watch(
       () => this.$route.query.page,
       async () => {
+        this.store.$patch({ comics: [] })
         this.store.$patch({ page: this.$route.query.hasOwnProperty('page') ? this.$route.query.page : 1 })
-        await Promise.all([this.fetchEntityData(this.entityId), this.fetchData(this.store.page)])
+        await this.fetchData(this.store.page)
+        this.entity = this.store.comics[0].metadata[`${this.$route.params.entity}s`]
         document.title = this.title(`Bubbles - ${this.formattedTitle}`)
       },
       { immediate: true }
@@ -94,19 +96,9 @@ export default {
           comic.route = { name: 'Comic', params: { id: comic.comicId } }
           this.comics.push(comic);
         });
+        this.store.$patch({ comics: this.comics })
         this.loaded = true
         window.scrollTo(0, 0);
-      } catch (e) {
-        console.log(e);
-      }
-    },
-    async fetchEntityData(id = '') {
-      try {
-        if ('' === id) {
-          return
-        }
-        const response = await api[this.$route.params.entity](id)
-        this.entity = response.data[this.$route.params.entity]
       } catch (e) {
         console.log(e);
       }
