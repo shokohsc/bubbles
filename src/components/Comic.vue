@@ -56,9 +56,9 @@
                 </strong>
               </td>
               <td>
-                <span class="is-capitalized">
-                  <router-link :to="creatorComicsRoute(creator.id)">
-                    {{ title(creator.name) }}
+                <span v-for="(person, i) in creator.persons" :key="i" class="is-capitalized mr-2">
+                  <router-link :to="creatorComicsRoute(person.id)">
+                    {{ title(person.full_name) }}
                   </router-link>
                 </span>
               </td>
@@ -105,7 +105,7 @@
         return this.comic.metadata.series.title || ''
       },
       creators: function() {
-        return Object.entries(this.comic.metadata.creators).flatMap(([role, persons]) => persons.map(p => ({ role, id: p.id, name: p.title })))
+        return Object.entries(this.comic.metadata.creators).map(creator => { return { role: creator[0], persons: creator[1] } });
       }
     },
     data() {
