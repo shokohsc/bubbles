@@ -84,7 +84,11 @@ export default {
         this.comics = []
         const response = await api.comicsWeek(date)
         this.date = response.data.date
-        response.data.comics.forEach(comic => {
+        response.data.comics.sort((a, b) => {
+          if (a.title.toUpperCase() === b.title.toUpperCase())
+            return 0
+          return a.title.toUpperCase() < b.title.toUpperCase() ? -1 : 1
+        }).forEach(comic => {
           comic.route = { name: 'Comic', params: { id: comic.comicId } }
           this.comics.push(comic);
         });
