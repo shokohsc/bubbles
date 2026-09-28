@@ -1,5 +1,4 @@
 import axios from 'axios'
-import getEnv from '../utils/env'
 import dayjs from 'dayjs'
 import isSameOrBefore from 'dayjs/plugin/isSameOrBefore'
 
@@ -7,7 +6,7 @@ dayjs.extend(isSameOrBefore)
 
 const apiConfig = {
   protocol: window.location.protocol,
-  host: getEnv('API_GATEWAY_HOST')
+  host: `api.comics.home.arpa`
 }
 
 const api = axios.create({

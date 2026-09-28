@@ -13,20 +13,29 @@ spec:
         app: bubbles
     spec:
       securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
         fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
       containers:
         - name: bubbles
           image: shokohsc/bubbles
-          env:
-            - name: ENV
-              value: production
-            - name: API_GATEWAY_HOST
-              value: api.cluster.local
-            - name: USE_SENTRY
-              value: "false"
+          securityContext:
+            allowPrivilegeEscalation: false
+            privileged: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 1000
+            capabilities:
+              drop:
+                - ALL
+            seccompProfile:
+              type: RuntimeDefault
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8000
               protocol: TCP
           startupProbe:
             tcpSocket:
@@ -40,8 +49,6 @@ spec:
               path: /
           resources:
             requests:
-              cpu: 10m
-              memory: 64M
+              cpu: 100m
             limits:
-              cpu: 1000m
-              memory: 256M
+              memory: 64M

@@ -1,0 +1,25 @@
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: bubbles
+  annotations:
+    dashboard.home.arpa/name: dev-bubbles
+    dashboard.home.arpa/url: https://dev.bubbles.home.arpa
+    dashboard.home.arpa/icon: wrench
+spec:
+  hostnames:
+  - dev.bubbles.home.arpa
+  parentRefs:
+  - name: bubbles
+    kind: ListenerSet
+    group: gateway.networking.k8s.io
+    sectionName: bubbles
+  rules:
+  - backendRefs:
+    - name: bubbles
+      port: 80
+    matches:
+    - path:
+        type: PathPrefix
+        value: /
